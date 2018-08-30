@@ -30,6 +30,7 @@ binary to octal
 octal to binary
 
 selection sort
+
 bubble sort
 
 partial sort:1st half in ascending and 2nd half in descending

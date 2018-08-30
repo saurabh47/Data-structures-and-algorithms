@@ -1,7 +1,8 @@
 #include<stdio.h>
 
 int main(int argc,char *argv[]){
-
+	if(argc==1)
+		return 0;
 	char arr[100];	
 	
 	int k=0;
@@ -13,12 +14,7 @@ int main(int argc,char *argv[]){
 		}
 	}
 
-	int z=0;
-	while(arr[z]!='\0'){
-		printf(" %c",arr[z]);
-		z++;	
-	}
-
+	printf("%s\n", arr);
 
 	return 0;
 }

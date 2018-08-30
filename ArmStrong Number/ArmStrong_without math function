@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+
+int Len(int p)
+{
+    int l=0;
+    while(p!=0)
+    {
+        p/=10;
+        l++;
+    }
+    return l;
+}
+int Arm(int rev,int len)
+{
+    int add=1;
+    for(int i=0;i<len;i++)
+    {
+        add=add*rev;
+    }
+    
+    return add;
+}
+
+int main(int argc,char *argv[])
+{
+    int no,temp,rev,sum=0;
+    no=atoi(argv[1]);
+    temp=no;
+    
+    int len=Len(no);
+    
+    
+   while(temp>0)
+   {
+       rev=temp%10;
+       temp=temp/10;
+      sum=sum+Arm(rev,len);
+       
+   }
+   if(no==sum)
+   printf("Armstrong Number");
+   else
+   printf("Not a ArmStrong Number");
+    
+    return 0;
+}

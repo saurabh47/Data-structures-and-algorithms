@@ -2,6 +2,7 @@
 This Repository contains all the important codes which may be ask in TCS Ninja Online Test and it also contains previous year solved Questions.
 
 [TCS2018](https://github.com/saurabh47/TCS_NINJA_CODES/tree/master/TCS2018)
+
 comaand line:-
 
 palindrome 
@@ -19,7 +20,6 @@ perfect number
 factorial
  
 fibonnaci series
- 
 
 swapping 
 

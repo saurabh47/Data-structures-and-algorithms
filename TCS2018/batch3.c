@@ -21,13 +21,15 @@ int main(){
 	int length[3];
 	int i;
 	for(i=0;i<=2;i++){
+		scanf("%[^\n]%*c", in[i]);
+		/*You can also use this for Reding the input
 		int j =-1;
 		while(in[i][j]!='\n'){
 			j++;
 			scanf("%c",&in[i][j]);
 		}
 		length[i]=j;
-		in[i][j]='\0';
+		in[i][j]='\0';*/
 	}
 
 	/*for(i=0;i<=2;i++){

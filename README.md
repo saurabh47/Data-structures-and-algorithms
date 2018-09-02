@@ -1,5 +1,7 @@
 # TCS_NINJA_CODES
+This Repository contains all the important codes which may be ask in TCS Ninja Online Test and it also contains previous year solved Questions.
 
+#TCS2018
 comaand line:-
 
 palindrome 

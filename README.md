@@ -1,5 +1,5 @@
 # TCS_NINJA_CODES
-This Repository contains all the important codes which may be ask in TCS Ninja Online Test and it also contains previous year solved Questions.
+This Repository contains all the important codes which may be asked in TCS Ninja Online Test and it also contains previous year solved Questions.
 
 [TCS2018](https://github.com/saurabh47/TCS_NINJA_CODES/tree/master/TCS2018)
 

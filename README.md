@@ -62,3 +62,4 @@ This Repository contains all the important codes which may be asked in Mass Recr
 ### armstrong number
     An Armstrong number is a number such that the sum  of its digits raised to the third power is equal to the number itself. For example, 371 is an Armstrong number, since 3^3+7^3+1^3 = 371
     
+## given input n print first n elements of the Series of the form 2,6,6,12,12,12,20,20,20,20,30,30,30,30,30....    

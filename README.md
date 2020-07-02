@@ -33,6 +33,9 @@ This Repository contains all the important codes which may be asked in Mass Recr
 ### swapping 
    swap the input variables  input-->a=10,b=20  -->output a=20,b=10
 
+### [ArrayRotation](https://www.hackerrank.com/challenges/circular-array-rotation/problem)
+  Given a vector array (A) and a rotation count(k) rotate the array K times,where rotation indicates shifting each element of the array 1 digit right, so after k rotations given an index the program should return the element at that index (from the resulting array) 
+
 ### GCD,HCF of two numbers 
 ### GCD of 3nos
 ### GCD or HCF of array

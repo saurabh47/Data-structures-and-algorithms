@@ -3,7 +3,8 @@
 
 int main(){
     int n; 
-    scanf("Enter Input String Length: %d",&n);
+    printf("Enter Input String Length: ");
+    scanf("%d",&n);
     char upper[26];
     char lower[26];
     for(int i=0,m=65,l=97; i<26; i++){
@@ -11,9 +12,11 @@ int main(){
         lower[i] = l++;
     }
     char* s = (char *)malloc(10240000 * sizeof(char));
-    scanf("Enter Input String %s",s);
+    printf("Enter Input String: ");
+    scanf("%s",s);
     int k; 
-    scanf("Enter Key %d",&k);
+    printf("Enter Key: ");
+    scanf("%d",&k);
     for(int i=0; i<=n; i++){
       if(s[i]>=65 && s[i]<=90){
           int d = s[i] - 65;

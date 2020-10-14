@@ -40,18 +40,18 @@ The postorder output for this example tree would be:4 5 2 3 1
 
 <b>Code screenshots</b>
 Input prompt: 
-<img src="../prompt.JPG">
+<img src="Binary Tree Traversal/prompt.JPG">
 
 Input:
-<img src="../input.jpg">
+<img src="Binary Tree Traversal/input.JPG">
 
 Input given: 6 4 8 2 1 5
 
 Preorder output:
-<img src="../preorder.jpg">
+<img src="Binary Tree Traversal/preorder.JPG">
 
 Inorder output:
-<img src="../inorder.jpg">
+<img src="Binary Tree Traversal/inorder.JPG">
 
 Postorder output:
-<img src="../postorder.jpg">
+<img src="Binary Tree Traversal/postorder.JPG">

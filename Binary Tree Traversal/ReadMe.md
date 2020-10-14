@@ -18,7 +18,6 @@ Preorder = First visits root, then covers left subtree, and lastly moves to the 
 </ul>
 In this way, the preorder function visits left nodes till there are no child elements, then backtracks and visits the right child node of the earlier visited node.
 The preorder output for this example tree would be:1 2 4 5 3
-<img src="preorder.jpg">
 
 Inorder = First traverses the left-subtree, then visits root and lastly moves to the right subtree. 
 <ul>
@@ -41,18 +40,18 @@ The postorder output for this example tree would be:4 5 2 3 1
 
 <b>Code screenshots</b>
 Input prompt: 
-<img src="prompt.jpg">
+<img src="../prompt.JPG">
 
 Input:
-<img src="input.jpg">
+<img src="../input.jpg">
 
 Input given: 6 4 8 2 1 5
 
 Preorder output:
-<img src="preorder.jpg">
+<img src="../preorder.jpg">
 
 Inorder output:
-<img src="inorder.jpg">
+<img src="../inorder.jpg">
 
 Postorder output:
-<img src="postorder.jpg">
+<img src="../postorder.jpg">

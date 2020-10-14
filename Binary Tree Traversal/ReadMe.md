@@ -40,18 +40,18 @@ The postorder output for this example tree would be:4 5 2 3 1
 
 <b>Code screenshots</b>
 Input prompt: 
-<img src="Binary Tree Traversal/prompt.JPG">
+<img src="https://github.com/MansiAyer/Popular_Coding_Questions_Solution/blob/master/Binary%20Tree%20Traversal/prompt.JPG">
 
 Input:
-<img src="Binary Tree Traversal/input.JPG">
+<img src="https://github.com/MansiAyer/Popular_Coding_Questions_Solution/blob/master/Binary%20Tree%20Traversal/input.JPG">
 
 Input given: 6 4 8 2 1 5
 
 Preorder output:
-<img src="Binary Tree Traversal/preorder.JPG">
+<img src="https://github.com/MansiAyer/Popular_Coding_Questions_Solution/blob/master/Binary%20Tree%20Traversal/preorder.JPG">
 
 Inorder output:
-<img src="Binary Tree Traversal/inorder.JPG">
+<img src="https://github.com/MansiAyer/Popular_Coding_Questions_Solution/blob/master/Binary%20Tree%20Traversal/inorder.JPG">
 
 Postorder output:
-<img src="Binary Tree Traversal/postorder.JPG">
+<img src="https://github.com/MansiAyer/Popular_Coding_Questions_Solution/blob/master/Binary%20Tree%20Traversal/postorder.JPG">

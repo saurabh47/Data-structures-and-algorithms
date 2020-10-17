@@ -40,7 +40,6 @@ int main(void)
 {
     char str1[50];
     char str2[50];
-
     printf("\n Enter source String  :  ");
     scanf("%s", str1);
     printf("\n Enter target String  :  ");
@@ -62,14 +61,10 @@ int main(void)
             {
                 int a = arr[i - 1][j] + 1;
                 int b = arr[i][j - 1] + 1;
-                int c;
-                if (str1[i] == str2[j])
+                int c = arr[i - 1][j - 1];
+                if (str1[i] != str2[j])
                 {
-                    c = arr[i - 1][j - 1];
-                }
-                else
-                {
-                    c = arr[i - 1][j - 1] + 1;
+                    c += 1;
                 }
                 int minABC = min(min(a, b), c);
                 // printf("min %d,%d,%d=%d",a,b,c,minABC);
@@ -77,28 +72,15 @@ int main(void)
             }
         }
     }
-    for (int i = 0; i < m; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            printf("%d", arr[i][j]);
-        }
-        printf("\n");
-    }
+
+    // for (int i = 0; i < m; i++)
+    // {
+    //     for (int j = 0; j < n; j++)
+    //     {
+    //         printf("%d", arr[i][j]);
+    //     }
+    //     printf("\n");
+    // }
     printf("len=%d", arr[m - 1][n - 1]);
     return 0;
 }
-
-/***output****
- Enter source String  :  sitting
-
- Enter target String  :  bitting      
-0123456
-1012345
-2101234
-3210123
-4321012
-5432101
-6543210
-len=0
- * /

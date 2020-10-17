@@ -84,3 +84,27 @@ int main(void)
     printf("len=%d", arr[m - 1][n - 1]);
     return 0;
 }
+
+
+/*** output *****
+ *  Enter source String  :  honda
+
+ * Enter target String  :  herhonda
+ *  len=3
+
+ *  Enter source String  :  abc
+
+ * Enter target String  :  yabd
+ *  len=2
+ * 
+ * 
+ * 
+ * ISSUE: FOR THIS CASE SHOULD PRINT 1
+ * Enter source String  :  hello
+
+ * Enter target String  :  dello
+   len=0
+ * 
+ * 
+ * /
+ * 

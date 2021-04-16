@@ -33,8 +33,8 @@ e.g 28 is a perfect number divisors of 28 are 1,2,4,7,14 which sum upto 28 = (1+
 ## [Factorial](https://en.wikipedia.org/wiki/Factorial)
 
 ```
- In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal    to n. For example, The value of 0! is 1, according to the convention for an empty product.
- e.g 5! = 120 i.e 5x4x3x2x1=120
+In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal    to n. For example, The value of 0! is 1, according to the convention for an empty product.
+e.g 5! = 120 i.e 5x4x3x2x1=120
 ```
 
 ## [Fibonnaci series](https://en.wikipedia.org/wiki/Fibonacci_number)
@@ -45,7 +45,11 @@ In mathematics, the Fibonacci numbers, commonly denoted Fₙ, form a sequence, c
 
 ## [Swap using pointers](https://github.com/saurabh47/Popular_Coding_Questions_Solution/blob/master/swapping/swap.c)
 
-swap the input variables input-->a=10,b=20 -->output a=20,b=10
+```
+swap the input variables 
+input: a=10,b=20 
+output:a=20,b=10
+```
 
 ## [GCD of two numbers](https://en.wikipedia.org/wiki/Greatest_common_divisor)
 
@@ -81,17 +85,39 @@ Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorith
 
 ## Partial sort:1st half in ascending and 2nd half in descending
 
-## removing vowels from string
+## [Removing vowels from string](https://en.wikipedia.org/wiki/Vowel)
+```
+A vowel is a syllabic speech sound pronounced without any stricture in the vocal tract. Vowels are one of the two principal classes of speech sounds, the other being the consonant. Vowels vary in quality, in loudness and also in quantity.
+In  english language there are 5 vowels "a, e, i, o, u"
+```
 
-## capitalizing string or decaptializing
-
+## Capitalizing string or Decaptializing
+```
+input : hello world
+output: Hello World
+```
 ## Printing alternate prime numbers
+```
+prime: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41...
+Alternate Prime: 2, 5, 11, 17, 23, 31, 41...
+```
 
-## Multilpication of two metrices,their inverse
 
+## [Matrix multiplication and its Inverse](https://en.wikipedia.org/wiki/Matrix_multiplication)
+```
+In mathematics, particularly in linear algebra, matrix multiplication is a binary operation that produces a matrix from two matrices. For matrix multiplication, the number of columns in the first matrix must be equal to the number of rows in the second matrix. The resulting matrix, known as the matrix product, has the number of rows of the first and the number of columns of the second matrix. The product of matrices A and B is denoted as AB
+```
+### Matrix Multiplication 
+<img src="https://www.mathsisfun.com/algebra/images/matrix-multiply-c.svg">
+
+### Matrix Inverse 
+<img src="https://www.mathsisfun.com/algebra/images/matrix-inverse-2x2.svg">
 ## Printing camel case
 
-## Linear search algorithm
+## [Linear search algorithm](https://github.com/saurabh47/Popular_Coding_Questions_Solution/tree/master/Linear)
+```
+In computer science, a linear search or sequential search is a method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched.
+```
 
 ## Armstrong number:
 
@@ -124,5 +150,5 @@ output: 3
 ## [ArrayRotation](https://www.hackerrank.com/challenges/circular-array-rotation/problem)
 
 ```
-Given a vector array (A) and a rotation count(k) rotate the array K times,where rotation indicates shifting each element of the array 1 digit right, so after k rotations given an index the program should return the element at that index (from the resulting array)
+Given a vector array (A) and a rotation count(k) rotate the array K times,where rotation indicates shifting each element ofthe array 1 digit right, so after k rotationsgiven an index the program should return the element at that index (from the resulting array)
 ```

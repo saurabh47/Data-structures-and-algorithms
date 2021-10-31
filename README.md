@@ -15,7 +15,7 @@ e.g Anna,1221,Noon,Racecar etc
 
 ## Number Palindrome
 
-given an input number print its reverse as output  
+given an input number print its reverse as output
  e.g input-->123 output-->321
 
 ## String Palindrome
@@ -46,8 +46,8 @@ In mathematics, the Fibonacci numbers, commonly denoted Fₙ, form a sequence, c
 ## [Swap using pointers](https://github.com/saurabh47/Popular_Coding_Questions_Solution/blob/master/swapping/swap.c)
 
 ```
-swap the input variables 
-input: a=10,b=20 
+swap the input variables
+input: a=10,b=20
 output:a=20,b=10
 ```
 
@@ -107,10 +107,10 @@ Alternate Prime: 2, 5, 11, 17, 23, 31, 41...
 ```
 In mathematics, particularly in linear algebra, matrix multiplication is a binary operation that produces a matrix from two matrices. For matrix multiplication, the number of columns in the first matrix must be equal to the number of rows in the second matrix. The resulting matrix, known as the matrix product, has the number of rows of the first and the number of columns of the second matrix. The product of matrices A and B is denoted as AB
 ```
-### Matrix Multiplication 
+### Matrix Multiplication
 <img src="https://www.mathsisfun.com/algebra/images/matrix-multiply-c.svg">
 
-### Matrix Inverse 
+### Matrix Inverse
 <img src="https://www.mathsisfun.com/algebra/images/matrix-inverse-2x2.svg">
 ## Printing camel case
 
@@ -151,4 +151,15 @@ output: 3
 
 ```
 Given a vector array (A) and a rotation count(k) rotate the array K times,where rotation indicates shifting each element ofthe array 1 digit right, so after k rotationsgiven an index the program should return the element at that index (from the resulting array)
+```
+
+## [Find Majority Element](https://leetcode.com/problems/majority-element/)
+
+```
+Given an array of size n, return the majority element.
+The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+
+Input :- [2,3,3,2,2]
+Output :- 2
+
 ```

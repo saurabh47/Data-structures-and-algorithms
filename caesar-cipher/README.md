@@ -1,4 +1,4 @@
-<h1>Caesae Cipher </h1>
+<h1>Caesar Cipher </h1>
 
 
 ```sh

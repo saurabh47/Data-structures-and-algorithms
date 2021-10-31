@@ -162,17 +162,6 @@ The majority element is the element that appears more than ⌊n / 2⌋ times. Yo
 Input :- [2,3,3,2,2]
 Output :- 2
 
-```
-## [Find Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
-
-
-```
-Given an unsorted array of integers, return the length of the longest consecutive elements sequence.
-
-Input :- [100,4,200,1,3,2]
-Output :- 4
-
-```
 ## [Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/)
 
 ```

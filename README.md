@@ -164,7 +164,7 @@ Output :- 2
 
 ```
 
-## [Find Majority Element](https://leetcode.com/problems/majority-element/)
+## [Find sum of Maximum sum subarray](https://leetcode.com/problems/maximum-subarray/)
 
 ```
 Given an array of integers containing positive as well as negative integers. Find the sum of subarray which has maximum sum, in the given array.

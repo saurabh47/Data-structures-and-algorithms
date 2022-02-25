@@ -45,7 +45,6 @@ int searchNumber(int arr[],int target, int start, int end)
     }
     return -1;
 }
-// 3456
 
 int middleNumber(int start,int end)
 {

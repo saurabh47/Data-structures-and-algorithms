@@ -13,7 +13,7 @@ int main(void)
     int size = 12;
     printf("enter integer to search in array");
     int search = getInt();
-    int start=0; 
+    int start = 0;
     int end=11; // length-1
     int foundIndex = searchNumber(array,search,start,end);
     if(foundIndex != -1){
@@ -48,15 +48,7 @@ int searchNumber(int arr[],int target, int start, int end)
 
 int middleNumber(int start,int end)
 {
-    int length=end-start+1;
-    if(length%2==0){
-        return start+((length/2) - 1);
-    }
-    else
-    {
-        return start + length/2;
-    }
-
+    return start + (end - start)/2;
 }
 
 

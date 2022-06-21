@@ -7,7 +7,7 @@
  * @return {number[]}
  */
 var sortArray = function (nums) {
-    MS(nums, 0, nums.length - 1);
+    mergeSort(nums, 0, nums.length - 1);
     return nums
 };
 
@@ -32,13 +32,13 @@ function merge(arr, low, mid, high) {
     }
 }
 
-function MS(arr, low, high) {
+function mergeSort(arr, low, high) {
     if (low >= high) return;
 
     let mid = Math.floor((low + high) / 2);
 
-    MS(arr, low, mid);
-    MS(arr, mid + 1, high);
+    mergeSort(arr, low, mid);
+    mergeSort(arr, mid + 1, high);
 
     merge(arr, low, mid, high);
 }

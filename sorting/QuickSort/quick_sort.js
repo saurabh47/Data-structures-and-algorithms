@@ -7,17 +7,17 @@
  * @return {number[]}
  */
 var sortArray = function (nums) {
-    QuickSort(nums, 0, nums.length - 1);
+    quickSort(nums, 0, nums.length - 1);
     return nums
 };
 
-function QuickSort(arr, s, e) {
+function quickSort(arr, s, e) {
     if (s >= e) return;
 
     let p = partition(arr, s, e);
 
-    QuickSort(arr, s, p);
-    QuickSort(arr, p + 1, e);
+    quickSort(arr, s, p);
+    quickSort(arr, p + 1, e);
 }
 
 function partition(arr, s, e) {

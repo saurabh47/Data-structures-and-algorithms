@@ -2,7 +2,7 @@
  * Insertion Sort
  * Time Complexity -> O(n^2) (Best case -> O(n))
  * Space Complexity -> O(1)
- * This technique it useful for the partionally sorted array
+ * This technique is useful for the partially sorted array
  * In case of sorted array time complexity will be O(n)
  * https://leetcode.com/problems/sort-an-array/
  * @param {number[]} nums

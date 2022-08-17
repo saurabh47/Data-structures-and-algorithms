@@ -81,3 +81,9 @@ swap the input variables
 input: a=10,b=20
 output:a=20,b=10
 ```
+
+
+## [Matrix multiplication and its Inverse](https://en.wikipedia.org/wiki/Matrix_multiplication)
+```
+In mathematics, particularly in linear algebra, matrix multiplication is a binary operation that produces a matrix from two matrices. For matrix multiplication, the number of columns in the first matrix must be equal to the number of rows in the second matrix. The resulting matrix, known as the matrix product, has the number of rows of the first and the number of columns of the second matrix. The product of matrices A and B is denoted as AB
+```

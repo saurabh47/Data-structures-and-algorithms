@@ -14,3 +14,15 @@ given an input number print its reverse as output
 
 Input: IAMGOD
 Output: DOGMAI
+
+#### [Removing vowels from string](https://en.wikipedia.org/wiki/Vowel)
+```
+A vowel is a syllabic speech sound pronounced without any stricture in the vocal tract. Vowels are one of the two principal classes of speech sounds, the other being the consonant. Vowels vary in quality, in loudness and also in quantity.
+In  english language there are 5 vowels "a, e, i, o, u"
+```
+
+#### Capitalizing string or Decaptializing
+```
+input : hello world
+output: Hello World
+```

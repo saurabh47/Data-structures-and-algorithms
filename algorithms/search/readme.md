@@ -2,14 +2,11 @@
 
 1. Linear Search
 2. Binary Search
-3. Jump Search
-4. Interpolation Search
-5. Exponential Search
-
 
 ### Linear Search
 
 Linear Search is a search algorithm that sequentially checks each element in the list to see if it is the one we are looking for. The time complexity of Linear Search is O(n).
+
 ### Binary Search
 
 Binary search is one of the most efficient way to search a sorted array. It works by repeatedly dividing half the portion of the list that could 

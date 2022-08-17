@@ -70,5 +70,3 @@ gcc file.c -o file.out
 ```
 ./file.out arg1 arg2
 ```
-
-

@@ -163,3 +163,45 @@ Input :- [2,3,3,2,2]
 Output :- 2
 
 ```
+
+### Running a cpp program
+
+**compilation**
+
+```
+g++ file.cpp -o file.out
+```
+
+**running**
+
+```
+./file.out
+```
+
+**passing command line arguments**
+
+```
+./file.out arg1 arg2
+```
+
+### Running a c program
+
+**compilation**
+
+```
+gcc file.c -o file.out
+```
+
+**running**
+
+```
+./file.out
+```
+
+**passing command line arguments**
+
+```
+./file.out arg1 arg2
+```
+
+

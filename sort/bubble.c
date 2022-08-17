@@ -12,18 +12,18 @@ int main(int argc,char *argv[]){
 	int arr[argc-1];
 	int i =0;
 	int n=argc-1,j=0;
-	
+
 	for(i=0;i<n;i++){
-		arr[i] = atoi(argv[i+1]);	
-	}	
-	
+		arr[i] = atoi(argv[i+1]);
+	}
+
 	for(i=0;i<n-1;i++){
 		for(int j=0;j<n-i-1;j++){
 			if(arr[j]>arr[j+1]){
-				swap(&arr[j],&arr[j+1]);				
+				swap(&arr[j],&arr[j+1]);
 			}
 		}
-	}	
+	}
 
 	for(i=0;i<n;i++){
 		printf("%d ",arr[i]);

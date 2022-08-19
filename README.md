@@ -10,6 +10,7 @@ This Repository contains all the important coding solutions, which may be asked 
 - Cryptography
 - Exam Questions
 - HackerRank
+- Leetcode
 - Number Theory
 - Patterns
 - String manipulation

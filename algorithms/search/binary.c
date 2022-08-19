@@ -9,9 +9,10 @@ int searchNumber();
 int main(void)
 {
 
-    int array[] ={3,5,7,21,34,54,76,89,90,93,95,96};
+    int array[] ={3,5,7,21,34,54
+                 ,76,89,90,93,95,96};
     int size = 12;
-    printf("enter integer to search in array");
+    printf("enter integer to search in array:");
     int search = getInt();
     int start = 0;
     int end=11; // length-1
@@ -28,6 +29,7 @@ int searchNumber(int arr[],int target, int start, int end)
 {
     int midIndex = middleNumber(start,end);
     int mid = arr[midIndex];
+    printf("\nmiddle=%d",mid);
     int length=end-start+1;
     if(length>0){
         if(target == mid)

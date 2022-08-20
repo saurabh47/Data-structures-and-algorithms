@@ -15,6 +15,8 @@ In selection sort we iterate the list to find the smallest element of the array 
 then swap it with the first element of the last iteration.
 We repeat the above process for the next element and so on.
 Until we reach the end of the array.
+
+Ref: https://www.youtube.com/watch?v=gR6nycuZKlM&t=1378s
 */
 
 #include<iostream>

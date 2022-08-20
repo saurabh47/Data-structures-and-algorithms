@@ -32,21 +32,29 @@ This Repository contains all the important coding solutions, which may be asked 
 
 #### [Moore's voting algorithm](algorithms/moores-voting-algorithm.cpp)
 
-### Running a cpp program
+## Running a cpp program
 
-**compilation**
-
+### **compilation**
+### Mac/Linux
 ```
 g++ file.cpp -o file.out
 ```
+### Windows
+```
+g++ file.cpp -o file.exe
+```
 
-**running**
-
+### **Running**
+### Mac/Linux
 ```
 ./file.out
 ```
+### Windows
+```
+file
+```
 
-**passing command line arguments**
+### **Passing command line arguments**
 
 ```
 ./file.out arg1 arg2

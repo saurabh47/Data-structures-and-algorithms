@@ -114,7 +114,7 @@ void InsertAfter(int index, int x)
 }
 
 /**
- * Deletes the first element of the list 
+ * Deletes the first element of the list
  * by breaking the link to the first node
  * by simply pointing the start address to the second
  * item in the linked list
@@ -135,7 +135,7 @@ void deleteFront()
 /**
  * Deletes the last element of the linked list
  * by traversing to the last but one node
- * and point the link of N-1 th node to [NULL] 
+ * and point the link of N-1 th node to [NULL]
  */
 void deleteEnd()
 {
@@ -217,6 +217,4 @@ int main(/*int argc, char const *argv[]*/)
     }
     printf("exited \n");
     return 0;
-}	
-
-
+}

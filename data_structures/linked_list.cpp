@@ -30,7 +30,7 @@ public:
 
 	LinkedList()
 	{
-		head=NULL;
+		head = NULL;
 	}
 
 	// push at the end of list
@@ -53,33 +53,37 @@ public:
 	// remove last element of list
 	void pop()
 	{
-		if(head == NULL){
-			cout<<"list is empty"<<endl;
+		if (head == NULL)
+		{
+			cout << "list is empty" << endl;
 			return;
 		}
-		if(head->next==NULL){
-			head=NULL;
+		if (head->next == NULL)
+		{
+			head = NULL;
 			return;
 		}
 		Node *start = head;
 		Node *temp = head;
-		while(start->next != NULL)
+		while (start->next != NULL)
 		{
 			temp = start;
 			start = start->next;
 		}
 		temp->next = NULL;
 
-		if(temp==start){
-			head=NULL;
+		if (temp == start)
+		{
+			head = NULL;
 		}
 	}
 
 	void display()
 	{
-		cout<<"List:";
-		if(head==NULL) {
-			cout<<endl;
+		cout << "List:";
+		if (head == NULL)
+		{
+			cout << endl;
 			return;
 		}
 		Node *start = head;
@@ -88,81 +92,95 @@ public:
 			cout << start->data << " ";
 			start = start->next;
 		}
-		cout<<endl;
+		cout << endl;
 	}
 
 	// if insert position is greater than list size, then insert at end
-	void insertAt(int index,int item){
-		int count=0;
-		if(head==NULL){
+	void insertAt(int index, int item)
+	{
+		int count = 0;
+		if (head == NULL)
+		{
 			push(item);
 			return;
 		}
 		// insert at the beginning
-		if(index==0){
+		if (index == 0)
+		{
 			Node *newNode = new Node(item);
-			newNode->next=head;
-			head=newNode;
+			newNode->next = head;
+			head = newNode;
 			return;
 		}
 		Node *start = head;
 		Node *prev = head;
 
 		// insert at mid or end beginning
-		while(start->next!= NULL && count<index){
+		while (start->next != NULL && count < index)
+		{
 			prev = start;
 			start = start->next;
-			count+=1;
-	  	}
+			count += 1;
+		}
 		// if we ve reached the end of the list
-		if(count<index){
+		if (count < index)
+		{
 			push(item);
-		}else{
+		}
+		else
+		{
 			Node *newNode = new Node(item);
 			newNode->next = start;
 			prev->next = newNode;
 		}
 	}
 
-	void deleteNode(int item){
-		Node* prev = head;
-		Node* start = head;
-		if(start==NULL){
-			cout<<"List is empty";
+	void deleteNode(int item)
+	{
+		Node *prev = head;
+		Node *start = head;
+		if (start == NULL)
+		{
+			cout << "List is empty";
 			return;
 		}
-		int count=0;
-		while(item != start->data && start->next!=NULL){
+		int count = 0;
+		while (item != start->data && start->next != NULL)
+		{
 			prev = start;
 			start = start->next;
-			count+=1;
+			count += 1;
 		}
 		// if deleting the first element of the list
-		if(count==0){
+		if (count == 0)
+		{
 			head = start->next;
 			return;
 		}
-		if(item == start->data){
+		if (item == start->data)
+		{
 			prev->next = start->next;
-			cout<<"Item found"<<endl;
-		}else{
+			cout << "Item found" << endl;
+		}
+		else
+		{
 			// reached the end of the list but item not found
-			cout<<"Item not found"<<endl;
+			cout << "Item not found" << endl;
 		}
 	}
 };
 
 int main(int argc, char *argv[])
 {
-  LinkedList list = LinkedList();
-  int n;
+	LinkedList list = LinkedList();
+	int n;
 	do
 	{
-		cout << "\nChoose an operation to perform"<< endl;
+		cout << "\nChoose an operation to perform" << endl;
 		cout << "1.push" << endl;
 		cout << "2.pop" << endl;
-		cout << "3.insert at"<<endl;
-		cout << "4.delete"<<endl;
+		cout << "3.insert at" << endl;
+		cout << "4.delete" << endl;
 		cout << "0.exit" << endl;
 		cin >> n;
 		if (n == 1)
@@ -172,22 +190,26 @@ int main(int argc, char *argv[])
 			cin >> x;
 			list.push(x);
 		}
-		else if(n==2){
+		else if (n == 2)
+		{
 			list.pop();
 		}
-		else if(n==3){
+		else if (n == 3)
+		{
 			int position;
 			int item;
-			cout<<"insert what?";
-			cin>>item;
-			cout<<endl;
-			cout<<"position:";
-			cin>>position;
-			list.insertAt(position,item);
-		}else if(n==4){
+			cout << "insert what?";
+			cin >> item;
+			cout << endl;
+			cout << "position:";
+			cin >> position;
+			list.insertAt(position, item);
+		}
+		else if (n == 4)
+		{
 			int item;
-			cout<<"delete what:";
-			cin>>item;
+			cout << "delete what:";
+			cin >> item;
 			list.deleteNode(item);
 		}
 		list.display();
@@ -195,7 +217,6 @@ int main(int argc, char *argv[])
 
 	return 0;
 }
-
 
 /**
  * Sample Output

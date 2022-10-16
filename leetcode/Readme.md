@@ -13,5 +13,18 @@ Given a shuffled sentence s containing no more than 9 words, reconstruct and ret
 Input: s = "is2 sentence4 This1 a3"
 Output: "This is a sentence"
 Explanation: Sort the words in s to their original positions "This1 is2 a3 sentence4", then remove the numbers.
+```
+#### [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
+Given a string s, find the length of the longest substring without repeating characters.
+```
+input : "abcabcbb"
+output : 3
+Explanation : The answer is "abc", with the length of 3.
+```
+
+```
+input : "bbbbb"
+output : 1
+Explanation : The answer is "b", with the length of 1.
 ```

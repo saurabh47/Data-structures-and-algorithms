@@ -2,4 +2,5 @@
 !**/*.c
 !**/*.cpp
 *.out
+*.exe
 !.gitignore

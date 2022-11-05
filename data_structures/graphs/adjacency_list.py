@@ -38,7 +38,7 @@ class Graph:
 # |  /
 # | /
 # 2 - - 3
-# 
+#
 if __name__ == "__main__":
   graph = Graph(4, [3, 4, 7, 8])
 
@@ -51,17 +51,17 @@ if __name__ == "__main__":
 
 
 ### output
-# python3 adjacency_list.py
-# Current Vertex at: 0
-# Vertex 2
-# Vertex 1
-# Current Vertex at: 1
-# Vertex 2
-# Vertex 0
-# Current Vertex at: 2
-# Vertex 3
-# Vertex 1
-# Vertex 0
+# mahesh@Maheshs-MacBook-Air-M1 graphs % python3 adjacency_list.py
 # Current Vertex at: 3
-# Vertex 2
+# Vertex 7
+# Vertex 4
+# Current Vertex at: 4
+# Vertex 7
+# Vertex 3
+# Current Vertex at: 7
+# Vertex 8
+# Vertex 4
+# Vertex 3
+# Current Vertex at: 8
+# Vertex 7
 # None

@@ -1,6 +1,5 @@
 # A class to represent a graph. A graph is the list of the adjacency lists.
 # Size of the array will be the no of the vertices "nodes"
-
 class Graph:
   def __init__(self, size, directed):
     self.nodes_len = size
@@ -9,8 +8,6 @@ class Graph:
 
   # connects node a and b
   def addEdge(self, a, b):
-    # index_a = self.nodes.index(a)
-    # index_b = self.nodes.index(b)
     if a not in self.roots:
       self.roots[a] = []
     if b not in self.roots:

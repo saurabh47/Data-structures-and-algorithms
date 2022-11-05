@@ -14,7 +14,7 @@ class Graph:
       self.roots[b] = []
 
     self.roots[a].append(b)
-    if self.directed == True:
+    if self.directed == False:
       self.roots[b].append(a)
 
   def showGraph(self):
@@ -34,7 +34,7 @@ class Graph:
 
 if __name__ == "__main__":
   # graph with 4 nodes and directed = False
-  graph = Graph(4, False)
+  graph = Graph(4, True)
   graph.addEdge(3, 4)
   graph.addEdge(3, 7)
   graph.addEdge(4, 7)
@@ -43,6 +43,7 @@ if __name__ == "__main__":
 
 ### Output ###
 
+# mahesh@Maheshs-MacBook-Air-M1 graphs % python3 adjacency_list.py 
 # Current Vertex at: 3
 # Vertex 4
 # Vertex 7
@@ -56,4 +57,16 @@ if __name__ == "__main__":
 # Current Vertex at: 8
 # Vertex 7
 # None
-# 
+
+# Directed = True
+
+# mahesh@Maheshs-MacBook-Air-M1 graphs % python3 adjacency_list.py
+# Current Vertex at: 3
+# Vertex 4
+# Vertex 7
+# Current Vertex at: 4
+# Vertex 7
+# Current Vertex at: 7
+# Vertex 8
+# Current Vertex at: 8
+# None

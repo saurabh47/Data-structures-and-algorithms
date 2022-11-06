@@ -28,3 +28,13 @@ input : "bbbbb"
 output : 1
 Explanation : The answer is "b", with the length of 1.
 ```
+
+### [1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
+
+```
+Input: "abbaca"
+Output: "ca"
+Explanation:
+For example, in "abbaca" we could remove "bb" since the letters are adjacent and equal, and this is the only possible move.  The result of this move is that the string is "aaca", of which only "aa" is possible, so the final string is "ca".
+```
+

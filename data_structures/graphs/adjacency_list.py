@@ -23,50 +23,55 @@ class Graph:
       for i in range(len(values)):
         print("Vertex {}".format(values[i]))
 
+# {0: [1], 1: [0]}
+# {0: [1], 1: [0, 2], 2: [1]}
+# {0: [1, 2], 1: [0, 2], 2: [1, 0]}
+# {0: [1, 2], 1: [0, 2, 3], 2: [1, 0], 3: [1]}
+# {0: [1, 2], 1: [0, 2, 3], 2: [1, 0], 3: [1, 4], 4: [3]}
+# {0: [1, 2], 1: [0, 2, 3], 2: [1, 0, 4], 3: [1, 4], 4: [3, 2]}
+# {0: [1, 2], 1: [0, 2, 3], 2: [1, 0, 4, 3], 3: [1, 4, 2], 4: [3, 2]}
+
 #
-# 3 - - 4
-# |    /
-# |   /
-# |  /
-# | /
-#  2 -- -- 3
+#       1 ----- 3
+#     / |     / |
+#   /   |    /  |
+# 0     |   /   |
+#   \   |  /    |
+#     \ | /     |
+#       2 ----- 4
 #
 
 if __name__ == "__main__":
-  # graph with 4 nodes and directed = False
-  graph = Graph(4, True)
+  # graph with 5 nodes and directed = False
+  graph = Graph(5, False)
+  graph.addEdge(0, 1)
+  graph.addEdge(1, 2)
+  graph.addEdge(2, 0)
+  graph.addEdge(1, 3)
   graph.addEdge(3, 4)
-  graph.addEdge(3, 7)
-  graph.addEdge(4, 7)
-  graph.addEdge(7, 8)
-  print(graph.showGraph())
+  graph.addEdge(2, 4)
+  graph.addEdge(2, 3)
 
 ### Output ###
 
 # mahesh@Maheshs-MacBook-Air-M1 graphs % python3 adjacency_list.py 
-# Current Vertex at: 3
+# Current Vertex at: 0
+# Vertex 1
+# Vertex 2
+# Current Vertex at: 1
+# Vertex 0
+# Vertex 2
+# Vertex 3
+# Current Vertex at: 2
+# Vertex 1
+# Vertex 0
 # Vertex 4
-# Vertex 7
+# Vertex 3
+# Current Vertex at: 3
+# Vertex 1
+# Vertex 4
+# Vertex 2
 # Current Vertex at: 4
 # Vertex 3
-# Vertex 7
-# Current Vertex at: 7
-# Vertex 3
-# Vertex 4
-# Vertex 8
-# Current Vertex at: 8
-# Vertex 7
-# None
-
-# Directed = True
-
-# mahesh@Maheshs-MacBook-Air-M1 graphs % python3 adjacency_list.py
-# Current Vertex at: 3
-# Vertex 4
-# Vertex 7
-# Current Vertex at: 4
-# Vertex 7
-# Current Vertex at: 7
-# Vertex 8
-# Current Vertex at: 8
+# Vertex 2
 # None

@@ -25,7 +25,7 @@
 
 #### Binary Trees
 
-    A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right. 
+    A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right.
 
     Binary Tree traversal is the process of visiting each node in a tree exactly once. There are three types of traversal: preorder, inorder, and postorder.
 
@@ -50,3 +50,22 @@
             Queries like whether there is an edge from vertex u to vertex v are efficient and can be done O(LogV).
             It doesn’t occupy extra space like adjacency matrix.
             In the worst case, there can be C(V, 2) number of edges in a graph thus consuming O(V^2) space. Adding a vertex is easier.
+
+    - Breadth First Search
+        Breadth First Search is a traversing algorithm where you should start traversing from a selected node (source or starting node) and traverse the graph layerwise thus exploring the neighbour nodes (nodes which are directly connected to source node). You must then move towards the next-level neighbour nodes.
+
+        e.g
+
+        ```
+               1 ----- 3 -- -- 0
+             / |     / |     / |
+           /   |    /  |    /  |
+         5     |   /   |   /   |
+           \   |  /    |  /    |
+             \ | /     | /     |
+               2 ----- 4 -- -- 6
+
+        ```
+        The output of BFS traversal from a node 2 is: 2, 5, 3, 1, 4, 0, 6. If you observe carefully, you will notice that the nodes are visited level wise. First, all the nodes of the first level are visited, then nodes of second level, and so on. The algorithm for BFS traversal is as follows:
+        The output of BFS traversal from a node 0 is: 0, 3, 4, 6, 2, 1, 5
+        The output of BFS traversal from a node 5 is: 5, 1, 2, 3, 4, 0, 6

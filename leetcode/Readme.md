@@ -28,3 +28,13 @@ input : "bbbbb"
 output : 1
 Explanation : The answer is "b", with the length of 1.
 ```
+
+### [215 Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+
+```
+Input: [3,2,1,5,6,4] and k = 2
+Output: 5
+Explanation: The 2nd largest element is 5.
+```
+
+

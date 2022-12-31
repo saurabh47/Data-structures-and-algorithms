@@ -37,4 +37,14 @@ Output: 5
 Explanation: The 2nd largest element is 5.
 ```
 
+### [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+
+```
+Input: s = "babad"
+Output: "bab"
+Note: "aba" is also a valid answer.
+Explanation: "aba" is a palindrome, "bab" is a substring.
+```
+
+
 

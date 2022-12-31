@@ -6,7 +6,6 @@ def lengthOfLongestSubstring(self,s):
     while(front < len(s)):
         if(s[front] not in array):
             array.append(s[front])
-            print(array)
             front += 1
             count = max(count, len(array))
         else:

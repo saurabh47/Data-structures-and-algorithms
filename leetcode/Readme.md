@@ -46,5 +46,16 @@ Note: "aba" is also a valid answer.
 Explanation: "aba" is a palindrome, "bab" is a substring.
 ```
 
+### [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)
+
+```
+Input: s = "PAYPALISHIRING", numRows = 3
+Output: "PAHNAPLSIIGYIR"
+Explanation:
+P   A   H   N
+A P L S I I G
+Y   I   R
+```
+
 
 

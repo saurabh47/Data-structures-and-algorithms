@@ -13,7 +13,7 @@
 Merge Sort is a Divide and Conquer algorithm.
 It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves.
 
-ref:  https://www.youtube.com/watch?v=gR6nycuZKlM&t=1378s
+ref:  https://www.youtube.com/watch?v=gR6nycuZKlM&t=7460s
  */
 
 #include<iostream>

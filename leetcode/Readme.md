@@ -57,5 +57,13 @@ A P L S I I G
 Y   I   R
 ```
 
+### [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
+
+```
+Input: x = 123
+Output: 321
+```
+
+
 
 

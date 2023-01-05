@@ -80,6 +80,14 @@ The parsed integer is 42.
 Since 42 is in the range [-231, 231 - 1], the final result is 42.
 ```
 
+### [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+
+```
+Input: nums = [1,2,3,1]
+Output: true
+```
+
+
 
 
 

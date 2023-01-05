@@ -87,6 +87,14 @@ Input: nums = [1,2,3,1]
 Output: true
 ```
 
+### [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)
+
+```
+Input: s = "anagram", t = "nagaram"
+Output: true
+```
+
+
 
 
 

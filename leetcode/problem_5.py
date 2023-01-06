@@ -1,15 +1,4 @@
-'''
-File: longest_palindrome.py
-Project: None
-File Created: Saturday, 31st December 2022 3:39:02 pm
-Author: Mahesh Jamdade
------
-Last Modified: Saturday, 31st December 2022 4:09:51 pm
-Modified By: Mahesh Jamdade
------
-'''
-
-# Problem: https://leetcode.com/problems/longest-palindromic-substring/
+# Problem 5: Longest Palindromic Substring (Medium): https://leetcode.com/problems/longest-palindromic-substring/
 
 class Solution:
     def longestPalindrome(self, s: str) -> str:

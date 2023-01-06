@@ -67,6 +67,18 @@ The parsed integer is 42.
 Since 42 is in the range [-231, 231 - 1], the final result is 42.
 ```
 
+### [Problem 49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
+
+```
+Input: strs = ["eat","tea","tan","ate","nat","bat"]
+Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+Explanation: The groupings are as follows:
+"ate", "eat", and "tea" are all anagrams of each other, so they all belong to the same group.
+"nat" and "tan" are anagrams of each other, so they all belong to the same group.
+"bat" is not an anagram of any other word, so it its own group.
+```
+
+
 ### [Problem 215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 ```

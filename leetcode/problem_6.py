@@ -1,5 +1,5 @@
 
-# problem: https://leetcode.com/problems/zigzag-conversion/
+# Problem 6: ZigZag Conversion (Medium): https://leetcode.com/problems/zigzag-conversion/
 
 class Solution:
     def convert(self, s: str, numRows: int) -> str:

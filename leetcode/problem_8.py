@@ -1,4 +1,4 @@
-# Problem Statement: [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)
+# Problem 8: String to Integer (atoi) (Medium): https://leetcode.com/problems/string-to-integer-atoi/
 class Solution:
     def myAtoi(self, s: str) -> int:
         isPositive = True

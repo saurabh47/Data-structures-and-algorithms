@@ -101,6 +101,15 @@ Output: true
 Input: s = "anagram", t = "nagaram"
 Output: true
 ```
+Explanation: Both s and t contain all the same letters, in the same frequency, so they are anagrams.
+
+### [Problem 347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
+
+```
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
+```
+Explanation: Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order. In this case, the answer is [1,2] because both 1 and 2 appear twice, and 1 comes before 2.
 
 #### [Problem 1859. Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/)
 

@@ -17,12 +17,10 @@ class Solution:
                 freq_k[letter_k] +=1
             else:
                 freq_k[letter_k] = 1
-        result = True
         for key,value in freq_s.items():
             if(key not in freq_k or freq_s[key]!=freq_k[key]):
-                result = False
-                break;
-        return result
+                return False
+        return True
 
 if __name__ == "__main__":
     s = "anagram"

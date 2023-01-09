@@ -78,6 +78,14 @@ Explanation: The groupings are as follows:
 "bat" is not an anagram of any other word, so it its own group.
 ```
 
+### [Problem 125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+
+```
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Explanation: "amanaplanacanalpanama" is a palindrome.
+```
+
 ### [Problem 128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 
 ```

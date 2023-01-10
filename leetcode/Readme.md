@@ -67,6 +67,15 @@ The parsed integer is 42.
 Since 42 is in the range [-231, 231 - 1], the final result is 42.
 ```
 
+### [Problem 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+
+```
+Input: nums = [1,3,5,6], target = 5
+Output: 2
+Explanation: 5 exists in nums and its index is 2.
+```
+
+
 ### [Problem 49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 
 ```

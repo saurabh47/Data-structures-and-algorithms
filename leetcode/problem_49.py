@@ -1,7 +1,7 @@
 # Problem 49: Group Anagrams (Medium): https://leetcode.com/problems/group-anagrams/
 
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    def groupAnagrams(self, strs):
         result = {}
         grouped = []
         for i in range(len(strs)):

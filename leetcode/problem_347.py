@@ -1,7 +1,7 @@
 # Problem 347: Top K Frequent Elements (Medium): https://leetcode.com/problems/top-k-frequent-elements/
 
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+    def topKFrequent(self, nums):
         freq = {}
         for i in range(len(nums)):
             num = nums[i]

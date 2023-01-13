@@ -1,7 +1,7 @@
 # Problem 217: Contains Duplicate (Easy): https://leetcode.com/problems/contains-duplicate/
 
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    def containsDuplicate(self, nums):
         freq = {}
         containsDuplicate = False
         for i in range(len(nums)):

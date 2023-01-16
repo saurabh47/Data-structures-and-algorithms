@@ -9,7 +9,6 @@ class Solution:
         for i in range(len(s)):
             if(key not in result):
                 result[key]=''
-            print(key)
             result[key] += s[i]
             key = key + factor
             if(key>=(numRows-1) or key<= 0):
@@ -21,4 +20,3 @@ class Solution:
 if __name__ == '__main__':
     s = Solution()
     s.convert("PAYPALISHIRING", 3)
-

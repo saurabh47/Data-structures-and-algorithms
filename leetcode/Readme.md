@@ -117,6 +117,14 @@ Output: 6
 Explanation: [4,-1,2,1] has the largest sum = 6.
 ```
 
+### [Problem 121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+
+```
+Input: prices = [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+```
+
 ### [Problem 125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 
 ```

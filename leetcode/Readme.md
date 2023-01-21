@@ -26,6 +26,8 @@ Explanation : The answer is "b", with the length of 1.
 
 ### [Problem 5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
+Given a string s, return the longest palindromic substring in s.
+
 ```
 Input: s = "babad"
 Output: "bab"
@@ -34,6 +36,8 @@ Explanation: "aba" is a palindrome, "bab" is a substring.
 ```
 
 ### [Problem 6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)
+
+Given a string s and an integer numRows, convert s into a zigzag pattern. More formally, convert s into a rows x numRows grid by placing each character in s in one of the rows, going from top to bottom row by row. Then, read the zigzag pattern from left to right. The characters in each row are read from left to right and the characters are concatenated to form a string.
 
 ```
 Input: s = "PAYPALISHIRING", numRows = 3
@@ -46,6 +50,7 @@ Y   I   R
 
 ### [Problem 7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 
+Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
 ```
 Input: x = 123
 Output: 321
@@ -69,6 +74,8 @@ Since 42 is in the range [-231, 231 - 1], the final result is 42.
 
 ### [Problem 11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
+A container with water is given. The container can be filled with water. The container has a length and width. The container can hold water up to the height of the container. Find two vertical lines, which together with the x-axis forms a container, such that the container contains the most water.
+
 ```
 Input: height = [1,8,6,2,5,4,8,3,7]
 Output: 49
@@ -76,6 +83,8 @@ Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,
 ```
 
 ### [Problem 15. 3Sum](https://leetcode.com/problems/3sum/)
+
+Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 
 ```
 Input: nums = [-1,0,1,2,-1,-4]
@@ -86,6 +95,9 @@ Explanation: The triplets are: [-1, 0, 1], [-1, -1, 2]
 
 ### [Problem 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 
+
+A sorted array of distinct integers is given. Find the index of the target value. If the target value is not found, return the index where it would be if it were inserted in order.
+
 ```
 Input: nums = [1,3,5,6], target = 5
 Output: 2
@@ -94,6 +106,8 @@ Explanation: 5 exists in nums and its index is 2.
 
 
 ### [Problem 49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
+
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
 
 ```
 Input: strs = ["eat","tea","tan","ate","nat","bat"]
@@ -106,6 +120,8 @@ Explanation: The groupings are as follows:
 
 ### [Problem 53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 
+Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+
 Solved with 3 different approaches
 1. Brute Force
 2. Divide and Conquer
@@ -116,8 +132,9 @@ Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
 Output: 6
 Explanation: [4,-1,2,1] has the largest sum = 6.
 ```
-
 ### [Problem 121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+
+You are given an array prices where prices[i] is the price of a given stock on the ith day.
 
 ```
 Input: prices = [7,1,5,3,6,4]
@@ -127,6 +144,8 @@ Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-
 
 ### [Problem 125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 
+Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
 ```
 Input: s = "A man, a plan, a canal: Panama"
 Output: true
@@ -134,6 +153,8 @@ Explanation: "amanaplanacanalpanama" is a palindrome.
 ```
 
 ### [Problem 128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+
+Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
 
 ```
 Input: nums = [100,4,200,1,3,2]
@@ -143,14 +164,17 @@ Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefor
 
 ### [Problem 215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
+Given an integer array nums and an integer k, return the kth largest element in the array.
+
 ```
 Input: [3,2,1,5,6,4] and k = 2
 Output: 5
 Explanation: The 2nd largest element is 5.
 ```
 
-
 ### [Problem 217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+
+Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
 ```
 Input: nums = [1,2,3,1]
@@ -158,6 +182,8 @@ Output: true
 ```
 
 ### [Problem 238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+
+Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
 
 ```
 Input: nums = [1,2,3,4]
@@ -168,6 +194,8 @@ Explanation: The array of the products of all other elements is [24,12,8,6]. The
 
 ### [Problem 242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 
+Given two strings s and t , write a function to determine if t is an anagram of s. 
+
 ```
 Input: s = "anagram", t = "nagaram"
 Output: true
@@ -176,10 +204,22 @@ Explanation: Both s and t contain all the same letters, in the same frequency, s
 
 ### [Problem 347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
 
+Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+
 ```
 Input: nums = [1,1,1,2,2,3], k = 2
 Output: [1,2]
 Explanation: Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order. In this case, the answer is [1,2] because both 1 and 2 appear twice, and 1 comes before 2.
+```
+
+### [Problem 424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
+
+Given a string s that consists of only uppercase English letters, you can perform at most k operations on that string.
+
+```
+Input: s = "ABAB", k = 2
+Output: 4
+Explanation: Replace the two 'A's with two 'B's or vice versa.
 ```
 
 #### [Problem 1859. Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/)

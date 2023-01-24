@@ -92,6 +92,13 @@ Output: [[-1,-1,2],[-1,0,1]]
 Explanation: The triplets are: [-1, 0, 1], [-1, -1, 2] 
 ```
 
+### [Problem 20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+```
+Input: s = "()"
+Output: true
+```
 
 ### [Problem 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 

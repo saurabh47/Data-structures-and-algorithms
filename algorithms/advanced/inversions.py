@@ -1,14 +1,6 @@
 # Description: Counting Inversions and Significant Inversions in an array.
-# An inversion is a pair of elements in an array that are out of order. We say a pair (a, b) is an inversion if a > b and a appears before b in the array.
-# For example, in the array [2, 4, 1, 3, 5], there are three inversions: (4, 1), (4, 3), and (2, 1).
-# The number of inversions in an array is the number of pairs of elements that are out of order.
-# In the array [2, 4, 1, 3, 5], there are three inversions: (4, 1), (4, 3), and (2, 1).
-# The number of inversions in an array is the number of pairs of elements that are out of order.
-#
-# A significant inversion is an inversion where a > 2*b. For example, in the array [1, 20, 6, 4, 5],
-# there are five significant inversions: (20, 6), (20, 4), (20, 5), (6, 4), and (6, 5).
-# The number of significant inversions in an array is the number of pairs of elements that are out of order and where a > 2*b.
-#
+# See Readme.md for more details.
+
 class Inversions():
   def __init__(self , array):
     self.array = array

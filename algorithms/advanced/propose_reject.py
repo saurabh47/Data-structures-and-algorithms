@@ -1,3 +1,6 @@
+# Stable matching algorithm
+# see readme.md for more details
+
 class ProposeRejectAlgorithm:
 
     def __init__(self):

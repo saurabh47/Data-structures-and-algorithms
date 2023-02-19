@@ -12,6 +12,11 @@ Output :- 2
 
 ### Advanced Algorithms (Problems from Algorithms: Design by Jon Kleinberg and Eva Tardos)
 
+
+### Stable Matching Problem
+
+The stable matching problem is a problem in combinatorial mathematics and computer science. It is a special case of the assignment problem. The problem is to find a stable matching between two equally sized sets of elements given an ordering of preferences for each element. A matching is a one-to-one mapping between the elements of the two sets. A matching is stable if no element prefers a partner in the matching to its current partner, and no element prefers its current partner to a partner in the matching. The stable matching problem is a special case of the stable marriage problem, which is a special case of the stable roommates problem.
+
 ### Competition Scheduling Problem (Chapter 4, exercise 6 )
 
 Your friend is working as a camp counselor, and he is in charge of organizing activities for a set of junior-high-school-age

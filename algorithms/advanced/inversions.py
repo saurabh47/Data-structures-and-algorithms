@@ -19,8 +19,6 @@ class Inversions():
   def sortAndCount(self, arr, s, e):
     size = e - s + 1
     if(size == 1):
-        self.inversions += 0
-        self.significantInversions += 0
         return [arr[s]]
     else:
       start = s
@@ -76,3 +74,16 @@ if __name__ == '__main__':
 # 4 1 5 2 3 7 6 8
 # Sorted Array = [1, 2, 3, 4, 5, 6, 7, 8]
 # Inversions = 6, Significant Inversions = 2
+
+
+
+# Pseudocode:
+# let Numbers be an array of n integers.
+# let length = Numbers.size()
+# let start = 0, end = length - 1;
+# mid  = end + start / 2
+# count = 0
+
+# function sortAndCount(Numbers, start, end):
+#  if(length of Numbers is 1):
+#    return Numbers

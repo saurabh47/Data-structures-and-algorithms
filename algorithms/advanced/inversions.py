@@ -5,31 +5,32 @@ class Inversions():
   def __init__(self , array):
     self.array = array
     self.length = len(array)
+    self.inversions = 0
+    self.significantInversions = 0
 
   def countInversions(self):
     length = len(self.array)
     start = 0
     end = length - 1
     mid = start + (end - start) // 2
-    inversions, sorted_array = self.sortAndCount(self.array, start, end)
-    print("Inversions = ", inversions[0], "Significant Inversions = ", inversions[1])
+    sorted_array = self.sortAndCount(self.array, start, end)
+    print("Sorted Array = {}".format(sorted_array))
+    print("Inversions = {}, Significant Inversions = {}".format(self.inversions, self.significantInversions))
 
   def sortAndCount(self, arr, s, e):
     size = e - s + 1
-    count = 0
-    sigCount = 0
     if(size == 1):
-        return [0,0], [arr[s]]
+        self.inversions += 0
+        self.significantInversions += 0
+        return [arr[s]]
     else:
       start = s
       end = e
       mid = start + (end - start) // 2
-      inv1 , sortedLeftHalf = self.sortAndCount(arr, start, mid)
-      inv2 , sortedRightHalf = self.sortAndCount(arr, mid + 1, end)
-      inv3 , sorted_array = self.mergeAndCountInversions(sortedLeftHalf,sortedRightHalf)
-      count = inv1[0] + inv2[0] + inv3[0]
-      sigCount = inv1[1] + inv2[1] + inv3[1]
-    return [count, sigCount], sorted_array
+      sortedLeftHalf = self.sortAndCount(arr, start, mid)
+      sortedRightHalf = self.sortAndCount(arr, mid + 1, end)
+      sorted_array = self.mergeAndCountInversions(sortedLeftHalf,sortedRightHalf)
+    return sorted_array
 
   def mergeAndCountInversions(self, array1, array2):
     len1 = len(array1)
@@ -57,7 +58,9 @@ class Inversions():
       while(j < len2):
           sorted_array.append(array2[j])
           j+=1
-    return [count, sigCount], sorted_array
+    self.inversions += count
+    self.significantInversions += sigCount
+    return sorted_array
 
 if __name__ == '__main__':
   print("enter elements of array:")
@@ -65,9 +68,12 @@ if __name__ == '__main__':
   # inversions = Inversions([5, 4, 3, 2, 1]) # 10
   # inversions = Inversions([2, 4, 1, 3, 5]) # 3
   # inversions = Inversions([1, 20, 6, 4, 5]) # 5
+  # inversions = Inversions([4, 1, 5, 2, 3, 7, 6, 8]) # 6
   inversions = Inversions(array)
   inversions.countInversions()
 
+# Output:
 # enter elements of array:
-# 4 1 5 2 3 7 6 2
-# Inversions =  11 Significant Inversions =  3
+# 4 1 5 2 3 7 6 8
+# Sorted Array = [1, 2, 3, 4, 5, 6, 7, 8]
+# Inversions = 6, Significant Inversions = 2

@@ -12,7 +12,6 @@ class Inversions():
     length = len(self.array)
     start = 0
     end = length - 1
-    mid = start + (end - start) // 2
     sorted_array = self.sortAndCount(self.array, start, end)
     print("Sorted Array = {}".format(sorted_array))
     print("Inversions = {}, Significant Inversions = {}".format(self.inversions, self.significantInversions))

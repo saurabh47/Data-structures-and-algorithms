@@ -17,6 +17,21 @@ class Graph:
     if self.directed == False:
       self.roots[b].append(a)
 
+  def isConnected(self, source, destination, visited):
+    if(source not in self.roots or destination not in self.roots):
+        return False
+    connections = self.roots[source]
+    if(destination in connections):
+        return True
+    for connection in connections:
+        if(connection not in visited):
+            source = connection
+            visited.append(connection)
+            connected = self.isConnected(source, destination, visited)
+            if(connected):
+                return connected
+    return False
+
   def showGraph(self):
     for key, values in self.roots.items():
       print("Current Vertex at: {}".format(key))
@@ -51,6 +66,8 @@ if __name__ == "__main__":
   graph.addEdge(3, 4)
   graph.addEdge(2, 4)
   graph.addEdge(2, 3)
+  graph.showGraph()
+  print(graph.isConnected(0, 6, [])) # False
 
 ### Output ###
 

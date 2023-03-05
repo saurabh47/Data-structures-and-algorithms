@@ -24,8 +24,11 @@ class Inversions():
       start = s
       end = e
       mid = start + (end - start) // 2
+    #   print("current array to be sorted:", arr[start:end+1])
       sortedLeftHalf = self.sortAndCount(arr, start, mid)
+    #   print("left sorted array", sortedLeftHalf)
       sortedRightHalf = self.sortAndCount(arr, mid + 1, end)
+    #   print("right sorted array:", sortedRightHalf)
       sorted_array = self.mergeAndCountInversions(sortedLeftHalf,sortedRightHalf)
     return sorted_array
 
@@ -34,14 +37,16 @@ class Inversions():
     len2 = len(array2)
     i = 0
     j = 0
+    k = 0
     sorted_array = []
     count = 0
     sigCount = 0
     while(i < len1 and j < len2):
       if(array1[i] > array2[j]):
         count += (len1 - i)
-        if(array1[i] > 2*array2[j]):
-          sigCount += 1
+        for k in range(i,len1):
+            if(array1[k] > 2*array2[j]):
+                sigCount += 1
         sorted_array.append(array2[j])
         j+=1
       else:
@@ -71,19 +76,7 @@ if __name__ == '__main__':
 
 # Output:
 # enter elements of array:
-# 4 1 5 2 3 7 6 8
-# Sorted Array = [1, 2, 3, 4, 5, 6, 7, 8]
-# Inversions = 6, Significant Inversions = 2
+# 5 4 3 2 1
+# Sorted Array = [1, 2, 3, 4, 5]
+# Inversions = 10, Significant Inversions = 4
 
-
-
-# Pseudocode:
-# let Numbers be an array of n integers.
-# let length = Numbers.size()
-# let start = 0, end = length - 1;
-# mid  = end + start / 2
-# count = 0
-
-# function sortAndCount(Numbers, start, end):
-#  if(length of Numbers is 1):
-#    return Numbers

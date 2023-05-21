@@ -7,6 +7,7 @@ class Solution:
             # if number is odd bitwise AND is 1
             if(n & 1 == 1):
                 count+=1
+            # right shift by k (here k=1) divides by 2^k
             n = n >> 1
         return count
 

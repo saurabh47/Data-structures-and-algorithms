@@ -218,6 +218,25 @@ Output: true
 Explanation: Both s and t contain all the same letters, in the same frequency, so they are anagrams.
 ```
 
+### [Problem 338. Counting Bits](https://leetcode.com/problems/counting-bits/)
+Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
+
+```
+Input: n = 5
+Output: [0,1,1,2,1,2]
+Explanation:
+number --> binary --> count of 1
+0      -->   000  -->       0
+1      -->   001  -->       1
+2      -->   010  -->       1
+3      -->   011  -->       2
+4      -->   100  -->       1
+5      -->   101  -->       2
+```
+
+
+
+
 ### [Problem 347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
 
 Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.

@@ -169,6 +169,15 @@ Output: 4
 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
 ```
 
+### [Problem 191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
+Write a function that takes an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).
+
+```
+Input: n = 00000000000000000000000000001011
+Output: 3
+Explanation: The input binary string 00000000000000000000000000001011 has a total of three '1' bits.
+```
+
 ### [Problem 215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 Given an integer array nums and an integer k, return the kth largest element in the array.

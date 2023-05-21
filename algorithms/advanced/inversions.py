@@ -44,6 +44,8 @@ class Inversions():
     while(i < len1 and j < len2):
       if(array1[i] > array2[j]):
         count += (len1 - i)
+        # check if all elements in left array
+        # are greater than twice the element in right array
         for k in range(i,len1):
             if(array1[k] > 2*array2[j]):
                 sigCount += 1

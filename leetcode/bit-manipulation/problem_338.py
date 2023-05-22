@@ -10,7 +10,14 @@ class Solution:
         for number in range(n+1):
             target = number
             count = 0
-            while(target !=0):
+            while(target != 0):
+                # e.g target = 19 = 10011
+                # 19 & 1 = 1
+                # 9 & 1 = 1
+                # 4 & 1 = 0
+                # 2 & 1 = 0
+                # 1 & 1 = 1
+                # so there are 3 1s in 19
                 if(target & 1 == 1):
                     count+=1
                 target = target >> 1

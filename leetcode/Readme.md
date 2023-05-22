@@ -282,6 +282,19 @@ You want to determine if there is a valid path that exists from vertex source to
 Given edges and the integers n, source, and destination, return true if there is a valid path from source to destination, or false otherwise.
 ```
 
+### [Problem: 2220. (Easy): Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
+
+
+```
+You are given two numbers a and b. You need to find the number of bits you need to flip to convert a to b. Note: All given integers are in binary form.
+
+Input: a = 10, b = 20
+Output: 4
+Explanation:
+a = 01010
+b = 10100
+As we can see, the bits of a that need to be flipped are 01010. If we flip these bits, we get 10100, which is b. Hence, the number of bits that need to be flipped is 4.
+```
 
 
 

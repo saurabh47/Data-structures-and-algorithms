@@ -218,6 +218,15 @@ Output: true
 Explanation: Both s and t contain all the same letters, in the same frequency, so they are anagrams.
 ```
 
+### [Problem 268. Missing Number](https://leetcode.com/problems/missing-number/)
+Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+
+```
+Input: nums = [3,0,1]
+Output: 2
+Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.
+```
+
 ### [Problem 338. Counting Bits](https://leetcode.com/problems/counting-bits/)
 Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
 

@@ -2,6 +2,8 @@
 
 class Solution:
     def minBitFlips(self, start: int, goal: int) -> int:
+        # XOR of two numbers will give 1 if the bits are different
+        # XOR start and goal, and count the number of 1s
         target = start ^ goal;
         count = 0
         while(target!=0):

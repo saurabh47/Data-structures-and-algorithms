@@ -12,7 +12,22 @@ class Solution:
                 length+=1
             result <<= length
             result = (result | i) % (10**9 + 7)
-        return result 
+        return result
+
+
+# Optimized to not calculate length of binary i with a while loop
+class Solution2:
+    def concatenatedBinary(self, n: int) -> int:
+        result = 0
+        for i in range(1,n+1):
+            # find length of binary i
+            length = len(bin(i)) - 2
+            result <<= length
+            result = (result | i) % (10**9 + 7)
+        return result
+
+
+
 
 if __name__ == '__main__':
     solution = Solution()

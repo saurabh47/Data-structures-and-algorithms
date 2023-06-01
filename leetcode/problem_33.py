@@ -1,5 +1,14 @@
 # Problem 33. Search in Rotated Sorted Array
 # Link: https://leetcode.com/problems/search-in-rotated-sorted-array/
+
+# The Ideas is to apply binary search on a partial array
+# We do this by finding the pivot point which basically divides the array into two
+# subarray so as to be able to apply a binary search on either side of the array
+# depending on where the target value lies.
+# E.g [4,5,6,7,0,1,2] pivot = 3
+# array1 = [4,5,6,7] array2 = [0,1,2]
+# if target = 0, we apply binary search on array2
+
 from typing import List
 
 class Solution:

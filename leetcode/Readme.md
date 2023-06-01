@@ -11,6 +11,7 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 #### [Problem 3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 Given a string s, find the length of the longest substring without repeating characters.
+
 ```
 input : "abcabcbb"
 output : 3
@@ -22,7 +23,6 @@ input : "bbbbb"
 output : 1
 Explanation : The answer is "b", with the length of 1.
 ```
-
 
 ### [Problem 5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
@@ -51,6 +51,7 @@ Y   I   R
 ### [Problem 7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 
 Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
+
 ```
 Input: x = 123
 Output: 321
@@ -89,10 +90,11 @@ Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]]
 ```
 Input: nums = [-1,0,1,2,-1,-4]
 Output: [[-1,-1,2],[-1,0,1]]
-Explanation: The triplets are: [-1, 0, 1], [-1, -1, 2] 
+Explanation: The triplets are: [-1, 0, 1], [-1, -1, 2]
 ```
 
 ### [Problem 20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 ```
@@ -100,8 +102,18 @@ Input: s = "()"
 Output: true
 ```
 
-### [Problem 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+### [Problem 33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
+There is an integer array nums sorted in ascending order (with distinct values). Prior to being passed to your function, nums is rotated at an unknown pivot index k (0 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2]. Given the array nums after the rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
+
+```
+Input: nums = [4,5,6,7,0,1,2], target = 0
+Output: 4
+
+Explanation: The target value is present at index 4.
+```
+
+### [Problem 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 
 A sorted array of distinct integers is given. Find the index of the target value. If the target value is not found, return the index where it would be if it were inserted in order.
 
@@ -110,7 +122,6 @@ Input: nums = [1,3,5,6], target = 5
 Output: 2
 Explanation: 5 exists in nums and its index is 2.
 ```
-
 
 ### [Problem 49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 
@@ -130,6 +141,7 @@ Explanation: The groupings are as follows:
 Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
 
 Solved with 3 different approaches
+
 1. Brute Force
 2. Divide and Conquer
 3. Kadane's Algorithm
@@ -139,6 +151,7 @@ Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
 Output: 6
 Explanation: [4,-1,2,1] has the largest sum = 6.
 ```
+
 ### [Problem 121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day.
@@ -198,10 +211,9 @@ Output: [24,12,8,6]
 Explanation: The array of the products of all other elements is [24,12,8,6]. The product of all the elements of nums is 24. So, for each index i in nums, we have nums[i] = 24 / nums[i].
 ```
 
-
 ### [Problem 242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 
-Given two strings s and t , write a function to determine if t is an anagram of s. 
+Given two strings s and t , write a function to determine if t is an anagram of s.
 
 ```
 Input: s = "anagram", t = "nagaram"
@@ -253,8 +265,3 @@ You want to determine if there is a valid path that exists from vertex source to
 
 Given edges and the integers n, source, and destination, return true if there is a valid path from source to destination, or false otherwise.
 ```
-
-
-
-
-

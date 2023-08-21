@@ -4,7 +4,7 @@ class Solution:
         reverse = 0
         count = 0
         while(count < 32):
-            # legft shift reverse by 1 bit
+            # left shift reverse by 1 bit
             reverse = reverse << 1;
             # add lsb of n to reverse using Bitwise OR
             reverse = reverse | (n & 1);

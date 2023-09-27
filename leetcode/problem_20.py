@@ -15,3 +15,6 @@ class Solution:
                      else:
                          return False
         return len(stack) == 0
+
+if __name__ == "__main__":
+    print(Solution().isValid("()[]{}")) # True

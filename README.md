@@ -32,6 +32,18 @@ This Repository contains all the important coding solutions, which may be asked 
 
 #### [Moore's voting algorithm](algorithms/moores-voting-algorithm.cpp)
 
+## Running a Python program
+
+#### Download Python
+- [Python](https://www.python.org/downloads/)
+- [Python 3](https://www.python.org/downloads/)
+
+#### Run the program
+
+```python
+python3 <filename>.py
+```
+
 ## Running a cpp program
 
 ### **compilation**

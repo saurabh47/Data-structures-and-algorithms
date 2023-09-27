@@ -11,6 +11,7 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 #### [Problem 3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 Given a string s, find the length of the longest substring without repeating characters.
+
 ```
 input : "abcabcbb"
 output : 3
@@ -22,7 +23,6 @@ input : "bbbbb"
 output : 1
 Explanation : The answer is "b", with the length of 1.
 ```
-
 
 ### [Problem 5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
@@ -51,6 +51,7 @@ Y   I   R
 ### [Problem 7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 
 Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
+
 ```
 Input: x = 123
 Output: 321
@@ -89,10 +90,11 @@ Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]]
 ```
 Input: nums = [-1,0,1,2,-1,-4]
 Output: [[-1,-1,2],[-1,0,1]]
-Explanation: The triplets are: [-1, 0, 1], [-1, -1, 2] 
+Explanation: The triplets are: [-1, 0, 1], [-1, -1, 2]
 ```
 
 ### [Problem 20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 ```
@@ -100,8 +102,18 @@ Input: s = "()"
 Output: true
 ```
 
-### [Problem 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+### [Problem 33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
+There is an integer array nums sorted in ascending order (with distinct values). Prior to being passed to your function, nums is rotated at an unknown pivot index k (0 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2]. Given the array nums after the rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
+
+```
+Input: nums = [4,5,6,7,0,1,2], target = 0
+Output: 4
+
+Explanation: The target value is present at index 4.
+```
+
+### [Problem 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 
 A sorted array of distinct integers is given. Find the index of the target value. If the target value is not found, return the index where it would be if it were inserted in order.
 
@@ -110,7 +122,6 @@ Input: nums = [1,3,5,6], target = 5
 Output: 2
 Explanation: 5 exists in nums and its index is 2.
 ```
-
 
 ### [Problem 49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 
@@ -130,6 +141,7 @@ Explanation: The groupings are as follows:
 Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
 
 Solved with 3 different approaches
+
 1. Brute Force
 2. Divide and Conquer
 3. Kadane's Algorithm
@@ -139,6 +151,7 @@ Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
 Output: 6
 Explanation: [4,-1,2,1] has the largest sum = 6.
 ```
+
 ### [Problem 121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day.
@@ -169,14 +182,30 @@ Output: 4
 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
 ```
 
+### [Problem 154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
+
+Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,4,4,5,6,7] might become:
+
+- [4,5,6,7,0,1,4] if it was rotated 4 times.
+- [0,1,4,4,5,6,7] if it was rotated 7 times.
+
+```
+Input: nums = [4,5,6,7,0,1,4]
+Output: 0
+Explanation: The original array was [0,1,4,4,5,6,7] rotated 4 times.
+The smallest element is 0.
+```
+
 ### [Problem 215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 Given an integer array nums and an integer k, return the kth largest element in the array.
 
 ```
+
 Input: [3,2,1,5,6,4] and k = 2
 Output: 5
 Explanation: The 2nd largest element is 5.
+
 ```
 
 ### [Problem 217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
@@ -184,8 +213,10 @@ Explanation: The 2nd largest element is 5.
 Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
 ```
+
 Input: nums = [1,2,3,1]
 Output: true
+
 ```
 
 ### [Problem 238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
@@ -193,20 +224,23 @@ Output: true
 Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
 
 ```
+
 Input: nums = [1,2,3,4]
 Output: [24,12,8,6]
 Explanation: The array of the products of all other elements is [24,12,8,6]. The product of all the elements of nums is 24. So, for each index i in nums, we have nums[i] = 24 / nums[i].
-```
 
+```
 
 ### [Problem 242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 
-Given two strings s and t , write a function to determine if t is an anagram of s. 
+Given two strings s and t , write a function to determine if t is an anagram of s.
 
 ```
+
 Input: s = "anagram", t = "nagaram"
 Output: true
 Explanation: Both s and t contain all the same letters, in the same frequency, so they are anagrams.
+
 ```
 
 ### [Problem 347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
@@ -214,9 +248,11 @@ Explanation: Both s and t contain all the same letters, in the same frequency, s
 Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
 
 ```
+
 Input: nums = [1,1,1,2,2,3], k = 2
 Output: [1,2]
 Explanation: Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order. In this case, the answer is [1,2] because both 1 and 2 appear twice, and 1 comes before 2.
+
 ```
 
 ### [Problem 424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
@@ -224,14 +260,37 @@ Explanation: Given an integer array nums and an integer k, return the k most fre
 Given a string s that consists of only uppercase English letters, you can perform at most k operations on that string.
 
 ```
+
 Input: s = "ABAB", k = 2
 Output: 4
 Explanation: Replace the two 'A's with two 'B's or vice versa.
+
+```
+
+### [Problem 1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
+
+```
+Input: "abbaca"
+Output: "ca"
+Explanation:
+For example, in "abbaca" we could remove "bb" since the letters are adjacent and equal, and this is the only possible move.  The result of this move is that the string is "aaca", of which only "aa" is possible, so the final string is "ca".
+```
+
+### [Problem 1209. Remove all adjacent Duplicates II ]
+
+```
+Input : s = "deeedbbcccbdaa", k = 3
+Output : "aa"
+Explanation :
+First delete "eee" and "ccc", get "ddbbbdaa"
+Then delete "bbb", get "dddaa"
+Finally delete "ddd", get "aa"
 ```
 
 #### [Problem 1859. Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/)
 
 ```
+
 A sentence is a list of words that are separated by a single space with no leading or trailing spaces. Each word consists of lowercase and uppercase English letters.
 
 A sentence can be shuffled by appending the 1-indexed word position to each word then rearranging the words in the sentence.
@@ -242,19 +301,25 @@ Given a shuffled sentence s containing no more than 9 words, reconstruct and ret
 Input: s = "is2 sentence4 This1 a3"
 Output: "This is a sentence"
 Explanation: Sort the words in s to their original positions "This1 is2 a3 sentence4", then remove the numbers.
+
 ```
 
 ### [Problem: 1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)
 
 ```
+
 There is a bi-directional graph with n vertices, where each vertex is labeled from 0 to n - 1 (inclusive). The edges in the graph are represented as a 2D integer array edges, where each edges[i] = [ui, vi] denotes a bi-directional edge between vertex ui and vertex vi. Every vertex pair is connected by at most one edge, and no vertex has an edge to itself.
 
 You want to determine if there is a valid path that exists from vertex source to vertex destination.
 
 Given edges and the integers n, source, and destination, return true if there is a valid path from source to destination, or false otherwise.
+
 ```
 
+input : "bbbbb"
+output : 1
+Explanation : The answer is "b", with the length of 1.
 
+```
 
-
-
+```

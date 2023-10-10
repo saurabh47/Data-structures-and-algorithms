@@ -61,7 +61,7 @@ class Graph:
 class GeneticAlgorithmTSP:
 
     def __init__(self, generations=20, population_size=10, tournamentSize=4, mutationRate=0.1, fit_selection_rate=0.1):
-        # the number of routes in each generation
+        # the size of the population of routes 
         self.population_size = population_size
         # the number of generations to run the algorithm for
         self.generations = generations
@@ -90,14 +90,14 @@ class GeneticAlgorithmTSP:
 
         for generation in range(self.generations):
             print ('\nGeneration: {0}'.format(generation + 1))
-            # print ('Population: {0}'.format(population))
+            print ('Population: {0}'.format(population))
 
             newPopulation = []
             fitness = self.computeFitness(graph, population)
-            # print ('Fitness: {0}'.format(fitness))
             fitIndex = self.minCostIndex(fitness)
             print ('Fittest Route: {0} fitness(minium cost): ({1})'.format(population[fitIndex], fitness[fitIndex]))
 
+            # Add fit population to newPopulation
             if number_of_fits_to_carryover:
                 sorted_population = [x for _,x in sorted(zip(fitness,population))]
                 fitness = sorted(fitness)
@@ -154,7 +154,7 @@ class GeneticAlgorithmTSP:
         tournament_contestants_fitness = self.computeFitness(graph, tournament_contestants)
         return tournament_contestants[tournament_contestants_fitness.index(min(tournament_contestants_fitness))]
 
-    # This method uses Partially mapped crossover (PMX) using two points to generate a new offspring
+    # This method uses simple order crossover using two points to generate a new offspring
     # from two parents
     def crossover(self,parent1, parent2):
       offspring_length = len(parent1)-2 #excluding first and last city

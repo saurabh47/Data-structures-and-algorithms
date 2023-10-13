@@ -1,6 +1,6 @@
 # Popular Coding Questions Solution
 
-This repository is a collection of popular coding questions and their solutions. You can use this repository to refer to solutions for coding questions. If you have a better solution, you can create a pull request.
+This repository is a collection of popular coding questions and their solutions. You can use this repository to refer to solutions for coding questions. If you have a better solution to an existing question or have a solution to a new question, feel free to contribute.
 
 ### Table of Contents
 
@@ -83,3 +83,15 @@ gcc file.c -o file.out
 ```
 ./file.out arg1 arg2
 ```
+
+
+## Contributing Policy
+
+By Sharing a code to this repository you agree to the following:
+
+- The code shared is written by you and free from plagiarism.
+- You have full rights to the code you are contributing and it does not violate any law or third party rights.
+- You agree that your contribution will be publicly available for use under the [MIT License](LICENSE).
+- You agree that the maintainers of this repository have the right to edit, modify, copy, share your code under the [MIT License](LICENSE).
+- You agree to indemnify and hold harmless the maintainers of this repository from any damages or claims caused by your contribution.
+- You agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md) of this repository.

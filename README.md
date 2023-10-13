@@ -15,22 +15,6 @@ This repository is a collection of popular coding questions and their solutions.
 - [Foobar](foobar/)
 - [String manipulation](string_manipulation/)
 
-### Algorithms
-
-#### [Search Algorithms](algorithms/search/)
-
-- [Linear Search](algorithms/search/linear.c)
-- [Binary Search](algorithms/search/binary.c)
-
-#### [Sort Algorithms](algorithms/sort/)
-
-- [Bubble Sort](algorithms/sort/bubble.c)
-- [Selection Sort](algorithms/sort/selection.c)
-
-#### [Levenshtein Distance](algorithms/levenshtein_distance.c)
-
-#### [Moore's voting algorithm](algorithms/moores-voting-algorithm.cpp)
-
 ## Running a Python program
 
 #### Download Python

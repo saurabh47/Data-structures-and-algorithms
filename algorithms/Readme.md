@@ -1,23 +1,26 @@
-#Algorithms
+## Algorithms
 
+#### [Search Algorithms](search/)
 
-###[Find Majority Element](https://leetcode.com/problems/majority-element/)
+- [Linear Search](search/linear.c)
+- [Binary Search](search/binary.c)
 
-Given an array of size n, return the majority element.
-The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+#### [Sort Algorithms](sort/)
 
-Input :- [2,3,3,2,2]
-Output :- 2
+- [Bubble Sort](sort/bubble.c)
+- [Selection Sort](sort/selection.c)
 
+#### [Levenshtein Distance](levenshtein_distance.c)
+
+#### [Moore's voting algorithm](moores-voting-algorithm.cpp)
 
 ### Advanced Algorithms (Problems from Algorithms: Design by Jon Kleinberg and Eva Tardos)
 
-
-### Stable Matching Problem
+### [Stable Matching Problem](advanced/propose_reject.py)
 
 The stable matching problem is a problem in combinatorial mathematics and computer science. It is a special case of the assignment problem. The problem is to find a stable matching between two equally sized sets of elements given an ordering of preferences for each element. A matching is a one-to-one mapping between the elements of the two sets. A matching is stable if no element prefers a partner in the matching to its current partner, and no element prefers its current partner to a partner in the matching. The stable matching problem is a special case of the stable marriage problem, which is a special case of the stable roommates problem.
 
-### Competition Scheduling Problem (Chapter 4, exercise 6 )
+### [Competition Scheduling Problem (Chapter 4, exercise 6 )](advanced/comp-scheduling.py)
 
 Your friend is working as a camp counselor, and he is in charge of organizing activities for a set of junior-high-school-age
 campers. One of his plans is the following mini-triathlon exercise: each contestant must swim 20 laps of a pool, then bike 10
@@ -36,9 +39,7 @@ most one person can be in the pool at any time.) What’s the best order for sen
 competition to be over as early as possible? More precisely, give an efficient algorithm that produces a schedule whose
 completion time is as small as possible.
 
-
-
-### Counting Inversions (Chapter 5, Exercise 2 )
+### [Counting Inversions (Chapter 5, Exercise 2 )](advanced/inversions.py)
 
 Counting Inversions and Significant Inversions in an array. An inversion is a pair of elements in an array that are out of order. We say a pair (a, b) is an inversion if a > b and a appears before b in the array.
 
@@ -52,3 +53,8 @@ there are five significant inversions: (20, 6), (20, 4), (20, 5), (6, 4), and (6
 The number of significant inversions in an array is the number of pairs of elements that are out of order and where a > 2*b.
 
 Time Complexity :- O(nlogn)
+
+### [Genetic Algorithm](advanced/genetic.py)
+
+Genetic Algorithm is a search-based optimization technique based on the principles of Genetics and Natural Selection. It is frequently used to find optimal or near-optimal solutions to difficult problems which otherwise would take a lifetime to solve.
+Detailed explanation of this algotihm and the implementation can be found in this [blog post](https://maheshjamdade.medium.com/the-genetic-algorithm-and-the-travelling-salesman-problem-tsp-31dfa57f3b62)

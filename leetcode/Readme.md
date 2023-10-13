@@ -1,4 +1,7 @@
 ## Leetcode
+### Resources
+
+Bit manipulation: https://leetcode.com/problems/sum-of-two-integers/solutions/84278/a-summary-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently/
 
 ### [Problem 1. Two Sum](https://leetcode.com/problems/two-sum/)
 
@@ -196,6 +199,15 @@ Explanation: The original array was [0,1,4,4,5,6,7] rotated 4 times.
 The smallest element is 0.
 ```
 
+### [Problem 191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
+Write a function that takes an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).
+
+```
+Input: n = 00000000000000000000000000001011
+Output: 3
+Explanation: The input binary string 00000000000000000000000000001011 has a total of three '1' bits.
+```
+
 ### [Problem 215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 Given an integer array nums and an integer k, return the kth largest element in the array.
@@ -240,9 +252,32 @@ Given two strings s and t , write a function to determine if t is an anagram of 
 Input: s = "anagram", t = "nagaram"
 Output: true
 Explanation: Both s and t contain all the same letters, in the same frequency, so they are anagrams.
-
 ```
 
+### [Problem 268. Missing Number](https://leetcode.com/problems/missing-number/)
+Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+
+```
+Input: nums = [3,0,1]
+Output: 2
+Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.
+```
+
+### [Problem 338. Counting Bits](https://leetcode.com/problems/counting-bits/)
+Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
+
+```
+Input: n = 5
+Output: [0,1,1,2,1,2]
+Explanation:
+number --> binary --> count of 1
+0      -->   000  -->       0
+1      -->   001  -->       1
+2      -->   010  -->       1
+3      -->   011  -->       2
+4      -->   100  -->       1
+5      -->   101  -->       2
+```
 ### [Problem 347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
 
 Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
@@ -264,7 +299,6 @@ Given a string s that consists of only uppercase English letters, you can perfor
 Input: s = "ABAB", k = 2
 Output: 4
 Explanation: Replace the two 'A's with two 'B's or vice versa.
-
 ```
 
 ### [Problem 1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
@@ -285,6 +319,16 @@ Explanation :
 First delete "eee" and "ccc", get "ddbbbdaa"
 Then delete "bbb", get "dddaa"
 Finally delete "ddd", get "aa"
+```
+
+### [Problem 1680. Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
+Given an integer n, return the decimal value of the binary string formed by concatenating the binary representations of 1 to n in order, modulo 109 + 7.
+
+```
+Input: n = 3
+Output: 27
+Explanation: In binary, 1, 2, and 3 corresponds to "1", "10", and "11".
+After concatenating them, we have "11011", which corresponds to the decimal value 27.
 ```
 
 #### [Problem 1859. Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/)
@@ -316,10 +360,17 @@ Given edges and the integers n, source, and destination, return true if there is
 
 ```
 
-input : "bbbbb"
-output : 1
-Explanation : The answer is "b", with the length of 1.
+### [Problem: 2220. (Easy): Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
+
+
 
 ```
-
+You are given two numbers a and b. You need to find the number of bits you need to flip to convert a to b. Note: All given integers are in binary form.
+```
+Input: a = 10, b = 20
+Output: 4
+Explanation:
+a = 01010
+b = 10100
+As we can see, the bits of a that need to be flipped are 01010. If we flip these bits, we get 10100, which is b. Hence, the number of bits that need to be flipped is 4.
 ```

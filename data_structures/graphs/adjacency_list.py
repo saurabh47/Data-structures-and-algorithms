@@ -17,7 +17,7 @@ class Graph:
     if self.directed == False:
       self.roots[b].append(a)
 
-  def isConnected(self, source, destination, visited):
+  def isConnected(self, source, destination, visited=[]):
     if(source not in self.roots or destination not in self.roots):
         return False
     connections = self.roots[source]
@@ -67,7 +67,7 @@ if __name__ == "__main__":
   graph.addEdge(2, 4)
   graph.addEdge(2, 3)
   graph.showGraph()
-  print(graph.isConnected(0, 6, [])) # False
+  print("is 2,3 connected?",graph.isConnected(2, 3)) # False
 
 ### Output ###
 

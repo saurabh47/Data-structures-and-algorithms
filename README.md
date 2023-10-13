@@ -1,20 +1,19 @@
 # Popular Coding Questions Solution
 
-This Repository contains all the important coding solutions, which may be asked in Mass Recruitment exams like <b>WIPRO elite NLTH,TCS Ninja</b> Online Tests etc and it also contains previous year solved Coding Questions.
-
+This repository is a collection of popular coding questions and their solutions. You can use this repository to refer to solutions for coding questions. If you have a better solution, you can create a pull request.
 
 ### Table of Contents
 
-- Algorithms
-- Data Structures
-- Cryptography
-- Exam Questions
-- HackerRank
-- Leetcode
-- Number Theory
-- Patterns
-- String manipulation
-
+- [Algorithms](algorithms/)
+- [Data Structures](data_structures/)
+- [Cryptography](cryptography/)
+- [Exam Questions](exams/)
+- [HackerRank](hackerrank/)
+- [Leetcode](leetcode/)
+- [Number Theory](number_theory/)
+- [Patterns](patterns/)
+- [Foobar](foobar/)
+- [String manipulation](string_manipulation/)
 
 ### Algorithms
 
@@ -35,6 +34,7 @@ This Repository contains all the important coding solutions, which may be asked 
 ## Running a Python program
 
 #### Download Python
+
 - [Python](https://www.python.org/downloads/)
 - [Python 3](https://www.python.org/downloads/)
 
@@ -47,21 +47,29 @@ python3 <filename>.py
 ## Running a cpp program
 
 ### **compilation**
+
 ### Mac/Linux
+
 ```
 g++ file.cpp -o file.out
 ```
+
 ### Windows
+
 ```
 g++ file.cpp -o file.exe
 ```
 
 ### **Running**
+
 ### Mac/Linux
+
 ```
 ./file.out
 ```
+
 ### Windows
+
 ```
 file
 ```

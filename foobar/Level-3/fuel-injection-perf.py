@@ -5,6 +5,8 @@ def solution(x):
         if(isEven(n)):
             n = n // 2
         else:
+            # handle case for n = 3 since 3-1 = 2 and 3-2 = 1
+            # 2 & 1 = 0 and 4 & 3 = 0
             if ((n+1 & n) > (n-1 & n-2) or (n == 3)):
                 n = n-1
             else:

@@ -4,7 +4,7 @@ Foobar is a Google recruiting challenge. It is a series of 5 levels, each with 1
 
 Here are some of the challenges from Google Foobar
 
-### Braille Translation (Level 1)
+### Braille Translation (Problem 1, Level 1)
 ======================
 
 Because Commander Lambda is an equal-opportunity despot, she has several visually-impaired minions. But she never bothered to follow intergalactic standards for workplace accommodations, so those minions have a hard time navigating her space station. You figure printing out Braille signs will help them, and - since you’ll be promoting efficiency at the same time - increase your chances of a promotion.
@@ -45,7 +45,7 @@ Output:
 (string) "000001011110110010100010000000111110101001010100100100101000000000110000111010101010010111101110000000110100101010101101000000010110101001101100111100100010100110000000101010111001100010111010000000011110110010100010000000111000100000101011101111000000100110101010110110"
 
 
-### Bunny Worker Locations (Level 2)
+### Bunny Worker Locations (Problem 1, Level 2)
 ======================
 Keeping track of Commander Lambda's many bunny workers is starting to get tricky. You've been tasked with writing a program to match bunny worker IDs to cell locations.
 
@@ -95,7 +95,7 @@ solution.solution(3, 2)
 Output:
     9
 
-### Power Hungry (Level 2)
+### Power Hungry (Problem 2, Level 2)
 ============
 Commander Lambda's space station is HUGE. And huge space stations take a LOT of power. Huge space stations with doomsday devices take even more power. To help meet the station's power needs, Commander Lambda has installed solar panels on the station's outer surface. But the station sits in the middle of a quasar quantum flux field, which wreaks havoc on the solar panels. You and your team of henchmen have been assigned to repair the solar panels, but you'd rather not take down all of the panels at once if you can help it, since they do help power the space station and all!
 
@@ -136,7 +136,56 @@ Solution.solution({-2, -3, 4, -5})
 Output:
     60
 
-### Queue To Do (level 3)
+### Bomb Baby (Problem 1, Level 3)
+===========
+You're so close to destroying the LAMBCHOP doomsday device you can taste it! But in order to do so, you need to deploy special self-replicating bombs designed for you by the brightest scientists on Bunny Planet. There are two types: Mach bombs (M) and Facula bombs (F). The bombs, once released into the LAMBCHOP's inner workings, will automatically deploy to all the strategic points you've identified and destroy them at the same time.
+
+But there's a few catches. First, the bombs self-replicate via one of two distinct processes:
+Every Mach bomb retrieves a sync unit from a Facula bomb; for every Mach bomb, a Facula bomb is created;
+Every Facula bomb spontaneously creates a Mach bomb.
+
+For example, if you had 3 Mach bombs and 2 Facula bombs, they could either produce 3 Mach bombs and 5 Facula bombs, or 5 Mach bombs and 2 Facula bombs. The replication process can be changed each cycle.
+
+Second, you need to ensure that you have exactly the right number of Mach and Facula bombs to destroy the LAMBCHOP device. Too few, and the device might survive. Too many, and you might overload the mass capacitors and create a singularity at the heart of the space station - not good!
+
+And finally, you were only able to smuggle one of each type of bomb - one Mach, one Facula - aboard the ship when you arrived, so that's all you have to start with. (Thus it may be impossible to deploy the bombs to destroy the LAMBCHOP, but that's not going to stop you from trying!)
+
+You need to know how many replication cycles (generations) it will take to generate the correct amount of bombs to destroy the LAMBCHOP. Write a function solution(M, F) where M and F are the number of Mach and Facula bombs needed. Return the fewest number of generations (as a string) that need to pass before you'll have the exact number of bombs necessary to destroy the LAMBCHOP, or the string "impossible" if this can't be done! M and F will be string representations of positive integers no larger than 10^50. For example, if M = "2" and F = "1", one generation would need to pass, so the solution would be "1". However, if M = "2" and F = "4", it would not be possible.
+
+Languages
+=========
+
+To provide a Java solution, edit Solution.java
+To provide a Python solution, edit solution.py
+
+Test cases
+==========
+Your code should pass the following test cases.
+Note that it may also be run against hidden test cases not shown here.
+
+-- Java cases --
+Input:
+Solution.solution('4', '7')
+Output:
+    4
+
+Input:
+Solution.solution('2', '1')
+Output:
+    1
+
+-- Python cases --
+Input:
+solution.solution('4', '7')
+Output:
+    4
+
+Input:
+solution.solution('2', '1')
+Output:
+    1
+
+### Queue To Do (Problem 2, Level 3)
 ===========
 You're almost ready to make your move to destroy the LAMBCHOP doomsday device, but the security checkpoints that guard the underlying systems of the LAMBCHOP are going to be a problem. You were able to take one down without tripping any alarms, which is great! Except that as Commander Lambda's assistant, you've learned that the checkpoints are about to come under automated review, which means that your sabotage will be discovered and your cover blown -- unless you can trick the automated review system.
 
@@ -192,7 +241,7 @@ solution.solution(17, 4)
 Output:
     14
 
-### Fuel Injection Perfection
+### Fuel Injection Perfection 
 =========================
 Commander Lambda has asked for your help to refine the automatic quantum antimatter fuel injection system for the LAMBCHOP doomsday device. It's a great chance for you to get a closer look at the LAMBCHOP -- and maybe sneak in a bit of sabotage while you're at it -- so you took the job gladly.
 

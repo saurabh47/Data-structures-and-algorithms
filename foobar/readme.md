@@ -305,7 +305,7 @@ Solution.solution('4')
 Output:
     2
 
-Running with Bunnies
+Running with Bunnies (Problem 1, Level 4)
 ====================
 You and the bunny workers need to get out of this collapsing death trap of a space station -- and fast! Unfortunately, some of the bunnies have been weakened by their long work shifts and can't run very fast. Their friends are trying to help them, but this escape would go a lot faster if you also pitched in. The defensive bulkhead doors have begun to close, and if you don't make it through in time, you'll be trapped! You need to grab as many bunnies as you can and get through the bulkheads before they close.
 

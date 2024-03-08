@@ -295,11 +295,29 @@ Explanation: Given an integer array nums and an integer k, return the k most fre
 Given a string s that consists of only uppercase English letters, you can perform at most k operations on that string.
 
 ```
-
 Input: s = "ABAB", k = 2
 Output: 4
 Explanation: Replace the two 'A's with two 'B's or vice versa.
 ```
+
+### [Problem 997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)
+In a town, there are n people labeled from 1 to n. There is a rumor that one of these people is secretly the town judge. If the town judge exists, then:
+
+1. The town judge trusts nobody.
+2. Everybody (except for the town judge) trusts the town judge.
+3. There is exactly one person that satisfies properties 1 and 2.
+
+
+```
+Input: n = 4, trust = [[1,3],[1,4],[2,3],[2,4],[4,3]]
+Output: 3
+Explanation: The town judge is the person labeled 3. Everyone trusts 3 except for 3, and no one trusts 3.
+```
+
+Hint:
+# The idea is to calculate incoming and outgoing edges
+# for each person in the trust. Judge is a a person with n-1 incming edge and 0 outgoing edge.
+explanation: https://www.youtube.com/watch?v=QiGaxdUINJ8
 
 ### [Problem 1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
 

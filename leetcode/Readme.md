@@ -1,4 +1,5 @@
 ## Leetcode
+
 ### Resources
 
 Bit manipulation: https://leetcode.com/problems/sum-of-two-integers/solutions/84278/a-summary-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently/
@@ -28,6 +29,7 @@ Explanation : The answer is "b", with the length of 1.
 ```
 
 ### [Problem 4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+
 There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays.
 
 ```
@@ -35,6 +37,7 @@ Input: nums1 = [1,3], nums2 = [2]
 Output: 2.00000
 Explanation: merged array = [1,2,3] and median is 2.
 ```
+
 hint: sort the array and find the median
 
 ### [Problem 5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
@@ -84,6 +87,17 @@ Step 3: "42" ("42" is read in)
               ^
 The parsed integer is 42.
 Since 42 is in the range [-231, 231 - 1], the final result is 42.
+```
+
+### [Problem 9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)
+
+Given an integer x, return true if x is a palindrome integer.
+
+```
+Input: x = 121
+Output: true
+
+Explanation: From left to right, it reads 121. From right to left, it becomes 121. Therefore it is a palindrome.
 ```
 
 ### [Problem 11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
@@ -210,6 +224,7 @@ The smallest element is 0.
 ```
 
 ### [Problem 191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
+
 Write a function that takes an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).
 
 ```
@@ -265,6 +280,7 @@ Explanation: Both s and t contain all the same letters, in the same frequency, s
 ```
 
 ### [Problem 268. Missing Number](https://leetcode.com/problems/missing-number/)
+
 Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
 
 ```
@@ -274,6 +290,7 @@ Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0
 ```
 
 ### [Problem 338. Counting Bits](https://leetcode.com/problems/counting-bits/)
+
 Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
 
 ```
@@ -288,6 +305,7 @@ number --> binary --> count of 1
 4      -->   100  -->       1
 5      -->   101  -->       2
 ```
+
 ### [Problem 347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
 
 Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
@@ -311,12 +329,12 @@ Explanation: Replace the two 'A's with two 'B's or vice versa.
 ```
 
 ### [Problem 997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)
+
 In a town, there are n people labeled from 1 to n. There is a rumor that one of these people is secretly the town judge. If the town judge exists, then:
 
 1. The town judge trusts nobody.
 2. Everybody (except for the town judge) trusts the town judge.
 3. There is exactly one person that satisfies properties 1 and 2.
-
 
 ```
 Input: n = 4, trust = [[1,3],[1,4],[2,3],[2,4],[4,3]]
@@ -325,8 +343,11 @@ Explanation: The town judge is the person labeled 3. Everyone trusts 3 except fo
 ```
 
 Hint:
+
 # The idea is to calculate incoming and outgoing edges
+
 # for each person in the trust. Judge is a a person with n-1 incming edge and 0 outgoing edge.
+
 explanation: https://www.youtube.com/watch?v=QiGaxdUINJ8
 
 ### [Problem 1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
@@ -350,6 +371,7 @@ Finally delete "ddd", get "aa"
 ```
 
 ### [Problem 1680. Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
+
 Given an integer n, return the decimal value of the binary string formed by concatenating the binary representations of 1 to n in order, modulo 109 + 7.
 
 ```
@@ -390,15 +412,17 @@ Given edges and the integers n, source, and destination, return true if there is
 
 ### [Problem: 2220. (Easy): Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
 
-
-
 ```
 You are given two numbers a and b. You need to find the number of bits you need to flip to convert a to b. Note: All given integers are in binary form.
 ```
+
 Input: a = 10, b = 20
 Output: 4
 Explanation:
 a = 01010
 b = 10100
 As we can see, the bits of a that need to be flipped are 01010. If we flip these bits, we get 10100, which is b. Hence, the number of bits that need to be flipped is 4.
+
+```
+
 ```

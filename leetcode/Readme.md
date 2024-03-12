@@ -27,6 +27,16 @@ output : 1
 Explanation : The answer is "b", with the length of 1.
 ```
 
+### [Problem 4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays.
+
+```
+Input: nums1 = [1,3], nums2 = [2]
+Output: 2.00000
+Explanation: merged array = [1,2,3] and median is 2.
+```
+hint: sort the array and find the median
+
 ### [Problem 5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
 Given a string s, return the longest palindromic substring in s.

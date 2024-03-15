@@ -128,7 +128,9 @@ Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
 Input: s = "()"
 Output: true
 ```
+
 ### Problem 26. Remove Duplicates from Sorted Array (https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+
 Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
 
 ```
@@ -195,6 +197,16 @@ Solved with 3 different approaches
 Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
 Output: 6
 Explanation: [4,-1,2,1] has the largest sum = 6.
+```
+
+### [Problem 80 Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
+
+Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
+
+```
+Input: nums = [1,1,1,2,2,3]
+Output: 5, nums = [1,1,2,2,3]
+Explanation: Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3 respectively. It doesn't matter what you leave beyond the returned length.
 ```
 
 #### [Problem 88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)

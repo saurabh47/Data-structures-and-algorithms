@@ -110,6 +110,20 @@ Output: 49
 Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
 ```
 
+### [Problem 14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+
+Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string "".
+
+```
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+
+Explanation: The longest common prefix is "fl".
+```
+
+
+
+
 ### [Problem 15. 3Sum](https://leetcode.com/problems/3sum/)
 
 Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.

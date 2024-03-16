@@ -21,7 +21,7 @@ class Solution:
 # no extra memory is used
 class Solution2:
     def removeDuplicates(nums) -> int:
-        start = 0
+        start = 0   
         end = 0
         while (end < len(nums)):
             if(nums[end] == nums[start]):

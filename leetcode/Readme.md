@@ -121,9 +121,6 @@ Output: "fl"
 Explanation: The longest common prefix is "fl".
 ```
 
-
-
-
 ### [Problem 15. 3Sum](https://leetcode.com/problems/3sum/)
 
 Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
@@ -277,6 +274,16 @@ Input: nums = [4,5,6,7,0,1,4]
 Output: 0
 Explanation: The original array was [0,1,4,4,5,6,7] rotated 4 times.
 The smallest element is 0.
+```
+
+### [Problem 169. Majority Element](https://leetcode.com/problems/majority-element/)
+
+Given an array nums of size n, return the majority element.
+
+```
+Input: nums = [3,2,3]
+Output: 3
+Explanation: The majority element is 3.
 ```
 
 ### [Problem 191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)

@@ -17,6 +17,22 @@ class Solution:
 
         return i
 
+# hint: uses two pointers since the array is sorted
+# no extra memory is used
+class Solution2:
+    def removeDuplicates(nums) -> int:
+        start = 0
+        end = 0
+        while (end < len(nums)):
+            if(nums[end] == nums[start]):
+                if(end - start < 2):
+                    end += 1
+                else:
+                    del nums[end]
+            else:
+                start = end
+        return len(nums)
+
 if __name__ == "__main__":
     nums = [1,1,1,2,2,3]
     print(Solution().removeDuplicates(nums)) # 5

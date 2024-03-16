@@ -286,6 +286,15 @@ Output: 3
 Explanation: The majority element is 3.
 ```
 
+### [Problem 189. Rotate Array](https://leetcode.com/problems/rotate-array/)
+Given an array, rotate the array to the right by k steps, where k is non-negative.
+
+```
+Input: nums = [1,2,3,4,5,6,7], k = 3
+Output: [5,6,7,1,2,3,4]
+Explanation: After rotating the array by 3 steps to the right, we get [5,6,7,1,2,3,4].
+```
+
 ### [Problem 191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 
 Write a function that takes an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).

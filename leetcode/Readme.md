@@ -210,6 +210,16 @@ Output: 6
 Explanation: [4,-1,2,1] has the largest sum = 6.
 ```
 
+### [Problem 55. Jump Game](https://leetcode.com/problems/jump-game/)
+
+Given an array of non-negative integers nums, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you can reach the last index.
+
+```
+Input: nums = [2,3,1,1,4]
+Output: true
+Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
+```
+
 ### [Problem 80 Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
 
 Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
@@ -295,6 +305,7 @@ Explanation: The majority element is 3.
 ```
 
 ### [Problem 189. Rotate Array](https://leetcode.com/problems/rotate-array/)
+
 Given an array, rotate the array to the right by k steps, where k is non-negative.
 
 ```

@@ -409,6 +409,14 @@ Explanation: Given an integer array nums and an integer k, return the k most fre
 
 ```
 
+### [Problem 380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)
+
+Design a data structure that supports all following operations in average O(1) time.
+
+- insert(val): Inserts an item val to the set if not already present.
+- remove(val): Removes an item val from the set if present.
+- getRandom: Returns a random element from the current set of elements. Each element must have the same probability of being returned.
+
 ### [Problem 424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
 Given a string s that consists of only uppercase English letters, you can perform at most k operations on that string.

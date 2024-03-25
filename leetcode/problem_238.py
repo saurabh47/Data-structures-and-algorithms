@@ -1,7 +1,6 @@
 # Problem 238 (Medium): https://leetcode.com/problems/product-of-array-except-self/
 
 # Solution 1 uses division operator
-
 class Solution:
     def productExceptSelf(self, nums):
         product = 1
@@ -26,7 +25,8 @@ class Solution:
             else:
                 result.append(product//nums[i])
         return result
-
+# Solution 2: Calculate the prefix and suffix product of the arrays
+# Multiply the prefix and suffix product to get the result
 class Solution2:
     def productExceptSelf(self, nums):
         pref = [1 for i in range(len(nums))]

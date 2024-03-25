@@ -1,6 +1,6 @@
 # Problem 29. Divide Two Integers (Medium)
 
-# hint: division is basically subtraction quotient times
+# explanation: division is basically subtraction quotient times
 # but doing so will take O(n) time where n is the quotient
 # But when the number is large, it will take long time subtracting the divisor from dividend
 # imagine 1M/1, it will take 1M iterations to get the quotient

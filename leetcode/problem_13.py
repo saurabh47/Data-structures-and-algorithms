@@ -1,4 +1,7 @@
 # Problem 13. Roman to Integer (Easy): https://leetcode.com/problems/roman-to-integer/
+# hint: The key intuition lies in the fact that in Roman numerals, when a smaller value appears /
+# before a larger value, it represents subtraction, while when a smaller value appears after or 
+# equal to a larger value, it represents addition.
 class Solution:
     def romanToInt(self, s: str) -> int:
         symbols = {

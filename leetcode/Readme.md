@@ -109,7 +109,9 @@ Input: height = [1,8,6,2,5,4,8,3,7]
 Output: 49
 Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
 ```
+
 ### [Problem 13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
+
 Given a roman numeral, convert it to an integer.
 
 ```
@@ -340,6 +342,20 @@ Write a function that takes an unsigned integer and returns the number of '1' bi
 Input: n = 00000000000000000000000000001011
 Output: 3
 Explanation: The input binary string 00000000000000000000000000001011 has a total of three '1' bits.
+```
+
+### [Problem 202. Happy Number](https://leetcode.com/problems/happy-number/)
+
+Write an algorithm to determine if a number n is happy.
+
+```
+Input: n = 19
+Output: true
+Explanation:
+1^2 + 9^2 = 82
+8^2 + 2^2 = 68
+6^2 + 8^2 = 100
+1^2 + 0^2 + 0^2 = 1
 ```
 
 ### [Problem 215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)

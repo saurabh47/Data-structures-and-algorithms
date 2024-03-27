@@ -4,6 +4,7 @@ class Solution:
     def isHappy(self, n: int) -> bool:
         result = 0
         count = 0
+        visited = {}
         while(n != 1):
             while(n != 0):
                 rem = n%10
@@ -12,7 +13,9 @@ class Solution:
             count +=1
             n = result
             result = 0
-            # If it is in endless loop for more than 10 times, then it is not a happy number
-            if(count > 10):
+            # If we encounter the same number again, then it will go into an infinite loop
+            if(n in visited):
                 return False
+            else:
+                visited[n] = True
         return True

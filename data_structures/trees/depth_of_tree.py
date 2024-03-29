@@ -1,4 +1,6 @@
 # Program to find depth or height of a tree
+# Time Complexity: O(n) 
+# Space Complexity: O(n)
 # A height of the tree is the number of vertices in the tree from the root to the deepest node. 
 
 #           1
@@ -38,6 +40,7 @@ class Tree:
             return 0
         leftDepth = self.findDepth(node.left)
         rightDepth = self.findDepth(node.right)
+        print(node.data, leftDepth, rightDepth)
         return max(leftDepth, rightDepth) + 1
 
 if __name__ == '__main__':

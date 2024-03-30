@@ -461,6 +461,16 @@ Output: 4
 Explanation: Replace the two 'A's with two 'B's or vice versa.
 ```
 
+### [Problem 525. Contiguous Array](https://leetcode.com/problems/contiguous-array/)
+
+Given a binary array nums, return the maximum length of a contiguous subarray with an equal number of 0 and 1.
+
+```
+Input: nums = [0,1]
+Output: 2
+Explanation: [0, 1] is the longest contiguous subarray with an equal number of 0 and 1.
+```
+
 ### [Problem 706. Design HashMap](https://leetcode.com/problems/design-hashmap/)
 
 Design a HashMap without using any built-in hash table libraries.

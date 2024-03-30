@@ -12,6 +12,14 @@ Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 ```
 
+#### [Problem 2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
+
+```
+Input: l1 = [2,4,3], l2 = [5,6,4]
+Output: [7,0,8]
+Explanation: 342 + 465 = 807.
+```
+
 #### [Problem 3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 Given a string s, find the length of the longest substring without repeating characters.
@@ -470,7 +478,6 @@ Input: s = "tree"
 Output: "eert"
 Explanation: 'e' appears twice while 'r' and 't' both appear once. The answer can be "eetr" as well.
 ```
-
 
 ### [Problem 525. Contiguous Array](https://leetcode.com/problems/contiguous-array/)
 

@@ -461,6 +461,17 @@ Output: 4
 Explanation: Replace the two 'A's with two 'B's or vice versa.
 ```
 
+### [Problem 451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)
+
+Given a string s, sort it in decreasing order based on the frequency of characters, and return the sorted string. If there are multiple answers, return any of them.
+
+```
+Input: s = "tree"
+Output: "eert"
+Explanation: 'e' appears twice while 'r' and 't' both appear once. The answer can be "eetr" as well.
+```
+
+
 ### [Problem 525. Contiguous Array](https://leetcode.com/problems/contiguous-array/)
 
 Given a binary array nums, return the maximum length of a contiguous subarray with an equal number of 0 and 1.

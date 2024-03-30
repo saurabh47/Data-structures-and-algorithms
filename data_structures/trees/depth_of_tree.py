@@ -1,3 +1,7 @@
+import sys
+sys.path.append('../trees')  # Add the correct path to the sys.path list
+from node import Node  # Import the 'Node' class from the correct package
+
 # Program to find depth or height of a tree
 # Time Complexity: O(n) 
 # Space Complexity: O(n)
@@ -13,23 +17,6 @@
 #
 #  Consider the above tree, the height of the tree is 4.
 
-# Define a class Node with data, left, and right attributes.
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.left = None
-        self.right = None
-
-    def hasChild(self):
-        return self.left != None or self.right != None
-    def hasLeftChild(self):
-        return self.left != None
-
-    def hasRightChild(self):
-        return self.right != None
-
-
-
 # Define a class Tree with root attribute.
 class Tree:
     def __init (self):
@@ -42,6 +29,7 @@ class Tree:
         rightDepth = self.findDepth(node.right)
         print(node.data, leftDepth, rightDepth)
         return max(leftDepth, rightDepth) + 1
+
 
 if __name__ == '__main__':
     tree = Tree()

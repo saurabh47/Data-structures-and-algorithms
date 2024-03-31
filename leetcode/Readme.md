@@ -366,6 +366,15 @@ Explanation:
 1^2 + 0^2 + 0^2 = 1
 ```
 
+### [Problem 206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+
+```
+Input: head = [1,2,3,4,5]
+Output: [5,4,3,2,1]
+
+Explanation: The linked list is 1 -> 2 -> 3 -> 4 -> 5. After reversing the linked list, the linked list becomes 5 -> 4 -> 3 -> 2 -> 1.
+```
+
 ### [Problem 215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 Given an integer array nums and an integer k, return the kth largest element in the array.

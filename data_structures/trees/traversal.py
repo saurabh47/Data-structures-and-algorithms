@@ -62,9 +62,19 @@ class Tree2:
             self.postOrderRecurstion(root.right)
             print(root.data)
 
-
-
-
+    # Iteration left -> right -> root
+    def postOrderIteration(self, root):
+        stack = []
+        result = []
+        stack.append(root)
+        while(stack):
+            root = stack.pop()
+            result.append(root.data)
+            if root.left:
+                stack.append(root.left)
+            if root.right:
+                stack.append(root.right)
+        return result[::-1]
 #           1
 #         /   \
 #        2     3
@@ -89,6 +99,6 @@ if __name__ == '__main__':
     tree.root.left.left.left = Node(8)
     tree.root.left.left.right = Node(9)
     # print("Inorder:", tree.inorderTraversalIteration(tree.root)) # 8 4 9 2 5 1 6 3 7
-    print("PreOrder:", tree.preOrderIteration(tree.root)) # 1 2 4 8 9 5 3 6 7
-    print("Inorder:", tree.postOrderRecurstion(tree.root)) # 8 9 4 5 2 6 7 3 1
+    # print("PreOrder:", tree.preOrderIteration(tree.root)) # 1 2 4 8 9 5 3 6 7
+    print("Inorder:", tree.postOrderIteration(tree.root)) # 8 9 4 5 2 6 7 3 1
 

@@ -119,6 +119,7 @@ Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,
 ```
 
 ### [Problem 12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
+
 Given an integer, convert it to a roman numeral.
 
 ```
@@ -127,7 +128,6 @@ Output: "III"
 
 Explanation: The number 3 is written in Roman numerals as "III".
 ```
-
 
 ### [Problem 13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
 
@@ -167,6 +167,18 @@ Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
 ```
 Input: s = "()"
 Output: true
+```
+
+### [Problem 21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+
+Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
+
+```
+Input: l1 = [1,2,4], l2 = [1,3,4]
+Output: [1,1,2,3,4,4]
+
+Explanation: The linked list is [1,1,2,3,4,4].
+
 ```
 
 ### Problem 26. Remove Duplicates from Sorted Array (https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
@@ -417,6 +429,18 @@ Given an integer array nums, return true if any value appears at least twice in 
 Input: nums = [1,2,3,1]
 Output: true
 
+```
+
+### [Problem 234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
+
+Given the head of a singly linked list, return true if it is a palindrome.
+
+```
+Input: head = [1,2,2,1]
+Output: true
+
+Input: head = [1,2]
+Output: false
 ```
 
 ### [Problem 238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)

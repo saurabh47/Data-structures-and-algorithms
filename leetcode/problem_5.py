@@ -34,6 +34,29 @@ class Solution:
             end += 1
         return maxPal
 
+# for each char in String expand outward
+# same logic for even and odd string has to be repeated
+class Solution2:
+    def longestPalindrome(self, s: str) -> str:
+        result = ""
+        for i in range(len(s)):
+            start = i
+            end = i
+            while(start >= 0 and end < len(s) and s[start] == s[end]):
+                if(len(result) < end - start + 1):
+                    result = s[start : end+1]
+                start -=1
+                end += 1
+            start = i
+            end = i+1
+            while(start >= 0 and end < len(s) and s[start] == s[end]):
+                if(len(result) < end - start + 1):
+                    result = s[start : end + 1]
+                start -= 1
+                end += 1
+        return result
+        
+
 if __name__ == "__main__":
         s = Solution()
         print(s.longestPalindrome('ababcccbabb'))

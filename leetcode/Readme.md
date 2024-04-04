@@ -118,6 +118,17 @@ Output: 49
 Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
 ```
 
+### [Problem 12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
+Given an integer, convert it to a roman numeral.
+
+```
+Input: num = 3
+Output: "III"
+
+Explanation: The number 3 is written in Roman numerals as "III".
+```
+
+
 ### [Problem 13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
 
 Given a roman numeral, convert it to an integer.

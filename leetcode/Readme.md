@@ -248,6 +248,16 @@ Output: true
 Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
 ```
 
+### [Problem 58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/)
+
+Given a string s consisting of some words separated by some number of spaces, return the length of the last word in the string. A word is a maximal substring consisting of non-space characters only.
+
+```
+Input: s = "Hello World"
+Output: 5
+Explanation: The last word is "World" with length 5.
+```
+
 ### [Problem 80 Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
 
 Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.

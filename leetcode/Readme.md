@@ -281,6 +281,16 @@ Output: 5
 Explanation: The last word is "World" with length 5.
 ```
 
+### [Problem 75. Sort Colors](https://leetcode.com/problems/sort-colors/)
+
+Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+
+```
+Input: nums = [2,0,2,1,1,0]
+Output: [0,0,1,1,2,2]
+Explanation: The output is the array in the correct order.
+```
+
 ### [Problem 80 Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
 
 Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.

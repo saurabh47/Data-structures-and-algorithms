@@ -4,7 +4,7 @@ sys.path.append('../trees')
 from node import Node
 
 class Tree2:
-    def __init (self):
+    def __init__ (self):
         self.root = None
 
     # recursion left ->  root -> right

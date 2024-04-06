@@ -351,6 +351,15 @@ Output: 4
 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
 ```
 
+### [Problem 143. Reorder List](https://leetcode.com/problems/reorder-list/)
+Given the head of a singly linked list L: L0→L1→…→Ln-1→Ln, reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
+
+```
+Input: head = [1,2,3,4]
+Output: [1,4,2,3]
+Explanation: The reordered list is [1,4,2,3].
+```
+
 ### [Problem 154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
 
 Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,4,4,5,6,7] might become:

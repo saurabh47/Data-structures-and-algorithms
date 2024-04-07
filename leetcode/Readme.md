@@ -352,6 +352,7 @@ Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefor
 ```
 
 ### [Problem 143. Reorder List](https://leetcode.com/problems/reorder-list/)
+
 Given the head of a singly linked list L: L0→L1→…→Ln-1→Ln, reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
 
 ```
@@ -560,6 +561,16 @@ Given a binary array nums, return the maximum length of a contiguous subarray wi
 Input: nums = [0,1]
 Output: 2
 Explanation: [0, 1] is the longest contiguous subarray with an equal number of 0 and 1.
+```
+
+### [Problem 704. Binary Search](https://leetcode.com/problems/binary-search/)
+
+Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
+
+```
+Input: nums = [-1,0,3,5,9,12], target = 9
+Output: 4
+Explanation: 9 exists in nums and its index is 4
 ```
 
 ### [Problem 706. Design HashMap](https://leetcode.com/problems/design-hashmap/)

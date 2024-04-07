@@ -19,7 +19,7 @@ from node import Node  # Import the 'Node' class from the correct package
 
 # Define a class Tree with root attribute.
 class Tree:
-    def __init (self):
+    def __init__ (self):
         self.root = None
 
     def findDepth(self, node):

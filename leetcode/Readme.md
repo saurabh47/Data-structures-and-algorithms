@@ -201,6 +201,15 @@ Output: 2, nums = [2,2,_,_]
 Explanation: Your function should return length = 2, with the first two elements of nums being 2.
 ```
 
+### [Problem 28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string)
+
+```
+Input: haystack = "hello", needle = "ll"
+Output: 2
+
+Explanation: The first occurrence of "ll" is at index 2.
+```
+
 ### Problem 29. Divide Two Integers (https://leetcode.com/problems/divide-two-integers/)
 
 Given two integers dividend and divisor, divide two integers without using multiplication, division, and mod operator.

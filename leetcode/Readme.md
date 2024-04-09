@@ -370,6 +370,16 @@ Output: [1,4,2,3]
 Explanation: The reordered list is [1,4,2,3].
 ```
 
+### [Problem 151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
+
+Given an input string s, reverse the order of the words.
+
+```
+Input: s = "the sky is blue"
+Output: "blue is sky the"
+Explanation: The words are reversed.
+```
+
 ### [Problem 154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
 
 Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,4,4,5,6,7] might become:

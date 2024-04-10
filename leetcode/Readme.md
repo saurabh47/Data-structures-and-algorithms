@@ -515,6 +515,16 @@ Output: 2
 Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.
 ```
 
+### [Problem 274. H-Index](https://leetcode.com/problems/h-index/)
+
+Given an array of integers citations where citations[i] is the number of citations a researcher received for their ith paper, return compute the researcher's h-index.
+
+```
+Input: citations = [3,0,6,1,5]
+Output: 3
+Explanation: The researcher has 3 papers with at least 3 citations each and the remaining two with no more than 3 citations.
+```
+
 ### [Problem 338. Counting Bits](https://leetcode.com/problems/counting-bits/)
 
 Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.

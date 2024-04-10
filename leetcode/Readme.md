@@ -394,6 +394,17 @@ Explanation: The original array was [0,1,4,4,5,6,7] rotated 4 times.
 The smallest element is 0.
 ```
 
+### [Problem 167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+
+(similar to problem 1)
+Given an array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number.
+
+```
+Input: numbers = [2,7,11,15], target = 9
+Output: [1,2]
+Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
+```
+
 ### [Problem 169. Majority Element](https://leetcode.com/problems/majority-element/)
 
 Given an array nums of size n, return the majority element.

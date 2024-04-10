@@ -1,17 +1,14 @@
 # Problem 1: Two Sum (Easy): https://leetcode.com/problems/two-sum/
 
 class Solution:
-    def twoSum(self, nums):
-        map = {}
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        diffMap = {}
         for i in range(len(nums)):
-            result = []
-            difference = target - nums[i]
-            if(difference in map):
-                result.append(map[difference])
-                result.append(i)
-                return result;
-            map[nums[i]] = i
-        return [] 
+            diff = target - nums[i]
+            if(diff not in diffMap):
+                diffMap[nums[i]] = i
+            else:
+                return [i, diffMap[diff]]
 
 if __name__ == "__main__":
     nums = [2,7,11,15]

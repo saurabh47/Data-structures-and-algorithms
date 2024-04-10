@@ -562,6 +562,17 @@ Design a data structure that supports all following operations in average O(1) t
 - remove(val): Removes an item val from the set if present.
 - getRandom: Returns a random element from the current set of elements. Each element must have the same probability of being returned.
 
+### [Problem 392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)
+
+Given two strings s and t, return true if s is a subsequence of t, or false otherwise.
+
+```
+Input: s = "abc", t = "ahbgdc"
+Output: true
+
+Explanation: The string "abc" is a subsequence of "ahbgdc".
+```
+
 ### [Problem 424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
 Given a string s that consists of only uppercase English letters, you can perform at most k operations on that string.

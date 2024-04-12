@@ -710,6 +710,16 @@ Then delete "bbb", get "dddaa"
 Finally delete "ddd", get "aa"
 ```
 
+### [Problem 1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)
+
+Given an array of integers nums. A pair (i,j) is called good if nums[i] == nums[j] and i < j. Return the number of good pairs.
+
+```
+Input: nums = [1,2,3,1,1,3]
+Output: 4
+Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
+```
+
 ### [Problem 1680. Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
 
 Given an integer n, return the decimal value of the binary string formed by concatenating the binary representations of 1 to n in order, modulo 109 + 7.

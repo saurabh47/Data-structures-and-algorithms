@@ -5,5 +5,6 @@
 *.exe
 !.gitignore
 
+leetcode/problem_30.py
 leetcode/problem_36.py
 leetcode/problem_992.py

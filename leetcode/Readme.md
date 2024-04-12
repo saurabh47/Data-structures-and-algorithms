@@ -573,6 +573,16 @@ Design a data structure that supports all following operations in average O(1) t
 - remove(val): Removes an item val from the set if present.
 - getRandom: Returns a random element from the current set of elements. Each element must have the same probability of being returned.
 
+### [Problem 383. Ransom Note](https://leetcode.com/problems/ransom-note/)
+
+Given two stings ransomNote and magazine, return true if ransomNote can be constructed from magazine and false otherwise.
+
+```
+Input: ransomNote = "aa", magazine = "aab"
+Output: true
+Explanation: ransomNote is "aa" and magazine is "aab", so ransomNote can be constructed from magazine.
+```
+
 ### [Problem 392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)
 
 Given two strings s and t, return true if s is a subsequence of t, or false otherwise.

@@ -719,14 +719,27 @@ Then delete "bbb", get "dddaa"
 Finally delete "ddd", get "aa"
 ```
 
+### [Problem 1365. How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
+
+Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
+
+```
+Input: nums = [8,1,2,2,3]
+Output: [4,0,1,1,3]
+Explanation:
+For nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3).
+```
+
 ### [Problem 1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)
 
 Given an array of integers nums. A pair (i,j) is called good if nums[i] == nums[j] and i < j. Return the number of good pairs.
 
 ```
+
 Input: nums = [1,2,3,1,1,3]
 Output: 4
 Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
+
 ```
 
 ### [Problem 1680. Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
@@ -734,23 +747,28 @@ Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
 Given an integer n, return the decimal value of the binary string formed by concatenating the binary representations of 1 to n in order, modulo 109 + 7.
 
 ```
+
 Input: n = 3
 Output: 27
 Explanation: In binary, 1, 2, and 3 corresponds to "1", "10", and "11".
 After concatenating them, we have "11011", which corresponds to the decimal value 27.
+
 ```
 
 #### [Problem 1710. Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)
 
 ```
+
 Input: boxTypes = [[1,3],[2,2],[3,1]], truckSize = 4
 Output: 8
 Explanation: There are:
+
 - 1 box of the first type that contains 3 units.
 - 2 boxes of the second type that contain 2 units each.
 - 3 boxes of the third type that contain 1 unit each.
-You can take all the boxes of the first and second types, and one box of the third type.
-The total number of units will be = (1 * 3) + (2 * 2) + (1 * 1) = 8.
+  You can take all the boxes of the first and second types, and one box of the third type.
+  The total number of units will be = (1 _ 3) + (2 _ 2) + (1 \* 1) = 8.
+
 ```
 
 #### [Problem 1859. Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/)
@@ -785,7 +803,9 @@ Given edges and the integers n, source, and destination, return true if there is
 ### [Problem: 2220. (Easy): Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
 
 ```
+
 You are given two numbers a and b. You need to find the number of bits you need to flip to convert a to b. Note: All given integers are in binary form.
+
 ```
 
 Input: a = 10, b = 20
@@ -794,6 +814,10 @@ Explanation:
 a = 01010
 b = 10100
 As we can see, the bits of a that need to be flipped are 01010. If we flip these bits, we get 10100, which is b. Hence, the number of bits that need to be flipped is 4.
+
+```
+
+```
 
 ```
 

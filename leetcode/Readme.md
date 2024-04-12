@@ -665,7 +665,16 @@ myHashMap.put(2, 1); // The map is now [[1,1], [2,1]] (i.e., update the existing
 myHashMap.get(2);    // return 1, The map is now [[1,1], [2,1]]
 myHashMap.remove(2); // remove the mapping for 2, The map is now [[1,1]]
 myHashMap.get(2);    // return -1 (i.e., not found), The map is now [[1,1]]
+```
 
+### [Problem 771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)
+
+You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
+
+```
+Input: jewels = "aA", stones = "aAAbbbb"
+Output: 3
+Explanation: All the stones are jewels, you have 3 jewels.
 ```
 
 ### [Problem 997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)

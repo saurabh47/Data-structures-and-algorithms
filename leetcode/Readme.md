@@ -822,3 +822,7 @@ As we can see, the bits of a that need to be flipped are 01010. If we flip these
 ```
 
 ```
+
+X >> Y means x is shifted to the right by y bits. This is equivalent to dividing x by 2^y.
+e.g 8 >> 1 = 4  (1000 >> 1 = 0100)
+ 

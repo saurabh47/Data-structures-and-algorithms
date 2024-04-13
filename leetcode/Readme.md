@@ -824,5 +824,17 @@ As we can see, the bits of a that need to be flipped are 01010. If we flip these
 ```
 
 X >> Y means x is shifted to the right by y bits. This is equivalent to dividing x by 2^y.
-e.g 8 >> 1 = 4  (1000 >> 1 = 0100)
- 
+e.g 8 >> 1 = 4 (1000 >> 1 = 0100)
+
+### [Problem 2640. (Medium) Find the score of all prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array)
+
+```
+Input: nums = [2,3,7,5,10]
+Output: [4,10,24,36,56]
+Explanation:
+For the prefix [2], the conversion array is [4] hence the score is 4
+For the prefix [2, 3], the conversion array is [4, 6] hence the score is 10
+For the prefix [2, 3, 7], the conversion array is [4, 6, 14] hence the score is 24
+For the prefix [2, 3, 7, 5], the conversion array is [4, 6, 14, 12] hence the score is 36
+For the prefix [2, 3, 7, 5, 10], the conversion array is [4, 6, 14, 12, 20] hence the score is 56
+```

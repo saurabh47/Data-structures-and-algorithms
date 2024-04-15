@@ -5,6 +5,9 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
+# Time complexity: O(n)
+# Space complexity: O(n)
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         unique = {}
@@ -19,8 +22,21 @@ class Solution:
             temp = temp.next;
         return head
 
+
 # Time complexity: O(n)
-# Space complexity: O(n)
+# Space complexity: O(1)
+class Solution2:
+    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        temp = head
+        prev = ListNode(-1002)
+        while(temp):
+            if(temp.val != prev.val):
+                prev = temp
+                temp = temp.next
+            else:
+                temp = temp.next
+                prev.next = temp
+        return head
 
 if __name__ == '__main__':
     s = Solution()

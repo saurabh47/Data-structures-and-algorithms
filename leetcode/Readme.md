@@ -394,6 +394,16 @@ Explanation: The original array was [0,1,4,4,5,6,7] rotated 4 times.
 The smallest element is 0.
 ```
 
+### [Problem 160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
+
+Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.
+
+```
+Input: headA = [4,1,8,4,5], headB = [5,0,1,8,4,5]
+Output: [8,4,5]
+Explanation: The intersected node's value is 8 (note that this must not be 0 if the two lists intersect).
+```
+
 ### [Problem 167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 
 (similar to problem 1)
@@ -501,6 +511,16 @@ Output: true
 
 Input: head = [1,2]
 Output: false
+```
+
+### [Problem 237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
+
+Write a function to delete a node in a singly-linked list. You will not be given access to the head of the list, instead you will be given access to the node to be deleted directly.
+
+```
+Input: head = [4,5,1,9], node = 5
+Output: [4,1,9]
+Explanation: You are given the second node with value 5, the linked list should become 4 -> 1 -> 9 after calling your function.
 ```
 
 ### [Problem 238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)

@@ -3,8 +3,11 @@ sys.path.append('../linked_list')
 from node import Node
 
 class LinkedList:
-    def __init__(self):
-        self.head = None
+    def __init__(self, arr = []):
+        if(len(arr) > 0):
+            self.head = self.arrayToList(arr)
+        else:
+            self.head = None
 
     def arrayToList(self, arr):
         start = Node(arr[0])
@@ -14,7 +17,8 @@ class LinkedList:
             temp = temp.next
         return start
 
-    def iterateList(self, head):
+    def iterateList(self, head=None):
+        head = self.head if head == None else head
         while(head):
             print(head.data)
             head = head.next

@@ -577,6 +577,15 @@ Output: 3
 Explanation: The researcher has 3 papers with at least 3 citations each and the remaining two with no more than 3 citations.
 ```
 
+### [Problem 328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)
+Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list.
+
+```
+Input: head = [1,2,3,4,5]
+Output: [1,3,5,2,4]
+Explanation: The first node is odd and remaining are even. The odd nodes are [1,3,5] and even nodes are [2,4].
+```
+
 ### [Problem 338. Counting Bits](https://leetcode.com/problems/counting-bits/)
 
 Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.

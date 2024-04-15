@@ -310,6 +310,17 @@ Output: 5, nums = [1,1,2,2,3]
 Explanation: Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3 respectively. It doesn't matter what you leave beyond the returned length.
 ```
 
+### [Problem 83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
+
+Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
+
+```
+Input: head = [1,1,2]
+Output: [1,2]
+
+Explanation: The linked list is 1 -> 1 -> 2. After removing the duplicates, it is now 1 -> 2.
+```
+
 #### [Problem 88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 
 Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.

@@ -898,3 +898,11 @@ For the prefix [2, 3, 7], the conversion array is [4, 6, 14] hence the score is 
 For the prefix [2, 3, 7, 5], the conversion array is [4, 6, 14, 12] hence the score is 36
 For the prefix [2, 3, 7, 5, 10], the conversion array is [4, 6, 14, 12, 20] hence the score is 56
 ```
+
+### [Problem 2816. (Medium) Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list)
+
+```
+Input: head = [1,2,3]
+Output: [2,4,6]
+Explanation: The linked list is 1 -> 2 -> 3. After doubling the linked list, the linked list becomes 2 -> 4 -> 6.
+```

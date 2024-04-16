@@ -578,6 +578,7 @@ Explanation: The researcher has 3 papers with at least 3 citations each and the 
 ```
 
 ### [Problem 328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)
+
 Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list.
 
 ```
@@ -869,12 +870,21 @@ As we can see, the bits of a that need to be flipped are 01010. If we flip these
 
 ```
 
-```
-
-```
-
 X >> Y means x is shifted to the right by y bits. This is equivalent to dividing x by 2^y.
 e.g 8 >> 1 = 4 (1000 >> 1 = 0100)
+
+### [Problem 2487. (Easy): Find the Score of All Prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes/description/)
+
+Given an array of integers nums, you are asked to calculate the score of all prefixes of the array. The score of a prefix is defined as the sum of the elements of the prefix multiplied by the length of the prefix.
+
+```
+Input: head = [5,2,13,3,8]
+Output: [13,8]
+Explanation: The nodes that should be removed are 5, 2 and 3.
+- Node 13 is to the right of node 5.
+- Node 13 is to the right of node 2.
+- Node 8 is to the right of node 3.
+```
 
 ### [Problem 2640. (Medium) Find the score of all prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array)
 

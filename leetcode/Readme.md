@@ -675,6 +675,15 @@ Output: 2
 Explanation: [0, 1] is the longest contiguous subarray with an equal number of 0 and 1.
 ```
 
+### [Problem 535. Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl)
+
+TinyURL is a URL shortening service where you enter a URL such as https://leetcode.com/problems/design-tinyurl and it returns a short URL such as http://tinyurl.com/4e9iAk.
+
+```
+Input: longUrl = "https://leetcode.com/problems/design-tinyurl"
+Output: "http://tinyurl.com/4e9iAk"
+```
+
 ### [Problem 704. Binary Search](https://leetcode.com/problems/binary-search/)
 
 Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.

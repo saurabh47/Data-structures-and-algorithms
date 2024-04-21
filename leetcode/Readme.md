@@ -353,6 +353,16 @@ Output: true
 Explanation: The two binary trees are the same.
 ```
 
+### [Problem 101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)
+
+Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
+
+```
+Input: root = [1,2,2,3,4,4,3]
+Output: true
+Explanation: The binary tree is symmetric.
+```
+
 ### [Problem 121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day.

@@ -331,6 +331,16 @@ Output: [1,2,2,3,5,6]
 Explanation: The arrays we are merging are [1,2,3] and [2,5,6]. The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.
 ```
 
+### [Problem 94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+
+Given the root of a binary tree, return the inorder traversal of its nodes' values.
+
+```
+Input: root = [1,null,2,3]
+Output: [1,3,2]
+Explanation: The inorder traversal is [1,3,2].
+```
+
 hint: sort the array from the end
 
 ### [Problem 121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)

@@ -17,6 +17,7 @@ class Tree2:
     # iteration
     def inorderTraversalIteration(self,root):
         stack = []
+        result = []
         while True:
             while root:
                 stack.append(root)
@@ -25,8 +26,9 @@ class Tree2:
             if not stack:
                 break
             root = stack.pop()
-            print(root.data, end=' ')
+            result.append(root.data)
             root = root.right
+        return result
 
     # recursion root -> left -> right
     def preOrderRecursion(self, root):
@@ -39,20 +41,15 @@ class Tree2:
     def preOrderIteration(self, root):
         stack = []
         result = []
-        stack.append(root)
-        result.append(root.data)
         while(True):
-            while(root.left):
-                stack.append(root.left)
-                result.append(root.left.data)
+            while(root):
+                stack.append(root)
+                result.append(root.data)
                 root = root.left
             if(not stack):
                 break
             root = stack.pop()
-            if root.right:
-                stack.append(root.right)
-                result.append(root.right.data)
-                root = root.right
+            root = root.right
         return result
 
     # Recursion left -> right -> root
@@ -99,6 +96,6 @@ if __name__ == '__main__':
     tree.root.left.left.left = Node(8)
     tree.root.left.left.right = Node(9)
     # print("Inorder:", tree.inorderTraversalIteration(tree.root)) # 8 4 9 2 5 1 6 3 7
-    # print("PreOrder:", tree.preOrderIteration(tree.root)) # 1 2 4 8 9 5 3 6 7
-    print("Inorder:", tree.postOrderIteration(tree.root)) # 8 9 4 5 2 6 7 3 1
+    print("PreOrder:", tree.preOrderIteration(tree.root)) # 1 2 4 8 9 5 3 6 7
+    # print("PostOrder:", tree.postOrderIteration(tree.root)) # 8 9 4 5 2 6 7 3 1
 

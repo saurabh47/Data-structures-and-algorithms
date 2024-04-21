@@ -343,6 +343,16 @@ Explanation: The inorder traversal is [1,3,2].
 
 hint: sort the array from the end
 
+### [Problem 100. Same Tree](https://leetcode.com/problems/same-tree/)
+
+Given the roots of two binary trees p and q, write a function to check if they are the same or not.
+
+```
+Input: p = [1,2,3], q = [1,2,3]
+Output: true
+Explanation: The two binary trees are the same.
+```
+
 ### [Problem 121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day.

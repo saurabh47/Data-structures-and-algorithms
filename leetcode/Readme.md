@@ -737,6 +737,16 @@ Output: [3,4,5]
 Explanation: The middle node of the list is node 3.
 ```
 
+### [Problem 938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
+
+Given the root node of a binary search tree, return the sum of values of all nodes with a value in the range [low, high].
+
+```
+Input: root = [10,5,15,3,7,null,18], low = 7, high = 15
+Output: 32
+Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.
+```
+
 ### [Problem 997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)
 
 In a town, there are n people labeled from 1 to n. There is a rumor that one of these people is secretly the town judge. If the town judge exists, then:

@@ -401,6 +401,16 @@ Output: 4
 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
 ```
 
+### [Problem 141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+
+Given head, the head of a linked list, determine if the linked list has a cycle in it.
+
+```
+Input: head = [3,2,0,-4], pos = 1
+Output: true
+Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
+```
+
 ### [Problem 143. Reorder List](https://leetcode.com/problems/reorder-list/)
 
 Given the head of a singly linked list L: L0→L1→…→Ln-1→Ln, reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…

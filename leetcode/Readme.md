@@ -411,6 +411,16 @@ Output: true
 Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
 ```
 
+### [Problem 142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
+
+Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
+
+```
+Input: head = [3,2,0,-4], pos = 1
+Output: [2]
+Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
+```
+
 ### [Problem 143. Reorder List](https://leetcode.com/problems/reorder-list/)
 
 Given the head of a singly linked list L: L0→L1→…→Ln-1→Ln, reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…

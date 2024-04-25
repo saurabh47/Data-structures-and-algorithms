@@ -14,7 +14,17 @@ class Solution:
             head = head.next
             current +=1
         return head
-    
+
+# Optimized solution usinng tortoise and hare
+class Solution:
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        fast = head
+        slow = head
+        while(fast and fast.next):
+            slow = slow.next
+            fast = fast.next.next
+        return slow    
+
 # Time complexity: O(n)
 # Space complexity: O(1)
 

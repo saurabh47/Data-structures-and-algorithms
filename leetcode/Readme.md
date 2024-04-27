@@ -767,14 +767,34 @@ myHashMap.remove(2); // remove the mapping for 2, The map is now [[1,1]]
 myHashMap.get(2);    // return -1 (i.e., not found), The map is now [[1,1]]
 ```
 
+### [Problem 725. Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/)
+
+Given the head of a singly linked list and an integer k, split the linked list into k consecutive linked list parts.
+
+```
+Input: head = [1,2,3], k = 5
+Output: [[1],[2],[3],[],[]]
+Explanation:
+The first element output[0] has output[0].val = 1, output[0].next = null.
+
+The last element output[4] is null, but it's string representation as a ListNode is [].
+
+Input: head = [1,2,3,4,5,6,7,8,9,10], k = 3
+Output: [[1,2,3,4],[5,6,7],[8,9,10]]
+Explanation:
+The input has been split into consecutive parts with size difference at most 1, and earlier parts are larger than the later parts.
+```
+
 ### [Problem 771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)
 
 You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
 
 ```
+
 Input: jewels = "aA", stones = "aAAbbbb"
 Output: 3
 Explanation: All the stones are jewels, you have 3 jewels.
+
 ```
 
 ### [Problem 876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
@@ -782,9 +802,11 @@ Explanation: All the stones are jewels, you have 3 jewels.
 Given the head of a singly linked list, return the middle node of the linked list.
 
 ```
+
 Input: head = [1,2,3,4,5]
 Output: [3,4,5]
 Explanation: The middle node of the list is node 3.
+
 ```
 
 ### [Problem 938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
@@ -792,9 +814,11 @@ Explanation: The middle node of the list is node 3.
 Given the root node of a binary search tree, return the sum of values of all nodes with a value in the range [low, high].
 
 ```
+
 Input: root = [10,5,15,3,7,null,18], low = 7, high = 15
 Output: 32
 Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.
+
 ```
 
 ### [Problem 997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)
@@ -806,9 +830,11 @@ In a town, there are n people labeled from 1 to n. There is a rumor that one of 
 3. There is exactly one person that satisfies properties 1 and 2.
 
 ```
+
 Input: n = 4, trust = [[1,3],[1,4],[2,3],[2,4],[4,3]]
 Output: 3
 Explanation: The town judge is the person labeled 3. Everyone trusts 3 except for 3, and no one trusts 3.
+
 ```
 
 Hint:
@@ -822,21 +848,25 @@ explanation: https://www.youtube.com/watch?v=QiGaxdUINJ8
 ### [Problem 1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
 
 ```
+
 Input: "abbaca"
 Output: "ca"
 Explanation:
-For example, in "abbaca" we could remove "bb" since the letters are adjacent and equal, and this is the only possible move.  The result of this move is that the string is "aaca", of which only "aa" is possible, so the final string is "ca".
+For example, in "abbaca" we could remove "bb" since the letters are adjacent and equal, and this is the only possible move. The result of this move is that the string is "aaca", of which only "aa" is possible, so the final string is "ca".
+
 ```
 
 ### [Problem 1209. Remove all adjacent Duplicates II ]
 
 ```
+
 Input : s = "deeedbbcccbdaa", k = 3
 Output : "aa"
 Explanation :
 First delete "eee" and "ccc", get "ddbbbdaa"
 Then delete "bbb", get "dddaa"
 Finally delete "ddd", get "aa"
+
 ```
 
 ### [Problem 1365. How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
@@ -844,10 +874,12 @@ Finally delete "ddd", get "aa"
 Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
 
 ```
+
 Input: nums = [8,1,2,2,3]
 Output: [4,0,1,1,3]
 Explanation:
 For nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3).
+
 ```
 
 ### [Problem 1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)
@@ -947,17 +979,21 @@ e.g 8 >> 1 = 4 (1000 >> 1 = 0100)
 Given an array of integers nums, you are asked to calculate the score of all prefixes of the array. The score of a prefix is defined as the sum of the elements of the prefix multiplied by the length of the prefix.
 
 ```
+
 Input: head = [5,2,13,3,8]
 Output: [13,8]
 Explanation: The nodes that should be removed are 5, 2 and 3.
+
 - Node 13 is to the right of node 5.
 - Node 13 is to the right of node 2.
 - Node 8 is to the right of node 3.
+
 ```
 
 ### [Problem 2640. (Medium) Find the score of all prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array)
 
 ```
+
 Input: nums = [2,3,7,5,10]
 Output: [4,10,24,36,56]
 Explanation:
@@ -966,12 +1002,19 @@ For the prefix [2, 3], the conversion array is [4, 6] hence the score is 10
 For the prefix [2, 3, 7], the conversion array is [4, 6, 14] hence the score is 24
 For the prefix [2, 3, 7, 5], the conversion array is [4, 6, 14, 12] hence the score is 36
 For the prefix [2, 3, 7, 5, 10], the conversion array is [4, 6, 14, 12, 20] hence the score is 56
+
 ```
 
 ### [Problem 2816. (Medium) Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list)
 
 ```
+
 Input: head = [1,2,3]
 Output: [2,4,6]
 Explanation: The linked list is 1 -> 2 -> 3. After doubling the linked list, the linked list becomes 2 -> 4 -> 6.
+
+```
+
+```
+
 ```

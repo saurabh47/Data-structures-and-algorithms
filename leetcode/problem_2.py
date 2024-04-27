@@ -31,3 +31,39 @@ class Solution:
             prev.next = ListNode(value)
             prev = prev.next
         return head.next
+
+# Optimized solution
+class Solution2:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        head = None
+        current = None
+        carry = 0
+        while(l1 and l2):
+            val = l1.val + l2.val + carry
+            if(head):
+                current.next = ListNode(val % 10)
+                current = current.next
+            else:
+                head = ListNode(val % 10)
+                current = head
+            carry = val//10
+            l1 = l1.next
+            l2 = l2.next
+        if(l1):
+            while(l1):
+                val = l1.val + carry
+                carry = val // 10
+                current.next = ListNode(val%10)
+                current = current.next
+                l1 = l1.next
+        else:
+            while(l2):
+                val = l2.val + carry
+                carry = val // 10
+                current.next = ListNode(val%10)
+                current = current.next
+                l2 = l2.next
+        if(carry):
+            current.next = ListNode(carry)
+            current = current.next
+        return head

@@ -231,6 +231,16 @@ Output: 4
 Explanation: The target value is present at index 4.
 ```
 
+### [Problem 34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+
+Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value. If target is not found in the array, return [-1, -1].
+
+```
+Input: nums = [5,7,7,8,8,10], target = 8
+Output: [3,4]
+Explanation: The value 8 is present at index 3 and 4.
+```
+
 ### [Problem 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 
 A sorted array of distinct integers is given. Find the index of the target value. If the target value is not found, return the index where it would be if it were inserted in order.

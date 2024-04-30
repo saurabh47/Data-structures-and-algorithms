@@ -300,6 +300,16 @@ Output: 5
 Explanation: The last word is "World" with length 5.
 ```
 
+### [Problem 69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
+
+Given a non-negative integer x, compute and return the square root of x.
+
+```
+Input: x = 4
+Output: 2
+Explanation: The square root of 4 is 2.
+```
+
 ### [Problem 75. Sort Colors](https://leetcode.com/problems/sort-colors/)
 
 Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.

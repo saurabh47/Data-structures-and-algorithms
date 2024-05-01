@@ -604,6 +604,23 @@ Output: true
 
 ```
 
+### [Problem 225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)
+
+Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).
+
+```
+Input: ["MyStack", "push", "push", "top", "pop", "empty"]
+[[], [1], [2], [], [], []]
+Output: [null, null, null, 2, 2, false]
+Explanation:
+MyStack myStack = new MyStack();
+myStack.push(1);
+myStack.push(2);
+myStack.top(); // return 2
+myStack.pop(); // return 2
+myStack.empty(); // return False
+```
+
 ### [Problem 234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
 
 Given the head of a singly linked list, return true if it is a palindrome.

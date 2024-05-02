@@ -394,6 +394,16 @@ Output: true
 Explanation: The binary tree is symmetric.
 ```
 
+### [Problem 104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+
+Given the root of a binary tree, return its maximum depth.
+
+```
+Input: root = [3,9,20,null,null,15,7]
+Output: 3
+Explanation: The maximum depth is 3.
+```
+
 ### [Problem 121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day.
@@ -1107,13 +1117,7 @@ For the prefix [2, 3, 7, 5, 10], the conversion array is [4, 6, 14, 12, 20] henc
 ### [Problem 2816. (Medium) Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list)
 
 ```
-
 Input: head = [1,2,3]
 Output: [2,4,6]
 Explanation: The linked list is 1 -> 2 -> 3. After doubling the linked list, the linked list becomes 2 -> 4 -> 6.
-
-```
-
-```
-
 ```

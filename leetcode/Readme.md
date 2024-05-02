@@ -1083,6 +1083,17 @@ As we can see, the bits of a that need to be flipped are 01010. If we flip these
 X >> Y means x is shifted to the right by y bits. This is equivalent to dividing x by 2^y.
 e.g 8 >> 1 = 4 (1000 >> 1 = 0100)
 
+### [Problem 2236. Root equals sum of children](https://leetcode.com/problems/root-equals-sum-of-children/description/)
+
+Given a binary tree root, return whether the sum of all leaves is equal to the sum of all non-leaf nodes.
+
+```
+Input: root = [10,4,6]
+Output: true
+Explanation: The values of the root, its left child, and its right child are 10, 4, and 6, respectively.
+10 is equal to 4 + 6, so we return true.
+```
+
 ### [Problem 2487. (Easy): Find the Score of All Prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes/description/)
 
 Given an array of integers nums, you are asked to calculate the score of all prefixes of the array. The score of a prefix is defined as the sum of the elements of the prefix multiplied by the length of the prefix.

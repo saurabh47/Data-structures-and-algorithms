@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../linked_list')
-from node import Node
+from data_structures.node import Node
 
 class LinkedList:
     def __init__(self, arr = []):

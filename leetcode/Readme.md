@@ -1030,6 +1030,16 @@ Given edges and the integers n, source, and destination, return true if there is
 
 ```
 
+### [Problem 2016. Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/description/)
+
+```
+Input: nums = [7,1,5,4]
+Output: 4
+Explanation:
+The maximum difference occurs with i = 1 and j = 2, nums[j] - nums[i] = 5 - 1 = 4.
+Note that with i = 1 and j = 0, the difference nums[j] - nums[i] = 7 - 1 = 6, but i > j, so it is not valid.s
+```
+
 ### [Problem: 2220. (Easy): Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
 
 ```

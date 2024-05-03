@@ -394,6 +394,16 @@ Output: true
 Explanation: The binary tree is symmetric.
 ```
 
+### [Problem 102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+
+Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
+
+```
+Input: root = [3,9,20,null,null,15,7]
+Output: [[3],[9,20],[15,7]]
+Explanation: The level order traversal of the binary tree is [[3],[9,20],[15,7]].
+```
+
 ### [Problem 104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
 Given the root of a binary tree, return its maximum depth.
@@ -966,6 +976,15 @@ First delete "eee" and "ccc", get "ddbbbdaa"
 Then delete "bbb", get "dddaa"
 Finally delete "ddd", get "aa"
 
+```
+
+### [Problem 1302. Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)
+
+Given the root of a binary tree, return the sum of values of its deepest leaves.
+
+```
+Input: root = [1,2,3,4,5,null,6,7,null,null,null,null,8]
+Output: 15
 ```
 
 ### [Problem 1365. How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)

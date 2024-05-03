@@ -404,6 +404,17 @@ Output: [[3],[9,20],[15,7]]
 Explanation: The level order traversal of the binary tree is [[3],[9,20],[15,7]].
 ```
 
+### [Problem 103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
+
+Given the root of a binary tree, return the zigzag level order traversal of its nodes' values. (i.e., from left to right, then right to left for the next level and alternate between).
+
+```
+Input: root = [3,9,20,null,null,15,7]
+
+Output: [[3],[20,9],[15,7]]
+Explanation: The zigzag level order traversal of the binary tree is [[3],[20,9],[15,7]].
+```
+
 ### [Problem 104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
 Given the root of a binary tree, return its maximum depth.

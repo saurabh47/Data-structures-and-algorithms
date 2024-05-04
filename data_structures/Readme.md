@@ -5,6 +5,12 @@
 - Binary Search Trees
 - Graphs
 
+#### Trees
+
+- [Binary Tree]()
+A Binary Tree Data Structure is a hierarchical data structure in which each node has at most two children, referred to as the left child and the right child. It is commonly used in computer science for efficient storage and retrieval of data, with various operations such as insertion, deletion, and traversal.
+
+
 *Note: Docs generated via Github copilot*
 #### Linked Lists
 
@@ -69,3 +75,22 @@
         The output of BFS traversal from a node 2 is: 2, 5, 3, 1, 4, 0, 6. If you observe carefully, you will notice that the nodes are visited level wise. First, all the nodes of the first level are visited, then nodes of second level, and so on. The algorithm for BFS traversal is as follows:
         The output of BFS traversal from a node 0 is: 0, 3, 4, 6, 2, 1, 5
         The output of BFS traversal from a node 5 is: 5, 1, 2, 3, 4, 0, 6
+
+
+### Problems to solve
+
+- Height and Depth of a node in a Binary Tree
+Given a Binary Tree consisting of N nodes and a integer K, the task is to find the depth and height of the node with value K in the Binary Tree. 
+
+The depth of a node is the number of edges present in path from the root node of a tree to that node.
+The height of a node is the number of edges present in the longest path connecting that node to a leaf node.
+
+
+- Given a Binary tree and a node. The task is to search and check if the given node exists in the binary tree or not. If it exists, print YES otherwise print NO.
+
+
+- Given a tree and a node, the task is to find the parent of the given node in the tree. Print -1 if the given node is the root node.
+
+- Given a Binary tree and a node. The task is to search and check if the given node exists in the binary tree or not. If it exists, print YES otherwise print NO.
+
+

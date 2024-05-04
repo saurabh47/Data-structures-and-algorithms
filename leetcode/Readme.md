@@ -425,6 +425,16 @@ Output: 3
 Explanation: The maximum depth is 3.
 ```
 
+### [Problem 110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
+
+Given a binary tree, determine if it is height-balanced.
+
+```
+Input: root = [3,9,20,null,null,15,7]
+Output: true
+Explanation: The binary tree is height-balanced.
+```
+
 ### [Problem 121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day.

@@ -445,6 +445,16 @@ Output: true
 Explanation: The binary tree is height-balanced.
 ```
 
+### [Problem 111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+
+Given a binary tree, find its minimum depth.
+
+```
+Input: root = [3,9,20,null,null,15,7]
+Output: 2
+Explanation: The minimum depth is 2.
+```
+
 ### [Problem 121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day.

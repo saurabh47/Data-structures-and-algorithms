@@ -887,6 +887,16 @@ Input: longUrl = "https://leetcode.com/problems/design-tinyurl"
 Output: "http://tinyurl.com/4e9iAk"
 ```
 
+### [Problem 622. Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)
+
+Design your implementation of the circular queue. The circular queue is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle and the last position is connected back to the first position to make a circle. It is also called "Ring Buffer".
+
+```
+Input: ["MyCircularQueue", "enQueue", "enQueue", "enQueue", "enQueue", "Rear", "isFull", "deQueue", "enQueue", "Rear"]
+[[3], [1], [2], [3], [4], [], [], [], [4], []]
+Output: [null, true, true, true, false, 3, true, true, true, 4]
+```
+
 ### [Problem 704. Binary Search](https://leetcode.com/problems/binary-search/)
 
 Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.

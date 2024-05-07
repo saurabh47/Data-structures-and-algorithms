@@ -845,6 +845,16 @@ Output: 4
 Explanation: Replace the two 'A's with two 'B's or vice versa.
 ```
 
+### [Problem 445. Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/)
+
+You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+
+```
+Input: l1 = [7,2,4,3], l2 = [5,6,4]
+Output: [7,8,0,7]
+Explanation: 7243 + 564 = 7807
+```
+
 ### [Problem 451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)
 
 Given a string s, sort it in decreasing order based on the frequency of characters, and return the sorted string. If there are multiple answers, return any of them.

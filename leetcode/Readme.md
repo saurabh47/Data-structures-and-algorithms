@@ -865,6 +865,21 @@ Output: "eert"
 Explanation: 'e' appears twice while 'r' and 't' both appear once. The answer can be "eetr" as well.
 ```
 
+### [Problem 506. Relative Ranks](https://leetcode.com/problems/relative-ranks/)
+
+Given an integer array score of size n, return the relative ranks of the athletes. The relative ranks are the positions of the athletes in the leaderboard.
+
+```
+Input: score = [10,3,8,9,4]
+Output: ["Gold Medal","5","Bronze Medal","Silver Medal","4"]
+Explanation: The athletes are ranked as follows:
+
+Gold Medal: Score 10 is the highest.
+5: Score 9.
+Bronze Medal: Score 8.
+Silver Medal: Score 4.
+```
+
 ### [Problem 513. Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/)
 
 Given the root of a binary tree, return the leftmost value in the last row of the tree.

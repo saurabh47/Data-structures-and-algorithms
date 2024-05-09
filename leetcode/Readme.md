@@ -1230,3 +1230,13 @@ Input: head = [1,2,3]
 Output: [2,4,6]
 Explanation: The linked list is 1 -> 2 -> 3. After doubling the linked list, the linked list becomes 2 -> 4 -> 6.
 ```
+### [Problem 3075. (Medium) Maximum Happiness of Selected Children](https://leetcode.com/problems/maximum-happiness-of-selected-children)
+
+```
+Input: happiness = [1,2,3], k = 2
+Output: 4
+Explanation: We can pick 2 children in the following way:
+- Pick the child with the happiness value == 3. The happiness value of the remaining children becomes [0,1].
+- Pick the child with the happiness value == 1. The happiness value of the remaining child becomes [0]. Note that the happiness value cannot become less than 0.
+The sum of the happiness values of the selected children is 3 + 1 = 4.
+```

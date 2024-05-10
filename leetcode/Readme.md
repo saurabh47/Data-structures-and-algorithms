@@ -275,6 +275,16 @@ Explanation: The groupings are as follows:
 "bat" is not an anagram of any other word, so it its own group.
 ```
 
+### [Problem 50. Pow(x, n)](https://leetcode.com/problems/powx-n/)
+
+Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+
+```
+Input: x = 2.00000, n = 10
+Output: 1024.00000
+Explanation: 2^10 = 1024.
+```
+
 ### [Problem 53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 
 Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.

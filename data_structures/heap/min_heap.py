@@ -42,14 +42,16 @@ class MinHeap:
 
 if __name__ == '__main__':
     minHeap = MinHeap(20)
-    minHeap.insert(20)
-    minHeap.insert(50)
-    minHeap.insert(10)
     minHeap.insert(40)
-    minHeap.insert(15)
-    minHeap.insert(100)
-    minHeap.insert(45)
+    minHeap.insert(20)
+    minHeap.insert(30)
+    minHeap.insert(35)
     minHeap.insert(25)
+    minHeap.insert(80)
+    minHeap.insert(32)
+    minHeap.insert(100)
+    minHeap.insert(70)
+    minHeap.insert(60)
     # for i in range(20, 0, -1):
     #     minHeap.insert(i)
     print(minHeap.arr, minHeap.size, minHeap.capacity)

@@ -11,6 +11,28 @@
 A Binary Tree Data Structure is a hierarchical data structure in which each node has at most two children, referred to as the left child and the right child. It is commonly used in computer science for efficient storage and retrieval of data, with various operations such as insertion, deletion, and traversal.
 
 
+#### Heap
+
+The Heap is a complete binary tree, which means that all levels of the tree are filled except possibly for the last level, which is filled from left to right. The Heap is also a binary tree, which means that each node has at most two children. The Heap is a partial order tree, which means that the value of each node is greater than or equal to the values of its children.
+
+- the nodes are filled from left to right so that if a specific node has no left child, it should have no right child too.
+- if there is a node in level h, the level h - 1 should be fulfilled
+
+The following is a formal definition of the Heap [from Computer Algorithms by S. Baase and A. Van Gelder]:
+
+*A binary tree V is a Heap structure if and only if it satisfies the following conditions:*
+
+1. *V is complete at least through depth h - 1*
+2. *All leaves are at depth h or h - 1*
+3. *All paths to a leaf of depth h are to the left of all paths to a leaf of depth h - 1*
+
+There are two kinds of Binary Heaps - **minheap** and **maxheap**.
+
+*A minheap is a Heap for which each node's priority is less than or equal to its children's priorities.*
+
+*A maxheap is a Heap for which each node's priority is greater than or equal to its children's priorities.*
+
+
 *Note: Docs generated via Github copilot*
 #### Linked Lists
 
@@ -80,7 +102,7 @@ A Binary Tree Data Structure is a hierarchical data structure in which each node
 ### Problems to solve
 
 - Height and Depth of a node in a Binary Tree
-Given a Binary Tree consisting of N nodes and a integer K, the task is to find the depth and height of the node with value K in the Binary Tree. 
+Given a Binary Tree consisting of N nodes and a integer K, the task is to find the depth and height of the node with value K in the Binary Tree.
 
 The depth of a node is the number of edges present in path from the root node of a tree to that node.
 The height of a node is the number of edges present in the longest path connecting that node to a leaf node.

@@ -1199,6 +1199,18 @@ Given edges and the integers n, source, and destination, return true if there is
 
 ```
 
+### [Problem 2006. Count Number of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/description/)
+
+```
+Input: nums = [1,2,2,1], k = 1
+Output: 4
+Explanation: The pairs with an absolute difference of 1 are:
+- [1,2,2,1]
+- [1,2,2,1]
+- [1,2,2,1]
+- [1,2,2,1]
+```
+
 ### [Problem 2016. Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/description/)
 
 ```

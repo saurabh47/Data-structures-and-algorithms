@@ -33,6 +33,7 @@ class MinHeap:
         if(self.size > 1):
             self.size -= 1
             self.swap(0, self.size)
+            self.arr.pop()
             self.min_heapify(0)
         return minimum
 
@@ -70,10 +71,56 @@ class MinHeap:
                 node = self.arr[i]
         print(val, "inserted in heap")
 
+    def delete(self, index):
+        if(self.size <= 0):
+            print("heap is empty")
+            return
+        if(index >= self.size):
+            print("index out of bounds")
+            return
+        self.size -= 1
+        self.swap(index, self.size)
+        deleted = self.arr.pop()
+        self.min_heapify(index)
+        print(deleted, " deleted from the heap")
+        return deleted
+
+    def decrease(self, val, index):
+        if(self.size <= 0):
+            print("heap is empty")
+            return
+        if(index >= self.size):
+            print("index out of bounds")
+            return
+        if(self.arr[index] <= val):
+            print("value to be decreased at {} should be less than {}".format(index,self.arr[index]))
+            return
+        self.arr[index] = val
+        p = self.parent(index)
+        while(index != 0 and self.arr[p] > self.arr[index]):
+                self.swap(p,index)
+                index = p
+                p = self.parent(index)
+        print("decreased the element", val, "at ", index)
+
     def swap(self, i, j):
+        if(i == j):
+            return
         temp = self.arr[i]
         self.arr[i] = self.arr[j]
         self.arr[j]= temp
+
+    #  Min Heap
+    #               40                                20
+    #             /   \                            /      \
+    #           20     30       Min Heap         25        30
+    #          /  \   /  \      ------->        /  \      /   \
+    #         35  25 80   32                   40   35   80   32
+    #        /  \ /                           /  \  /
+    #       100 70 60                       100  70 60
+    #
+
+
 
 if __name__ == '__main__':
     minHeap = MinHeap(20)
@@ -90,6 +137,9 @@ if __name__ == '__main__':
     print("min heap:", minHeap.arr)
     print("minimum:", minHeap.get_min())
     print("extract:", minHeap.extract_min())
-    # for i in range(20, 0, -1):
+    print("min heap:", minHeap.arr)
+    print("delete:", minHeap.delete(4))
+    print("min heap:", minHeap.arr)
+    print("decreased:", minHeap.decrease(20, 1))
     #     minHeap.insert(i)
     print(minHeap.arr, minHeap.size, minHeap.capacity)

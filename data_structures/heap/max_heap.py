@@ -55,6 +55,7 @@ class MaxHeap:
     def build_max_heap(self, arr):
         # find the bottom right parent
         self.arr = arr
+        self.size = len(arr)
         ri  = self.parent(len(self.arr)- 1)
         for i in range(ri, -1, -1):
             self.max_heapify(i)
@@ -78,7 +79,16 @@ class MaxHeap:
                 node = self.arr[i]
         print(val, "inserted in heap")
 
+    def heapSort(self):
+        last = len(self.arr) - 1
+        for i in range(len(self.arr)- 1, -1, -1):
+            self.swap(last, i)
+            last -=1
+            self.size -=1
+            self.max_heapify(0)
+
     def delete(self, index):
+        print("deleting", self.arr[index])
         if(self.size <= 0):
             print("heap is empty")
             return
@@ -89,7 +99,7 @@ class MaxHeap:
         self.swap(index, self.size)
         deleted = self.arr.pop()
         self.max_heapify(index)
-        print(deleted, " deleted from the heap")
+        print(deleted, " deleted from the heap",)
         return deleted
 
     def decrease(self, val, k):
@@ -136,12 +146,12 @@ if __name__ == '__main__':
     for num in arr:
         heap.insert(num)
     print("max heap:", heap.arr)
-    print("maximum:", heap.get_max())
-    print("extract:", heap.extract_max())
-    print("max heap:", heap.arr)
+    print("maximum:", heap.get_max(),heap.size)
+    print("extract:", heap.extract_max(),heap.size)
+    print("max heap:", heap.arr,heap.size)
     heap.delete(4)
-    print("max heap:", heap.arr)
-    print("decreased:", heap.decrease(20, 1))
+    print("max heap:", heap.arr,heap.size)
+    print("decreased:", heap.decrease(20, 1),heap.size)
     heap.build_max_heap(arr)
-    print("max heap:", heap.arr)
-    print(heap.arr, heap.size, heap.capacity)
+    print("max heap:", heap.arr, heap.size)
+    print(heap.arr,"size:", heap.size,"capacity:", heap.capacity)

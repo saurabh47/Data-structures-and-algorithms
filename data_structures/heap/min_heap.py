@@ -40,6 +40,7 @@ class MinHeap:
     # Given an array create min Heap
     def build_min_heap(self, arr):
         self.arr = arr
+        self.size = len(arr)
         # get the bottom most parent with
         ri  = self.parent(len(self.arr) -1)
         for i in range(ri, -1, -1):

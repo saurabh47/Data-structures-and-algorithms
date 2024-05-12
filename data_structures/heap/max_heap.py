@@ -79,6 +79,7 @@ class MaxHeap:
                 node = self.arr[i]
         print(val, "inserted in heap")
 
+    # Time complexity of heapsort is O(NlogN)
     def heapSort(self):
         for i in range(len(self.arr)- 1, 0, -1):
             self.swap(0, i)

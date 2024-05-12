@@ -80,10 +80,8 @@ class MaxHeap:
         print(val, "inserted in heap")
 
     def heapSort(self):
-        last = len(self.arr) - 1
-        for i in range(len(self.arr)- 1, -1, -1):
-            self.swap(last, i)
-            last -=1
+        for i in range(len(self.arr)- 1, 0, -1):
+            self.swap(0, i)
             self.size -=1
             self.max_heapify(0)
 
@@ -155,3 +153,5 @@ if __name__ == '__main__':
     heap.build_max_heap(arr)
     print("max heap:", heap.arr, heap.size)
     print(heap.arr,"size:", heap.size,"capacity:", heap.capacity)
+    heap.heapSort()
+    print("sorted heap:", heap.arr, heap.size)

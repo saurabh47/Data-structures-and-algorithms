@@ -1,4 +1,4 @@
-class MinHeap:
+class MaxHeap:
     def __init__(self, capacity):
         # defines the maximum number of elements that can be stored in the heap
         self.capacity = capacity
@@ -16,17 +16,17 @@ class MinHeap:
     def parent(self, i):
         return (i - 1) // 2
 
-    def get_min(self):
+    def get_max(self):
         if(self.arr):
             return self.arr[0]
         print("heap is empty")
 
     # removes and returns root of heap arr[0]
-    def extract_min(self):
+    def extract_max(self):
         if(self.size == 0):
             print("heap is empty")
             return
-        minimum = self.arr[0]
+        maximum = self.arr[0]
         if(self.size == 1):
             self.size -= 1
             return self.arr.pop()
@@ -34,31 +34,30 @@ class MinHeap:
             self.size -= 1
             self.swap(0, self.size)
             self.arr.pop()
-            self.min_heapify(0)
-        return minimum
+            self.max_heapify(0)
+        return maximum
 
-    # Given an array create min Heap
-    def build_min_heap(self, arr):
-        self.arr = arr
-        # get the bottom most parent with
-        ri  = self.parent(len(self.arr) -1)
-        for i in range(ri, -1, -1):
-            self.min_heapify(i)
-        print("heap built:")
-
-    # converts the binary tree to min heap
-    # input is index i at which heapfiy has to be checked
-    def min_heapify(self, i:int):
-        smallest = i
-        right = self.right(i)
+    # max heapify at node index i
+    # This is called to fix node i in a heap
+    def max_heapify(self, i:int):
+        largest = i
         left = self.left(i)
-        if(left < self.size and self.arr[left] < self.arr[smallest]):
-           smallest = left
-        if(right < self.size and self.arr[right] < self.arr[smallest]):
-           smallest = right
-        if(smallest != i):
-            self.swap(smallest, i)
-            self.min_heapify(smallest)
+        right = self.right(i)
+        if(left < self.size and self.arr[left] > self.arr[largest]):
+            largest = left
+        if(right < self.size and self.arr[right] > self.arr[largest]):
+            largest = right
+        if(largest != i):
+            self.swap(largest, i)
+            self.max_heapify(largest)
+
+    # Creates a max heap from an array
+    def build_max_heap(self, arr):
+        # find the bottom right parent
+        self.arr = arr
+        ri  = self.parent(len(self.arr)- 1)
+        for i in range(ri, -1, -1):
+            self.max_heapify(i)
 
     # time complexity log(n) or height of tree
     # To insert in a min_heap
@@ -72,7 +71,7 @@ class MinHeap:
             i = self.size - 1
             p = self.parent(i)
             node = self.arr[i]
-            while(i !=0 and self.arr[p] > node):
+            while(i !=0 and self.arr[p] < node):
                 self.swap(p, i)
                 i = p
                 p = self.parent(i)
@@ -89,7 +88,7 @@ class MinHeap:
         self.size -= 1
         self.swap(index, self.size)
         deleted = self.arr.pop()
-        self.min_heapify(index)
+        self.max_heapify(index)
         print(deleted, " deleted from the heap")
         return deleted
 
@@ -132,19 +131,17 @@ class MinHeap:
 
 
 if __name__ == '__main__':
-    heap = MinHeap(20)
+    heap = MaxHeap(20)
     arr = [40, 20, 30, 35, 25, 80, 32, 100, 70, 60]
     for num in arr:
         heap.insert(num)
-    print("min heap:", heap.arr)
-    print("minimum:", heap.get_min())
-    print("extract:", heap.extract_min())
-    print("min heap:", heap.arr)
-    print("delete:", heap.delete(4))
-    print("min heap:", heap.arr)
+    print("max heap:", heap.arr)
+    print("maximum:", heap.get_max())
+    print("extract:", heap.extract_max())
+    print("max heap:", heap.arr)
+    heap.delete(4)
+    print("max heap:", heap.arr)
     print("decreased:", heap.decrease(20, 1))
-    print("min heap:", heap.arr)
-    arr = [72,12,40, 20, 30, 35, 25, 100, 70, 60]
-    print("build min heap: ", heap.build_min_heap(arr))
-    print("min heap:", heap.arr)
-    # print(heap.arr, heap.size, heap.capacity)
+    heap.build_max_heap(arr)
+    print("max heap:", heap.arr)
+    print(heap.arr, heap.size, heap.capacity)

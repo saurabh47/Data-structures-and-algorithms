@@ -21,6 +21,14 @@ class MinHeap:
             return self.arr[0]
         print("heap is empty")
 
+    # Given an array create min Heap
+    def build_min_heap(self, arr):
+        self.arr = arr
+        # get the bottom most parent with
+        ri  = self.parent(self.arr[-1])
+        for i in range(ri, -1, -1):
+            self.min_heapify(i)
+        print("heap built:")
     # removes and returns root of heap arr[0]
     def extract_min(self):
         if(self.size == 0):
@@ -124,16 +132,10 @@ class MinHeap:
 
 if __name__ == '__main__':
     minHeap = MinHeap(20)
-    minHeap.insert(40)
-    minHeap.insert(20)
-    minHeap.insert(30)
-    minHeap.insert(35)
-    minHeap.insert(25)
-    minHeap.insert(80)
-    minHeap.insert(32)
-    minHeap.insert(100)
-    minHeap.insert(70)
-    minHeap.insert(60)
+    arr = [40, 20, 30, 35, 25, 80, 32, 100, 70, 60]
+    for num in arr:
+        minHeap.insert(num)
+
     print("min heap:", minHeap.arr)
     print("minimum:", minHeap.get_min())
     print("extract:", minHeap.extract_min())
@@ -142,4 +144,5 @@ if __name__ == '__main__':
     print("min heap:", minHeap.arr)
     print("decreased:", minHeap.decrease(20, 1))
     #     minHeap.insert(i)
+    print("build min heap: ",arr, minHeap.build_min_heap(arr))
     print(minHeap.arr, minHeap.size, minHeap.capacity)

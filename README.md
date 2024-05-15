@@ -1,5 +1,3 @@
-# Popular Coding Questions Solution
-
 This repository is a collection of popular coding questions and their solutions. You can use this repository to refer to solutions for coding questions. If you have a better solution to an existing question or have a solution to a new question, feel free to contribute.
 
 ### Table of Contents

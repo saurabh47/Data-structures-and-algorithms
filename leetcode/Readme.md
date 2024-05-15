@@ -1284,7 +1284,6 @@ Explanation: The values of the root, its left child, and its right child are 10,
 Given an array of integers nums, you are asked to calculate the score of all prefixes of the array. The score of a prefix is defined as the sum of the elements of the prefix multiplied by the length of the prefix.
 
 ```
-
 Input: head = [5,2,13,3,8]
 Output: [13,8]
 Explanation: The nodes that should be removed are 5, 2 and 3.
@@ -1292,7 +1291,20 @@ Explanation: The nodes that should be removed are 5, 2 and 3.
 - Node 13 is to the right of node 5.
 - Node 13 is to the right of node 2.
 - Node 8 is to the right of node 3.
+```
 
+### [Problem 2500. (Easy) Delete Greatest Value in Each Row]
+
+Given a 2D integer array matrix, you need to delete the greatest value in each row. Return the sum of all the deleted values.
+
+```
+Input: grid = [[1,2,4],[3,3,1]]
+Output: 8
+Explanation: The diagram above shows the removed values in each step.
+- In the first operation, we remove 4 from the first row and 3 from the second row (notice that, there are two cells with value 3 and we can remove any of them). We add 4 to the answer.
+- In the second operation, we remove 2 from the first row and 3 from the second row. We add 3 to the answer.
+- In the third operation, we remove 1 from the first row and 1 from the second row. We add 1 to the answer.
+The final answer = 4 + 3 + 1 = 8.
 ```
 
 ### [Problem 2640. (Medium) Find the score of all prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array)

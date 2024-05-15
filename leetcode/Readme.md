@@ -917,6 +917,16 @@ Output: 3
 Explanation: 3 is the length of the path [4,2,1,3] or [5,2,1,3].
 ```
 
+### [Problem 622. Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)
+
+Given the root of a binary tree, return the length of the diameter of the tree.
+
+```
+Input: root = [1,2,3,4,5]
+Output: 3
+Explanation: 3 is the length of the path [4,2,1,3] or [5,2,1,3].
+```
+
 ### [Problem 704. Binary Search](https://leetcode.com/problems/binary-search/)
 
 Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
@@ -981,6 +991,7 @@ Explanation: All the stones are jewels, you have 3 jewels.
 ```
 
 ### [Problem 881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)
+
 The i-th person has weight people[i], and each boat can carry a maximum weight of limit.
 Each boat carries at most 2 people at the same time, provided the sum of the weight of those people is at most limit.
 Return the minimum number of boats to carry every given person.
@@ -992,6 +1003,18 @@ Output: 3
 Explanation: 3 boats (1, 2), (2) and (3)
 ```
 
+### [Problem 881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)
+
+The i-th person has weight people[i], and each boat can carry a maximum weight of limit.
+Each boat carries at most 2 people at the same time, provided the sum of the weight of those people is at most limit.
+Return the minimum number of boats to carry every given person.
+
+```
+Input: people = [3,2,2,1], limit = 3
+Output: 3
+
+Explanation: 3 boats (1, 2), (2) and (3)
+```
 
 ### [Problem 876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
 

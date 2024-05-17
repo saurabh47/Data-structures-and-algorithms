@@ -1291,3 +1291,25 @@ Explanation: We can pick 2 children in the following way:
 - Pick the child with the happiness value == 1. The happiness value of the remaining child becomes [0]. Note that the happiness value cannot become less than 0.
 The sum of the happiness values of the selected children is 3 + 1 = 4.
 ```
+
+### [Problem 3110. (Easy) Score of a String](https://leetcode.com/problems/score-of-a-string)
+
+```
+Input: s = "hello"
+
+Output: 13
+
+Explanation:
+
+The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111. So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13
+```
+
+### Problem 3114. (Easy) Find the Score of All Prefixes of a String
+
+```
+Input: s = "1?:?4"
+
+Output: "11:54"
+
+Explanation: The latest 12-hour format time we can achieve by replacing "?" characters is "11:54".
+```

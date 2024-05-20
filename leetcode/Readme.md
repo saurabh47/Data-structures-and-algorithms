@@ -867,6 +867,18 @@ Output: 4
 Explanation: Replace the two 'A's with two 'B's or vice versa.
 ```
 
+### [Problem 438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+
+Given two strings s and p, return an array of all the start indices of p's anagrams in s. You may return the answer in any order.
+
+```
+Input: s = "cbaebabacd", p = "abc"
+Output: [0,6]
+
+Explanation: The substring with start index = 0 is "cba", which is an anagram of "abc".
+The substring with start index = 6 is "bac", which is an anagram of "abc".
+```
+
 ### [Problem 445. Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/)
 
 You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
@@ -1021,6 +1033,22 @@ Output: [2,5]
 Explanation: The fractions to be considered in sorted order are:
 1/5, 1/3, 2/5, 1/2, 3/5, and 2/3.
 The third fraction is 2/5.
+```
+
+### [Problem 796. Rotate String](https://leetcode.com/problems/rotate-string/)
+
+Given two strings s and goal, return true if and only if s can become goal after some number of shifts on s.
+
+A shift on s consists of moving the leftmost character of s to the rightmost position.
+
+For example, if s = "abcde", then it will be "bcdea" after one shift.
+
+```
+Input: s = "abcde", goal = "cdeab"
+Output: true
+
+Input: s = "abcde", goal = "abced"
+Output: false
 ```
 
 ### [Problem 876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)

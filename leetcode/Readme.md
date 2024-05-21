@@ -321,6 +321,18 @@ Output: 5
 Explanation: The last word is "World" with length 5.
 ```
 
+### [Problem 66. Plus One](https://leetcode.com/problems/plus-one/)
+
+Given a non-empty array of decimal digits representing a non-negative integer, increment one to the integer.
+
+```
+Input: digits = [1,2,3]
+Output: [1,2,4]
+
+Explanation: The array represents the integer 123. Incrementing by one gives 124.
+
+```
+
 ### [Problem 69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
 
 Given a non-negative integer x, compute and return the square root of x.

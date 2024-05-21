@@ -353,6 +353,16 @@ Output: [0,0,1,1,2,2]
 Explanation: The output is the array in the correct order.
 ```
 
+### [Problem 78. Subsets](https://leetcode.com/problems/subsets/)
+
+Given an integer array nums of unique elements, return all possible subsets (the power set).
+
+```
+Input: nums = [1,2,3]
+
+Output: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
+```
+
 ### [Problem 80 Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
 
 Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.

@@ -330,7 +330,14 @@ Input: digits = [1,2,3]
 Output: [1,2,4]
 
 Explanation: The array represents the integer 123. Incrementing by one gives 124.
+```
 
+### [Problem 67. Add Binary](https://leetcode.com/problems/add-binary/)
+
+```
+Input: a = "11", b = "1"
+Output: "100"
+Explanation: The sum of binary strings 11 and 1 is 100.
 ```
 
 ### [Problem 69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)

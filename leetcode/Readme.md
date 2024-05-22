@@ -944,6 +944,16 @@ Input: ["MyCircularQueue", "enQueue", "enQueue", "enQueue", "enQueue", "Rear", "
 Output: [null, true, true, true, false, 3, true, true, true, 4]
 ```
 
+### [Problem 658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/)
+
+```
+Input: arr = [1,2,3,4,5], k = 4, x = 3
+Output: [1,2,3,4]
+
+Input: arr = [1,2,3,4,5], k = 4, x = -1
+
+```
+
 ### [Problem 703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
 
 Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.

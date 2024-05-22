@@ -1,5 +1,7 @@
 ### Problem 658. Find K Closest Elements (Medium): https://leetcode.com/problems/find-k-closest-elements/
 
+# hint: find the index of element closest to x using binary search
+# then use two pointers to find k closest elements
 class Solution:
     def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
         result = []

@@ -178,7 +178,18 @@ Input: l1 = [1,2,4], l2 = [1,3,4]
 Output: [1,1,2,3,4,4]
 
 Explanation: The linked list is [1,1,2,3,4,4].
+```
 
+### Problem 23. Merge k Sorted Lists (https://leetcode.com/problems/merge-k-sorted-lists/)
+
+Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+
+```
+Input: lists = [[1,4,5],[1,3,4],[2,6]]
+
+Output: [1,1,2,3,4,4,5,6]
+
+Explanation: The linked list is [1,1,2,3,4,4,5,6].
 ```
 
 ### Problem 26. Remove Duplicates from Sorted Array (https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
@@ -273,6 +284,16 @@ Explanation: The groupings are as follows:
 "ate", "eat", and "tea" are all anagrams of each other, so they all belong to the same group.
 "nat" and "tan" are anagrams of each other, so they all belong to the same group.
 "bat" is not an anagram of any other word, so it its own group.
+```
+
+### [Problem 50. Pow(x, n)](https://leetcode.com/problems/powx-n/)
+
+Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+
+```
+Input: x = 2.00000, n = 10
+Output: 1024.00000
+Explanation: 2^10 = 1024.
 ```
 
 ### [Problem 53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
@@ -767,6 +788,24 @@ Output: 3
 Explanation: The researcher has 3 papers with at least 3 citations each and the remaining two with no more than 3 citations.
 ```
 
+### [Problem 295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
+
+The median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value and the median is the mean of the two middle values.
+
+```
+Input: ["MedianFinder", "addNum", "addNum", "findMedian", "addNum", "findMedian"]
+[[], [1], [2], [], [3], []]
+
+Output: [null, null, null, 1.5, null, 2.0]
+
+Explanation: MedianFinder medianFinder = new MedianFinder();
+medianFinder.addNum(1);    // arr = [1]
+medianFinder.addNum(2);    // arr = [1, 2]
+medianFinder.findMedian(); // return 1.5 (i.e., (1 + 2) / 2)
+medianFinder.addNum(3);    // arr[1, 2, 3]
+medianFinder.findMedian(); // return 2.0
+```
+
 ### [Problem 328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)
 
 Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list.
@@ -792,6 +831,18 @@ number --> binary --> count of 1
 3      -->   011  -->       2
 4      -->   100  -->       1
 5      -->   101  -->       2
+```
+
+### [Problem 344. Reverse String](https://leetcode.com/problems/reverse-string/)
+
+Write a function that reverses a string. The input string is given as an array of characters s.
+
+```
+Input: s = ["h","e","l","l","o"]
+Output: ["o","l","l","e","h"]
+
+Input: s = ["H","a","n","n","a","h"]
+Output: ["h","a","n","n","a","H"]
 ```
 
 ### [Problem 347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
@@ -845,6 +896,16 @@ Output: 4
 Explanation: Replace the two 'A's with two 'B's or vice versa.
 ```
 
+### [Problem 445. Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/)
+
+You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+
+```
+Input: l1 = [7,2,4,3], l2 = [5,6,4]
+Output: [7,8,0,7]
+Explanation: 7243 + 564 = 7807
+```
+
 ### [Problem 451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)
 
 Given a string s, sort it in decreasing order based on the frequency of characters, and return the sorted string. If there are multiple answers, return any of them.
@@ -853,6 +914,21 @@ Given a string s, sort it in decreasing order based on the frequency of characte
 Input: s = "tree"
 Output: "eert"
 Explanation: 'e' appears twice while 'r' and 't' both appear once. The answer can be "eetr" as well.
+```
+
+### [Problem 506. Relative Ranks](https://leetcode.com/problems/relative-ranks/)
+
+Given an integer array score of size n, return the relative ranks of the athletes. The relative ranks are the positions of the athletes in the leaderboard.
+
+```
+Input: score = [10,3,8,9,4]
+Output: ["Gold Medal","5","Bronze Medal","Silver Medal","4"]
+Explanation: The athletes are ranked as follows:
+
+Gold Medal: Score 10 is the highest.
+5: Score 9.
+Bronze Medal: Score 8.
+Silver Medal: Score 4.
 ```
 
 ### [Problem 513. Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/)
@@ -885,6 +961,45 @@ TinyURL is a URL shortening service where you enter a URL such as https://leetco
 ```
 Input: longUrl = "https://leetcode.com/problems/design-tinyurl"
 Output: "http://tinyurl.com/4e9iAk"
+```
+
+### [Problem 622. Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)
+
+Design your implementation of the circular queue. The circular queue is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle and the last position is connected back to the first position to make a circle. It is also called "Ring Buffer".
+
+```
+Input: ["MyCircularQueue", "enQueue", "enQueue", "enQueue", "enQueue", "Rear", "isFull", "deQueue", "enQueue", "Rear"]
+[[3], [1], [2], [3], [4], [], [], [], [4], []]
+Output: [null, true, true, true, false, 3, true, true, true, 4]
+```
+
+### [Problem 658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/)
+
+```
+Input: arr = [1,2,3,4,5], k = 4, x = 3
+Output: [1,2,3,4]
+
+Input: arr = [1,2,3,4,5], k = 4, x = -1
+
+```
+
+### [Problem 703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
+
+Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+
+```
+Input: ["KthLargest", "add", "add", "add", "add", "add"]
+[[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]]
+Output: [null, 4, 5, 5, 8, 8]
+
+Explanation:
+
+KthLargest kthLargest = new KthLargest(3, [4, 5, 8, 2]);
+kthLargest.add(3);   // return 4
+kthLargest.add(5);   // return 5
+kthLargest.add(10);  // return 5
+kthLargest.add(9);   // return 8
+kthLargest.add(4);   // return 8
 ```
 
 ### [Problem 704. Binary Search](https://leetcode.com/problems/binary-search/)
@@ -948,6 +1063,22 @@ Input: jewels = "aA", stones = "aAAbbbb"
 Output: 3
 Explanation: All the stones are jewels, you have 3 jewels.
 
+```
+
+### [Problem 786. K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/)
+
+You are given a sorted integer array arr containing 1 and prime numbers, where all the integers of arr are unique. You are also given an integer k.
+
+For every i and j where 0 <= i < j < arr.length, we consider the fraction arr[i] / arr[j].
+
+Return the kth smallest fraction considered. Return your answer as an array of integers of size 2, where answer[0] == arr[i] and answer[1] == arr[j].
+
+```
+Input: arr = [1,2,3,5], k = 3
+Output: [2,5]
+Explanation: The fractions to be considered in sorted order are:
+1/5, 1/3, 2/5, 1/2, 3/5, and 2/3.
+The third fraction is 2/5.
 ```
 
 ### [Problem 876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
@@ -1031,17 +1162,58 @@ Input: root = [1,2,3,4,5,null,6,7,null,null,null,null,8]
 Output: 15
 ```
 
+### [Problem 1337. The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/)
+
+Given a m \* n matrix mat of ones (representing soldiers) and zeros (representing civilians), return the indexes of the k weakest rows in the matrix ordered from the weakest to the strongest.
+
+```
+Input: mat =
+[[1,1,0,0,0],
+ [1,1,1,1,0],
+ [1,0,0,0,0],
+ [1,1,0,0,0],
+ [1,1,1,1,1]],
+k = 3
+Output: [2,0,3]
+Explanation:
+The number of soldiers in each row is:
+- Row 0: 2
+- Row 1: 4
+- Row 2: 1
+- Row 3: 2
+- Row 4: 5
+The rows ordered from weakest to strongest are [2,0,3,1,4].
+```
+
 ### [Problem 1365. How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
 
 Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
 
 ```
-
 Input: nums = [8,1,2,2,3]
 Output: [4,0,1,1,3]
 Explanation:
 For nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3).
+```
 
+### [Problem 1464. Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)
+
+```
+Input: nums = [3,4,5,2]
+Output: 12
+Explanation: If you choose the indices i=1 and j=2 (indexed from 0), you will get the maximum value, that is, (nums[1]-1)*(nums[2]-1) = (4-1)*(5-1) = 3*4 = 12.
+```
+
+### [Problem 1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)
+
+Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
+
+```
+Example 1:
+
+Input: nums = [1,2,3,4]
+Output: [1,3,6,10]
+Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
 ```
 
 ### [Problem 1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)
@@ -1114,6 +1286,18 @@ Given edges and the integers n, source, and destination, return true if there is
 
 ```
 
+### [Problem 2006. Count Number of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/description/)
+
+```
+Input: nums = [1,2,2,1], k = 1
+Output: 4
+Explanation: The pairs with an absolute difference of 1 are:
+- [1,2,2,1]
+- [1,2,2,1]
+- [1,2,2,1]
+- [1,2,2,1]
+```
+
 ### [Problem 2016. Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/description/)
 
 ```
@@ -1162,7 +1346,6 @@ Explanation: The values of the root, its left child, and its right child are 10,
 Given an array of integers nums, you are asked to calculate the score of all prefixes of the array. The score of a prefix is defined as the sum of the elements of the prefix multiplied by the length of the prefix.
 
 ```
-
 Input: head = [5,2,13,3,8]
 Output: [13,8]
 Explanation: The nodes that should be removed are 5, 2 and 3.
@@ -1170,7 +1353,20 @@ Explanation: The nodes that should be removed are 5, 2 and 3.
 - Node 13 is to the right of node 5.
 - Node 13 is to the right of node 2.
 - Node 8 is to the right of node 3.
+```
 
+### [Problem 2500. (Easy) Delete Greatest Value in Each Row]
+
+Given a 2D integer array matrix, you need to delete the greatest value in each row. Return the sum of all the deleted values.
+
+```
+Input: grid = [[1,2,4],[3,3,1]]
+Output: 8
+Explanation: The diagram above shows the removed values in each step.
+- In the first operation, we remove 4 from the first row and 3 from the second row (notice that, there are two cells with value 3 and we can remove any of them). We add 4 to the answer.
+- In the second operation, we remove 2 from the first row and 3 from the second row. We add 3 to the answer.
+- In the third operation, we remove 1 from the first row and 1 from the second row. We add 1 to the answer.
+The final answer = 4 + 3 + 1 = 8.
 ```
 
 ### [Problem 2640. (Medium) Find the score of all prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array)
@@ -1194,4 +1390,24 @@ For the prefix [2, 3, 7, 5, 10], the conversion array is [4, 6, 14, 12, 20] henc
 Input: head = [1,2,3]
 Output: [2,4,6]
 Explanation: The linked list is 1 -> 2 -> 3. After doubling the linked list, the linked list becomes 2 -> 4 -> 6.
+```
+
+### [Problem 2974. (Easy) Minimum Number Game] (https://leetcode.com/problems/minimum-number-game)
+
+```
+Input: nums = [5,4,2,3]
+Output: [3,2,5,4]
+Explanation: In round one, first Alice removes 2 and then Bob removes 3. Then in arr firstly Bob appends 3 and then Alice appends 2. So arr = [3,2].
+At the begining of round two, nums = [5,4]. Now, first Alice removes 4 and then Bob removes 5. Then both append in arr which becomes [3,2,5,4].
+```
+
+### [Problem 3075. (Medium) Maximum Happiness of Selected Children](https://leetcode.com/problems/maximum-happiness-of-selected-children)
+
+```
+Input: happiness = [1,2,3], k = 2
+Output: 4
+Explanation: We can pick 2 children in the following way:
+- Pick the child with the happiness value == 3. The happiness value of the remaining children becomes [0,1].
+- Pick the child with the happiness value == 1. The happiness value of the remaining child becomes [0]. Note that the happiness value cannot become less than 0.
+The sum of the happiness values of the selected children is 3 + 1 = 4.
 ```

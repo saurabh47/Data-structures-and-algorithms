@@ -44,3 +44,16 @@ class Solution(object):
             left_half = self.merge_sort(left_array) # left_half
             right_half = self.merge_sort(right_array) # right_half
             return self.mergeHalves(left_half,right_half)
+
+# Using Max heap (O (kLogN))
+class Solution2:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        max_heap = []
+        for element in nums:
+            heapq.heappush(max_heap, -element)  # Negate the elements to create a max heap
+        result = 0
+        for _ in range(k):
+            if max_heap:
+                element = heapq.heappop(max_heap) 
+                result = -element
+        return result

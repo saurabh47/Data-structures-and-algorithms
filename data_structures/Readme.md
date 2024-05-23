@@ -8,26 +8,57 @@
 #### Trees
 
 - [Binary Tree]()
-A Binary Tree Data Structure is a hierarchical data structure in which each node has at most two children, referred to as the left child and the right child. It is commonly used in computer science for efficient storage and retrieval of data, with various operations such as insertion, deletion, and traversal.
+  A Binary Tree Data Structure is a hierarchical data structure in which each node has at most two children, referred to as the left child and the right child. It is commonly used in computer science for efficient storage and retrieval of data, with various operations such as insertion, deletion, and traversal.
 
+#### Heap
 
-*Note: Docs generated via Github copilot*
+The Heap is a complete binary tree, which means that all levels of the tree are filled except possibly for the last level, which is filled from left to right. The Heap is also a binary tree, which means that each node has at most two children. The Heap is a partial order tree, which means that the value of each node is greater than or equal to the values of its children.
+
+- the nodes are filled from left to right so that if a specific node has no left child, it should have no right child too.
+- if there is a node in level h, the level h - 1 should be fulfilled
+
+The following is a formal definition of the Heap [from Computer Algorithms by S. Baase and A. Van Gelder]:
+
+_A binary tree V is a Heap structure if and only if it satisfies the following conditions:_
+
+1. _V is complete at least through depth h - 1_
+2. _All leaves are at depth h or h - 1_
+3. _All paths to a leaf of depth h are to the left of all paths to a leaf of depth h - 1_
+
+There are two kinds of Binary Heaps - **minheap** and **maxheap**.
+
+_A minheap is a Heap for which each node's priority is less than or equal to its children's priorities._
+
+_A maxheap is a Heap for which each node's priority is greater than or equal to its children's priorities._
+
+# Heapify
+
+Heapify is a process of converting a binary tree into a heap. It is a process of converting an array into a heap. The process of heapify is used to maintain the heap property of the binary tree. The heap property is that the value of each node is greater than or equal to the values of its children.
+
+There are two types of heapify operations: heapify-up and heapify-down.
+
+Heapify-up is used to maintain the heap property when a new node is inserted into the heap. The new node is inserted at the end of the heap and then moved up the heap until the heap property is satisfied.
+
+Heapify-down is used to maintain the heap property when a node is removed from the heap. The last node in the heap is moved to the root of the heap and then moved down the heap until the heap property is satisfied.
+
+_Note: Docs generated via Github copilot_
+
 #### Linked Lists
 
 - [Singly Linked List](singly_linked_list.md)
 
-    Linked lists are a data structure that are linear data structures made up of nodes. Each node contains a value and a pointer to the next node. The first node in the linked list is called the head node. The last node in the linked list is called the tail node.
+  Linked lists are a data structure that are linear data structures made up of nodes. Each node contains a value and a pointer to the next node. The first node in the linked list is called the head node. The last node in the linked list is called the tail node.
 
-    Linked lists are very efficient for searching and traversing.
+  Linked lists are very efficient for searching and traversing.
 
-    The time complexity for searching and traversing a linked list is O(n) where n is the number of nodes in the linked list. While, The time complexity for inserting and deleting a node in a linked list is O(1) as compared to O(n) in an array. This is because, in an array, we have to shift the elements to the right or left when we insert or delete an element.But in linked list it is assumed that we have a pointer to the location where we want to insert an element. So, we just have to change the pointer of the previous node to point to the new node and the pointer of the new node to point to the next node. This is why linked lists are very efficient for inserting and deleting elements.
+  The time complexity for searching and traversing a linked list is O(n) where n is the number of nodes in the linked list. While, The time complexity for inserting and deleting a node in a linked list is O(1) as compared to O(n) in an array. This is because, in an array, we have to shift the elements to the right or left when we insert or delete an element.But in linked list it is assumed that we have a pointer to the location where we want to insert an element. So, we just have to change the pointer of the previous node to point to the new node and the pointer of the new node to point to the next node. This is why linked lists are very efficient for inserting and deleting elements.
 
 - [Doubly Linked List](doubly_linked_list.md)
 
-    In Doubley Linked List, we have two pointers, one pointing to the next node and the other pointing to the previous node.
-    In Singly Linked List, we have only one pointer, pointing to the next node.
-    The advantage of using Doubley Linked List is that we can traverse the list in both the directions, i.e. forward and backward. This is not possible in Singly Linked List.
-    The disadvantage of using Doubley Linked List is that it takes more memory as compared to Singly Linked List.
+  In Doubley Linked List, we have two pointers, one pointing to the next node and the other pointing to the previous node.
+  In Singly Linked List, we have only one pointer, pointing to the next node.
+  The advantage of using Doubley Linked List is that we can traverse the list in both the directions, i.e. forward and backward. This is not possible in Singly Linked List.
+  The disadvantage of using Doubley Linked List is that it takes more memory as compared to Singly Linked List.
 
 #### Binary Trees
 
@@ -76,21 +107,16 @@ A Binary Tree Data Structure is a hierarchical data structure in which each node
         The output of BFS traversal from a node 0 is: 0, 3, 4, 6, 2, 1, 5
         The output of BFS traversal from a node 5 is: 5, 1, 2, 3, 4, 0, 6
 
-
 ### Problems to solve
 
 - Height and Depth of a node in a Binary Tree
-Given a Binary Tree consisting of N nodes and a integer K, the task is to find the depth and height of the node with value K in the Binary Tree. 
+  Given a Binary Tree consisting of N nodes and a integer K, the task is to find the depth and height of the node with value K in the Binary Tree.
 
 The depth of a node is the number of edges present in path from the root node of a tree to that node.
 The height of a node is the number of edges present in the longest path connecting that node to a leaf node.
 
-
 - Given a Binary tree and a node. The task is to search and check if the given node exists in the binary tree or not. If it exists, print YES otherwise print NO.
-
 
 - Given a tree and a node, the task is to find the parent of the given node in the tree. Print -1 if the given node is the root node.
 
 - Given a Binary tree and a node. The task is to search and check if the given node exists in the binary tree or not. If it exists, print YES otherwise print NO.
-
-

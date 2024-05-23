@@ -712,6 +712,15 @@ Input: nums = [1,2,3,1], k = 3
 Output: true
 ```
 
+### [Problem 223. Rectangle Area](https://leetcode.com/problems/rectangle-area/)
+
+Find the total area covered by two rectilinear rectangles in a 2D plane. Each rectangle is defined by its bottom left corner and top right corner.
+
+```
+Input: ax1 = -3, ay1 = 0, ax2 = 3, ay2 = 4, bx1 = 0, by1 = -1, bx2 = 9, by2 = 2
+Output: 45
+```
+
 ### [Problem 225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)
 
 Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).

@@ -920,6 +920,16 @@ Output: true
 Explanation: ransomNote is "aa" and magazine is "aab", so ransomNote can be constructed from magazine.
 ```
 
+### [Problem 387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
+
+Given a string s, return the first non-repeating character in it and return its index. If it does not exist, return -1.
+
+```
+Input: s = "leetcode"
+Output: 0
+Explanation: The first non-repeating character is "l" and its index is 0.
+```
+
 ### [Problem 392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)
 
 Given two strings s and t, return true if s is a subsequence of t, or false otherwise.

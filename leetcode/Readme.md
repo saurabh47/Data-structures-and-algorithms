@@ -1316,12 +1316,29 @@ Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
 Given an integer n, return the decimal value of the binary string formed by concatenating the binary representations of 1 to n in order, modulo 109 + 7.
 
 ```
-
 Input: n = 3
 Output: 27
 Explanation: In binary, 1, 2, and 3 corresponds to "1", "10", and "11".
 After concatenating them, we have "11011", which corresponds to the decimal value 27.
+```
 
+### [Problem 1700. Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/)
+
+```
+Input: students = [1,1,0,0], sandwiches = [0,1,0,1]
+Output: 0
+
+Explanation: You take the sandwich in the 0th iteration. Students are [1,1,0,0].
+
+The 1st student takes the sandwich and leaves the remaining students as [1,0,0].
+
+The 2nd student takes the sandwich and leaves the remaining students as [1,0].
+
+The 3rd student takes the sandwich and leaves the remaining students as [1].
+
+The 4th student takes the sandwich and leaves the remaining students as [].
+
+There are no students who are unable to eat.
 ```
 
 #### [Problem 1710. Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)

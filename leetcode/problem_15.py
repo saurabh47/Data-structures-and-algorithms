@@ -1,4 +1,5 @@
 # Problem 15: 3Sum  (Medium): https://leetcode.com/problems/3sum/
+# Tags: Array, Two Pointers
 class Solution:
     def threeSum(self, nums):
         result = []

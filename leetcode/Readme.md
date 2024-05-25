@@ -160,6 +160,17 @@ Output: [[-1,-1,2],[-1,0,1]]
 Explanation: The triplets are: [-1, 0, 1], [-1, -1, 2]
 ```
 
+### [Problem 16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
+
+Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.
+
+```
+Input: nums = [-1,2,1,-4], target = 1
+Output: 2
+
+Explanation: The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+```
+
 ### [Problem 20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.

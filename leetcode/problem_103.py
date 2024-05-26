@@ -31,6 +31,6 @@ class Solution:
             if(alternate):
                 result.append(reversed(zig_zag))
             else:
-                result.append(reversedzig_zag)
+                result.append(zig_zag)
             alternate = not alternate
         return result

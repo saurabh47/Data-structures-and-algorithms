@@ -10,8 +10,5 @@ class Solution:
             if(i <= k):
                 time += min(ticket, tickets[k])
             else:
-                if(ticket < tickets[k]):
-                    time += ticket
-                else:
-                    time += (tickets[k] - 1)
+               time += min(ticket, tickets[k] - 1)
         return time

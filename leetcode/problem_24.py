@@ -8,14 +8,14 @@
 #         self.next = next
 class Solution:
     def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        stack = []
+        temp = None
         current = head
         count = 0
         prev = None
         while(current):
             if(count % 2 == 0):
                 # delete a node
-                stack.append(current)
+                temp = current
                 if(count == 0):
                     # delete at head
                     if(current.next):
@@ -27,9 +27,8 @@ class Solution:
                         prev.next = current.next
                     current = current.next
             else:
-                popped = stack.pop()
-                popped.next = current.next
-                current.next = popped
+                temp.next = current.next
+                current.next = temp
                 prev = current.next
                 if(current.next):
                     current = current.next.next

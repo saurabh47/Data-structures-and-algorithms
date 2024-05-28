@@ -203,6 +203,18 @@ Output: [1,1,2,3,4,4,5,6]
 Explanation: The linked list is [1,1,2,3,4,4,5,6].
 ```
 
+### Problem 24. Swap Nodes in Pairs (https://leetcode.com/problems/swap-nodes-in-pairs/)
+
+Given a linked list, swap every two adjacent nodes and return its head.
+
+```
+Input: head = [1,2,3,4]
+
+Output: [2,1,4,3]
+
+Explanation: The linked list is 1 -> 2 -> 3 -> 4. After swapping the nodes, the linked list becomes 2 -> 1 -> 4 -> 3.
+```
+
 ### Problem 26. Remove Duplicates from Sorted Array (https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
 Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
@@ -1453,7 +1465,7 @@ Return the time taken for the person at position k (0-indexed) to finish buying 
 ```
 Input: tickets = [2,3,2], k = 2
 Output: 6
-Explanation: 
+Explanation:
 - In the first pass, everyone in the line buys a ticket and the line becomes [1, 2, 1].
 - In the second pass, everyone in the line buys a ticket and the line becomes [0, 1, 0].
 The person at position 2 has successfully bought 2 tickets and it took 3 + 3 = 6 seconds.

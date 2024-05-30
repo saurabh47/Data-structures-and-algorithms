@@ -586,6 +586,16 @@ Output: [1,2,3]
 Explanation: The preorder traversal of the binary tree is [1,2,3].
 ```
 
+### [Problem 145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
+
+Given the root of a binary tree, return the postorder traversal of its nodes' values.
+
+```
+Input: root = [1,null,2,3]
+Output: [3,2,1]
+Explanation: The postorder traversal of the binary tree is [3,2,1].
+```
+
 ### [Problem 146. LRU Cache](https://leetcode.com/problems/lru-cache/)
 
 Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.

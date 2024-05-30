@@ -576,6 +576,16 @@ Output: [1,4,2,3]
 Explanation: The reordered list is [1,4,2,3].
 ```
 
+### [Problem 144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+
+Given the root of a binary tree, return the preorder traversal of its nodes' values.
+
+```
+Input: root = [1,null,2,3]
+Output: [1,2,3]
+Explanation: The preorder traversal of the binary tree is [1,2,3].
+```
+
 ### [Problem 146. LRU Cache](https://leetcode.com/problems/lru-cache/)
 
 Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.

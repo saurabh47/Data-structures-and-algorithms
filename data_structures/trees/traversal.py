@@ -60,9 +60,11 @@ class Tree2:
             print(root.data)
 
     # Iteration left -> right -> root
-    def postOrderIteration(self, root):
+    def postOrderIteration(self, root): 
         stack = []
         result = []
+        if(root is None):
+            return result
         stack.append(root)
         while(stack):
             root = stack.pop()

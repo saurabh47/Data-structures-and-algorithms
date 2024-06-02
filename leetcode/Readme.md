@@ -1422,6 +1422,44 @@ The maximum difference occurs with i = 1 and j = 2, nums[j] - nums[i] = 5 - 1 = 
 Note that with i = 1 and j = 0, the difference nums[j] - nums[i] = 7 - 1 = 6, but i > j, so it is not valid.s
 ```
 
+### [Problem: 2220. (Easy): Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
+
+```
+
+You are given two numbers a and b. You need to find the number of bits you need to flip to convert a to b. Note: All given integers are in binary form.
+
+Input: a = 10, b = 20
+Output: 4
+Explanation:
+a = 01010
+b = 10100
+As we can see, the bits of a that need to be flipped are 01010. If we flip these bits, we get 10100, which is b. Hence, the number of bits that need to be flipped is 4.
+
+
+X >> Y means x is shifted to the right by y bits. This is equivalent to dividing x by 2^y.
+e.g 8 >> 1 = 4 (1000 >> 1 = 0100)
+
+```
+
+### [Problem 2265. (Medium) Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/)
+
+Given the root of a binary tree, return the number of nodes where the value of the node is equal to the average of the values in its subtree.
+
+Note: The average of n elements is the sum of the n elements divided by n and rounded down to the nearest integer.
+
+A subtree of root is a tree consisting of root and all of its descendants.
+
+```
+Input: root = [4,8,5,0,1,null,6]
+Output: 5
+Explanation:
+For the node with value 4: The average of its subtree is (4 + 8 + 5 + 0 + 1 + 6) / 6 = 24 / 6 = 4.
+For the node with value 5: The average of its subtree is (5 + 6) / 2 = 11 / 2 = 5.
+For the node with value 0: The average of its subtree is 0 / 1 = 0.
+For the node with value 1: The average of its subtree is 1 / 1 = 1.
+For the node with value 6: The average of its subtree is 6 / 1 = 6.
+```
+
 ### [Problem 2331. (Easy): Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/description/)
 
 ```
@@ -1432,28 +1470,6 @@ The AND node evaluates to False AND True = False.
 The OR node evaluates to True OR False = True.
 The root node evaluates to True, so we return true.
 ```
-
-### [Problem: 2220. (Easy): Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
-
-```
-
-You are given two numbers a and b. You need to find the number of bits you need to flip to convert a to b. Note: All given integers are in binary form.
-
-```
-
-Input: a = 10, b = 20
-Output: 4
-Explanation:
-a = 01010
-b = 10100
-As we can see, the bits of a that need to be flipped are 01010. If we flip these bits, we get 10100, which is b. Hence, the number of bits that need to be flipped is 4.
-
-```
-
-```
-
-X >> Y means x is shifted to the right by y bits. This is equivalent to dividing x by 2^y.
-e.g 8 >> 1 = 4 (1000 >> 1 = 0100)
 
 ### [Problem 2236. Root equals sum of children](https://leetcode.com/problems/root-equals-sum-of-children/description/)
 

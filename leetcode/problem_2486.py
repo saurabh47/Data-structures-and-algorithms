@@ -1,6 +1,7 @@
 ### Problem 2486. Append Characters to String to Make Subsequence (Medium)
 ### Tags: String, Two Pointers, Greedy
 
+# Hint: compare the characters of s and t, if they are equal, move both pointers, otherwise move only the pointer of s
 class Solution:
     def appendCharacters(self, s: str, t: str) -> int:
         i = 0

@@ -1502,6 +1502,22 @@ Explanation: The values of the root, its left child, and its right child are 10,
 10 is equal to 4 + 6, so we return true.
 ```
 
+### [Problem 2486. Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/description/)
+
+You are given two strings s and t consisting of only lowercase English letters.
+
+Return the minimum number of characters that need to be appended to the end of s so that t becomes a subsequence of s.
+
+A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.
+
+```
+Input: s = "coaching", t = "coding"
+Output: 4
+Explanation: Append the characters "ding" to the end of s so that s = "coachingding".
+Now, t is a subsequence of s ("coachingding").
+It can be shown that appending any 3 characters to the end of s will never make t a subsequence.
+```
+
 ### [Problem 2487. (Easy): Find the Score of All Prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes/description/)
 
 Given an array of integers nums, you are asked to calculate the score of all prefixes of the array. The score of a prefix is defined as the sum of the elements of the prefix multiplied by the length of the prefix.
@@ -1585,7 +1601,7 @@ Explanation:
 The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111. So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13
 ```
 
-### Problem 3114. (Easy) Find the Score of All Prefixes of a String
+### [Problem 3114. (Easy) Find the Score of All Prefixes of a String](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-a-string)
 
 ```
 Input: s = "1?:?4"
@@ -1595,7 +1611,7 @@ Output: "11:54"
 Explanation: The latest 12-hour format time we can achieve by replacing "?" characters is "11:54".
 ```
 
-### Problem 3120. Count the Number of Special Characters I
+### [Problem 3120. Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i)
 
 You are given a string word. A letter is called special if it appears both in lowercase and uppercase in word.
 
@@ -1611,7 +1627,7 @@ Explanation:
 The special characters in word are 'a', 'b', and 'c'.
 ```
 
-### Problem 3121. Count the Number of Special Characters II
+### [Problem 3121. Count the Number of Special Characters II](https://leetcode.com/problems/count-the-number-of-special-characters-ii)
 
 You are given a string word. A letter c is called special if it appears both in lowercase and uppercase in word, and every lowercase occurrence of c appears before the first uppercase occurrence of c.
 
@@ -1625,7 +1641,7 @@ Explanation:
 
 The special characters are 'a', 'b', and 'c'.
 
-### Problem 3136. (Easy) Valid Word
+### [Problem 3136. (Easy) Valid Word](https://leetcode.com/problems/valid-word)
 
 A word is considered valid if:
 

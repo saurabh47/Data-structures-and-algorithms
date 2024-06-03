@@ -5,6 +5,9 @@ sys.path.append('../trees')  # Add the correct path to the sys.path list
 from node import Node  # Import the 'Node' class from the correct package
 
 class Tree:
+    def __init__(self):
+        self.root = None
+
     def findMax(self,root):
         maximum = -1
         def max_tree(root):

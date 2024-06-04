@@ -951,6 +951,18 @@ Output: true
 Explanation: The string "abc" is a subsequence of "ahbgdc".
 ```
 
+### [Problem 409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)
+
+Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.
+
+```
+Input: s = "abccccdd"
+
+Output: 7
+
+Explanation: One longest palindrome that can be built is "dccaccd", whose length is 7.
+```
+
 ### [Problem 424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
 Given a string s that consists of only uppercase English letters, you can perform at most k operations on that string.

@@ -18,3 +18,17 @@ class Solution:
             result.append(root.val)
             root = root.right
         return result 
+
+### Recursive
+class Solution:
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        def inorder(root):
+            if(root is None):
+                return
+            inorder(root.left)
+            result.append(root.val)
+            inorder(root.right)
+        
+        result = []
+        inorder(root)
+        return result

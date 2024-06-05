@@ -160,6 +160,17 @@ Output: [[-1,-1,2],[-1,0,1]]
 Explanation: The triplets are: [-1, 0, 1], [-1, -1, 2]
 ```
 
+### [Problem 16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
+
+Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.
+
+```
+Input: nums = [-1,2,1,-4], target = 1
+Output: 2
+
+Explanation: The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+```
+
 ### [Problem 20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
@@ -190,6 +201,18 @@ Input: lists = [[1,4,5],[1,3,4],[2,6]]
 Output: [1,1,2,3,4,4,5,6]
 
 Explanation: The linked list is [1,1,2,3,4,4,5,6].
+```
+
+### Problem 24. Swap Nodes in Pairs (https://leetcode.com/problems/swap-nodes-in-pairs/)
+
+Given a linked list, swap every two adjacent nodes and return its head.
+
+```
+Input: head = [1,2,3,4]
+
+Output: [2,1,4,3]
+
+Explanation: The linked list is 1 -> 2 -> 3 -> 4. After swapping the nodes, the linked list becomes 2 -> 1 -> 4 -> 3.
 ```
 
 ### Problem 26. Remove Duplicates from Sorted Array (https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
@@ -573,6 +596,26 @@ Output: [1,4,2,3]
 Explanation: The reordered list is [1,4,2,3].
 ```
 
+### [Problem 144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+
+Given the root of a binary tree, return the preorder traversal of its nodes' values.
+
+```
+Input: root = [1,null,2,3]
+Output: [1,2,3]
+Explanation: The preorder traversal of the binary tree is [1,2,3].
+```
+
+### [Problem 145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
+
+Given the root of a binary tree, return the postorder traversal of its nodes' values.
+
+```
+Input: root = [1,null,2,3]
+Output: [3,2,1]
+Explanation: The postorder traversal of the binary tree is [3,2,1].
+```
+
 ### [Problem 146. LRU Cache](https://leetcode.com/problems/lru-cache/)
 
 Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.
@@ -842,6 +885,16 @@ Output: true
 Explanation: Both s and t contain all the same letters, in the same frequency, so they are anagrams.
 ```
 
+### [Problem 260. Single Number III](https://leetcode.com/problems/single-number-iii/)
+
+Given an integer array nums, in which exactly two elements appear only once and all the other elements appear exactly twice. Find the two elements that appear only once. You can return the answer in any order.
+
+```
+Input: nums = [1,2,1,3,2,5]
+Output: [3,5]
+Explanation:  [5, 3] is also a valid answer.
+```
+
 ### [Problem 268. Missing Number](https://leetcode.com/problems/missing-number/)
 
 Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
@@ -947,6 +1000,16 @@ Given two stings ransomNote and magazine, return true if ransomNote can be const
 Input: ransomNote = "aa", magazine = "aab"
 Output: true
 Explanation: ransomNote is "aa" and magazine is "aab", so ransomNote can be constructed from magazine.
+```
+
+### [Problem 387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
+
+Given a string s, return the first non-repeating character in it and return its index. If it does not exist, return -1.
+
+```
+Input: s = "leetcode"
+Output: 0
+Explanation: The first non-repeating character is "l" and its index is 0.
 ```
 
 ### [Problem 392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)
@@ -1235,6 +1298,7 @@ Output: [3,4,5]
 Explanation: The middle node of the list is node 3.
 ```
 
+
 ### [Problem 881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)
 
 The i-th person has weight people[i], and each boat can carry a maximum weight of limit.
@@ -1244,8 +1308,28 @@ Return the minimum number of boats to carry every given person.
 ```
 Input: people = [3,2,2,1], limit = 3
 Output: 3
-
 Explanation: 3 boats (1, 2), (2) and (3)
+```
+### [Problem 933. Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)
+
+You have a RecentCounter class which counts the number of recent requests within a certain time frame.
+
+Implement the RecentCounter class:
+
+- RecentCounter() Initializes the counter with zero recent requests.
+- int ping(int t) Adds a new request at time t, where t represents some time in milliseconds, and returns the number of requests that has happened in the past 3000 milliseconds (including the new request). Specifically, return the number of requests that have happened in the inclusive range [t - 3000, t].
+
+Input
+["RecentCounter", "ping", "ping", "ping", "ping"]
+[[], [1], [100], [3001], [3002]]
+
+Output: [null, 1, 2, 3, 3]
+
+Explanation: RecentCounter recentCounter = new RecentCounter();
+recentCounter.ping(1);     // requests = [1], range is [-2999,1], return 1
+recentCounter.ping(100);   // requests = [1, 100], range is [-2900,100], return 2
+recentCounter.ping(3001);  // requests = [1, 100, 3001], range is [1,3001], return 3
+recentCounter.ping(3002);  // requests = [1, 100, 3001, 3002], range is [2,3002], return 3
 ```
 
 ### [Problem 938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
@@ -1351,6 +1435,46 @@ Explanation:
 For nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3).
 ```
 
+### [Problem 1404. Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)
+
+Given a number s in their binary representation. Return the number of steps to reduce it to 1 under the following rules:
+
+- If the current number is even, you have to divide it by 2.
+- If the current number is odd, you have to add 1 to it.
+- It's guaranteed that you can always reach to one for all testcases.
+
+```
+Input: s = "1101"
+Output: 6
+Explanation: "1101" corressponds to number 13 in their decimal representation.
+Step 1) 13 is odd, add 1 and obtain 14.
+Step 2) 14 is even, divide by 2 and obtain 7.
+Step 3) 7 is odd, add 1 and obtain 8.
+Step 4) 8 is even, divide by 2 and obtain 4.
+Step 5) 4 is even, divide by 2 and obtain 2.
+Step 6) 2 is even, divide by 2 and obtain 1.
+```
+
+### [Problem 1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/)
+
+Given an array of integers arr.
+
+We want to select three indices i, j and k where (0 <= i < j <= k < arr.length).
+
+Let's define a and b as follows:
+
+a = arr[i] ^ arr[i + 1] ^ ... ^ arr[j - 1]
+b = arr[j] ^ arr[j + 1] ^ ... ^ arr[k]
+Note that ^ denotes the bitwise-xor operation.
+
+Return the number of triplets (i, j and k) Where a == b.
+
+```
+Input: arr = [2,3,1,6,7]
+Output: 4
+Explanation: The triplets are (0,1,2), (0,2,2), (2,3,4) and (2,4,4)
+```
+
 ### [Problem 1464. Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)
 
 ```
@@ -1388,12 +1512,29 @@ Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
 Given an integer n, return the decimal value of the binary string formed by concatenating the binary representations of 1 to n in order, modulo 109 + 7.
 
 ```
-
 Input: n = 3
 Output: 27
 Explanation: In binary, 1, 2, and 3 corresponds to "1", "10", and "11".
 After concatenating them, we have "11011", which corresponds to the decimal value 27.
+```
 
+### [Problem 1700. Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/)
+
+```
+Input: students = [1,1,0,0], sandwiches = [0,1,0,1]
+Output: 0
+
+Explanation: You take the sandwich in the 0th iteration. Students are [1,1,0,0].
+
+The 1st student takes the sandwich and leaves the remaining students as [1,0,0].
+
+The 2nd student takes the sandwich and leaves the remaining students as [1,0].
+
+The 3rd student takes the sandwich and leaves the remaining students as [1].
+
+The 4th student takes the sandwich and leaves the remaining students as [].
+
+There are no students who are unable to eat.
 ```
 
 #### [Problem 1710. Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)
@@ -1461,6 +1602,32 @@ Output: 4
 Explanation:
 The maximum difference occurs with i = 1 and j = 2, nums[j] - nums[i] = 5 - 1 = 4.
 Note that with i = 1 and j = 0, the difference nums[j] - nums[i] = 7 - 1 = 6, but i > j, so it is not valid.s
+```
+
+### [Problem 2073. Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets-in-queue/description/)
+
+There are n people in a line queuing to buy tickets, where the 0th person is at the front of the line and the (n - 1)th person is at the back of the line.
+
+You are given a 0-indexed integer array tickets of length n where the number of tickets that the ith person would like to buy is tickets[i].
+
+Each person takes exactly 1 second to buy a ticket. A person can only buy 1 ticket at a time and has to go back to the end of the line (which happens instantaneously) in order to buy more tickets. If a person does not have any tickets left to buy, the person will leave the line.
+
+Return the time taken for the person at position k (0-indexed) to finish buying tickets.
+
+```
+Input: tickets = [2,3,2], k = 2
+Output: 6
+Explanation:
+- In the first pass, everyone in the line buys a ticket and the line becomes [1, 2, 1].
+- In the second pass, everyone in the line buys a ticket and the line becomes [0, 1, 0].
+The person at position 2 has successfully bought 2 tickets and it took 3 + 3 = 6 seconds.
+
+Input: tickets = [5,1,1,1], k = 0
+Output: 8
+Explanation:
+- In the first pass, everyone in the line buys a ticket and the line becomes [4, 0, 0, 0].
+- In the next 4 passes, only the person in position 0 is buying tickets.
+The person at position 0 has successfully bought 5 tickets and it took 4 + 1 + 1 + 1 + 1 = 8 seconds.
 ```
 
 ### [Problem: 2220. (Easy): Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)

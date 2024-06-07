@@ -856,6 +856,16 @@ Output: true
 Explanation: Both s and t contain all the same letters, in the same frequency, so they are anagrams.
 ```
 
+### [Problem 258. Add Digits](https://leetcode.com/problems/add-digits/)
+
+Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
+```
+Input: num = 38
+Output: 2
+
+Explanation: The process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one digit, return it.
+```
+
 ### [Problem 260. Single Number III](https://leetcode.com/problems/single-number-iii/)
 
 Given an integer array nums, in which exactly two elements appear only once and all the other elements appear exactly twice. Find the two elements that appear only once. You can return the answer in any order.

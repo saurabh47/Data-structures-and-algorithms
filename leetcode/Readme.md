@@ -1093,6 +1093,21 @@ Input: ["MyCircularQueue", "enQueue", "enQueue", "enQueue", "enQueue", "Rear", "
 Output: [null, true, true, true, false, 3, true, true, true, 4]
 ```
 
+### [Problem 648. Replace Words](https://leetcode.com/problems/replace-words/)
+
+In English, we have a concept called root, which can be followed by some other word to form another longer word - let's call this word derivative. For example, when the root "help" is followed by the word "ful", we can form a derivative "helpful".
+
+Given a dictionary consisting of many roots and a sentence consisting of words separated by spaces, replace all the derivatives in the sentence with the root forming it. If a derivative can be replaced by more than one root, replace it with the root that has the shortest length.
+
+Return the sentence after the replacement.
+
+```
+Example 1:
+
+Input: dictionary = ["cat","bat","rat"], sentence = "the cattle was rattled by the battery"
+Output: "the cat was rat by the bat"
+```
+
 ### [Problem 658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/)
 
 ```

@@ -1,5 +1,6 @@
 ### Problem 523. Continuous Subarray Sum (Medium): https://leetcode.com/problems/continuous-subarray-sum/
 
+### Tags: Math, Array, Hash Table
 class Solution:
     def checkSubarraySum(self, nums: List[int], k: int) -> bool:
         rems = {0: -1}

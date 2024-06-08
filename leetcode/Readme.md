@@ -859,6 +859,7 @@ Explanation: Both s and t contain all the same letters, in the same frequency, s
 ### [Problem 258. Add Digits](https://leetcode.com/problems/add-digits/)
 
 Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
+
 ```
 Input: num = 38
 Output: 2
@@ -874,6 +875,21 @@ Given an integer array nums, in which exactly two elements appear only once and 
 Input: nums = [1,2,1,3,2,5]
 Output: [3,5]
 Explanation:  [5, 3] is also a valid answer.
+```
+
+### [Problem 263. Ugly Number](https://leetcode.com/problems/ugly-number/)
+
+An ugly number is a positive integer whose prime factors are limited to 2, 3, and 5.
+
+```
+Input: n = 6
+Output: true
+
+Explanation: 6 = 2 × 3
+
+Input: n = 1
+Output: true
+Explanation: 1 has no prime factors, therefore all of its prime factors are limited to 2, 3, and 5.
 ```
 
 ### [Problem 268. Missing Number](https://leetcode.com/problems/missing-number/)

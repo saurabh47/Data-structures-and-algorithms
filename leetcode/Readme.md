@@ -1101,7 +1101,7 @@ the sum of the elements of the subarray is a multiple of k.
 Note that:
 
 A subarray is a contiguous part of the array.
-An integer x is a multiple of k if there exists an integer n such that x = n * k. 0 is always a multiple of k.
+An integer x is a multiple of k if there exists an integer n such that x = n \* k. 0 is always a multiple of k.
 
 ```
 Example 1:
@@ -1336,7 +1336,19 @@ Given the root node of a binary search tree, return the sum of values of all nod
 Input: root = [10,5,15,3,7,null,18], low = 7, high = 15
 Output: 32
 Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.
+```
 
+### [Problem 974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)
+
+Given an integer array nums and an integer k, return the number of non-empty subarrays that have a sum divisible by k.
+
+A subarray is a contiguous part of an array.
+
+```
+Input: nums = [4,5,0,-2,-3,1], k = 5
+Output: 7
+Explanation: There are 7 subarrays with a sum divisible by k = 5:
+[4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3]
 ```
 
 ### [Problem 997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)

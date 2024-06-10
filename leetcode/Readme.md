@@ -546,6 +546,17 @@ Output: 4
 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
 ```
 
+### [Problem 135. Candy](https://leetcode.com/problems/candy/)
+
+There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings.
+
+```
+Input: ratings = [1,0,2]
+Output: 5
+
+Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.
+```
+
 ### [Problem 141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
 
 Given head, the head of a linked list, determine if the linked list has a cycle in it.

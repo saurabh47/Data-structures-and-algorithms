@@ -753,6 +753,20 @@ Explanation:
 1^2 + 0^2 + 0^2 = 1
 ```
 
+### [Problem 205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)
+
+Given two strings s and t, determine if they are isomorphic.
+
+```
+Input: s = "egg", t = "add"
+Output: true
+Explanation: The strings "egg" and "add" are isomorphic because there is a one-to-one mapping of each letter in s to a letter in t.
+
+Input: s = "foo", t = "bar"
+Output: false
+Explanation: The strings "foo" and "bar" are not isomorphic because there is a one-to-one mapping between the letters 'f' and 'b', but there is not a one-to-one mapping between the letters 'o' and 'a'.
+```
+
 ### [Problem 206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 
 ```

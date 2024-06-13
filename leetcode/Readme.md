@@ -962,6 +962,20 @@ Output: 3
 Explanation: The researcher has 3 papers with at least 3 citations each and the remaining two with no more than 3 citations.
 ```
 
+### [Problem 290. Word Pattern](https://leetcode.com/problems/word-pattern/)
+
+Given a pattern and a string s, find if s follows the same pattern.
+
+```
+Input: pattern = "abba", s = "dog cat cat dog"
+Output: true
+
+Explanation: The pattern is "abba" and the string is "dog cat cat dog", which are the same.
+
+Input: pattern = "abba", s = "dog cat cat fish"
+Output: false
+```
+
 ### [Problem 295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
 
 The median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value and the median is the mean of the two middle values.

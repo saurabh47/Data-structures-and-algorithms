@@ -1729,6 +1729,27 @@ The maximum difference occurs with i = 1 and j = 2, nums[j] - nums[i] = 5 - 1 = 
 Note that with i = 1 and j = 0, the difference nums[j] - nums[i] = 7 - 1 = 6, but i > j, so it is not valid.s
 ```
 
+### [Problem 2037. Minimum Number of Moves to Seat Everyone](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/description/)
+
+There are n seats and n students in a room. You are given an array seats of length n, where seats[i] is the position of the ith seat. You are also given the array students of length n, where students[j] is the position of the jth student.
+
+You may perform the following move any number of times:
+
+Increase or decrease the position of the ith student by 1 (i.e., moving the ith student from position x to x + 1 or x - 1)
+Return the minimum number of moves required to move each student to a seat such that no two students are in the same seat.
+
+Note that there may be multiple seats or students in the same position at the beginning.
+
+```
+Input: seats = [3,1,5], students = [2,7,4]
+Output: 4
+Explanation: The students are moved as follows:
+- The first student is moved from from position 2 to position 1 using 1 move.
+- The second student is moved from from position 7 to position 5 using 2 moves.
+- The third student is moved from from position 4 to position 3 using 1 move.
+In total, 1 + 2 + 1 = 4 moves were used.
+```
+
 ### [Problem 2073. Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets-in-queue/description/)
 
 There are n people in a line queuing to buy tickets, where the 0th person is at the front of the line and the (n - 1)th person is at the back of the line.

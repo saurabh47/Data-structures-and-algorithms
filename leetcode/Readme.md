@@ -1402,6 +1402,28 @@ Output: 32
 Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.
 ```
 
+### [Problem 945. Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)
+
+Given an array of integers nums, a move consists of choosing any nums[i], and incrementing it by 1.
+
+Return the minimum number of moves to make every value in nums unique.
+
+The test cases are generated so that the answer fits in a 32-bit inte
+
+```
+Example 1:
+
+Input: nums = [1,2,2]
+Output: 1
+Explanation: After 1 move, the array could be [1, 2, 3].
+Example 2:
+
+Input: nums = [3,2,1,2,1,7]
+Output: 6
+Explanation: After 6 moves, the array could be [3, 4, 1, 2, 5, 7].
+It can be shown with 5 or less moves that it is impossible for the array to have all unique values.
+```
+
 ### [Problem 974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)
 
 Given an integer array nums and an integer k, return the number of non-empty subarrays that have a sum divisible by k.

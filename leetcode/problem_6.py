@@ -13,7 +13,6 @@ class Solution:
             key = key + factor
             if(key>=(numRows-1) or key<= 0):
                 factor = factor * -1
-            print(result)
         result = ''.join(result.values())
 
 

@@ -1225,6 +1225,23 @@ Input: ["MyCircularQueue", "enQueue", "enQueue", "enQueue", "enQueue", "Rear", "
 Output: [null, true, true, true, false, 3, true, true, true, 4]
 ```
 
+### [Problem 633. Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/)
+
+Given a non-negative integer c, decide whether there're two integers a and b such that a^2 + b^2 = c.
+
+```
+Example 1:
+
+Input: c = 5
+Output: true
+Explanation: 1 * 1 + 2 * 2 = 5
+
+Example 2:
+
+Input: c = 3
+Output: false
+```
+
 ### [Problem 648. Replace Words](https://leetcode.com/problems/replace-words/)
 
 In English, we have a concept called root, which can be followed by some other word to form another longer word - let's call this word derivative. For example, when the root "help" is followed by the word "ful", we can form a derivative "helpful".

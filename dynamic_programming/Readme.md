@@ -7,6 +7,13 @@ Steps to solve DP problems:
 1. Define the objective function f(n)
 2. Identify the base cases
 3. Write down a recurrence relation for the optimized objective function by idenifying the patterns in the base cases
+4. Order of Computation
+5. Location of the answer
+
+#### Dynamic Programming Problems
+
+1. [Sum of N numbers](../dynamic_programming/sum_n.py)
+2. [Climbing Staircase](../leetcode/problem_70.py)
 
 ### Dynamic Programming Problems by Patterns
 

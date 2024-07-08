@@ -14,6 +14,26 @@ class Solution:
         return arr[n-1] + arr[n-2]
 
 
+### Optimized on Memory
+# Uses only use two variables instead of allocating an array
+# since we only need the last two values to calculate the next value
+class Solution2:
+    def climbStairs(self, n: int) -> int:
+        x = 1
+        y = 2
+        if(n < 2):
+            return 1
+        elif(n == 2):
+            return 2
+        else:
+            for i in range(3, n):
+                # arr.append(arr[i-1] + arr[i-2])
+                z = x + y
+                x = y
+                y = z
+        return x + y
+
+
 
 ### Approach:
 # Find the base cases

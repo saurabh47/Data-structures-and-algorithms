@@ -2133,3 +2133,19 @@ Explanation:
 
 This word satisfies the conditions.
 ```
+
+### Problem 3151. Special Array I (Easy)
+
+An array is considered special if every pair of its adjacent elements contains two numbers with different parity.
+
+You are given an array of integers nums. Return true if nums is a special array, otherwise, return false.
+
+```
+Input: nums = [1]
+
+Output: true
+
+Explanation:
+
+There is only one element. So the answer is true.
+```

@@ -1,12 +1,31 @@
 ### Problem 1823. Find the Winner of the Circular Game (Medium)
 ### Tags: Queue, Simulation
 
+
+class Solution:
+    def findTheWinner(self, n: int, k: int) -> int:
+        q = deque()
+        count = 0
+        for i in range(1, n+1):
+            q.append(i)
+
+        count = 0
+        while(len(q) != 1):
+            if(count == k-1):
+                q.popleft()
+                count = 0
+            else:
+                q.append(q.popleft())
+                count += 1
+        return q[0]
+
+### Using linked list
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
-class Solution:
+class Solution2:
     def findTheWinner(self, n: int, k: int) -> int:
         remaining = n
         head = None
@@ -29,7 +48,7 @@ class Solution:
                 # insert head at end
                 tail.next = ListNode(head.val)
                 tail = tail.next
-                # move head 
+                # move head
                 head = head.next
                 count += 1
             if(head.next is None):

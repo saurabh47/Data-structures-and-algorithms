@@ -33,7 +33,25 @@ class Solution2:
                 y = z
         return x + y
 
+    def climb3Stairs(n):
+        x = 1
+        y = 2
+        z = 4
+        if(n < 2):
+            return 1
+        elif(n == 2):
+            return 2
+        elif(n == 3):
+            return 4
+        else:
+            for i in range(4, n):
+                k = x + y + z
+                x = y
+                y = z
+                z = k
+        return x + y + z
 
+print(climb3Stairs(5))
 
 ### Approach:
 # Find the base cases

@@ -552,6 +552,21 @@ Output: true
 Explanation: The binary tree is height-balanced.
 ```
 
+### [Problem 118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)
+
+Given a non-negative integer numRows, generate the first numRows of Pascal's triangle.
+
+```
+Example 1:
+
+Input: numRows = 5
+Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+Example 2:
+
+Input: numRows = 1
+Output: [[1]]
+```
+
 ### [Problem 121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day.

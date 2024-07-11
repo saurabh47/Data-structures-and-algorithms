@@ -100,6 +100,23 @@ public:
             insertAtEnd(value);
         }
     }
+    // delete target from linked list
+    void deleteNode(int target)
+    {
+        Node *current = head;
+        while (current->next && (current->next->data != target))
+        {
+            current = current->next;
+        }
+        if (current->next != NULL)
+        {
+            current->next = current->next->next;
+        }
+        else
+        {
+            cout << "target not found" << endl;
+        }
+    }
 
     void printList(Node *current = NULL)
     {
@@ -152,8 +169,14 @@ int main()
     list.printList();
     list.insertBefore(102, 6);
     list.printList();
-    Node *newPtr = list.reverseList();
+    list.head = list.reverseList();
     cout << "reversed list:";
-    list.printList(newPtr);
+    list.printList();
+    list.deleteNode(101);
+    list.printList();
+    list.deleteNode(101);
+    list.printList();
+    list.deleteNode(102);
+    list.printList();
     return 0;
 }

@@ -101,15 +101,39 @@ public:
         }
     }
 
-    void printList()
+    void printList(Node *current = NULL)
     {
-        Node *current = head;
+        if (current == NULL)
+        {
+            current = head;
+        }
         while (current)
         {
             cout << current->data << "->";
             current = current->next;
         }
         cout << endl;
+    }
+
+    Node *reverseList()
+    {
+        if (head == NULL)
+        {
+            return head;
+        }
+        else
+        {
+            Node *prev = NULL;
+            Node *current = head;
+            while (current)
+            {
+                Node *temp = current->next;
+                current->next = prev;
+                prev = current;
+                current = temp;
+            }
+            return prev;
+        }
     }
 };
 
@@ -128,5 +152,8 @@ int main()
     list.printList();
     list.insertBefore(102, 6);
     list.printList();
+    Node *newPtr = list.reverseList();
+    cout << "reversed list:";
+    list.printList(newPtr);
     return 0;
 }

@@ -23,3 +23,20 @@ class Solution:
             costs[0] = costs[1]
             costs[1] = cost_step
         return costs[1]
+
+# Extension : Print path of min Cost
+class Solution:
+    def minCostClimbingStairs(self, cost: List[int]) -> int:
+        costs = [0, 0]
+        path = [0, 0]
+        for step in range(2, len(cost)+1):
+            cost_step = min(cost[step-2] + costs[0],cost[step-1] + costs[1])
+            if(cost[step-2] + costs[0] < (cost[step-1] + costs[1])):
+               path.append(step - 2)
+            else:
+               path.append(step - 1)
+            costs[0] = costs[1]
+            costs[1] = cost_step
+        print(path)
+        return costs[1]
+

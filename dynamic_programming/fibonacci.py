@@ -22,8 +22,24 @@ def fibonacci_memoization(n):
         dp[i] = dp[i-1] + dp[i-2]
     return dp[n]
 
+# further optimization can be done by using two variables instead of an array
+def fib(n):
+    # 0 1 1 2 3 5
+    x, y = 0, 1
+    z = 0
+    if(n == 0):
+        return n
+    if(n < 3):
+        return 1
+    for i in range(2,n+1):
+        z = x + y
+        x = y
+        y = z
+    return z
+
 if __name__ =='__main__':
     print(fibonacci(5)) # 5
     print(fibonacci(10)) # 55
     print(fibonacci_memoization(10)) # 55
+    print(fib(10)) # 55
 

@@ -4,16 +4,22 @@ Dynamic Programming is a method for solving a complex problem by breaking it dow
 
 Steps to solve DP problems:
 
-1. Define the objective function f(n)
+1. Define the objective function f(n): (What is input and output?)
 2. Identify the base cases
 3. Write down a recurrence relation for the optimized objective function by idenifying the patterns in the base cases
-4. Order of Computation
-5. Location of the answer
+4. Order of Computation: Top Down or Bottom Up
+5. Location of the answer: Return f(n)
+
+There are two types of Dynamic Programming problems
+
+1. Combinatorial Problems: These problems are solved by generating all possible combinations of the solution and then selecting the best one. For example, the knapsack problem.
+2. Optimization Problems: These problems are solved by finding the best solution from all possible solutions. For example, the Fibonacci sequence.
 
 #### Dynamic Programming Problems
 
 1. [Sum of N numbers](../dynamic_programming/sum_n.py)
 2. [Climbing Staircase](../leetcode/problem_70.py)
+3. [Min Cost to climb stairs](../leetcode/problem_746.py)
 
 ### Dynamic Programming Problems by Patterns
 

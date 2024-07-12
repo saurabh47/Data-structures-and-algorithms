@@ -13,6 +13,26 @@ class Solution:
             sell_day+=1
         return profit
 
+# Dynamic Programming
+
+class Solution2:
+    def maxProfit(self, prices: List[int]) -> int:
+        # f(i) => j => max(prices[j]-prices[i]) or 0
+        # [7,1,5,3,6,4]
+        # day    MiB              MxP
+        # f(0) -> 7, (0, 7 - 7) => 0
+        # f(1) -> 1, (0, 1 - 1) => 0  
+        # f(2) -> 1, (0, 5 - 1) => 4
+        # f(3) -> 1, (4, 3 - 1) => 4
+        # f(4) -> 1, (4, 6 - 1) => 5
+        # f(5) -> 1, (5, 4 - 1) => 5
+        max_profit = 0
+        min_buy = prices[0]
+        for price in prices:
+            min_buy = min(min_buy, price)
+            max_profit = max(max_profit, price - min_buy)
+        return max_profit
+
 if __name__ == "__main__":
     prices = [7,1,5,3,6,4]
     print(Solution().maxProfit(prices)) # 5

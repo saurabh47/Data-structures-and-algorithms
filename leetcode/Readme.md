@@ -1300,6 +1300,20 @@ Input: longUrl = "https://leetcode.com/problems/design-tinyurl"
 Output: "http://tinyurl.com/4e9iAk"
 ```
 
+### [Problem 572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
+
+Given the roots of two binary trees root and subRoot, return true if there is a subtree of root with the same structure and node values of subRoot and false otherwise.
+
+A subtree of a binary tree tree is a tree that consists of a node in tree and all of this node's descendants. The tree tree could also be considered as a subtree of itself.
+
+```
+Input: root = [3,4,5,1,2], subRoot = [4,1,2]
+Output: true
+
+Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]
+Output: false
+```
+
 ### [Problem 622. Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)
 
 Design your implementation of the circular queue. The circular queue is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle and the last position is connected back to the first position to make a circle. It is also called "Ring Buffer".

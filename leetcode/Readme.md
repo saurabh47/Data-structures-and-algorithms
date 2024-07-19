@@ -552,6 +552,13 @@ Output: true
 Explanation: The binary tree is height-balanced.
 ```
 
+### [Problem 112. Path Sum](https://leetcode.com/problems/path-sum/)
+Given the root of a binary tree and an integer targetSum, return true if the tree has a root-to-leaf path such that adding up all the values along the path equals targetSum.
+
+```
+Input: root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22
+```
+
 ### [Problem 116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
 
 You are given a perfect binary tree where all leaves are on the same level, and every parent has two children. The binary tree has the following definition:

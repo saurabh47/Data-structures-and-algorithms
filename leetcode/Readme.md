@@ -557,10 +557,10 @@ Explanation: The binary tree is height-balanced.
 You are given a perfect binary tree where all leaves are on the same level, and every parent has two children. The binary tree has the following definition:
 
 struct Node {
-  int val;
-  Node *left;
-  Node *right;
-  Node *next;
+int val;
+Node *left;
+Node *right;
+Node \*next;
 }
 Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL.
 
@@ -1793,6 +1793,29 @@ Input: nums = [8,1,2,2,3]
 Output: [4,0,1,1,3]
 Explanation:
 For nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3).
+```
+
+### [Problem 1380. Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)
+Given an m x n matrix of distinct numbers, return all lucky numbers in the matrix in any order.
+
+A lucky number is an element of the matrix such that it is the minimum element in its row and maximum in its column.
+
+```
+Example 1:
+
+Input: matrix = [[3,7,8],[9,11,13],[15,16,17]]
+Output: [15]
+Explanation: 15 is the only lucky number since it is the minimum in its row and the maximum in its column.
+Example 2:
+
+Input: matrix = [[1,10,4,2],[9,3,8,7],[15,16,17,12]]
+Output: [12]
+Explanation: 12 is the only lucky number since it is the minimum in its row and the maximum in its column.
+Example 3:
+
+Input: matrix = [[7,8],[1,2]]
+Output: [7]
+Explanation: 7 is the only lucky number since it is the minimum in its row and the maximum in its column.
 ```
 
 ### [Problem 1404. Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)

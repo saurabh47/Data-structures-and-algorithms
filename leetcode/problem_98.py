@@ -18,6 +18,7 @@ class Solution:
         return isValid(root, float('-inf'), float('inf'))
 
 ### Iterative Solution
+# hint: IF inorder is ascending, then it is a valid BST
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         inorder = self.inOrder(root)

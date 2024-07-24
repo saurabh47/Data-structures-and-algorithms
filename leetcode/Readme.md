@@ -547,6 +547,16 @@ Output: 3
 Explanation: The maximum depth is 3.
 ```
 
+### [Problem 107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
+
+Given the root of a binary tree, return the bottom-up level order traversal of its nodes' values. (i.e., from left to right, level by level from leaf to root).
+
+```
+Input: root = [3,9,20,null,null,15,7]
+Output: [[15,7],[9,20],[3]]
+Explanation: The bottom-up level order traversal of the binary tree is [[15,7],[9,20],[3]].
+```
+
 ### [Problem 110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
 
 Given a binary tree, determine if it is height-balanced.
@@ -555,6 +565,16 @@ Given a binary tree, determine if it is height-balanced.
 Input: root = [3,9,20,null,null,15,7]
 Output: true
 Explanation: The binary tree is height-balanced.
+```
+
+### [Problem 111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+
+Given a binary tree, find its minimum depth.
+
+```
+Input: root = [3,9,20,null,null,15,7]
+Output: 2
+Explanation: The minimum depth is 2.
 ```
 
 ### [Problem 121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
@@ -886,6 +906,15 @@ myStack.top(); // return 2
 myStack.pop(); // return 2
 myStack.empty(); // return False
 ```
+### [Problem 226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+
+Given the root of a binary tree, invert the tree, and return its root.
+
+```
+Input: root = [4,2,7,1,3,6,9]
+Output: [4,7,2,9,6,3,1]
+Explanation: The input binary tree is [4,2,7,1,3,6,9]. The inverted form of the binary tree is [4,7,2,9,6,3,1].
+```
 
 ### [Problem 232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
 
@@ -1129,6 +1158,18 @@ Output: true
 Explanation: The string "abc" is a subsequence of "ahbgdc".
 ```
 
+### [Problem 409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)
+
+Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.
+
+```
+Input: s = "abccccdd"
+
+Output: 7
+
+Explanation: One longest palindrome that can be built is "dccaccd", whose length is 7.
+```
+
 ### [Problem 424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
 Given a string s that consists of only uppercase English letters, you can perform at most k operations on that string.
@@ -1199,6 +1240,26 @@ Explanation: The tree is:
 1   3
 ```
 
+### [Problem 515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)
+
+Given the root of a binary tree, return an array of the largest value in each row of the tree (0-indexed).
+
+```
+Input: root = [1,3,2,5,3,null,9]
+
+Output: [1,3,9]
+
+Explanation: The input is as follows:
+  Input:
+            1
+           / \
+          3   2
+         / \   \
+        5   3   9
+
+  Output: [1, 3, 9]
+```
+
 ### [Problem 523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)
 
 Given an integer array nums and an integer k, return true if nums has a continuous subarray of size at least two whose elements sum up to a multiple of k, or false otherwise.
@@ -1237,6 +1298,16 @@ TinyURL is a URL shortening service where you enter a URL such as https://leetco
 ```
 Input: longUrl = "https://leetcode.com/problems/design-tinyurl"
 Output: "http://tinyurl.com/4e9iAk"
+```
+
+### [Problem 543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
+
+Given the root of a binary tree, return the length of the diameter of the tree.
+
+```
+Input: root = [1,2,3,4,5]
+Output: 3
+Explanation: 3 is the length of the path [4,2,1,3] or [5,2,1,3].
 ```
 
 ### [Problem 622. Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)
@@ -1450,6 +1521,18 @@ Output: [3,4,5]
 Explanation: The middle node of the list is node 3.
 ```
 
+
+### [Problem 881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)
+
+The i-th person has weight people[i], and each boat can carry a maximum weight of limit.
+Each boat carries at most 2 people at the same time, provided the sum of the weight of those people is at most limit.
+Return the minimum number of boats to carry every given person.
+
+```
+Input: people = [3,2,2,1], limit = 3
+Output: 3
+Explanation: 3 boats (1, 2), (2) and (3)
+```
 ### [Problem 933. Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)
 
 You have a RecentCounter class which counts the number of recent requests within a certain time frame.
@@ -1459,7 +1542,6 @@ Implement the RecentCounter class:
 - RecentCounter() Initializes the counter with zero recent requests.
 - int ping(int t) Adds a new request at time t, where t represents some time in milliseconds, and returns the number of requests that has happened in the past 3000 milliseconds (including the new request). Specifically, return the number of requests that have happened in the inclusive range [t - 3000, t].
 
-```
 Input
 ["RecentCounter", "ping", "ping", "ping", "ping"]
 [[], [1], [100], [3001], [3002]]
@@ -2096,8 +2178,6 @@ The above figure represents the given linked list. The modified list contains
 
 You are given two numbers a and b. You need to find the number of bits you need to flip to convert a to b. Note: All given integers are in binary form.
 
-```
-
 Input: a = 10, b = 20
 Output: 4
 Explanation:
@@ -2105,12 +2185,41 @@ a = 01010
 b = 10100
 As we can see, the bits of a that need to be flipped are 01010. If we flip these bits, we get 10100, which is b. Hence, the number of bits that need to be flipped is 4.
 
-```
-
-```
 
 X >> Y means x is shifted to the right by y bits. This is equivalent to dividing x by 2^y.
 e.g 8 >> 1 = 4 (1000 >> 1 = 0100)
+
+```
+
+### [Problem 2265. (Medium) Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/)
+
+Given the root of a binary tree, return the number of nodes where the value of the node is equal to the average of the values in its subtree.
+
+Note: The average of n elements is the sum of the n elements divided by n and rounded down to the nearest integer.
+
+A subtree of root is a tree consisting of root and all of its descendants.
+
+```
+Input: root = [4,8,5,0,1,null,6]
+Output: 5
+Explanation:
+For the node with value 4: The average of its subtree is (4 + 8 + 5 + 0 + 1 + 6) / 6 = 24 / 6 = 4.
+For the node with value 5: The average of its subtree is (5 + 6) / 2 = 11 / 2 = 5.
+For the node with value 0: The average of its subtree is 0 / 1 = 0.
+For the node with value 1: The average of its subtree is 1 / 1 = 1.
+For the node with value 6: The average of its subtree is 6 / 1 = 6.
+```
+
+### [Problem 2331. (Easy): Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/description/)
+
+```
+Input: root = [2,1,3,null,null,0,1]
+Output: true
+Explanation: The above diagram illustrates the evaluation process.
+The AND node evaluates to False AND True = False.
+The OR node evaluates to True OR False = True.
+The root node evaluates to True, so we return true.
+```
 
 ### [Problem 2236. Root equals sum of children](https://leetcode.com/problems/root-equals-sum-of-children/description/)
 
@@ -2121,6 +2230,22 @@ Input: root = [10,4,6]
 Output: true
 Explanation: The values of the root, its left child, and its right child are 10, 4, and 6, respectively.
 10 is equal to 4 + 6, so we return true.
+```
+
+### [Problem 2486. Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/description/)
+
+You are given two strings s and t consisting of only lowercase English letters.
+
+Return the minimum number of characters that need to be appended to the end of s so that t becomes a subsequence of s.
+
+A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.
+
+```
+Input: s = "coaching", t = "coding"
+Output: 4
+Explanation: Append the characters "ding" to the end of s so that s = "coachingding".
+Now, t is a subsequence of s ("coachingding").
+It can be shown that appending any 3 characters to the end of s will never make t a subsequence.
 ```
 
 ### [Problem 2487. (Easy): Find the Score of All Prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes/description/)
@@ -2241,7 +2366,7 @@ Explanation:
 The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111. So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13
 ```
 
-### Problem 3114. (Easy) Find the Score of All Prefixes of a String
+### [Problem 3114. (Easy) Find the Score of All Prefixes of a String](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-a-string)
 
 ```
 Input: s = "1?:?4"
@@ -2251,7 +2376,7 @@ Output: "11:54"
 Explanation: The latest 12-hour format time we can achieve by replacing "?" characters is "11:54".
 ```
 
-### Problem 3120. Count the Number of Special Characters I
+### [Problem 3120. Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i)
 
 You are given a string word. A letter is called special if it appears both in lowercase and uppercase in word.
 
@@ -2267,7 +2392,7 @@ Explanation:
 The special characters in word are 'a', 'b', and 'c'.
 ```
 
-### Problem 3121. Count the Number of Special Characters II
+### [Problem 3121. Count the Number of Special Characters II](https://leetcode.com/problems/count-the-number-of-special-characters-ii)
 
 You are given a string word. A letter c is called special if it appears both in lowercase and uppercase in word, and every lowercase occurrence of c appears before the first uppercase occurrence of c.
 
@@ -2281,7 +2406,7 @@ Explanation:
 
 The special characters are 'a', 'b', and 'c'.
 
-### Problem 3136. (Easy) Valid Word
+### [Problem 3136. (Easy) Valid Word](https://leetcode.com/problems/valid-word)
 
 A word is considered valid if:
 

@@ -1734,7 +1734,6 @@ Given a binary tree root, a node X in the tree is named good if in the path from
 
 Return the number of good nodes in the binary tree.
 
-
 ```
 Example 1:
 
@@ -1759,7 +1758,6 @@ Output: 1
 Explanation: Root is considered as good.
 
 ```
-
 
 ### [Problem 1464. Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)
 
@@ -1807,6 +1805,7 @@ Number of water bottles you can drink: 9 + 3 + 1 = 13.
 ```
 
 ### [Problem 1530. Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/)
+
 Given the root of a binary tree and an integer distance. A pair of two different leaf nodes of a binary tree is said to be good if the length of the shortest path between them is less than or equal to distance.
 
 Return the number of good leaf node pairs in the tree.
@@ -1815,6 +1814,37 @@ Return the number of good leaf node pairs in the tree.
 Input: root = [1,2,3,null,4], distance = 3
 Output: 1
 Explanation: The leaf nodes are "4" and "3" and the length of the shortest path between them is "3", which is more than the distance.
+```
+
+### [Problem 1605. Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/)
+
+You are given two arrays rowSum and colSum of non-negative integers where rowSum[i] is the sum of the elements in the ith row and colSum[j] is the sum of the elements of the jth column of a 2D matrix. In other words, you do not know the elements of the matrix, but you do know the sums of each row and column.
+
+Find any matrix of non-negative integers of size rowSum.length x colSum.length that satisfies the rowSum and colSum requirements.
+
+Return a 2D array representing any matrix that fulfills the requirements. It's guaranteed that at least one matrix that fulfills the requirements exists.
+
+```
+Example 1:
+
+Input: rowSum = [3,8], colSum = [4,7]
+Output: [[3,0],
+         [1,7]]
+Explanation:
+0th row: 3 + 0 = 3 == rowSum[0]
+1st row: 1 + 7 = 8 == rowSum[1]
+0th column: 3 + 1 = 4 == colSum[0]
+1st column: 0 + 7 = 7 == colSum[1]
+The row and column sums match, and all matrix elements are non-negative.
+Another possible matrix is: [[1,2],
+                             [3,5]]
+
+Example 2:
+
+Input: rowSum = [5,7,10], colSum = [8,6,8]
+Output: [[0,5,0],
+         [6,1,0],
+         [2,0,8]]
 ```
 
 ### [Problem 1636. Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/)
@@ -1831,7 +1861,7 @@ Example 1:
 Input: rowSum = [3,8], colSum = [4,7]
 Output: [[3,0],
          [1,7]]
-Explanation: 
+Explanation:
 0th row: 3 + 0 = 3 == rowSum[0]
 1st row: 1 + 7 = 8 == rowSum[1]
 0th column: 3 + 1 = 4 == colSum[0]
@@ -2108,6 +2138,7 @@ Explanation: The nodes that should be removed are 5, 2 and 3.
 ```
 
 ### [Problem 2418. Sort the people](https://leetcode.com/problems/sort-the-people)
+
 You are given an array of strings names, and an array heights that consists of distinct positive integers. Both arrays are of length n.
 
 For each index i, names[i] and heights[i] denote the name and height of the ith person.

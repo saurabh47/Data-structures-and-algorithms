@@ -906,6 +906,7 @@ myStack.top(); // return 2
 myStack.pop(); // return 2
 myStack.empty(); // return False
 ```
+
 ### [Problem 226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
 
 Given the root of a binary tree, invert the tree, and return its root.
@@ -1359,7 +1360,17 @@ Input: arr = [1,2,3,4,5], k = 4, x = 3
 Output: [1,2,3,4]
 
 Input: arr = [1,2,3,4,5], k = 4, x = -1
+```
 
+### [Problem 700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)
+
+You are given the root of a binary search tree (BST) and an integer val.
+
+Find the node in the BST that the node's value equals val and return the subtree rooted with that node. If such a node does not exist, return null.
+
+```
+Input: root = [4,2,7,1,3], val = 2
+Output: [2,1,3]
 ```
 
 ### [Problem 703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
@@ -1521,7 +1532,6 @@ Output: [3,4,5]
 Explanation: The middle node of the list is node 3.
 ```
 
-
 ### [Problem 881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)
 
 The i-th person has weight people[i], and each boat can carry a maximum weight of limit.
@@ -1539,7 +1549,6 @@ Explanation: 3 boats (1, 2), (2) and (3)
 Given an array of integers nums, sort the array in ascending order and return it.
 
 You must solve the problem without using any built-in functions in O(nlog(n)) time complexity and with the smallest space complexity possible.
-
 
 ```
 Example 1:
@@ -1570,10 +1579,11 @@ Input
 Output: [null, 1, 2, 3, 3]
 
 Explanation: RecentCounter recentCounter = new RecentCounter();
-recentCounter.ping(1);     // requests = [1], range is [-2999,1], return 1
-recentCounter.ping(100);   // requests = [1, 100], range is [-2900,100], return 2
-recentCounter.ping(3001);  // requests = [1, 100, 3001], range is [1,3001], return 3
-recentCounter.ping(3002);  // requests = [1, 100, 3001, 3002], range is [2,3002], return 3
+recentCounter.ping(1); // requests = [1], range is [-2999,1], return 1
+recentCounter.ping(100); // requests = [1, 100], range is [-2900,100], return 2
+recentCounter.ping(3001); // requests = [1, 100, 3001], range is [1,3001], return 3
+recentCounter.ping(3002); // requests = [1, 100, 3001, 3002], range is [2,3002], return 3
+
 ```
 
 ### [Problem 938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
@@ -1585,6 +1595,7 @@ Given the root node of a binary search tree, return the sum of values of all nod
 Input: root = [10,5,15,3,7,null,18], low = 7, high = 15
 Output: 32
 Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.
+
 ```
 
 ### [Problem 945. Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)
@@ -1596,6 +1607,7 @@ Return the minimum number of moves to make every value in nums unique.
 The test cases are generated so that the answer fits in a 32-bit inte
 
 ```
+
 Example 1:
 
 Input: nums = [1,2,2]
@@ -1607,6 +1619,7 @@ Input: nums = [3,2,1,2,1,7]
 Output: 6
 Explanation: After 6 moves, the array could be [3, 4, 1, 2, 5, 7].
 It can be shown with 5 or less moves that it is impossible for the array to have all unique values.
+
 ```
 
 ### [Problem 974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)
@@ -1616,10 +1629,12 @@ Given an integer array nums and an integer k, return the number of non-empty sub
 A subarray is a contiguous part of an array.
 
 ```
+
 Input: nums = [4,5,0,-2,-3,1], k = 5
 Output: 7
 Explanation: There are 7 subarrays with a sum divisible by k = 5:
 [4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3]
+
 ```
 
 ### [Problem 997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)
@@ -1652,17 +1667,21 @@ Given an array A of strings made only from lowercase letters, return a list of a
 You may return the answer in any order.
 
 ```
+
 Input: ["bella","label","roller"]
 Output: ["e","l","l"]
+
 ```
 
 ### [Problem 1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
 
 ```
+
 Input: "abbaca"
 Output: "ca"
 Explanation:
 For example, in "abbaca" we could remove "bb" since the letters are adjacent and equal, and this is the only possible move. The result of this move is that the string is "aaca", of which only "aa" is possible, so the final string is "ca".
+
 ```
 
 ### [Problem 1051. Height Checker](https://leetcode.com/problems/height-checker/)
@@ -1674,12 +1693,13 @@ You are given an integer array heights representing the current order that the s
 Return the number of indices where heights[i] != expected[i].
 
 ```
+
 Example 1:
 
 Input: heights = [1,1,4,2,1,3]
 Output: 3
 Explanation:
-heights:  [1,1,4,2,1,3]
+heights: [1,1,4,2,1,3]
 expected: [1,1,1,2,3,4]
 Indices 2, 4, and 5 do not match.
 
@@ -1688,9 +1708,10 @@ Example 2:
 Input: heights = [5,1,2,3,4]
 Output: 5
 Explanation:
-heights:  [5,1,2,3,4]
+heights: [5,1,2,3,4]
 expected: [1,2,3,4,5]
 All indices do not match.
+
 ```
 
 ### [Problem 1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array/)
@@ -1700,6 +1721,7 @@ Given two arrays arr1 and arr2, the elements of arr2 are distinct, and all eleme
 Sort the elements of arr1 such that the relative ordering of items in arr1 are the same as in arr2. Elements that do not appear in arr2 should be placed at the end of arr1 in ascending order.
 
 ```
+
 Example 1:
 
 Input: arr1 = [2,3,1,3,2,4,6,7,9,2,19], arr2 = [2,1,4,3,9,6]
@@ -1709,6 +1731,7 @@ Example 2:
 
 Input: arr1 = [28,6,22,8,44,17], arr2 = [22,28,8,6]
 Output: [22,28,8,6,17,44]
+
 ```
 
 ### [Problem 1190. Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/)
@@ -1720,6 +1743,7 @@ Reverse the strings in each pair of matching parentheses, starting from the inne
 Your result should not contain any brackets.
 
 ```
+
 Example 1:
 
 Input: s = "(abcd)"
@@ -1734,11 +1758,13 @@ Example 3:
 Input: s = "(ed(et(oc))el)"
 Output: "leetcode"
 Explanation: First, we reverse the substring "oc", then "etco", and finally, the whole string.
+
 ```
 
 ### [Problem 1209. Remove all adjacent Duplicates II ] (https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/)
 
 ```
+
 Input : s = "deeedbbcccbdaa", k = 3
 Output : "aa"
 Explanation :
@@ -1753,8 +1779,10 @@ Finally delete "ddd", get "aa"
 Given the root of a binary tree, return the sum of values of its deepest leaves.
 
 ```
+
 Input: root = [1,2,3,4,5,null,6,7,null,null,null,null,8]
 Output: 15
+
 ```
 
 ### [Problem 1337. The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/)
@@ -1762,6 +1790,7 @@ Output: 15
 Given a m \* n matrix mat of ones (representing soldiers) and zeros (representing civilians), return the indexes of the k weakest rows in the matrix ordered from the weakest to the strongest.
 
 ```
+
 Input: mat =
 [[1,1,0,0,0],
  [1,1,1,1,0],
@@ -1772,12 +1801,14 @@ k = 3
 Output: [2,0,3]
 Explanation:
 The number of soldiers in each row is:
+
 - Row 0: 2
 - Row 1: 4
 - Row 2: 1
 - Row 3: 2
 - Row 4: 5
-The rows ordered from weakest to strongest are [2,0,3,1,4].
+  The rows ordered from weakest to strongest are [2,0,3,1,4].
+
 ```
 
 ### [Problem 1365. How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
@@ -1785,10 +1816,12 @@ The rows ordered from weakest to strongest are [2,0,3,1,4].
 Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
 
 ```
+
 Input: nums = [8,1,2,2,3]
 Output: [4,0,1,1,3]
 Explanation:
 For nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3).
+
 ```
 
 ### [Problem 1404. Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)
@@ -1800,6 +1833,7 @@ Given a number s in their binary representation. Return the number of steps to r
 - It's guaranteed that you can always reach to one for all testcases.
 
 ```
+
 Input: s = "1101"
 Output: 6
 Explanation: "1101" corressponds to number 13 in their decimal representation.
@@ -1809,6 +1843,7 @@ Step 3) 7 is odd, add 1 and obtain 8.
 Step 4) 8 is even, divide by 2 and obtain 4.
 Step 5) 4 is even, divide by 2 and obtain 2.
 Step 6) 2 is even, divide by 2 and obtain 1.
+
 ```
 
 ### [Problem 1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/)
@@ -1826,9 +1861,11 @@ Note that ^ denotes the bitwise-xor operation.
 Return the number of triplets (i, j and k) Where a == b.
 
 ```
+
 Input: arr = [2,3,1,6,7]
 Output: 4
 Explanation: The triplets are (0,1,2), (0,2,2), (2,3,4) and (2,4,4)
+
 ```
 
 ### [Problem 1448. Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)
@@ -1838,6 +1875,7 @@ Given a binary tree root, a node X in the tree is named good if in the path from
 Return the number of good nodes in the binary tree.
 
 ```
+
 Example 1:
 
 Input: root = [3,1,4,3,null,1,5]
@@ -1865,9 +1903,11 @@ Explanation: Root is considered as good.
 ### [Problem 1464. Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)
 
 ```
+
 Input: nums = [3,4,5,2]
 Output: 12
-Explanation: If you choose the indices i=1 and j=2 (indexed from 0), you will get the maximum value, that is, (nums[1]-1)*(nums[2]-1) = (4-1)*(5-1) = 3*4 = 12.
+Explanation: If you choose the indices i=1 and j=2 (indexed from 0), you will get the maximum value, that is, (nums[1]-1)_(nums[2]-1) = (4-1)_(5-1) = 3\*4 = 12.
+
 ```
 
 ### [Problem 1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)
@@ -1875,11 +1915,13 @@ Explanation: If you choose the indices i=1 and j=2 (indexed from 0), you will ge
 Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
 
 ```
+
 Example 1:
 
 Input: nums = [1,2,3,4]
 Output: [1,3,6,10]
 Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
+
 ```
 
 ### [Problem 1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)
@@ -1887,9 +1929,11 @@ Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
 Given an array of integers nums. A pair (i,j) is called good if nums[i] == nums[j] and i < j. Return the number of good pairs.
 
 ```
+
 Input: nums = [1,2,3,1,1,3]
 Output: 4
 Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
+
 ```
 
 ### [Problem 1518. Water Bottles](https://leetcode.com/problems/water-bottles/)
@@ -1901,10 +1945,12 @@ The operation of drinking a full water bottle turns it into an empty bottle.
 Given the two integers numBottles and numExchange, return the maximum number of water bottles you can drink.
 
 ```
+
 Input: numBottles = 9, numExchange = 3
 Output: 13
 Explanation: You can exchange 3 empty bottles to get 1 full water bottle.
 Number of water bottles you can drink: 9 + 3 + 1 = 13.
+
 ```
 
 ### [Problem 1530. Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/)
@@ -1914,9 +1960,11 @@ Given the root of a binary tree and an integer distance. A pair of two different
 Return the number of good leaf node pairs in the tree.
 
 ```
+
 Input: root = [1,2,3,null,4], distance = 3
 Output: 1
 Explanation: The leaf nodes are "4" and "3" and the length of the shortest path between them is "3", which is more than the distance.
+
 ```
 
 ### [Problem 1605. Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/)
@@ -1928,6 +1976,7 @@ Find any matrix of non-negative integers of size rowSum.length x colSum.length t
 Return a 2D array representing any matrix that fulfills the requirements. It's guaranteed that at least one matrix that fulfills the requirements exists.
 
 ```
+
 Example 1:
 
 Input: rowSum = [3,8], colSum = [4,7]
@@ -1948,6 +1997,7 @@ Input: rowSum = [5,7,10], colSum = [8,6,8]
 Output: [[0,5,0],
          [6,1,0],
          [2,0,8]]
+
 ```
 
 ### [Problem 1636. Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/)
@@ -1959,6 +2009,7 @@ Find any matrix of non-negative integers of size rowSum.length x colSum.length t
 Return a 2D array representing any matrix that fulfills the requirements. It's guaranteed that at least one matrix that fulfills the requirements exists.
 
 ```
+
 Example 1:
 
 Input: rowSum = [3,8], colSum = [4,7]
@@ -1986,15 +2037,18 @@ Output: [[0,5,0],
 Given an integer n, return the decimal value of the binary string formed by concatenating the binary representations of 1 to n in order, modulo 109 + 7.
 
 ```
+
 Input: n = 3
 Output: 27
 Explanation: In binary, 1, 2, and 3 corresponds to "1", "10", and "11".
 After concatenating them, we have "11011", which corresponds to the decimal value 27.
+
 ```
 
 ### [Problem 1700. Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/)
 
 ```
+
 Input: students = [1,1,0,0], sandwiches = [0,1,0,1]
 Output: 0
 
@@ -2009,6 +2063,7 @@ The 3rd student takes the sandwich and leaves the remaining students as [1].
 The 4th student takes the sandwich and leaves the remaining students as [].
 
 There are no students who are unable to eat.
+
 ```
 
 #### [Problem 1710. Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)
@@ -2024,6 +2079,7 @@ Explanation: There are:
 - 3 boxes of the third type that contain 1 unit each.
   You can take all the boxes of the first and second types, and one box of the third type.
   The total number of units will be = (1 _ 3) + (2 _ 2) + (1 \* 1) = 8.
+
 ```
 
 #### [Problem 1823. Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game/)
@@ -2041,18 +2097,21 @@ The rules of the game are as follows:
 Given the number of friends, n, and an integer k, return the winner of the game.
 
 ```
+
 Input: n = 5, k = 2
 Output: 3
 Explanation: Here are the steps of the game:
-1) Start at friend 1.
-2) Count 2 friends clockwise, which are friends 1 and 2.
-3) Friend 2 leaves the circle. Next start is friend 3.
-4) Count 2 friends clockwise, which are friends 3 and 4.
-5) Friend 4 leaves the circle. Next start is friend 5.
-6) Count 2 friends clockwise, which are friends 5 and 1.
-7) Friend 1 leaves the circle. Next start is friend 3.
-8) Count 2 friends clockwise, which are friends 3 and 5.
-9) Friend 5 leaves the circle. Only friend 3 is left, so they are the winner.
+
+1. Start at friend 1.
+2. Count 2 friends clockwise, which are friends 1 and 2.
+3. Friend 2 leaves the circle. Next start is friend 3.
+4. Count 2 friends clockwise, which are friends 3 and 4.
+5. Friend 4 leaves the circle. Next start is friend 5.
+6. Count 2 friends clockwise, which are friends 5 and 1.
+7. Friend 1 leaves the circle. Next start is friend 3.
+8. Count 2 friends clockwise, which are friends 3 and 5.
+9. Friend 5 leaves the circle. Only friend 3 is left, so they are the winner.
+
 ```
 
 #### [Problem 1859. Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/)
@@ -2087,23 +2146,28 @@ Given edges and the integers n, source, and destination, return true if there is
 ### [Problem 2006. Count Number of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/description/)
 
 ```
+
 Input: nums = [1,2,2,1], k = 1
 Output: 4
 Explanation: The pairs with an absolute difference of 1 are:
+
 - [1,2,2,1]
 - [1,2,2,1]
 - [1,2,2,1]
 - [1,2,2,1]
+
 ```
 
 ### [Problem 2016. Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/description/)
 
 ```
+
 Input: nums = [7,1,5,4]
 Output: 4
 Explanation:
 The maximum difference occurs with i = 1 and j = 2, nums[j] - nums[i] = 5 - 1 = 4.
 Note that with i = 1 and j = 0, the difference nums[j] - nums[i] = 7 - 1 = 6, but i > j, so it is not valid.s
+
 ```
 
 ### [Problem 2037. Minimum Number of Moves to Seat Everyone](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/description/)
@@ -2118,13 +2182,16 @@ Return the minimum number of moves required to move each student to a seat such 
 Note that there may be multiple seats or students in the same position at the beginning.
 
 ```
+
 Input: seats = [3,1,5], students = [2,7,4]
 Output: 4
 Explanation: The students are moved as follows:
+
 - The first student is moved from from position 2 to position 1 using 1 move.
 - The second student is moved from from position 7 to position 5 using 2 moves.
 - The third student is moved from from position 4 to position 3 using 1 move.
-In total, 1 + 2 + 1 = 4 moves were used.
+  In total, 1 + 2 + 1 = 4 moves were used.
+
 ```
 
 ### [Problem 2058. Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/description/)
@@ -2140,14 +2207,17 @@ Note that a node can only be a local maxima/minima if there exists both a previo
 Given a linked list head, return an array of length 2 containing [minDistance, maxDistance] where minDistance is the minimum distance between any two distinct critical points and maxDistance is the maximum distance between any two distinct critical points. If there are fewer than two critical points, return [-1, -1].
 
 ```
+
 Input: head = [5,3,1,2,5,1,2]
 Output: [1,3]
 Explanation: There are three critical points:
+
 - [5,3,1,2,5,1,2]: The third node is a local minima because 1 is less than 3 and 2.
 - [5,3,1,2,5,1,2]: The fifth node is a local maxima because 5 is greater than 2 and 1.
 - [5,3,1,2,5,1,2]: The sixth node is a local minima because 1 is less than 5 and 2.
-The minimum distance is between the fifth and the sixth node. minDistance = 6 - 5 = 1.
-The maximum distance is between the third and the sixth node. maxDistance = 6 - 3 = 3.
+  The minimum distance is between the fifth and the sixth node. minDistance = 6 - 5 = 1.
+  The maximum distance is between the third and the sixth node. maxDistance = 6 - 3 = 3.
+
 ```
 
 ### [Problem 2073. Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets-in-queue/description/)
@@ -2161,19 +2231,23 @@ Each person takes exactly 1 second to buy a ticket. A person can only buy 1 tick
 Return the time taken for the person at position k (0-indexed) to finish buying tickets.
 
 ```
+
 Input: tickets = [2,3,2], k = 2
 Output: 6
 Explanation:
+
 - In the first pass, everyone in the line buys a ticket and the line becomes [1, 2, 1].
 - In the second pass, everyone in the line buys a ticket and the line becomes [0, 1, 0].
-The person at position 2 has successfully bought 2 tickets and it took 3 + 3 = 6 seconds.
+  The person at position 2 has successfully bought 2 tickets and it took 3 + 3 = 6 seconds.
 
 Input: tickets = [5,1,1,1], k = 0
 Output: 8
 Explanation:
+
 - In the first pass, everyone in the line buys a ticket and the line becomes [4, 0, 0, 0].
 - In the next 4 passes, only the person in position 0 is buying tickets.
-The person at position 0 has successfully bought 5 tickets and it took 4 + 1 + 1 + 1 + 1 = 8 seconds.
+  The person at position 0 has successfully bought 5 tickets and it took 4 + 1 + 1 + 1 + 1 = 8 seconds.
+
 ```
 
 ### [Problem 2181. (Medium): 2181. Merge Nodes in Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros/description/)
@@ -2185,12 +2259,15 @@ For every two consecutive 0's, merge all the nodes lying in between them into a 
 Return the head of the modified linked list.
 
 ```
+
 Input: head = [0,3,1,0,4,5,2,0]
 Output: [4,11]
 Explanation:
 The above figure represents the given linked list. The modified list contains
+
 - The sum of the nodes marked in green: 3 + 1 = 4.
 - The sum of the nodes marked in red: 4 + 5 + 2 = 11.
+
 ```
 
 ### [Problem: 2220. (Easy): Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
@@ -2206,7 +2283,6 @@ a = 01010
 b = 10100
 As we can see, the bits of a that need to be flipped are 01010. If we flip these bits, we get 10100, which is b. Hence, the number of bits that need to be flipped is 4.
 
-
 X >> Y means x is shifted to the right by y bits. This is equivalent to dividing x by 2^y.
 e.g 8 >> 1 = 4 (1000 >> 1 = 0100)
 
@@ -2221,6 +2297,7 @@ Note: The average of n elements is the sum of the n elements divided by n and ro
 A subtree of root is a tree consisting of root and all of its descendants.
 
 ```
+
 Input: root = [4,8,5,0,1,null,6]
 Output: 5
 Explanation:
@@ -2229,17 +2306,20 @@ For the node with value 5: The average of its subtree is (5 + 6) / 2 = 11 / 2 = 
 For the node with value 0: The average of its subtree is 0 / 1 = 0.
 For the node with value 1: The average of its subtree is 1 / 1 = 1.
 For the node with value 6: The average of its subtree is 6 / 1 = 6.
+
 ```
 
 ### [Problem 2331. (Easy): Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/description/)
 
 ```
+
 Input: root = [2,1,3,null,null,0,1]
 Output: true
 Explanation: The above diagram illustrates the evaluation process.
 The AND node evaluates to False AND True = False.
 The OR node evaluates to True OR False = True.
 The root node evaluates to True, so we return true.
+
 ```
 
 ### [Problem 2236. Root equals sum of children](https://leetcode.com/problems/root-equals-sum-of-children/description/)
@@ -2247,10 +2327,12 @@ The root node evaluates to True, so we return true.
 Given a binary tree root, return whether the sum of all leaves is equal to the sum of all non-leaf nodes.
 
 ```
+
 Input: root = [10,4,6]
 Output: true
 Explanation: The values of the root, its left child, and its right child are 10, 4, and 6, respectively.
 10 is equal to 4 + 6, so we return true.
+
 ```
 
 ### [Problem 2486. Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/description/)
@@ -2262,11 +2344,13 @@ Return the minimum number of characters that need to be appended to the end of s
 A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.
 
 ```
+
 Input: s = "coaching", t = "coding"
 Output: 4
 Explanation: Append the characters "ding" to the end of s so that s = "coachingding".
 Now, t is a subsequence of s ("coachingding").
 It can be shown that appending any 3 characters to the end of s will never make t a subsequence.
+
 ```
 
 ### [Problem 2487. (Easy): Find the Score of All Prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes/description/)
@@ -2274,6 +2358,7 @@ It can be shown that appending any 3 characters to the end of s will never make 
 Given an array of integers nums, you are asked to calculate the score of all prefixes of the array. The score of a prefix is defined as the sum of the elements of the prefix multiplied by the length of the prefix.
 
 ```
+
 Input: head = [5,2,13,3,8]
 Output: [13,8]
 Explanation: The nodes that should be removed are 5, 2 and 3.
@@ -2281,6 +2366,7 @@ Explanation: The nodes that should be removed are 5, 2 and 3.
 - Node 13 is to the right of node 5.
 - Node 13 is to the right of node 2.
 - Node 8 is to the right of node 3.
+
 ```
 
 ### [Problem 2418. Sort the people](https://leetcode.com/problems/sort-the-people)
@@ -2292,6 +2378,7 @@ For each index i, names[i] and heights[i] denote the name and height of the ith 
 Return names sorted in descending order by the people's heights.
 
 ```
+
 Example 1:
 
 Input: names = ["Mary","John","Emma"], heights = [180,165,170]
@@ -2302,6 +2389,7 @@ Example 2:
 Input: names = ["Alice","Bob","Bob"], heights = [155,185,150]
 Output: ["Bob","Alice","Bob"]
 Explanation: The first Bob is the tallest, followed by Alice and the second Bob.
+
 ```
 
 ### [Problem 2500. (Easy) Delete Greatest Value in Each Row]
@@ -2309,13 +2397,16 @@ Explanation: The first Bob is the tallest, followed by Alice and the second Bob.
 Given a 2D integer array matrix, you need to delete the greatest value in each row. Return the sum of all the deleted values.
 
 ```
+
 Input: grid = [[1,2,4],[3,3,1]]
 Output: 8
 Explanation: The diagram above shows the removed values in each step.
+
 - In the first operation, we remove 4 from the first row and 3 from the second row (notice that, there are two cells with value 3 and we can remove any of them). We add 4 to the answer.
 - In the second operation, we remove 2 from the first row and 3 from the second row. We add 3 to the answer.
 - In the third operation, we remove 1 from the first row and 1 from the second row. We add 1 to the answer.
-The final answer = 4 + 3 + 1 = 8.
+  The final answer = 4 + 3 + 1 = 8.
+
 ```
 
 ### [Problem 2582. Pass the Pillow](https://leetcode.com/problems/pass-the-pillow)
@@ -2326,10 +2417,12 @@ For example, once the pillow reaches the nth person they pass it to the n - 1th 
 Given the two positive integers n and time, return the index of the person holding the pillow after time seconds.
 
 ```
+
 Input: n = 4, time = 5
 Output: 2
 Explanation: People pass the pillow in the following way: 1 -> 2 -> 3 -> 4 -> 3 -> 2.
 After five seconds, the 2nd person is holding the pillow.
+
 ```
 
 ### [Problem 2640. (Medium) Find the score of all prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array)
@@ -2350,34 +2443,42 @@ For the prefix [2, 3, 7, 5, 10], the conversion array is [4, 6, 14, 12, 20] henc
 ### [Problem 2816. (Medium) Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list)
 
 ```
+
 Input: head = [1,2,3]
 Output: [2,4,6]
 Explanation: The linked list is 1 -> 2 -> 3. After doubling the linked list, the linked list becomes 2 -> 4 -> 6.
+
 ```
 
 ### [Problem 2974. (Easy) Minimum Number Game] (https://leetcode.com/problems/minimum-number-game)
 
 ```
+
 Input: nums = [5,4,2,3]
 Output: [3,2,5,4]
 Explanation: In round one, first Alice removes 2 and then Bob removes 3. Then in arr firstly Bob appends 3 and then Alice appends 2. So arr = [3,2].
 At the begining of round two, nums = [5,4]. Now, first Alice removes 4 and then Bob removes 5. Then both append in arr which becomes [3,2,5,4].
+
 ```
 
 ### [Problem 3075. (Medium) Maximum Happiness of Selected Children](https://leetcode.com/problems/maximum-happiness-of-selected-children)
 
 ```
+
 Input: happiness = [1,2,3], k = 2
 Output: 4
 Explanation: We can pick 2 children in the following way:
+
 - Pick the child with the happiness value == 3. The happiness value of the remaining children becomes [0,1].
 - Pick the child with the happiness value == 1. The happiness value of the remaining child becomes [0]. Note that the happiness value cannot become less than 0.
-The sum of the happiness values of the selected children is 3 + 1 = 4.
+  The sum of the happiness values of the selected children is 3 + 1 = 4.
+
 ```
 
 ### [Problem 3110. (Easy) Score of a String](https://leetcode.com/problems/score-of-a-string)
 
 ```
+
 Input: s = "hello"
 
 Output: 13
@@ -2385,16 +2486,19 @@ Output: 13
 Explanation:
 
 The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111. So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13
+
 ```
 
 ### [Problem 3114. (Easy) Find the Score of All Prefixes of a String](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-a-string)
 
 ```
+
 Input: s = "1?:?4"
 
 Output: "11:54"
 
 Explanation: The latest 12-hour format time we can achieve by replacing "?" characters is "11:54".
+
 ```
 
 ### [Problem 3120. Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i)
@@ -2404,6 +2508,7 @@ You are given a string word. A letter is called special if it appears both in lo
 Return the number of special letters in word.
 
 ```
+
 Input: word = "aaAbcBC"
 
 Output: 3
@@ -2411,6 +2516,7 @@ Output: 3
 Explanation:
 
 The special characters in word are 'a', 'b', and 'c'.
+
 ```
 
 ### [Problem 3121. Count the Number of Special Characters II](https://leetcode.com/problems/count-the-number-of-special-characters-ii)
@@ -2445,6 +2551,7 @@ Notes:
 A consonant is an English letter that is not a vowel.
 
 ```
+
 Input: word = "234Adas"
 
 Output: true
@@ -2452,6 +2559,7 @@ Output: true
 Explanation:
 
 This word satisfies the conditions.
+
 ```
 
 ### Problem 3151. Special Array I (Easy)
@@ -2461,6 +2569,7 @@ An array is considered special if every pair of its adjacent elements contains t
 You are given an array of integers nums. Return true if nums is a special array, otherwise, return false.
 
 ```
+
 Input: nums = [1]
 
 Output: true
@@ -2468,4 +2577,7 @@ Output: true
 Explanation:
 
 There is only one element. So the answer is true.
+
+```
+
 ```

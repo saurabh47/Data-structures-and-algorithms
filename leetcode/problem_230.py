@@ -23,3 +23,21 @@ class Solution:
                 return root.val
             root = root.right
         return -1
+
+
+### Recursive Solution
+class Solution2:
+    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+        def kthTraversal(root):
+            if root is None:
+                return None
+            left = kthTraversal(root.left)
+            if left is not None:
+                return left
+            self.count += 1
+            if self.count == k:
+                return root.val
+            return kthTraversal(root.right)
+
+        self.count = 0
+        return kthTraversal(root)

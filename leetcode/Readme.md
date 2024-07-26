@@ -917,6 +917,17 @@ Output: [4,7,2,9,6,3,1]
 Explanation: The input binary tree is [4,2,7,1,3,6,9]. The inverted form of the binary tree is [4,7,2,9,6,3,1].
 ```
 
+### [Problem 230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+
+Given the root of a binary search tree, and an integer k, return the kth smallest value (1-indexed) of all the values of the nodes in the tree.
+
+![](https://assets.leetcode.com/uploads/2021/01/28/kthtree1.jpg)
+
+```
+Input: root = [3,1,4,null,2], k = 1
+Output: 1
+```
+
 ### [Problem 232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
 
 Implement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (push, peek, pop, and empty).

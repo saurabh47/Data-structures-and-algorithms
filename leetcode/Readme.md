@@ -1014,10 +1014,20 @@ Explanation: The array of the products of all other elements is [24,12,8,6]. The
 Given two strings s and t , write a function to determine if t is an anagram of s.
 
 ```
-
 Input: s = "anagram", t = "nagaram"
 Output: true
 Explanation: Both s and t contain all the same letters, in the same frequency, so they are anagrams.
+```
+
+### [Problem 257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)
+Given the root of a binary tree, return all root-to-leaf paths in any order.
+
+A leaf is a node with no children
+
+```
+Example 1:
+Input: root = [1,2,3,null,5]
+Output: ["1->2->5","1->3"]
 ```
 
 ### [Problem 258. Add Digits](https://leetcode.com/problems/add-digits/)

@@ -1234,6 +1234,21 @@ Output: true
 Explanation: The string "abc" is a subsequence of "ahbgdc".
 ```
 
+### [Problem 404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)
+
+Given the root of a binary tree, return the sum of all left leaves.
+
+A leaf is a node with no children. A left leaf is a leaf that is the left child of another node.
+
+![](https://assets.leetcode.com/uploads/2021/04/08/leftsum-tree.jpg)
+
+```
+Example 1:
+Input: root = [3,9,20,null,null,15,7]
+Output: 24
+Explanation: There are two left leaves in the binary tree, with values 9 and 15 respectively.
+```
+
 ### [Problem 409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)
 
 Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.

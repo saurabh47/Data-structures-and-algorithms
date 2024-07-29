@@ -615,6 +615,30 @@ Output: 4
 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
 ```
 
+### [Problem 129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
+
+You are given the root of a binary tree containing digits from 0 to 9 only.
+
+Each root-to-leaf path in the tree represents a number.
+
+For example, the root-to-leaf path 1 -> 2 -> 3 represents the number 123.
+Return the total sum of all root-to-leaf numbers. Test cases are generated so that the answer will fit in a 32-bit integer.
+
+A leaf node is a node with no children
+
+![](https://assets.leetcode.com/uploads/2021/02/19/num2tree.jpg)
+
+```
+Example 2:
+Input: root = [4,9,0,5,1]
+Output: 1026
+Explanation:
+The root-to-leaf path 4->9->5 represents the number 495.
+The root-to-leaf path 4->9->1 represents the number 491.
+The root-to-leaf path 4->0 represents the number 40.
+Therefore, sum = 495 + 491 + 40 = 1026.
+```
+
 ### [Problem 135. Candy](https://leetcode.com/problems/candy/)
 
 There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings.
@@ -966,6 +990,7 @@ Given a binary search tree (BST), find the lowest common ancestor (LCA) node of 
 According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
 
 ![](https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png)
+
 ```
 Example 1:
 
@@ -1020,6 +1045,7 @@ Explanation: Both s and t contain all the same letters, in the same frequency, s
 ```
 
 ### [Problem 257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)
+
 Given the root of a binary tree, return all root-to-leaf paths in any order.
 
 A leaf is a node with no children

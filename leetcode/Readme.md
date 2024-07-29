@@ -1662,6 +1662,7 @@ Implement the RecentCounter class:
 - RecentCounter() Initializes the counter with zero recent requests.
 - int ping(int t) Adds a new request at time t, where t represents some time in milliseconds, and returns the number of requests that has happened in the past 3000 milliseconds (including the new request). Specifically, return the number of requests that have happened in the inclusive range [t - 3000, t].
 
+```
 Input
 ["RecentCounter", "ping", "ping", "ping", "ping"]
 [[], [1], [100], [3001], [3002]]
@@ -1673,7 +1674,6 @@ recentCounter.ping(1); // requests = [1], range is [-2999,1], return 1
 recentCounter.ping(100); // requests = [1, 100], range is [-2900,100], return 2
 recentCounter.ping(3001); // requests = [1, 100, 3001], range is [1,3001], return 3
 recentCounter.ping(3002); // requests = [1, 100, 3001, 3002], range is [2,3002], return 3
-
 ```
 
 ### [Problem 938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
@@ -1681,11 +1681,9 @@ recentCounter.ping(3002); // requests = [1, 100, 3001, 3002], range is [2,3002],
 Given the root node of a binary search tree, return the sum of values of all nodes with a value in the range [low, high].
 
 ```
-
 Input: root = [10,5,15,3,7,null,18], low = 7, high = 15
 Output: 32
 Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.
-
 ```
 
 ### [Problem 945. Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)
@@ -1697,7 +1695,6 @@ Return the minimum number of moves to make every value in nums unique.
 The test cases are generated so that the answer fits in a 32-bit inte
 
 ```
-
 Example 1:
 
 Input: nums = [1,2,2]
@@ -1709,7 +1706,6 @@ Input: nums = [3,2,1,2,1,7]
 Output: 6
 Explanation: After 6 moves, the array could be [3, 4, 1, 2, 5, 7].
 It can be shown with 5 or less moves that it is impossible for the array to have all unique values.
-
 ```
 
 ### [Problem 974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)
@@ -1736,11 +1732,9 @@ In a town, there are n people labeled from 1 to n. There is a rumor that one of 
 3. There is exactly one person that satisfies properties 1 and 2.
 
 ```
-
 Input: n = 4, trust = [[1,3],[1,4],[2,3],[2,4],[4,3]]
 Output: 3
 Explanation: The town judge is the person labeled 3. Everyone trusts 3 except for 3, and no one trusts 3.
-
 ```
 
 Hint:
@@ -1757,21 +1751,35 @@ Given an array A of strings made only from lowercase letters, return a list of a
 You may return the answer in any order.
 
 ```
-
 Input: ["bella","label","roller"]
 Output: ["e","l","l"]
+```
 
+### [Problem 1022. Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)
+
+You are given the root of a binary tree where each node has a value 0 or 1. Each root-to-leaf path represents a binary number starting with the most significant bit.
+
+For example, if the path is 0 -> 1 -> 1 -> 0 -> 1, then this could represent 01101 in binary, which is 13.
+For all leaves in the tree, consider the numbers represented by the path from the root to that leaf. Return the sum of these numbers.
+
+The test cases are generated so that the answer fits in a 32-bits integer.
+
+![](https://assets.leetcode.com/uploads/2019/04/04/sum-of-root-to-leaf-binary-numbers.png)
+
+```
+Example 1:
+Input: root = [1,0,1,0,1,0,1]
+Output: 22
+Explanation: (100) + (101) + (110) + (111) = 4 + 5 + 6 + 7 = 22
 ```
 
 ### [Problem 1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
 
 ```
-
 Input: "abbaca"
 Output: "ca"
 Explanation:
 For example, in "abbaca" we could remove "bb" since the letters are adjacent and equal, and this is the only possible move. The result of this move is that the string is "aaca", of which only "aa" is possible, so the final string is "ca".
-
 ```
 
 ### [Problem 1051. Height Checker](https://leetcode.com/problems/height-checker/)
@@ -2667,6 +2675,8 @@ Output: true
 Explanation:
 
 There is only one element. So the answer is true.
+
+```
 
 ```
 

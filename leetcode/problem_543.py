@@ -30,3 +30,18 @@ class Solution:
             return 0
         else:
             return max(self.height(root.left), self.height(root.right)) + 1
+
+
+# Recursive approach
+class Solution:
+    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        self.max_diam = 0
+        def height(root):    
+            if(root is None):
+                return 0
+            left = height(root.left)
+            right = height(root.right)
+            self.max_diam = max(self.max_diam, left + right)
+            return 1 + max(left, right)
+        height(root)
+        return  self.max_diam

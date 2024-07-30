@@ -2541,28 +2541,23 @@ For the prefix [2, 3, 7, 5, 10], the conversion array is [4, 6, 14, 12, 20] henc
 ### [Problem 2816. (Medium) Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list)
 
 ```
-
 Input: head = [1,2,3]
 Output: [2,4,6]
 Explanation: The linked list is 1 -> 2 -> 3. After doubling the linked list, the linked list becomes 2 -> 4 -> 6.
-
 ```
 
 ### [Problem 2974. (Easy) Minimum Number Game] (https://leetcode.com/problems/minimum-number-game)
 
 ```
-
 Input: nums = [5,4,2,3]
 Output: [3,2,5,4]
 Explanation: In round one, first Alice removes 2 and then Bob removes 3. Then in arr firstly Bob appends 3 and then Alice appends 2. So arr = [3,2].
 At the begining of round two, nums = [5,4]. Now, first Alice removes 4 and then Bob removes 5. Then both append in arr which becomes [3,2,5,4].
-
 ```
 
 ### [Problem 3075. (Medium) Maximum Happiness of Selected Children](https://leetcode.com/problems/maximum-happiness-of-selected-children)
 
 ```
-
 Input: happiness = [1,2,3], k = 2
 Output: 4
 Explanation: We can pick 2 children in the following way:
@@ -2570,33 +2565,22 @@ Explanation: We can pick 2 children in the following way:
 - Pick the child with the happiness value == 3. The happiness value of the remaining children becomes [0,1].
 - Pick the child with the happiness value == 1. The happiness value of the remaining child becomes [0]. Note that the happiness value cannot become less than 0.
   The sum of the happiness values of the selected children is 3 + 1 = 4.
-
 ```
 
 ### [Problem 3110. (Easy) Score of a String](https://leetcode.com/problems/score-of-a-string)
 
 ```
-
 Input: s = "hello"
-
 Output: 13
-
-Explanation:
-
-The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111. So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13
-
+Explanation: The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111. So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13
 ```
 
 ### [Problem 3114. (Easy) Find the Score of All Prefixes of a String](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-a-string)
 
 ```
-
 Input: s = "1?:?4"
-
 Output: "11:54"
-
 Explanation: The latest 12-hour format time we can achieve by replacing "?" characters is "11:54".
-
 ```
 
 ### [Problem 3120. Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i)
@@ -2606,15 +2590,9 @@ You are given a string word. A letter is called special if it appears both in lo
 Return the number of special letters in word.
 
 ```
-
 Input: word = "aaAbcBC"
-
 Output: 3
-
-Explanation:
-
-The special characters in word are 'a', 'b', and 'c'.
-
+Explanation: The special characters in word are 'a', 'b', and 'c'.
 ```
 
 ### [Problem 3121. Count the Number of Special Characters II](https://leetcode.com/problems/count-the-number-of-special-characters-ii)
@@ -2623,13 +2601,11 @@ You are given a string word. A letter c is called special if it appears both in 
 
 Return the number of special letters in word.
 
+```
 Input: word = "aaAbcBC"
-
 Output: 3
-
-Explanation:
-
-The special characters are 'a', 'b', and 'c'.
+Explanation: The special characters are 'a', 'b', and 'c'.
+```
 
 ### [Problem 3136. (Easy) Valid Word](https://leetcode.com/problems/valid-word)
 
@@ -2649,15 +2625,9 @@ Notes:
 A consonant is an English letter that is not a vowel.
 
 ```
-
 Input: word = "234Adas"
-
 Output: true
-
-Explanation:
-
-This word satisfies the conditions.
-
+Explanation: This word satisfies the conditions.
 ```
 
 ### Problem 3151. Special Array I (Easy)
@@ -2667,17 +2637,8 @@ An array is considered special if every pair of its adjacent elements contains t
 You are given an array of integers nums. Return true if nums is a special array, otherwise, return false.
 
 ```
-
 Input: nums = [1]
-
 Output: true
-
 Explanation:
-
 There is only one element. So the answer is true.
-
-```
-
-```
-
 ```

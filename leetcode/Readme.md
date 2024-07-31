@@ -1538,11 +1538,20 @@ The input has been split into consecutive parts with size difference at most 1, 
 You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
 
 ```
-
 Input: jewels = "aA", stones = "aAAbbbb"
 Output: 3
 Explanation: All the stones are jewels, you have 3 jewels.
+```
 
+### [Problem 783. Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)
+
+Given the root of a Binary Search Tree (BST), return the minimum difference between the values of any two different nodes in the tree.
+
+![](https://assets.leetcode.com/uploads/2021/02/05/bst1.jpg)
+
+```
+Input: root = [4,2,6,1,3]
+Output: 1
 ```
 
 ### [Problem 786. K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/)

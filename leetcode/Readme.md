@@ -2529,13 +2529,11 @@ Input: n = 4, time = 5
 Output: 2
 Explanation: People pass the pillow in the following way: 1 -> 2 -> 3 -> 4 -> 3 -> 2.
 After five seconds, the 2nd person is holding the pillow.
-
 ```
 
 ### [Problem 2640. (Medium) Find the score of all prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array)
 
 ```
-
 Input: nums = [2,3,7,5,10]
 Output: [4,10,24,36,56]
 Explanation:
@@ -2544,7 +2542,29 @@ For the prefix [2, 3], the conversion array is [4, 6] hence the score is 10
 For the prefix [2, 3, 7], the conversion array is [4, 6, 14] hence the score is 24
 For the prefix [2, 3, 7, 5], the conversion array is [4, 6, 14, 12] hence the score is 36
 For the prefix [2, 3, 7, 5, 10], the conversion array is [4, 6, 14, 12, 20] hence the score is 56
+```
 
+### [Problem 2678. Number of Senior Citizens (Easy)](https://leetcode.com/problems/number-of-senior-citizens/)
+
+You are given a 0-indexed array of strings details. Each element of details provides information about a given passenger compressed into a string of length 15. The system is such that:
+
+The first ten characters consist of the phone number of passengers.
+The next character denotes the gender of the person.
+The following two characters are used to indicate the age of the person.
+The last two characters determine the seat allotted to that person.
+Return the number of passengers who are strictly more than 60 years old.
+
+```
+Example 1:
+
+Input: details = ["7868190130M7522","5303914400F9211","9273338290F4010"]
+Output: 2
+Explanation: The passengers at indices 0, 1, and 2 have ages 75, 92, and 40. Thus, there are 2 people who are over 60 years old.
+Example 2:
+
+Input: details = ["1313579440F2036","2921522980M5644"]
+Output: 0
+Explanation: None of the passengers are older than 60.
 ```
 
 ### [Problem 2816. (Medium) Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list)

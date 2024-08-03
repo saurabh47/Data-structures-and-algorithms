@@ -491,10 +491,21 @@ Example 2:
 Input: root = [5,1,4,null,null,3,6]
 Output: false
 Explanation: The root node's value is 5 but its right child's value is 4.
-
 ```
 
 hint: sort the array from the end
+
+### [Problem 99. Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/)
+
+You are given the root of a binary search tree (BST), where the values of exactly two nodes of the tree were swapped by mistake. Recover the tree without changing its structure.
+
+![](https://assets.leetcode.com/uploads/2020/10/28/recover2.jpg)
+
+```
+Input: root = [3,1,4,null,null,2]
+Output: [2,1,4,null,null,3]
+Explanation: 2 cannot be in the right subtree of 3 because 2 < 3. Swapping 2 and 3 makes the BST valid.
+```
 
 ### [Problem 100. Same Tree](https://leetcode.com/problems/same-tree/)
 

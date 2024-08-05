@@ -2060,7 +2060,7 @@ Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
 
 ### [Problem 1508. Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/)
 
-You are given the array nums consisting of n positive integers. You computed the sum of all non-empty continuous subarrays from the array and then sorted them in non-decreasing order, creating a new array of n * (n + 1) / 2 numbers.
+You are given the array nums consisting of n positive integers. You computed the sum of all non-empty continuous subarrays from the array and then sorted them in non-decreasing order, creating a new array of n \* (n + 1) / 2 numbers.
 
 Return the sum of the numbers from index left to index right (indexed from 1), inclusive, in the new array. Since the answer can be a huge number return it modulo 109 + 7.
 
@@ -2068,7 +2068,7 @@ Return the sum of the numbers from index left to index right (indexed from 1), i
 Example 1:
 
 Input: nums = [1,2,3,4], n = 4, left = 1, right = 5
-Output: 13 
+Output: 13
 Explanation: All subarray sums are 1, 3, 6, 10, 2, 5, 9, 3, 7, 4. After sorting them in non-decreasing order we have the new array [1, 2, 3, 3, 4, 5, 6, 7, 9, 10]. The sum of the numbers from index le = 1 to ri = 5 is 1 + 2 + 3 + 3 + 4 = 13.
 
 Example 2:
@@ -2342,7 +2342,6 @@ Return the minimum number of moves required to move each student to a seat such 
 Note that there may be multiple seats or students in the same position at the beginning.
 
 ```
-
 Input: seats = [3,1,5], students = [2,7,4]
 Output: 4
 Explanation: The students are moved as follows:
@@ -2351,7 +2350,38 @@ Explanation: The students are moved as follows:
 - The second student is moved from from position 7 to position 5 using 2 moves.
 - The third student is moved from from position 4 to position 3 using 1 move.
   In total, 1 + 2 + 1 = 4 moves were used.
+```
 
+### [Problem 2053. Kth Distinct String in an Array](https://leetcode.com/problems/kth-distinct-string-in-an-array/description)
+
+A distinct string is a string that is present only once in an array.
+
+Given an array of strings arr, and an integer k, return the kth distinct string present in arr. If there are fewer than k distinct strings, return an empty string "".
+
+Note that the strings are considered in the order in which they appear in the array.
+
+```
+Example 1:
+
+Input: arr = ["d","b","c","b","c","a"], k = 2
+Output: "a"
+Explanation:
+The only distinct strings in arr are "d" and "a".
+"d" appears 1st, so it is the 1st distinct string.
+"a" appears 2nd, so it is the 2nd distinct string.
+Since k == 2, "a" is returned. 
+Example 2:
+
+Input: arr = ["aaa","aa","a"], k = 1
+Output: "aaa"
+Explanation:
+All strings in arr are distinct, so the 1st string "aaa" is returned.
+Example 3:
+
+Input: arr = ["a","b","a"], k = 3
+Output: ""
+Explanation:
+The only distinct string is "b". Since there are fewer than 3 distinct strings, we return an empty string "".
 ```
 
 ### [Problem 2058. Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/description/)

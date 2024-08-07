@@ -1113,6 +1113,26 @@ Output: 2
 Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.
 ```
 
+### [Problem 273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)
+
+Convert a non-negative integer num to its English words representation.
+
+
+```
+Example 1:
+
+Input: num = 123
+Output: "One Hundred Twenty Three"
+Example 2:
+
+Input: num = 12345
+Output: "Twelve Thousand Three Hundred Forty Five"
+Example 3:
+
+Input: num = 1234567
+Output: "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
+```
+
 ### [Problem 274. H-Index](https://leetcode.com/problems/h-index/)
 
 Given an array of integers citations where citations[i] is the number of citations a researcher received for their ith paper, return compute the researcher's h-index.

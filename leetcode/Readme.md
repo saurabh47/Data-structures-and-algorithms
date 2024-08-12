@@ -215,6 +215,20 @@ Output: [2,1,4,3]
 Explanation: The linked list is 1 -> 2 -> 3 -> 4. After swapping the nodes, the linked list becomes 2 -> 1 -> 4 -> 3.
 ```
 
+### Problem 25. Reverse Nodes in k-Group (https://leetcode.com/problems/reverse-nodes-in-k-group/)
+Given the head of a linked list, reverse the nodes of the list k at a time, and return the modified list.
+
+k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes, in the end, should remain as it is.
+
+You may not alter the values in the list's nodes, only nodes themselves may be changed.
+
+![](https://assets.leetcode.com/uploads/2020/10/03/reverse_ex1.jpg)
+
+```
+Example 1:
+Input: head = [1,2,3,4,5], k = 2
+Output: [2,1,4,3,5]
+```
 ### Problem 26. Remove Duplicates from Sorted Array (https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
 Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.

@@ -1,7 +1,7 @@
 import sys
 sys.path.append('../linked_list')
 from traversal import LinkedList
-from data_structures.node import Node
+from data_structures.linked_list.node import Node
 
 class Solution:
     def oddEvenList(self, head: Node):

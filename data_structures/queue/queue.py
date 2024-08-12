@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../../data_structures')
-from node import Node
+from data_structures.linked_list.node import Node
 
 class Queue:
     def __init__(self, head = None, tail = None):

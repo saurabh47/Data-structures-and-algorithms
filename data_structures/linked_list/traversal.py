@@ -1,6 +1,9 @@
+
+import os
 import sys
-sys.path.append('../linked_list')
-from data_structures.node import Node
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
+from data_structures.linked_list.node import Node
 
 class LinkedList:
     def __init__(self, arr = []):

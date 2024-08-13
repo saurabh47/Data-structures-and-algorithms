@@ -216,6 +216,7 @@ Explanation: The linked list is 1 -> 2 -> 3 -> 4. After swapping the nodes, the 
 ```
 
 ### Problem 25. Reverse Nodes in k-Group (https://leetcode.com/problems/reverse-nodes-in-k-group/)
+
 Given the head of a linked list, reverse the nodes of the list k at a time, and return the modified list.
 
 k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes, in the end, should remain as it is.
@@ -229,6 +230,7 @@ Example 1:
 Input: head = [1,2,3,4,5], k = 2
 Output: [2,1,4,3,5]
 ```
+
 ### Problem 26. Remove Duplicates from Sorted Array (https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
 Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
@@ -297,6 +299,56 @@ A sorted array of distinct integers is given. Find the index of the target value
 Input: nums = [1,3,5,6], target = 5
 Output: 2
 Explanation: 5 exists in nums and its index is 2.
+```
+
+### [Problem 39. Combination Sum](https://leetcode.com/problems/combination-sum/)
+
+Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. You may return the combinations in any order.
+
+The same number may be chosen from candidates an unlimited number of times. Two combinations are unique if the
+frequency
+of at least one of the chosen numbers is different.
+
+The test cases are generated such that the number of unique combinations that sum up to target is less than 150 combinations for the given input.
+
+```
+Example 1:
+
+Input: candidates = [2,3,6,7], target = 7
+Output: [[2,2,3],[7]]
+Explanation:
+2 and 3 are candidates, and 2 + 2 + 3 = 7. Note that 2 can be used multiple times.
+7 is a candidate, and 7 = 7.
+These are the only two combinations.
+```
+
+### [Problem 40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
+
+Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sum to target.
+
+Each number in candidates may only be used once in the combination.
+
+Note: The solution set must not contain duplicate combinations.
+
+```
+ Example 1:
+
+Input: candidates = [10,1,2,7,6,1,5], target = 8
+Output:
+[
+[1,1,6],
+[1,2,5],
+[1,7],
+[2,6]
+]
+Example 2:
+
+Input: candidates = [2,5,2,1,2], target = 5
+Output:
+[
+[1,2,2],
+[5]
+]
 ```
 
 ### [Problem 41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
@@ -1131,7 +1183,6 @@ Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0
 
 Convert a non-negative integer num to its English words representation.
 
-
 ```
 Example 1:
 
@@ -1662,8 +1713,9 @@ Note: while a magic square can only contain numbers from 1 to 9, grid may contai
 ```
 Input: grid = [[4,3,8,4],[9,5,1,9],[2,7,6,2]]
 Output: 1
-Explanation: 
+Explanation:
 ```
+
 The following subgrid is a 3 x 3 magic square:
 ![](https://assets.leetcode.com/uploads/2020/09/11/magic_valid.jpg)
 
@@ -1713,7 +1765,7 @@ Explanation: 3 boats (1, 2), (2) and (3)
 
 You start at the cell (rStart, cStart) of an rows x cols grid facing east. The northwest corner is at the first row and column in the grid, and the southeast corner is at the last row and column.
 
-You will walk in a clockwise spiral shape to visit every position in this grid. Whenever you move outside the grid's boundary, we continue our walk outside the grid (but may return to the grid boundary later.). Eventually, we reach all rows * cols spaces of the grid.
+You will walk in a clockwise spiral shape to visit every position in this grid. Whenever you move outside the grid's boundary, we continue our walk outside the grid (but may return to the grid boundary later.). Eventually, we reach all rows \* cols spaces of the grid.
 
 Return an array of coordinates representing the positions of the grid in the order you visited them.
 
@@ -2439,7 +2491,7 @@ Explanation:
 The only distinct strings in arr are "d" and "a".
 "d" appears 1st, so it is the 1st distinct string.
 "a" appears 2nd, so it is the 2nd distinct string.
-Since k == 2, "a" is returned. 
+Since k == 2, "a" is returned.
 Example 2:
 
 Input: arr = ["aaa","aa","a"], k = 1
@@ -2747,7 +2799,7 @@ It is allowed to remap the keys numbered 2 to 9 to distinct collections of lette
 
 Return the minimum number of pushes needed to type word after remapping the keys.
 
-An example mapping of letters to keys on a telephone keypad is given below. Note that 1, *, #, and 0 do not map to any letters.
+An example mapping of letters to keys on a telephone keypad is given below. Note that 1, \*, #, and 0 do not map to any letters.
 
 ```
 Input: word = "abcde"

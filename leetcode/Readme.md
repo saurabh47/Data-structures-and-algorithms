@@ -1617,7 +1617,6 @@ The distance of a pair of integers a and b is defined as the absolute difference
 
 Given an integer array nums and an integer k, return the kth smallest distance among all the pairs nums[i] and nums[j] where 0 <= i < j < nums.length.
 
-
 ```
 Example 1:
 
@@ -2010,7 +2009,6 @@ Reverse the strings in each pair of matching parentheses, starting from the inne
 Your result should not contain any brackets.
 
 ```
-
 Example 1:
 
 Input: s = "(abcd)"
@@ -2025,7 +2023,34 @@ Example 3:
 Input: s = "(ed(et(oc))el)"
 Output: "leetcode"
 Explanation: First, we reverse the substring "oc", then "etco", and finally, the whole string.
+```
 
+### [Problem 1200. Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/)
+
+Given an array of distinct integers arr, find all pairs of elements with the minimum absolute difference of any two elements.
+
+Return a list of pairs in ascending order(with respect to pairs), each pair [a, b] follows
+
+a, b are from arr
+a < b
+b - a equals to the minimum absolute difference of any two elements in arr
+
+```
+Example 1:
+
+Input: arr = [4,2,1,3]
+Output: [[1,2],[2,3],[3,4]]
+Explanation: The minimum absolute difference is 1. List all pairs with difference equal to 1 in ascending order.
+
+Example 2:
+
+Input: arr = [1,3,6,10,15]
+Output: [[1,3]]
+
+Example 3:
+
+Input: arr = [3,8,-10,23,19,-4,-14,27]
+Output: [[-14,-10],[19,23],[23,27]]
 ```
 
 ### [Problem 1209. Remove all adjacent Duplicates II ] (https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/)

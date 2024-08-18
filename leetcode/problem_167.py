@@ -1,4 +1,6 @@
 ### Problem 167: Two Sum II - Input array is sorted (Easy): https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+
+### tags: Array, Two Pointers, Binary Search
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         diffMap = {}
@@ -8,6 +10,20 @@ class Solution:
                 diffMap[numbers[i]] = i+1
             else:
                 return [diffMap[diff], i+1]
+
+### Two pointers approach (Memory efficient)
+class Solution2:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        left = 0
+        right = len(numbers) - 1
+        while(left < right):
+            if((numbers[left] + numbers[right]) == target):
+                break
+            elif((numbers[left] + numbers[right]) > target):
+                right -= 1
+            else:
+                left += 1
+        return [left+1, right+1]
 
 if __name__ == "__main__":
     nums = [2,7,11,15]

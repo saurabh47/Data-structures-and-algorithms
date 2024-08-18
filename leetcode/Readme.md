@@ -1343,7 +1343,6 @@ Explanation: 1 has no prime factors, therefore all of its prime factors are limi
 
 ### [Problem 264. Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)
 
-
 An ugly number is a positive integer whose prime factors are limited to 2, 3, and 5.
 
 Given an integer n, return the nth ugly number.
@@ -2938,6 +2937,7 @@ x for x >= 0.
 -x for x < 0.
 
 ![](https://assets.leetcode.com/uploads/2021/07/12/screenshot-2021-07-12-at-13-40-26-diagram-drawio-diagrams-net.png)
+
 ```
 Example 1:
 
@@ -2958,7 +2958,7 @@ The blue cells denote the optimal cells to pick, which have coordinates (0, 1), 
 You add 5 + 3 + 4 = 12 to your score.
 However, you must subtract abs(1 - 1) + abs(1 - 0) = 1 from your score.
 Your final score is 12 - 1 = 11.
-````
+```
 
 ### [Problem 2006. Count Number of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/description/)
 

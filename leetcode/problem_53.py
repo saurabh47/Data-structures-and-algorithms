@@ -63,7 +63,7 @@ class Solution3:
 
 # Kadane's Algorithm
 # Time Complexity: O(n)
-class Solution:
+class Solution4:
     def maxSubArray(self, nums):
         max_sum = 0
         result = -pow(10,4)
@@ -79,6 +79,16 @@ class Solution:
             return max(nums)
         else:
             return result
+
+class Solution5:
+    def maxSubArray(self, nums: List[int]) -> int:
+        curr_sum = 0
+        max_sum = nums[0]
+        for i in range(len(nums)):
+            curr_sum = max(curr_sum, 0)
+            curr_sum += nums[i]
+            max_sum = max(curr_sum, max_sum)
+        return max_sum
 
 if __name__ == '__main__':
     s = Solution()

@@ -1606,11 +1606,9 @@ The substring with start index = 6 is "bac", which is an anagram of "abc".
 You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
 
 ```
-
 Input: l1 = [7,2,4,3], l2 = [5,6,4]
 Output: [7,8,0,7]
 Explanation: 7243 + 564 = 7807
-
 ```
 
 ### [Problem 451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)
@@ -1618,11 +1616,29 @@ Explanation: 7243 + 564 = 7807
 Given a string s, sort it in decreasing order based on the frequency of characters, and return the sorted string. If there are multiple answers, return any of them.
 
 ```
-
 Input: s = "tree"
 Output: "eert"
 Explanation: 'e' appears twice while 'r' and 't' both appear once. The answer can be "eetr" as well.
+```
 
+### [Problem 476. Number Complement](https://leetcode.com/problems/number-complement/)
+
+The complement of an integer is the integer you get when you flip all the 0's to 1's and all the 1's to 0's in its binary representation.
+
+For example, The integer 5 is "101" in binary and its complement is "010" which is the integer 2.
+Given an integer num, return its complement.
+
+```
+Example 1:
+
+Input: num = 5
+Output: 2
+Explanation: The binary representation of 5 is 101 (no leading zero bits), and its complement is 010. So you need to output 2.
+Example 2:
+
+Input: num = 1
+Output: 0
+Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0.
 ```
 
 ### [Problem 506. Relative Ranks](https://leetcode.com/problems/relative-ranks/)

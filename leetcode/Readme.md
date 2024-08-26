@@ -1788,13 +1788,24 @@ Given the roots of two binary trees root and subRoot, return true if there is a 
 A subtree of a binary tree tree is a tree that consists of a node in tree and all of this node's descendants. The tree tree could also be considered as a subtree of itself.
 
 ```
-
 Input: root = [3,4,5,1,2], subRoot = [4,1,2]
 Output: true
 
 Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]
 Output: false
+```
 
+### [Problem 590. N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/)
+
+Given the root of an n-ary tree, return the postorder traversal of its nodes' values.
+
+Nary-Tree input serialization is represented in their level order traversal. Each group of children is separated by the null value (See examples)
+
+![](https://assets.leetcode.com/uploads/2019/11/08/sample_4_964.png)
+
+```
+Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
+Output: [2,6,14,11,7,3,12,8,4,13,9,10,5,1]
 ```
 
 ### [Problem 622. Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)

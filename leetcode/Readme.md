@@ -2815,6 +2815,7 @@ Explanation: The leaf nodes are "4" and "3" and the length of the shortest path 
 ```
 
 ### [Problem 1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
+
 You are given an undirected weighted graph of n nodes (0-indexed), represented by an edge list where edges[i] = [a, b] is an undirected edge connecting the nodes a and b with a probability of success of traversing that edge succProb[i].
 
 Given two nodes start and end, find the path with the maximum probability of success to go from start to end and return its success probability.
@@ -3003,6 +3004,29 @@ Output: "This is a sentence"
 Explanation: Sort the words in s to their original positions "This1 is2 a3 sentence4", then remove the numbers.
 ```
 
+### [Problem 1894. Find the Student that Will Replace the Chalk](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/)
+
+There are n students in a class numbered from 0 to n - 1. The teacher will give each student a problem starting with the student number 0, then the student number 1, and so on until the teacher reaches the student number n - 1. After that, the teacher will restart the process, starting with the student number 0 again.
+
+You are given a 0-indexed integer array chalk and an integer k. There are initially k pieces of chalk. When the student number i is given a problem to solve, they will use chalk[i] pieces of chalk to solve that problem. However, if the current number of chalk pieces is strictly less than chalk[i], then the student number i will be asked to replace the chalk.
+
+Return the index of the student that will replace the chalk pieces.
+
+```
+Example 1:
+
+Input: chalk = [5,1,5], k = 22
+Output: 0
+Explanation: The students go in turns as follows:
+- Student number 0 uses 5 chalk, so k = 17.
+- Student number 1 uses 1 chalk, so k = 16.
+- Student number 2 uses 5 chalk, so k = 11.
+- Student number 0 uses 5 chalk, so k = 6.
+- Student number 1 uses 1 chalk, so k = 5.
+- Student number 2 uses 5 chalk, so k = 0.
+Student number 0 does not have enough chalk, so they will have to replace it.
+```
+
 ### [Problem: 1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)
 
 ```
@@ -3074,11 +3098,12 @@ Explanation:
 The maximum difference occurs with i = 1 and j = 2, nums[j] - nums[i] = 5 - 1 = 4.
 Note that with i = 1 and j = 0, the difference nums[j] - nums[i] = 7 - 1 = 6, but i > j, so it is not valid.s
 ```
+
 ### [Problem 2022. Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array/description/)
 
-You are given a 0-indexed 1-dimensional (1D) integer array original, and two integers, m and n. You are tasked with creating a 2-dimensional (2D) array with  m rows and n columns using all the elements from original.
+You are given a 0-indexed 1-dimensional (1D) integer array original, and two integers, m and n. You are tasked with creating a 2-dimensional (2D) array with m rows and n columns using all the elements from original.
 
-The elements from indices 0 to n - 1 (inclusive) of original should form the first row of the constructed 2D array, the elements from indices n to 2 * n - 1 (inclusive) should form the second row of the constructed 2D array, and so on.
+The elements from indices 0 to n - 1 (inclusive) of original should form the first row of the constructed 2D array, the elements from indices n to 2 \* n - 1 (inclusive) should form the second row of the constructed 2D array, and so on.
 
 Return an m x n 2D array constructed according to the above procedure, or an empty 2D array if it is impossible.
 

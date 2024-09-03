@@ -3076,6 +3076,20 @@ However, you must subtract abs(1 - 1) + abs(1 - 0) = 1 from your score.
 Your final score is 12 - 1 = 11.
 ```
 
+### [Problem 1945. Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/description/)
+
+```
+Example 2:
+
+Input: s = "leetcode", k = 2
+Output: 6
+Explanation: The operations are as follows:
+- Convert: "leetcode" ➝ "(12)(5)(5)(20)(3)(15)(4)(5)" ➝ "12552031545" ➝ 12552031545
+- Transform #1: 12552031545 ➝ 1 + 2 + 5 + 5 + 2 + 0 + 3 + 1 + 5 + 4 + 5 ➝ 33
+- Transform #2: 33 ➝ 3 + 3 ➝ 6
+Thus the resulting integer is 6.
+```
+
 ### [Problem 2006. Count Number of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/description/)
 
 ```

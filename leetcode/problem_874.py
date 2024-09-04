@@ -70,3 +70,43 @@ class Solution:
             print("facing:" ,directions[self.direction], "position", self.x, self.y)
 
         return self.maxDist
+
+
+### Optimized 
+
+class Solution2:
+    def robotSim(self, commands: List[int], obstacles: List[List[int]]) -> int:
+        self.x = 0
+        self.y = 0
+        self.direction = 0
+        self.maxDist = 0
+        self.obj ={}
+        for o in obstacles:
+            k = "{},{}".format(o[0], o[1])
+            if(k not in self.obj):
+                self.obj[k] = 1
+        # N=0, E=1, S=2, W=3
+        directions = [[0, 1], [1, 0], [0, -1], [-1, 0]]
+        def updateLocation(distance):
+            dx, dy = directions[self.direction]
+            while(distance != 0):
+                k = "{},{}".format(self.x + dx, self.y + dy)
+                if(k in self.obj):
+                    break
+                else:
+                    self.x, self.y = self.x + dx, self.y + dy
+                    self.maxDist = max(self.maxDist, mdistance(self.x, self.y))
+                    distance -= 1
+
+        def mdistance(x, y):
+            return x * x + y * y
+        # dn = {0: 'N', 1: 'E', 2: 'S' , 3: 'W'}
+        for command in commands:
+            if(command == -2):
+                self.direction = (self.direction - 1) % 4 
+            elif(command == -1):
+                self.direction = (self.direction + 1) % 4 
+            else:
+                updateLocation(command)
+            # print("facing:" ,dn[self.direction], "position", self.x, self.y)
+        return self.maxDist

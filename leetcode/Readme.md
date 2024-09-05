@@ -2224,7 +2224,6 @@ Since not every customer received the correct change, the answer is false.
 
 ### [Problem 874. Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/description/?envType=daily-question&envId=2024-09-04)
 
-
 A robot on an infinite XY-plane starts at point (0, 0) facing north. The robot can receive a sequence of these three possible types of commands:
 
 -2: Turn left 90 degrees.
@@ -2339,12 +2338,43 @@ You will walk in a clockwise spiral shape to visit every position in this grid. 
 Return an array of coordinates representing the positions of the grid in the order you visited them.
 
 ```
-
 Example 2:
 
 Input: rows = 5, cols = 6, rStart = 1, cStart = 4
 Output: [[1,4],[1,5],[2,5],[2,4],[2,3],[1,3],[0,3],[0,4],[0,5],[3,5],[3,4],[3,3],[3,2],[2,2],[1,2],[0,2],[4,5],[4,4],[4,3],[4,2],[4,1],[3,1],[2,1],[1,1],[0,1],[4,0],[3,0],[2,0],[1,0],[0,0]]
+```
 
+### [Problem 901. Online Stock Span](https://leetcode.com/problems/online-stock-span/description/)
+
+Design an algorithm that collects daily price quotes for some stock and returns the span of that stock's price for the current day.
+
+The span of the stock's price in one day is the maximum number of consecutive days (starting from that day and going backward) for which the stock price was less than or equal to the price of that day.
+
+For example, if the prices of the stock in the last four days is [7,2,1,2] and the price of the stock today is 2, then the span of today is 4 because starting from today, the price of the stock was less than or equal 2 for 4 consecutive days.
+Also, if the prices of the stock in the last four days is [7,34,1,2] and the price of the stock today is 8, then the span of today is 3 because starting from today, the price of the stock was less than or equal 8 for 3 consecutive days.
+Implement the StockSpanner class:
+
+StockSpanner() Initializes the object of the class.
+int next(int price) Returns the span of the stock's price given that today's price is price.
+
+```
+Example 1:
+
+Input
+["StockSpanner", "next", "next", "next", "next", "next", "next", "next"]
+[[], [100], [80], [60], [70], [60], [75], [85]]
+Output
+[null, 1, 1, 1, 2, 1, 4, 6]
+
+Explanation
+StockSpanner stockSpanner = new StockSpanner();
+stockSpanner.next(100); // return 1
+stockSpanner.next(80);  // return 1
+stockSpanner.next(60);  // return 1
+stockSpanner.next(70);  // return 2
+stockSpanner.next(60);  // return 1
+stockSpanner.next(75);  // return 4, because the last 4 prices (including today's price of 75) were less than or equal to today's price.
+stockSpanner.next(85);  // return 6
 ```
 
 ### [Problem 912. Sort an Array](https://leetcode.com/problems/sort-an-array/)

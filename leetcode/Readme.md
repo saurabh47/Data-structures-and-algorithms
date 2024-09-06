@@ -1043,7 +1043,6 @@ Explanation: The right view of the binary tree is [1,3,4].
 Write an algorithm to determine if a number n is happy.
 
 ```
-
 Input: n = 19
 Output: true
 Explanation:
@@ -1051,7 +1050,28 @@ Explanation:
 8^2 + 2^2 = 68
 6^2 + 8^2 = 100
 1^2 + 0^2 + 0^2 = 1
+```
+### [Problem 203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)
 
+Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+
+![](https://assets.leetcode.com/uploads/2021/03/06/removelinked-list.jpg)
+
+```
+Example 1:
+Input: head = [1,2,6,3,4,5,6], val = 6
+Output: [1,2,3,4,5]
+
+Example 2:
+
+Input: head = [], val = 1
+Output: []
+
+Example 3:
+
+Input: head = [7,7,7,7], val = 7
+Output: []
+ 
 ```
 
 ### [Problem 205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)

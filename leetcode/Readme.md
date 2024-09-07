@@ -2721,12 +2721,29 @@ The number of soldiers in each row is:
 Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
 
 ```
-
 Input: nums = [8,1,2,2,3]
 Output: [4,0,1,1,3]
 Explanation:
 For nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3).
+```
 
+### [Problem 1367. Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/)
+
+Given a binary tree root and a linked list with head as the first node. 
+
+Return True if all the elements in the linked list starting from the head correspond to some downward path connected in the binary tree otherwise return False.
+
+In this context downward path means a path that starts at some node and goes downwards.
+
+![](https://assets.leetcode.com/uploads/2020/02/12/sample_1_1720.png)
+
+
+```
+Example 1.
+
+Input: head = [4,2,8], root = [1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]
+Output: true
+Explanation: Nodes in blue form a subpath in the binary Tree.  
 ```
 
 ### [Problem 1404. Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)
@@ -2738,7 +2755,6 @@ Given a number s in their binary representation. Return the number of steps to r
 - It's guaranteed that you can always reach to one for all testcases.
 
 ```
-
 Input: s = "1101"
 Output: 6
 Explanation: "1101" corressponds to number 13 in their decimal representation.
@@ -2748,7 +2764,6 @@ Step 3) 7 is odd, add 1 and obtain 8.
 Step 4) 8 is even, divide by 2 and obtain 4.
 Step 5) 4 is even, divide by 2 and obtain 2.
 Step 6) 2 is even, divide by 2 and obtain 1.
-
 ```
 
 ### [Problem 1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/)

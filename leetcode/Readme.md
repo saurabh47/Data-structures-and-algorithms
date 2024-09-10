@@ -426,6 +426,19 @@ Output: 6
 Explanation: [4,-1,2,1] has the largest sum = 6.
 ```
 
+### [Problem 54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
+
+Given an m x n matrix, return all elements of the matrix in spiral order.
+
+Example:
+
+![](https://assets.leetcode.com/uploads/2020/11/13/spiral.jpg)
+
+```
+Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+```
+
 ### [Problem 55. Jump Game](https://leetcode.com/problems/jump-game/)
 
 Given an array of non-negative integers nums, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you can reach the last index.
@@ -1051,6 +1064,7 @@ Explanation:
 6^2 + 8^2 = 100
 1^2 + 0^2 + 0^2 = 1
 ```
+
 ### [Problem 203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)
 
 Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
@@ -1071,7 +1085,7 @@ Example 3:
 
 Input: head = [7,7,7,7], val = 7
 Output: []
- 
+
 ```
 
 ### [Problem 205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)
@@ -2729,7 +2743,7 @@ For nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3).
 
 ### [Problem 1367. Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/)
 
-Given a binary tree root and a linked list with head as the first node. 
+Given a binary tree root and a linked list with head as the first node.
 
 Return True if all the elements in the linked list starting from the head correspond to some downward path connected in the binary tree otherwise return False.
 
@@ -2737,13 +2751,12 @@ In this context downward path means a path that starts at some node and goes dow
 
 ![](https://assets.leetcode.com/uploads/2020/02/12/sample_1_1720.png)
 
-
 ```
 Example 1.
 
 Input: head = [4,2,8], root = [1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]
 Output: true
-Explanation: Nodes in blue form a subpath in the binary Tree.  
+Explanation: Nodes in blue form a subpath in the binary Tree.
 ```
 
 ### [Problem 1404. Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)

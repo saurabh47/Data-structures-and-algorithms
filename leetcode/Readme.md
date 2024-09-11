@@ -2698,10 +2698,31 @@ Finally delete "ddd", get "aa"
 Given the root of a binary tree, return the sum of values of its deepest leaves.
 
 ```
-
 Input: root = [1,2,3,4,5,null,6,7,null,null,null,null,8]
 Output: 15
+```
 
+### [Problem 1318. Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/description/)
+
+Given 3 positives numbers a, b and c. Return the minimum flips required in some bits of a and b to make ( a OR b == c ). (bitwise OR operation).
+Flip operation consists of change any single bit 1 to 0 or change the bit 0 to 1 in their binary representation.
+
+```
+Example 1:
+
+Input: a = 2, b = 6, c = 5
+Output: 3
+Explanation: After flips a = 1 , b = 4 , c = 5 such that (a OR b == c)
+
+Example 2:
+
+Input: a = 4, b = 2, c = 7
+Output: 1
+
+Example 3:
+
+Input: a = 1, b = 2, c = 3
+Output: 0
 ```
 
 ### [Problem 1337. The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/)
@@ -3443,6 +3464,7 @@ For example, for x = 7, the binary representation is 111 and we may choose any b
 Given two integers start and goal, return the minimum number of bit flips to convert start to goal.
 
 ```
+
 Input: start = 10, goal = 7
 Output: 3
 Explanation: The binary representation of 10 and 7 are 1010 and 0111 respectively. We can convert 10 to 7 in 3 steps:
@@ -3451,6 +3473,7 @@ Explanation: The binary representation of 10 and 7 are 1010 and 0111 respectivel
 - Flip the third bit from the right: 1011 -> 1111.
 - Flip the fourth bit from the right: 1111 -> 0111.
   It can be shown we cannot convert 10 to 7 in less than 3 steps. Hence, we return 3.
+
 ```
 
 ### [Problem 2265. (Medium) Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/)

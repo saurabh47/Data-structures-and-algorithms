@@ -3437,18 +3437,20 @@ The resulting binary tree is shown in the diagram.
 
 ```
 
-You are given two numbers a and b. You need to find the number of bits you need to flip to convert a to b. Note: All given integers are in binary form.
+A bit flip of a number x is choosing a bit in the binary representation of x and flipping it from either 0 to 1 or 1 to 0.
 
-Input: a = 10, b = 20
-Output: 4
-Explanation:
-a = 01010
-b = 10100
-As we can see, the bits of a that need to be flipped are 01010. If we flip these bits, we get 10100, which is b. Hence, the number of bits that need to be flipped is 4.
+For example, for x = 7, the binary representation is 111 and we may choose any bit (including any leading zeros not shown) and flip it. We can flip the first bit from the right to get 110, flip the second bit from the right to get 101, flip the fifth bit from the right (a leading zero) to get 10111, etc.
+Given two integers start and goal, return the minimum number of bit flips to convert start to goal.
 
-X >> Y means x is shifted to the right by y bits. This is equivalent to dividing x by 2^y.
-e.g 8 >> 1 = 4 (1000 >> 1 = 0100)
+```
+Input: start = 10, goal = 7
+Output: 3
+Explanation: The binary representation of 10 and 7 are 1010 and 0111 respectively. We can convert 10 to 7 in 3 steps:
 
+- Flip the first bit from the right: 1010 -> 1011.
+- Flip the third bit from the right: 1011 -> 1111.
+- Flip the fourth bit from the right: 1111 -> 0111.
+  It can be shown we cannot convert 10 to 7 in less than 3 steps. Hence, we return 3.
 ```
 
 ### [Problem 2265. (Medium) Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/)
@@ -3475,6 +3477,7 @@ For the node with value 6: The average of its subtree is 6 / 1 = 6.
 ### [Problem 2331. (Easy): Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/description/)
 
 ```
+
 Input: root = [2,1,3,null,null,0,1]
 Output: true
 Explanation: The above diagram illustrates the evaluation process.
@@ -3506,11 +3509,13 @@ Return the minimum number of characters that need to be appended to the end of s
 A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.
 
 ```
+
 Input: s = "coaching", t = "coding"
 Output: 4
 Explanation: Append the characters "ding" to the end of s so that s = "coachingding".
 Now, t is a subsequence of s ("coachingding").
 It can be shown that appending any 3 characters to the end of s will never make t a subsequence.
+
 ```
 
 ### [Problem 2487. (Easy): Find the Score of All Prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes/description/)
@@ -3518,6 +3523,7 @@ It can be shown that appending any 3 characters to the end of s will never make 
 Given an array of integers nums, you are asked to calculate the score of all prefixes of the array. The score of a prefix is defined as the sum of the elements of the prefix multiplied by the length of the prefix.
 
 ```
+
 Input: head = [5,2,13,3,8]
 Output: [13,8]
 Explanation: The nodes that should be removed are 5, 2 and 3.
@@ -3525,6 +3531,7 @@ Explanation: The nodes that should be removed are 5, 2 and 3.
 - Node 13 is to the right of node 5.
 - Node 13 is to the right of node 2.
 - Node 8 is to the right of node 3.
+
 ```
 
 ### [Problem 2418. Sort the people](https://leetcode.com/problems/sort-the-people)
@@ -3536,6 +3543,7 @@ For each index i, names[i] and heights[i] denote the name and height of the ith 
 Return names sorted in descending order by the people's heights.
 
 ```
+
 Example 1:
 
 Input: names = ["Mary","John","Emma"], heights = [180,165,170]
@@ -3546,6 +3554,7 @@ Example 2:
 Input: names = ["Alice","Bob","Bob"], heights = [155,185,150]
 Output: ["Bob","Alice","Bob"]
 Explanation: The first Bob is the tallest, followed by Alice and the second Bob.
+
 ```
 
 ### [Problem 2500. (Easy) Delete Greatest Value in Each Row]
@@ -3573,10 +3582,12 @@ For example, once the pillow reaches the nth person they pass it to the n - 1th 
 Given the two positive integers n and time, return the index of the person holding the pillow after time seconds.
 
 ```
+
 Input: n = 4, time = 5
 Output: 2
 Explanation: People pass the pillow in the following way: 1 -> 2 -> 3 -> 4 -> 3 -> 2.
 After five seconds, the 2nd person is holding the pillow.
+
 ```
 
 ### [Problem 2640. (Medium) Find the score of all prefixes](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array)
@@ -3616,6 +3627,7 @@ Example 2:
 Input: details = ["1313579440F2036","2921522980M5644"]
 Output: 0
 Explanation: None of the passengers are older than 60.
+
 ```
 
 ### [Problem 2816. (Medium) Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list)
@@ -3669,6 +3681,7 @@ It can be shown that no other mapping can provide a lower cost.
 ### [Problem 3075. (Medium) Maximum Happiness of Selected Children](https://leetcode.com/problems/maximum-happiness-of-selected-children)
 
 ```
+
 Input: happiness = [1,2,3], k = 2
 Output: 4
 Explanation: We can pick 2 children in the following way:
@@ -3676,15 +3689,18 @@ Explanation: We can pick 2 children in the following way:
 - Pick the child with the happiness value == 3. The happiness value of the remaining children becomes [0,1].
 - Pick the child with the happiness value == 1. The happiness value of the remaining child becomes [0]. Note that the happiness value cannot become less than 0.
   The sum of the happiness values of the selected children is 3 + 1 = 4.
+
 ```
 
 ### [Problem 3110. (Easy) Score of a String](https://leetcode.com/problems/score-of-a-string)
 
 ```
+
 Input: s = "hello"
 Output: 13
 
 Explanation: The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111. So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13
+
 ```
 
 ### [Problem 3114. (Easy) Find the Score of All Prefixes of a String](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-a-string)
@@ -3704,11 +3720,13 @@ You are given a string word. A letter is called special if it appears both in lo
 Return the number of special letters in word.
 
 ```
+
 Input: word = "aaAbcBC"
 Output: 3
 Explanation: The special characters in word are 'a', 'b', and 'c'.
 
 The special characters in word are 'a', 'b', and 'c'.
+
 ```
 
 ### [Problem 3121. Count the Number of Special Characters II](https://leetcode.com/problems/count-the-number-of-special-characters-ii)
@@ -3743,12 +3761,14 @@ Notes:
 A consonant is an English letter that is not a vowel.
 
 ```
+
 Input: word = "234Adas"
 Output: true
 
 Explanation:
 
 This word satisfies the conditions.
+
 ```
 
 ### [Problem 3151. Special Array I (Easy)](https://leetcode.com/problems/special-array-i)
@@ -3758,10 +3778,12 @@ An array is considered special if every pair of its adjacent elements contains t
 You are given an array of integers nums. Return true if nums is a special array, otherwise, return false.
 
 ```
+
 Input: nums = [1]
 Output: true
 Explanation:
 There is only one element. So the answer is true.
+
 ```
 
 ### [Problem 3217. Delete Nodes From Linked List Present in Array (Medium)](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/)
@@ -3771,6 +3793,7 @@ You are given an array of integers nums and the head of a linked list. Return th
 ![](https://assets.leetcode.com/uploads/2024/06/11/linkedlistexample0.png)
 
 ```
+
 Example 1:
 
 Input: nums = [1,2,3], head = [1,2,3,4,5]
@@ -3782,4 +3805,7 @@ Example 2:
 Input: nums = [1], head = [1,2,1,2,1,2]
 Output: [2,2,2]
 Explanation: Remove the nodes with value 1.
+
+```
+
 ```

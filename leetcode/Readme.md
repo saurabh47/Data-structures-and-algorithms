@@ -1813,7 +1813,6 @@ Example 2:
 Input: timePoints = ["00:00","23:59","00:00"]
 Output: 0
 
-
 ### [Problem 543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
 
 Given the root of a binary tree, return the length of the diameter of the tree.
@@ -2367,13 +2366,33 @@ Each boat carries at most 2 people at the same time, provided the sum of the wei
 Return the minimum number of boats to carry every given person.
 
 ```
-
 Input: people = [3,2,2,1], limit = 3
 Output: 3
 Explanation: 3 boats (1, 2), (2) and (3)
-
 ```
 
+### [Problem 884. Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/description/)
+
+A sentence is a string of single-space separated words where each word consists only of lowercase letters.
+
+A word is uncommon if it appears exactly once in one of the sentences, and does not appear in the other sentence.
+
+Given two sentences s1 and s2, return a list of all the uncommon words. You may return the answer in any order.
+
+```
+Example 1:
+
+Input: s1 = "this apple is sweet", s2 = "this apple is sour"
+Output: ["sweet","sour"]
+Explanation:
+
+The word "sweet" appears only in s1, while the word "sour" appears only in s2.
+
+Example 2:
+Input: s1 = "apple apple", s2 = "banana"
+
+Output: ["banana"]
+```
 ### [Problem 885. Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/)
 
 You start at the cell (rStart, cStart) of an rows x cols grid facing east. The northwest corner is at the first row and column in the grid, and the southeast corner is at the last row and column.

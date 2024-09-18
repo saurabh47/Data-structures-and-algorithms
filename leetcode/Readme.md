@@ -1008,11 +1008,26 @@ Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
 Given an array nums of size n, return the majority element.
 
 ```
-
 Input: nums = [3,2,3]
 Output: 3
 Explanation: The majority element is 3.
+```
 
+### [Problem 179. Largest Number](https://leetcode.com/problems/largest-number/description/?envType=daily-question&envId=2024-09-18)
+
+Given a list of non-negative integers nums, arrange them such that they form the largest number and return it.
+
+Since the result may be very large, so you need to return a string instead of an integer. 
+
+```
+Example 1:
+
+Input: nums = [10,2]
+Output: "210"
+Example 2:
+
+Input: nums = [3,30,34,5,9]
+Output: "9534330"
 ```
 
 ### [Problem 189. Rotate Array](https://leetcode.com/problems/rotate-array/)

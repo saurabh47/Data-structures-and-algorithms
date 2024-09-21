@@ -1561,11 +1561,26 @@ Design a data structure that supports all following operations in average O(1) t
 Given two stings ransomNote and magazine, return true if ransomNote can be constructed from magazine and false otherwise.
 
 ```
-
 Input: ransomNote = "aa", magazine = "aab"
 Output: true
 Explanation: ransomNote is "aa" and magazine is "aab", so ransomNote can be constructed from magazine.
+```
 
+### [Problem 386. Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/)
+
+Given an integer n, return all the numbers in the range [1, n] sorted in lexicographical order.
+
+You must write an algorithm that runs in O(n) time and uses O(1) extra space. 
+
+```
+Example 1:
+
+Input: n = 13
+Output: [1,10,11,12,13,2,3,4,5,6,7,8,9]
+Example 2:
+
+Input: n = 2
+Output: [1,2]
 ```
 
 ### [Problem 387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)

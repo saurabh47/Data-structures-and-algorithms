@@ -27,3 +27,26 @@ class Solution:
         # print("toRemove", current.val)
         prev.next = current.next
         return head
+
+# Single Pass
+class Solution:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        current = head
+        targetNode = head
+        # give a head start to current
+        for i in range(n):
+            current = current.next
+
+        # when n == len of list,
+        # current reaches end, we are supposed to delete head
+        if(current is None):
+            return head.next
+        # when current reaches end
+        # target reaches at n
+        while(current.next):
+            targetNode = targetNode.next
+            current = current.next
+
+        # delete the node
+        targetNode.next = targetNode.next.next
+        return head

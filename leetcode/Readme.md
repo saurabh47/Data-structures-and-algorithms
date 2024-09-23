@@ -171,6 +171,29 @@ Output: 2
 Explanation: The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 ```
 
+### [Problem 19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+
+Given the head of a linked list, remove the nth node from the end of the list and return its head.
+
+![](https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg)
+
+```
+Example 1:
+
+Input: head = [1,2,3,4,5], n = 2
+Output: [1,2,3,5]
+
+Example 2:
+
+Input: head = [1], n = 1
+Output: []
+Example 3:
+
+Input: head = [1,2], n = 1
+Output: [1]
+
+```
+
 ### [Problem 20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.

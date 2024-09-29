@@ -1623,12 +1623,10 @@ Explanation: The first non-repeating character is "l" and its index is 0.
 Given two strings s and t, return true if s is a subsequence of t, or false otherwise.
 
 ```
-
 Input: s = "abc", t = "ahbgdc"
 Output: true
 
 Explanation: The string "abc" is a subsequence of "ahbgdc".
-
 ```
 
 ### [Problem 404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)
@@ -1659,7 +1657,6 @@ Input: s = "abccccdd"
 Output: 7
 
 Explanation: One longest palindrome that can be built is "dccaccd", whose length is 7.
-
 ```
 
 ### [Problem 424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
@@ -1667,11 +1664,42 @@ Explanation: One longest palindrome that can be built is "dccaccd", whose length
 Given a string s that consists of only uppercase English letters, you can perform at most k operations on that string.
 
 ```
-
 Input: s = "ABAB", k = 2
 Output: 4
 Explanation: Replace the two 'A's with two 'B's or vice versa.
+```
 
+### [Problem 432. All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/)
+
+Design a data structure to store the strings' count with the ability to return the strings with minimum and maximum counts.
+
+Implement the AllOne class:
+
+AllOne() Initializes the object of the data structure.
+inc(String key) Increments the count of the string key by 1. If key does not exist in the data structure, insert it with count 1.
+dec(String key) Decrements the count of the string key by 1. If the count of key is 0 after the decrement, remove it from the data structure. It is guaranteed that key exists in the data structure before the decrement.
+getMaxKey() Returns one of the keys with the maximal count. If no element exists, return an empty string "".
+getMinKey() Returns one of the keys with the minimum count. If no element exists, return an empty string "".
+Note that each function must run in O(1) average time complexity.
+
+```
+Example 1:
+
+Input
+["AllOne", "inc", "inc", "getMaxKey", "getMinKey", "inc", "getMaxKey", "getMinKey"]
+[[], ["hello"], ["hello"], [], [], ["leet"], [], []]
+Output
+[null, null, null, "hello", "hello", null, "hello", "leet"]
+
+Explanation
+AllOne allOne = new AllOne();
+allOne.inc("hello");
+allOne.inc("hello");
+allOne.getMaxKey(); // return "hello"
+allOne.getMinKey(); // return "hello"
+allOne.inc("leet");
+allOne.getMaxKey(); // return "hello"
+allOne.getMinKey(); // return "leet"
 ```
 
 ### [Problem 438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)

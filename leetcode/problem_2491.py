@@ -15,3 +15,24 @@ class Solution:
         if(end < start):
             return chemistry
         return -1
+
+### O(n) solution
+
+class Solution:
+    def dividePlayers(self, skill: List[int]) -> int:
+        pair_sum = (2 * sum(skill)) // len(skill)
+        if(pair_sum == 0):
+            return -1
+        s_map = Counter(skill)
+        chemistry = 0
+        for key in skill:
+            if(s_map[key] == 0):
+                continue
+            diff = pair_sum - key
+            if(not s_map[diff]):
+                return -1
+            chemistry += (key * diff)
+            s_map[diff] -= 1
+            s_map[key] -= 1
+
+        return chemistry

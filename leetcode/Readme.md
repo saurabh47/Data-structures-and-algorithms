@@ -3773,7 +3773,6 @@ The resulting binary tree is shown in the diagram.
 
 ### [Problem: 2220. (Easy): Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
 
-```
 
 A bit flip of a number x is choosing a bit in the binary representation of x and flipping it from either 0 to 1 or 1 to 0.
 
@@ -3883,7 +3882,6 @@ For each index i, names[i] and heights[i] denote the name and height of the ith 
 Return names sorted in descending order by the people's heights.
 
 ```
-
 Example 1:
 
 Input: names = ["Mary","John","Emma"], heights = [180,165,170]
@@ -3894,7 +3892,6 @@ Example 2:
 Input: names = ["Alice","Bob","Bob"], heights = [155,185,150]
 Output: ["Bob","Alice","Bob"]
 Explanation: The first Bob is the tallest, followed by Alice and the second Bob.
-
 ```
 
 ### [Problem 2500. (Easy) Delete Greatest Value in Each Row]
@@ -3902,7 +3899,6 @@ Explanation: The first Bob is the tallest, followed by Alice and the second Bob.
 Given a 2D integer array matrix, you need to delete the greatest value in each row. Return the sum of all the deleted values.
 
 ```
-
 Input: grid = [[1,2,4],[3,3,1]]
 Output: 8
 Explanation: The diagram above shows the removed values in each step.
@@ -3911,7 +3907,36 @@ Explanation: The diagram above shows the removed values in each step.
 - In the second operation, we remove 2 from the first row and 3 from the second row. We add 3 to the answer.
 - In the third operation, we remove 1 from the first row and 1 from the second row. We add 1 to the answer.
   The final answer = 4 + 3 + 1 = 8.
+```
+### [Problem 2491. Divide Players Into Teams of Equal Skill](https://leetcode.com/problems/divide-players-into-teams-of-equal-skill)
 
+You are given a positive integer array skill of even length n where skill[i] denotes the skill of the ith player. Divide the players into n / 2 teams of size 2 such that the total skill of each team is equal.
+
+The chemistry of a team is equal to the product of the skills of the players on that team.
+
+Return the sum of the chemistry of all the teams, or return -1 if there is no way to divide the players into teams such that the total skill of each team is equal.
+
+```
+Example 1:
+
+Input: skill = [3,2,5,1,3,4]
+Output: 22
+Explanation: 
+Divide the players into the following teams: (1, 5), (2, 4), (3, 3), where each team has a total skill of 6.
+The sum of the chemistry of all the teams is: 1 * 5 + 2 * 4 + 3 * 3 = 5 + 8 + 9 = 22.
+Example 2:
+
+Input: skill = [3,4]
+Output: 12
+Explanation:
+The two players form a team with a total skill of 7.
+The chemistry of the team is 3 * 4 = 12.
+Example 3:
+
+Input: skill = [1,1,2,3]
+Output: -1
+Explanation:
+There is no way to divide the players into teams such that the total skill of each team is equal.
 ```
 
 ### [Problem 2582. Pass the Pillow](https://leetcode.com/problems/pass-the-pillow)

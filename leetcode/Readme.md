@@ -1040,7 +1040,7 @@ Explanation: The majority element is 3.
 
 Given a list of non-negative integers nums, arrange them such that they form the largest number and return it.
 
-Since the result may be very large, so you need to return a string instead of an integer. 
+Since the result may be very large, so you need to return a string instead of an integer.
 
 ```
 Example 1:
@@ -1593,7 +1593,7 @@ Explanation: ransomNote is "aa" and magazine is "aab", so ransomNote can be cons
 
 Given an integer n, return all the numbers in the range [1, n] sorted in lexicographical order.
 
-You must write an algorithm that runs in O(n) time and uses O(1) extra space. 
+You must write an algorithm that runs in O(n) time and uses O(1) extra space.
 
 ```
 Example 1:
@@ -2209,9 +2209,9 @@ Output
 
 Explanation
 MyCalendarTwo myCalendarTwo = new MyCalendarTwo();
-myCalendarTwo.book(10, 20); // return True, The event can be booked. 
-myCalendarTwo.book(50, 60); // return True, The event can be booked. 
-myCalendarTwo.book(10, 40); // return True, The event can be double booked. 
+myCalendarTwo.book(10, 20); // return True, The event can be booked.
+myCalendarTwo.book(50, 60); // return True, The event can be booked.
+myCalendarTwo.book(10, 40); // return True, The event can be double booked.
 myCalendarTwo.book(5, 15);  // return False, The event cannot be booked, because it would result in a triple booking.
 myCalendarTwo.book(5, 10); // return True, The event can be booked, as it does not use time 10 which is already double booked.
 myCalendarTwo.book(25, 55); // return True, The event can be booked, as the time in [25, 40) will be double booked with the third event, the time [40, 50) will be single booked, and the time [50, 55) will be double booked with the second event.
@@ -2533,6 +2533,7 @@ Input: s1 = "apple apple", s2 = "banana"
 
 Output: ["banana"]
 ```
+
 ### [Problem 885. Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/)
 
 You start at the cell (rStart, cStart) of an rows x cols grid facing east. The northwest corner is at the first row and column in the grid, and the southeast corner is at the last row and column.
@@ -2924,6 +2925,7 @@ Example 3:
 Input: a = 1, b = 2, c = 3
 Output: 0
 ```
+
 ### [Problem 1331. Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/)
 
 Given an array of integers arr, replace each element with its rank.
@@ -2933,7 +2935,7 @@ The rank represents how large the element is. The rank has the following rules:
 Rank is an integer starting from 1.
 The larger the element, the larger the rank. If two elements are equal, their rank must be the same.
 Rank should be as small as possible.
- 
+
 ```
 
 Example 1:
@@ -3402,7 +3404,7 @@ Explanation: There are:
 
 You are given a string word that consists of digits and lowercase English letters.
 
-You will replace every non-digit character with a space. For example, "a123bc34d8ef34" will become " 123  34 8  34". Notice that you are left with some integers that are separated by at least one space: "123", "34", "8", and "34".
+You will replace every non-digit character with a space. For example, "a123bc34d8ef34" will become " 123 34 8 34". Notice that you are left with some integers that are separated by at least one space: "123", "34", "8", and "34".
 
 Return the number of different integers after performing the replacement operations on word.
 
@@ -3773,7 +3775,6 @@ The resulting binary tree is shown in the diagram.
 
 ### [Problem: 2220. (Easy): Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
 
-
 A bit flip of a number x is choosing a bit in the binary representation of x and flipping it from either 0 to 1 or 1 to 0.
 
 For example, for x = 7, the binary representation is 111 and we may choose any bit (including any leading zeros not shown) and flip it. We can flip the first bit from the right to get 110, flip the second bit from the right to get 101, flip the fifth bit from the right (a leading zero) to get 10111, etc.
@@ -3908,6 +3909,7 @@ Explanation: The diagram above shows the removed values in each step.
 - In the third operation, we remove 1 from the first row and 1 from the second row. We add 1 to the answer.
   The final answer = 4 + 3 + 1 = 8.
 ```
+
 ### [Problem 2491. Divide Players Into Teams of Equal Skill](https://leetcode.com/problems/divide-players-into-teams-of-equal-skill)
 
 You are given a positive integer array skill of even length n where skill[i] denotes the skill of the ith player. Divide the players into n / 2 teams of size 2 such that the total skill of each team is equal.
@@ -3921,7 +3923,7 @@ Example 1:
 
 Input: skill = [3,2,5,1,3,4]
 Output: 22
-Explanation: 
+Explanation:
 Divide the players into the following teams: (1, 5), (2, 4), (3, 3), where each team has a total skill of 6.
 The sum of the chemistry of all the teams is: 1 * 5 + 2 * 4 + 3 * 3 = 5 + 8 + 9 = 22.
 Example 2:
@@ -3992,6 +3994,19 @@ Example 2:
 Input: details = ["1313579440F2036","2921522980M5644"]
 Output: 0
 Explanation: None of the passengers are older than 60.
+```
+
+### [Problem 2696. (Easy) Minimum String Length After Removing Substrings](https://leetcode.com/problems/minimum-string-length-after-removing-substrings)
+
+You are given a string s consisting only of uppercase English letters.
+
+You can apply some operations to this string where, in one operation, you can remove any occurrence of one of the substrings "AB" or "CD" from s.
+
+Return the minimum possible length of the resulting string that you can obtain.
+
+Note that the string concatenates after removing the substring and could produce new "AB" or "CD" substrings.
+
+```
 
 ```
 
@@ -4204,10 +4219,12 @@ The maximum possible bitwise AND of a subarray is 4.
 The longest subarray with that value is [4], so we return 1.
 
 ```
+
 Constraints:
 
 1 <= nums.length <= 105
 1 <= nums[i] <= 106
+
 ```
 
 ### [Problem: 3043. Find the Length of the Longest Common Prefix]
@@ -4223,19 +4240,24 @@ You need to find the length of the longest common prefix between all pairs of in
 Return the length of the longest common prefix among all pairs. If no common prefix exists among them, return 0.
 
 ```
+
 Example 1:
 
 Input: arr1 = [1,10,100], arr2 = [1000]
 Output: 3
 Explanation: There are 3 pairs (arr1[i], arr2[j]):
+
 - The longest common prefix of (1, 1000) is 1.
 - The longest common prefix of (10, 1000) is 10.
 - The longest common prefix of (100, 1000) is 100.
-The longest common prefix is 100 with a length of 3.
-Example 2:
+  The longest common prefix is 100 with a length of 3.
+  Example 2:
 
 Input: arr1 = [1,2,3], arr2 = [4,4,4]
 Output: 0
 Explanation: There exists no common prefix for any pair (arr1[i], arr2[j]), hence we return 0.
 Note that common prefixes between elements of the same array do not count.
+
+```
+
 ```

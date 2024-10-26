@@ -23,6 +23,21 @@ class Solution:
                 result += ' '
         return result
 
+class Solution2:
+    def reverseWords(self, s: str) -> str:
+        reversed_s = self.reverseWord(s)
+        result = ''
+        words = reversed_s.split();
+        for i, word in enumerate(words):
+            if(i != len(words) -1):
+                result += (self.reverseWord(word) + ' ')
+            else:
+                result += self.reverseWord(word)
+        return result
+
+    def reverseWord(self, word):
+        return word[:: -1]
+
 
 if __name__ == '__main__':
     solution = Solution()

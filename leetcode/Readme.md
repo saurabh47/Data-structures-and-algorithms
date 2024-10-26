@@ -482,6 +482,18 @@ Output: 5
 Explanation: The last word is "World" with length 5.
 ```
 
+### [Problem 61. Rotate List](https://leetcode.com/problems/rotate-list/)
+
+Given the head of a linked list, rotate the list to the right by k places.
+
+![](https://assets.leetcode.com/uploads/2020/11/13/rotate1.jpg)
+
+```
+Example 1:
+Input: head = [1,2,3,4,5], k = 2
+Output: [4,5,1,2,3]
+```
+
 ### [Problem 66. Plus One](https://leetcode.com/problems/plus-one/)
 
 Given a non-empty array of decimal digits representing a non-negative integer, increment one to the integer.

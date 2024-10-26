@@ -21,6 +21,25 @@ class Solution:
             del nums[0]
             i += 1
 
+# alternate solution with extra memory
+class Solution2:
+    def rotate(self, nums: List[int], k: int) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """ 
+        k = k % len(nums)
+        rotation = []
+        for i in range(len(nums) - k, len(nums)):
+            rotation.append(nums[i])
+
+        for i in range(len(nums) - k):
+            rotation.append(nums[i])
+        for i in range(len(nums)):
+            nums[i] = rotation[i]
+
+
+
+
 if __name__ == "__main__":
     nums = [1,2,3,4,5,6,7]
     k = 3

@@ -37,6 +37,33 @@ class Solution2:
         for i in range(len(nums)):
             nums[i] = rotation[i]
 
+class Solution3:
+    def rotate(self, nums: List[int], k: int) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        def swap(start, end):
+            while(start < end):
+                temp = nums[start]
+                nums[start] = nums[end]
+                nums[end] = temp
+                start += 1
+                end -= 1
+
+        k = k % len(nums)
+        # reverse the nums list
+        start = 0
+        end = len(nums) -1
+        swap(start, end)
+        # reverse group 1
+        start = 0
+        end = k - 1
+        swap(start, end)
+
+        # reverse group 2
+        start = k
+        end = len(nums) - 1
+        swap(start, end)
 
 
 

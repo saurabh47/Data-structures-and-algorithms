@@ -42,7 +42,7 @@ class Solution3:
         """
         Do not return anything, modify nums in-place instead.
         """
-        def swap(start, end):
+        def reverse(start, end):
             while(start < end):
                 temp = nums[start]
                 nums[start] = nums[end]
@@ -54,16 +54,16 @@ class Solution3:
         # reverse the nums list
         start = 0
         end = len(nums) -1
-        swap(start, end)
+        reverse(start, end)
         # reverse group 1
         start = 0
         end = k - 1
-        swap(start, end)
+        reverse(start, end)
 
         # reverse group 2
         start = k
         end = len(nums) - 1
-        swap(start, end)
+        reverse(start, end)
 
 
 

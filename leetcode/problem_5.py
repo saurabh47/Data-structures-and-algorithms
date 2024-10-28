@@ -55,7 +55,25 @@ class Solution2:
                 start -= 1
                 end += 1
         return result
-        
+
+
+# Brute Force
+
+class Solution3:
+    def longestPalindrome(self, s: str) -> str:
+        def isPalindrome(s):
+            return s == s[:: -1]
+        if(len(s) < 2):
+            return s
+        max_len = 1
+        result = s[0]
+        for i in range(len(s)-1):
+            for j in range(i+1, len(s)):
+                if(j - i + 1 > max_len and isPalindrome(s[i:j+1])):
+                    result = s[i:j+1]
+                    max_len = j - i + 1
+        return result
+
 
 if __name__ == "__main__":
         s = Solution()

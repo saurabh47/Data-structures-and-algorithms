@@ -1,6 +1,8 @@
 # Problem 4: Median of Two Sorted Arrays (Hard): https://leetcode.com/problems/median-of-two-sorted-arrays/
 
-# Naive solution
+# Naive solution 
+# Time: O(n+m) where n is the length of nums1 and m is the length of nums2
+# Space: O(n+m) where n is the length of nums1 and m is the length of nums2
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         result = []
@@ -25,6 +27,8 @@ class Solution:
             return result[length // 2] 
         else: 
             return (result[length // 2] + result[(length // 2) -1]) / 2
+
+# O(n+m) solution
 
 class Solution2:
     def findMedianSortedArrays(self, nums1, nums2):
@@ -59,6 +63,52 @@ class Solution2:
         else:
             return nums[size//2]
 
+# O(1) space complexity
+# O(m+n) time complexity
+# hint:We traverse to middle by choosing the smallest from both arrays and keep track of recent two elements.
+class Solution3:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+
+        m = len(nums1)
+        n = len(nums2)
+        odd = m+n & 1
+        prev = 0
+        curr = 0
+        i = 0
+        j = 0
+        index = 0
+        while(i < m and j < n):
+            if(index == ((m + n)// 2) + 1):
+                break
+            prev = curr
+            if(nums1[i] < nums2[j]):
+                curr = nums1[i]
+                i += 1
+            else:
+                curr = nums2[j]
+                j += 1
+            index += 1
+
+        if(index == ((m + n)// 2) + 1):
+            if(odd):
+                return curr
+            return (curr + prev) / 2
+        else:
+            if(i < m):
+                while(index != ((m + n)// 2) + 1):
+                    prev = curr 
+                    curr = nums1[i]
+                    index += 1
+                    i += 1
+            else:
+                while(index != ((m + n)// 2) + 1):
+                    prev = curr 
+                    curr = nums2[j]
+                    index += 1
+                    j += 1
+        if(odd):
+            return curr
+        return (curr + prev) / 2
 if __name__ == "__main__":
     s = Solution()
     print(s.findMedianSortedArrays([1,3],[2])) # 2.0

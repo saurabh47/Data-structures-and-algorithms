@@ -1,3 +1,8 @@
+# Selection Sort
+
+# Time Complexity: O(n^2)
+# Space Complexity: O(1)
+
 def swap(i, j):
     temp = arr[i]
     arr[i] = arr[j]

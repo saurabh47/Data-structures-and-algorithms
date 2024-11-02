@@ -1,6 +1,7 @@
 ### Problem 135. Candy (Hard) https://leetcode.com/problems/candy/
 ### Tags: [Array, Greedy]
 
+# hint: satisfy left neighbour, right neighbour and return total
 ### Similar to problem 42. Trapping Rain Water (Hard) https://leetcode.com/problems/trapping-rain-water/
 
 class Solution:

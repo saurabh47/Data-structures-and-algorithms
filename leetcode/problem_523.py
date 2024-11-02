@@ -15,5 +15,22 @@ class Solution:
                     return True
             else:
                 rems[rem] = i
-        return False 
+        return False
+
+# hint: store Prefix Sum % k in hashmap
+# if we encounter same mod again that me found a subarray with sum%k==0
+class Solution:
+    def checkSubarraySum(self, nums: List[int], k: int) -> bool:
+        lookUp = {}
+        s = 0
+        for i, num in enumerate(nums):
+            s += num
+            if(s % k== 0 and i > 0):
+                return True
+            if((s % k) in lookUp):
+                if(abs(lookUp[s%k] - i) >= 2):
+                    return True
+            else:
+                lookUp[s % k] = i
+        return False
 

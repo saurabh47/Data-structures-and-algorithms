@@ -7,7 +7,7 @@
     Space Complexity: O(1)
 
     > Selection Sort cannot be optimized to perform better than O(n^2) in terms of time complexity. Even if you maintain a min index array, the time complexity remains the same. Because the original changes after swap which will invalidate the min index array.
-    
+
     The problems with selection sort are:
     - It has O(n^2) time complexity, which makes it inefficient on large lists.
     - The time complexity is still O(N^2) even if the list is already sorted.

@@ -171,6 +171,26 @@ Output: 2
 Explanation: The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 ```
 
+### [Problem 18. 4 Sum](https://leetcode.com/problems/4sum/)
+
+Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
+
+0 <= a, b, c, d < n
+a, b, c, and d are distinct.
+nums[a] + nums[b] + nums[c] + nums[d] == target
+You may return the answer in any order.
+
+```
+Example 1:
+
+Input: nums = [1,0,-1,0,-2,2], target = 0
+Output: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
+Example 2:
+
+Input: nums = [2,2,2,2,2], target = 8
+Output: [[2,2,2,2]]
+```
+
 ### [Problem 19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
 Given the head of a linked list, remove the nth node from the end of the list and return its head.

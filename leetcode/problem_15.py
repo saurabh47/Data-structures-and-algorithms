@@ -27,6 +27,37 @@ class Solution:
                     k -= 1 
         return result
 
+# Time Complexity:  (O(n(logn) + n^2)) =  (O(n^2))
+# Space Complexity: O(1)
+# Similar to 4Sum
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        nums.sort()
+        result = []
+        # [-1,0,1,2,-1,-4]
+        # [-4, -1, -1, 0, 1,  1, 2]
+        # 
+        for i in range(len(nums) - 2):
+            if(i > 0 and nums[i] == nums[i-1]):
+                continue
+            start = i + 1
+            end = len(nums) - 1
+            while(start < end):
+                s = nums[start] + nums[end] + nums[i]
+                if(s == 0):
+                    result.append([nums[start], nums[end], nums[i]])
+                    while(start < end and nums[start]==nums[start+1]):
+                        start += 1
+                    while(end > start and nums[end]==nums[end - 1]):
+                        end -= 1
+                    start += 1
+                    end -= 1
+                elif(s < 0):
+                    start += 1
+                else:
+                    end -= 1
+        return result
+
 if __name__ == "__main__":
     solution = Solution()
     print(solution.threeSum([-1, 0, 1, 2, -1, -4]))

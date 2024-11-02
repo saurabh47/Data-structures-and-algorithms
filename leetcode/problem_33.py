@@ -5,58 +5,43 @@
 # We do this by finding the pivot point which basically divides the array into two
 # subarray so as to be able to apply a binary search on either side of the array
 # depending on where the target value lies.
-# E.g [4,5,6,7,0,1,2] pivot = 3
+# E.g [4,5,6,7,0,1,2] pivot = 4
 # array1 = [4,5,6,7] array2 = [0,1,2]
-# if target = 0, we apply binary search on array2
-
-from typing import List
+# if target between start and pivot, we apply binary search on left half else right half
 
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        start = 0 
-        end = len(nums)-1;
-        pivot = self.pivot(start, end, nums);
-        print("start={}, end= {},pivot={}".format(start, end, pivot))
-        array1 = nums[:pivot+1]
-        array2 = nums[pivot+1:]
-        print("array1={} array2={}".format(array1,array2))
-        if(len(array1) > 0 and array1[0] <= target):
-            # search left half
-            return self.binarySearch(start, pivot, nums, target)
-        else:
-            # search right half
-            return self.binarySearch(pivot+1, end, nums, target)
-
-    def binarySearch(self, start, end, nums, target):
-        if(end < start):
-            return -1
-        mid = (end + start)//2
-        if(nums[mid] == target):
-            return mid;
-        elif(nums[mid] > target):
-            return self.binarySearch(start, mid-1, nums, target)
-        else:
-            return self.binarySearch(mid+1, end, nums, target)
-
-    def pivot(self, start, end, nums):
-        if(start == end):
+        def partition(start, end):
+            while(start <= end):
+                mid = start + (end - start) // 2
+                if(start == end):
+                    return start
+                if(mid >= 0 and nums[mid] > nums[end]):
+                    start = mid + 1
+                if(nums[mid] <= nums[end]):
+                    end = mid
             return start
-        mid = (end + start)// 2 #floor division
-        # if array is sorted (no rotation)
-        if(nums[mid] > nums[start] and nums[end] > nums[mid]):
-            return end;
-        if(nums[mid] > nums[mid+1]):
-            return mid
-        elif(nums[mid] < nums[mid-1] ):
-            return mid - 1
+
+        def bSearch(start, end):
+            while(start <= end):
+                mid = start + (end - start) // 2
+                if(nums[mid] == target):
+                    return mid
+                if(target < nums[mid]):
+                    end = mid - 1
+                else:
+                    start = mid + 1
+            return -1
+
+        start = 0
+        end = len(nums) - 1
+        index = partition(0, len(nums) - 1)
+        if(nums[index] == target):
+            return index
+        if(nums[index]<= target and target <= nums[end]):
+            return bSearch(index, end)
         else:
-            # mid < mid + 1
-            # mid > mid -1
-            if(nums[start] > nums[mid]):
-                end = mid-1
-            else:
-                start = mid+1
-            return self.pivot(start,end,nums)
+            return bSearch(start, index - 1)
 
 if __name__ == '__main__':
     solution = Solution()

@@ -26,3 +26,25 @@ class Solution:
 
         paths(root, "")
         return self.result
+    
+
+class Solution:
+    def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
+        result = []
+        def dfs(r, path):
+            if(r is None):
+                return
+            if(not r.left and not r.right):
+                if(path==""):
+                    result.append(path + str(r.val))
+                else:
+                    result.append(path + "->" + str(r.val))
+            else:
+                if(path==""):
+                    dfs(r.left, path + str(r.val))
+                    dfs(r.right, path + str(r.val))
+                else:
+                    dfs(r.left, path + "->" + str(r.val))
+                    dfs(r.right, path + "->" + str(r.val))
+        dfs(root, "")
+        return result

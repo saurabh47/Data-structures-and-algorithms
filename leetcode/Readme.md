@@ -4009,19 +4009,47 @@ Output: ["Bob","Alice","Bob"]
 Explanation: The first Bob is the tallest, followed by Alice and the second Bob.
 ```
 
-### [Problem 2500. (Easy) Delete Greatest Value in Each Row]
+### [Problem 2490. Circular Sentence](https://leetcode.com/problems/circular-sentence)
 
-Given a 2D integer array matrix, you need to delete the greatest value in each row. Return the sum of all the deleted values.
+A sentence is a list of words that are separated by a single space with no leading or trailing spaces.
+
+For example, "Hello World", "HELLO", "hello world hello world" are all sentences.
+Words consist of only uppercase and lowercase English letters. Uppercase and lowercase English letters are considered different.
+
+A sentence is circular if:
+
+The last character of a word is equal to the first character of the next word.
+The last character of the last word is equal to the first character of the first word.
+For example, "leetcode exercises sound delightful", "eetcode", "leetcode eats soul" are all circular sentences. However, "Leetcode is cool", "happy Leetcode", "Leetcode" and "I like Leetcode" are not circular sentences.
+
+Given a string sentence, return true if it is circular. Otherwise, return false.
 
 ```
-Input: grid = [[1,2,4],[3,3,1]]
-Output: 8
-Explanation: The diagram above shows the removed values in each step.
 
-- In the first operation, we remove 4 from the first row and 3 from the second row (notice that, there are two cells with value 3 and we can remove any of them). We add 4 to the answer.
-- In the second operation, we remove 2 from the first row and 3 from the second row. We add 3 to the answer.
-- In the third operation, we remove 1 from the first row and 1 from the second row. We add 1 to the answer.
-  The final answer = 4 + 3 + 1 = 8.
+Example 1:
+
+Input: sentence = "leetcode exercises sound delightful"
+Output: true
+Explanation: The words in sentence are ["leetcode", "exercises", "sound", "delightful"].
+- leetcode's last character is equal to exercises's first character.
+- exercises's last character is equal to sound's first character.
+- sound's last character is equal to delightful's first character.
+- delightful's last character is equal to leetcode's first character.
+The sentence is circular.
+Example 2:
+
+Input: sentence = "eetcode"
+Output: true
+Explanation: The words in sentence are ["eetcode"].
+- eetcode's last character is equal to eetcode's first character.
+The sentence is circular.
+Example 3:
+
+Input: sentence = "Leetcode is cool"
+Output: false
+Explanation: The words in sentence are ["Leetcode", "is", "cool"].
+- Leetcode's last character is not equal to is's first character.
+The sentence is not circular.
 ```
 
 ### [Problem 2491. Divide Players Into Teams of Equal Skill](https://leetcode.com/problems/divide-players-into-teams-of-equal-skill)
@@ -4053,6 +4081,22 @@ Input: skill = [1,1,2,3]
 Output: -1
 Explanation:
 There is no way to divide the players into teams such that the total skill of each team is equal.
+```
+
+
+### [Problem 2500. (Easy) Delete Greatest Value in Each Row](https://leetcode.com/problems/delete-greatest-value-in-each-row)
+
+Given a 2D integer array matrix, you need to delete the greatest value in each row. Return the sum of all the deleted values.
+
+```
+Input: grid = [[1,2,4],[3,3,1]]
+Output: 8
+Explanation: The diagram above shows the removed values in each step.
+
+- In the first operation, we remove 4 from the first row and 3 from the second row (notice that, there are two cells with value 3 and we can remove any of them). We add 4 to the answer.
+- In the second operation, we remove 2 from the first row and 3 from the second row. We add 3 to the answer.
+- In the third operation, we remove 1 from the first row and 1 from the second row. We add 1 to the answer.
+  The final answer = 4 + 3 + 1 = 8.
 ```
 
 ### [Problem 2582. Pass the Pillow](https://leetcode.com/problems/pass-the-pillow)

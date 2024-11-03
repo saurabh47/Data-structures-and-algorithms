@@ -4,69 +4,96 @@
 # if you are not familiar with the concept of linked list.
 
 class Node:
-    def __init__(self, val=0, next=None):
+    def __init__(self, key, val, next = None, prev = None):
+        self.key = key
         self.val = val
         self.next = next
+        self.prev = prev
 
 class LRUCache:
+
     def __init__(self, capacity: int):
-        self.capacity = capacity
+        # head = MRU, tail = LRU
         self.head = None
-        self.lastPointer = None
-        self.size = 0
+        self.tail = None
+        self.capacity = capacity
         self.cache = {}
-
-    def removeNode(self, val:int) -> Node: 
-        prev = None
-        current = self.head
-        while current:
-            if current.val == val:
-                if prev:
-                    prev.next = current.next
-                else:
-                    self.head = current.next
-                if current == self.lastPointer:
-                    self.lastPointer = prev
-                return current
-            prev = current
-            current = current.next
-
-    def removeFront(self)-> Node: 
-        print("remove Front:", self.cache)
-        current = self.head
-        if(self.head):
-            self.head = self.head.next
-        print("after removeFront:", self.cache)
-        return current
-
-    def insertLast(self, val:int):
-        if self.head:
-            self.lastPointer.next = Node(val)
-            self.lastPointer = self.lastPointer.next
-        else:
-            self.head = Node(val)
-            self.lastPointer = self.head
+        self.size = 0
 
     def get(self, key: int) -> int:
-        if key in self.cache:
-            node = self.removeNode(key)
-            self.insertLast(node.val)
-            return self.cache[key]
+        if(key in self.cache):
+            pointer = self.cache[key]
+            self.removeNode(pointer)
+            self.insertNode(pointer)
+            return pointer.val
         else:
             return -1
 
-    def put(self, key: int, value: int) -> None:
-        if key not in self.cache:
-            if self.size >= self.capacity:
-                del self.cache[self.head.val]
-                self.removeNode(self.head.val)
-            else:
-                self.size += 1
-            self.insertLast(key)
+    # insert Front
+    def insertNode(self, node):
+        if(self.head is None):
+            self.head = node
+            self.tail = node
         else:
-            self.removeNode(key)
-            self.insertLast(key)
-        self.cache[key] = value
+            self.head.prev = node
+            node.next = self.head
+            node.prev = None
+            self.head = node
+
+    def deleteEnd(self):
+        if(not self.tail):
+            return
+        if self.tail == self.head:
+            self.head = None
+            self.tail = None
+        else:
+            self.tail = self.tail.prev
+            self.tail.next = None
+
+    def removeNode(self, curr):
+        if(curr is None):
+            return
+        # only 1 element
+        if(not curr.prev and not curr.next):
+            self.head = None
+            self.tail = None
+        # last element
+        elif(curr.prev and not curr.next):
+            curr.prev.next = None
+            self.tail = curr.prev
+        # first element
+        elif(not curr.prev and curr.next):
+            self.head = curr.next
+            self.head.prev = None
+        # delete in between
+        else:
+            prev = curr.prev
+            next = curr.next
+            prev.next = next
+            next.prev = prev
+
+    def put(self, key: int, value: int) -> None:
+        if(key in self.cache):
+            self.removeNode(self.cache[key])
+            self.size -= 1  #
+        node = Node(key, value)
+        self.insertNode(node)
+        self.cache[key] = node
+        self.size += 1
+        while(self.size > self.capacity):
+            del self.cache[self.tail.key]
+            self.deleteEnd()
+            self.size -=1
+
+    def showCache(self):
+        result= []
+        for key, pointer in self.cache.items():
+            result.append((key, pointer.val))
+
+# Your LRUCache object will be instantiated and called as such:
+# obj = LRUCache(capacity)
+# param_1 = obj.get(key)
+# obj.put(key,value)
 
 
 # Your LRUCache object will be instantiated and called as such:

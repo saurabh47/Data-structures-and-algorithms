@@ -27,24 +27,19 @@ class Solution:
         paths(root, "")
         return self.result
     
-
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 class Solution:
     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
         result = []
         def dfs(r, path):
             if(r is None):
                 return
+            path += str(r.val) 
             if(not r.left and not r.right):
-                if(path==""):
-                    result.append(path + str(r.val))
-                else:
-                    result.append(path + "->" + str(r.val))
+                result.append(path)
             else:
-                if(path==""):
-                    dfs(r.left, path + str(r.val))
-                    dfs(r.right, path + str(r.val))
-                else:
-                    dfs(r.left, path + "->" + str(r.val))
-                    dfs(r.right, path + "->" + str(r.val))
+                dfs(r.left, path + "->")
+                dfs(r.right, path + "->")
         dfs(root, "")
         return result

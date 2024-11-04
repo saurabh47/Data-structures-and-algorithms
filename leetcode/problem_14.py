@@ -25,6 +25,19 @@ class Solution:
                 break
         return result
 
+class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
+        strs.sort()
+        print(strs)
+        result = ""
+        first = strs[0]
+        last = strs[-1]
+        for i in range(min(len(first), len(last))):
+            if(first[i] != last[i]):
+                return result
+            result += first[i]
+        return result
+
 if __name__ == "__main__":
     strs = ["flower","flow","flight"]
     print(Solution().longestCommonPrefix(strs)) # "fl"

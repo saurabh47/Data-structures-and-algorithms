@@ -15,3 +15,15 @@ class Solution:
                 result +=start.val
             start = start.right
         return result
+
+### Recursive Solution
+class Solution:
+    def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
+        def rangeSum(r):
+            if(r is None):
+                return 0
+            val = 0
+            if(r.val >= low and r.val <= high):
+                val = r.val
+            return rangeSum(r.left) + val + rangeSum(r.right)
+        return rangeSum(root)

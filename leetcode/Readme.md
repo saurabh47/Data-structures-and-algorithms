@@ -731,6 +731,20 @@ Output: true
 Explanation: The binary tree is height-balanced.
 ```
 
+### [Problem 108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
+
+Given an integer array nums where the elements are sorted in ascending order, convert it to a 
+height-balanced
+ binary search tree.
+
+![](https://assets.leetcode.com/uploads/2021/02/18/btree1.jpg)
+
+```
+Input: nums = [-10,-3,0,5,9]
+Output: [0,-3,9,-10,null,5]
+Explanation: [0,-10,5,null,-3,null,9] is also accepted:
+```
+
 ### [Problem 111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
 
 Given a binary tree, find its minimum depth.

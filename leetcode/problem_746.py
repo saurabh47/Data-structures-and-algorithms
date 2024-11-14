@@ -5,8 +5,7 @@ class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
         # f(i): cost to reach at step i
         # f(0) => 0
-        # f(1) => 0
-        # Since we can start at either 0 or 1
+        # f(1) => 0  Since we can start at either 0 or 1
         # f(2) => min(15 + 20, 20) = 20
         # f(n+1)=> min(f(n-1),f(n))
         # Bottom up Approach

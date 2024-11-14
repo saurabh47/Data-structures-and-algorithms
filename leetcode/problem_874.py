@@ -11,7 +11,7 @@ class Solution:
             k = "{},{}".format(o[0], o[1])
             if(k not in self.obj):
                 self.obj[k] = 1
-        
+
         # N=0, E=1, S=2, W=3
         def updateLocation(distance):
             if(self.direction & 1 == 1):

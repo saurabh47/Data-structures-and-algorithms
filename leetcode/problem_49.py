@@ -14,6 +14,7 @@ class Solution:
         return list(result.values())
 
 # hint: sort each character and map to a key
+# Time Complexity: n*(k*logk) where k is average length of string
 class Solution2:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         lookUp = {}    

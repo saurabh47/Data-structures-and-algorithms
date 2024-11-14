@@ -1,7 +1,7 @@
 ### Problem 875. Koko Eating Bananas (Medium): https://leetcode.com/problems/koko-eating-bananas/
 ### tags: binary search, math
 
-### hint: try all possible pair of eating speeds and find the minimum speed that can be used to eat all the bananas within h hours
+### hint: try all possible eating speeds and find the minimum speed that can be used to eat all the bananas within h hours
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
         

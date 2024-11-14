@@ -2303,19 +2303,16 @@ myCalendarTwo.book(50, 60); // return True, The event can be booked.
 myCalendarTwo.book(10, 40); // return True, The event can be double booked.
 myCalendarTwo.book(5, 15);  // return False, The event cannot be booked, because it would result in a triple booking.
 myCalendarTwo.book(5, 10); // return True, The event can be booked, as it does not use time 10 which is already double booked.
-myCalendarTwo.book(25, 55); // return True, The event can be booked, as the time in [25, 40) will be double booked with the third event, the time [40, 50) will be single booked, and the time [50, 55) will be double booked with the second event.
+myCalendarTwo.book(25, 55); // return True, The event can be booked, as the time in [25, 40) will be double booked with the third event, the time [40, 50) will be single booked, and the time([50, 55) will be double booked with the second event.
 ```
 
 ### [Problem 746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
 
 You are given an integer array cost where cost[i] is the cost of ith step on a staircase. Once you pay the cost, you can either climb one or two steps.
-
 You can either start from the step with index 0, or the step with index 1.
-
 Return the minimum cost to reach the top of the floor.
 
 ```
-
 Example 1:
 
 Input: cost = [10,15,20]
@@ -2338,7 +2335,6 @@ Explanation: You will start at index 0.
 - Pay 1 and climb two steps to reach index 9.
 - Pay 1 and climb one step to reach the top.
   The total cost is 6.
-
 ```
 
 ### [Problem 771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)
@@ -2547,6 +2543,31 @@ Explanation: The robot starts at (0, 0):
 3. Turn right.
 4. Move south 6 units to (0, 0).
 The furthest point the robot ever gets from the origin is (0, 6), which squared is 62 = 36 units away.
+```
+
+### [Problem 875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)
+
+Koko loves to eat bananas. There are n piles of bananas, the ith pile has piles[i] bananas. The guards have gone and will come back in h hours.
+
+Koko can decide her bananas-per-hour eating speed of k. Each hour, she chooses some pile of bananas and eats k bananas from that pile. If the pile has less than k bananas, she eats all of them instead and will not eat any more bananas during this hour.
+
+Koko likes to eat slowly but still wants to finish eating all the bananas before the guards return.
+
+Return the minimum integer k such that she can eat all the bananas within h hours.
+
+```
+Example 1:
+
+Input: piles = [3,6,7,11], h = 8
+Output: 4
+Example 2:
+
+Input: piles = [30,11,23,4,20], h = 5
+Output: 30
+Example 3:
+
+Input: piles = [30,11,23,4,20], h = 6
+Output: 23
 ```
 
 ### [Problem 876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)

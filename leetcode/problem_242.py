@@ -22,6 +22,26 @@ class Solution:
                 return False
         return True
 
+class Solution2:
+    def isAnagram(self, s: str, t: str) -> bool:
+        arr = [0]*26
+        if(len(s) != len(t)):
+            return False
+        for i in range(len(s)):
+            index = ord(s[i]) - 97
+            arr[index] += 1
+
+        for i in range(len(t)):
+            index = ord(t[i]) - 97
+            arr[index] -= 1
+        
+
+        for i in range(len(arr)):
+            if(arr[i] != 0):
+                return False
+        
+        return True
+
 if __name__ == "__main__":
     s = "anagram"
     t = "nagaram"

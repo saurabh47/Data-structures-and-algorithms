@@ -39,6 +39,22 @@ class Solution2:
             result.append(pair[1])
         return result
 
+# Time complexity: O(nlogk)
+# Space complexity: O(n)
+class Solution3:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        freq = Counter(nums)
+        result =[]
+        min_heap = []
+        for key, value in freq.items():
+            pair = (value * -1, key)
+            heapq.heappush(min_heap, pair)
+        
+        for i in range(k):
+            value, key = heapq.heappop(min_heap)
+            result.append(key)
+        return result
+
 if __name__ == "__main__":
     nums = [1,1,1,2,2,3]
     k = 2

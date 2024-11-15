@@ -2109,13 +2109,23 @@ Constraints:
 ### [Problem 658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/)
 
 ```
-
 Input: arr = [1,2,3,4,5], k = 4, x = 3
 Output: [1,2,3,4]
 
 Input: arr = [1,2,3,4,5], k = 4, x = -1
+```
+
+### [Problem 659. Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)
+
+Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.
 
 ```
+Input: strs = ["Hello", "World"]
+Output: ["Hello", "World"]
+
+Explanation: The input string is ["Hello", "World"] and the encoded string is "5#Hello6#World".
+```
+
 
 ### [Problem 700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)
 

@@ -25,6 +25,7 @@ class Solution:
             else:
                 result.append(product//nums[i])
         return result
+
 # Solution 2: Calculate the prefix and suffix product of the arrays
 # Multiply the prefix and suffix product to get the result
 class Solution2:
@@ -39,6 +40,22 @@ class Solution2:
             suf[i] = (suf[i+1] * nums[i+1])
         for i in range(len(nums)):
             result.append(pref[i]*suf[i])
+        return result
+
+# Solution 3: Optimized on memory usage
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        result = [1] * len(nums)
+        pref = 1
+        for i in range(len(nums)):
+            result[i] = pref
+            pref *= nums[i]
+        
+        suff = 1
+        for i in range(len(nums) - 1, -1, -1):
+            result[i] *= suff
+            suff *= nums[i]
+        
         return result
 
 

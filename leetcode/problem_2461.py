@@ -25,3 +25,28 @@ class Solution:
                 result = max(s, result)
             end += 1
         return result
+
+# Optimized: We use lookUp to store index of current element
+# This optmization skips windows with duplicate elements
+class Solution:
+    def maximumSubarraySum(self, nums: List[int], k: int) -> int:
+        # input: k, arr
+        # output: max sum of subarr of size k
+        start = 0
+        end = 0
+        lookUp = {}
+        s = 0
+        result = 0
+        # [1,2,4,2,9,9,9]
+        while(end < len(nums)):
+            s += nums[end]
+            idx = lookUp.get(nums[end], -1)
+            while(start <= idx or end - start + 1 > k):
+                s -= nums[start]
+                start += 1
+
+            if(end - start + 1 == k):
+                result = max(s, result)
+            lookUp[nums[end]] = end
+            end += 1
+        return result

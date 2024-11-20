@@ -4063,15 +4063,14 @@ For the node with value 6: The average of its subtree is 6 / 1 = 6.
 ### [Problem 2331. (Easy): Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/description/)
 
 ```
-
 Input: root = [2,1,3,null,null,0,1]
 Output: true
 Explanation: The above diagram illustrates the evaluation process.
 The AND node evaluates to False AND True = False.
 The OR node evaluates to True OR False = True.
 The root node evaluates to True, so we return true.
-
 ```
+
 
 ### [Problem 2236. Root equals sum of children](https://leetcode.com/problems/root-equals-sum-of-children/description/)
 
@@ -4082,6 +4081,41 @@ Input: root = [10,4,6]
 Output: true
 Explanation: The values of the root, its left child, and its right child are 10, 4, and 6, respectively.
 10 is equal to 4 + 6, so we return true.
+```
+
+### [Problem 2395. Find Subarrays With Equal Sum](https://leetcode.com/problems/find-subarrays-with-equal-sum/description/)
+
+Given a 0-indexed integer array nums, determine whether there exist two subarrays of length 2 with equal sum. Note that the two subarrays must begin at different indices.
+
+Return true if these subarrays exist, and false otherwise.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+```
+ 
+
+Example 1:
+
+Input: nums = [4,2,4]
+Output: true
+Explanation: The subarrays with elements [4,2] and [2,4] have the same sum of 6.
+Example 2:
+
+Input: nums = [1,2,3,4,5]
+Output: false
+Explanation: No two subarrays of size 2 have the same sum.
+Example 3:
+
+Input: nums = [0,0,0]
+Output: true
+Explanation: The subarrays [nums[0],nums[1]] and [nums[1],nums[2]] have the same sum of 0. 
+Note that even though the subarrays have the same content, the two subarrays are considered different because they are in different positions in the original array.
+ 
+
+Constraints:
+
+2 <= nums.length <= 1000
+-109 <= nums[i] <= 109
 ```
 
 ### [Problem 2461.  Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/)

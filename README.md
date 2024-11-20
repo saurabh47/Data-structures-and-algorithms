@@ -1,16 +1,17 @@
-This repository is a collection of popular coding questions and their solutions. You can use this repository to refer to solutions for coding questions. If you have a better solution to an existing question or have a solution to a new question, feel free to contribute.
+#### Data Structure and Algorithms
+
+This repository is a collection of resources to help you prepare for coding interviews. You can use this repository to refer to solutions for coding questions. If you have a better solution to an existing question or have a solution to a new question, feel free to contribute.
 
 ### Table of Contents
 
 - [Algorithms](algorithms/)
 - [Data Structures](data_structures/)
 - [Cryptography](cryptography/)
-- [Exam Questions](exams/)
 - [HackerRank](hackerrank/)
 - [Leetcode](leetcode/)
 - [Number Theory](number_theory/)
 - [Patterns](patterns/)
-- [Foobar](foobar/)
+- [Google Foobar](foobar/)
 - [String manipulation](string_manipulation/)
 
 ## Running a Python program
@@ -87,7 +88,7 @@ gcc file.c -o file.out
 
 By Sharing a code to this repository you agree to the following:
 
-- The code shared is written by you and free from plagiarism.
+- The code shared is written by you and not copied from any other source.
 - You have full rights to the code you are contributing and it does not violate any law or third party rights.
 - You agree that your contribution will be publicly available for use under the [MIT License](LICENSE).
 - You agree that the maintainers of this repository have the right to edit, modify, copy, share your code under the [MIT License](LICENSE).

@@ -2888,7 +2888,6 @@ You are given an integer array heights representing the current order that the s
 Return the number of indices where heights[i] != expected[i].
 
 ```
-
 Example 1:
 
 Input: heights = [1,1,4,2,1,3]
@@ -2906,7 +2905,32 @@ Explanation:
 heights: [5,1,2,3,4]
 expected: [1,2,3,4,5]
 All indices do not match.
+```
 
+### [Problem 1072. Flip Columns For Maximum Number of Equal Rows](https://leetcode.com/problems/flip-columns-for-maximum-number-of-equal-rows/)
+
+You are given an m x n binary matrix matrix.
+
+You can choose any number of columns in the matrix and flip every cell in that column (i.e., Change the value of the cell from 0 to 1 or vice versa).
+
+Return the maximum number of rows that have all values equal after some number of flips.
+
+```
+Example 1:
+
+Input: matrix = [[0,1],[1,1]]
+Output: 1
+Explanation: After flipping no values, 1 row has all values equal.
+Example 2:
+
+Input: matrix = [[0,1],[1,0]]
+Output: 2
+Explanation: After flipping values in the first column, both rows have equal values.
+Example 3:
+
+Input: matrix = [[0,0,0],[0,0,1],[1,1,0]]
+Output: 2
+Explanation: After flipping values in the first two columns, the last two rows have equal values.
 ```
 
 ### [Problem 1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array/)

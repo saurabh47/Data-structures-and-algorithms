@@ -1,5 +1,20 @@
 # Problem 997: Find the Town Judge (Easy): https://leetcode.com/problems/find-the-town-judge/description/
 
+### tags: Graph, Directed Graph, Indegree, Outdegree
+
+# Without Graphs
+
+class Solution:
+    def findJudge(self, n: int, trust: List[List[int]]) -> int:
+        delta = defaultdict(int)
+        for edge in trust:
+            delta[edge[1]] += 1
+            delta[edge[0]] -= 1
+        
+        for i in range(1, n+1):
+            if(delta[i] == n-1):
+                return i
+        return -1
 
 class Solution:
     def findJudge(self, n: int, trust) -> int:

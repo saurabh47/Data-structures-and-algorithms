@@ -1,10 +1,12 @@
 # A class to represent a graph. A graph is the list of the adjacency lists.
 # Size of the array will be the no of the vertices "nodes"
+from collections import deque
 class Graph:
   def __init__(self, size, directed):
     self.nodes_len = size
     self.roots = {}
     self.directed = directed
+    self.visited = set()
 
   # connects node a and b
   def addEdge(self, a, b):
@@ -23,6 +25,25 @@ class Graph:
       for i in range(len(values)):
         print("Vertex {}".format(values[i]))
 
+  def traversal_bfs(self):
+      for node, neighbors in self.roots.items():
+        if(node not in self.visited):
+            self.bfs(node)
+      
+  
+  def bfs(self, node):
+    q = deque()
+    q.append(node)
+    while(len(q) != 0):
+      # print("queue=", q)
+      top = q.popleft()
+      self.visited.add(top)
+      print(" {} ".format(top))
+      for neighbor in self.roots[top]:
+        if(neighbor not in self.visited):
+          q.append(neighbor)
+          self.visited.add(neighbor)
+  
   def bfs_traversal(self, source):
     print("source node={}".format(source))
     toVisit=[source]
@@ -64,7 +85,8 @@ if __name__ == "__main__":
   graph.addEdge(4, 0)
   graph.addEdge(4, 6)
   graph.addEdge(0, 6)
-  print(graph.bfs_traversal(2))
+  graph.bfs_traversal(5)
+  graph.traversal_bfs()
 
 
 ### output

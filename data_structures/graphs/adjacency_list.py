@@ -33,10 +33,11 @@ class Graph:
     return False
 
   def showGraph(self):
-    for key, values in self.roots.items():
-      print("Current Vertex at: {}".format(key))
-      for i in range(len(values)):
-        print("Vertex {}".format(values[i]))
+    print("Graph:", self.roots)
+    # for key, values in self.roots.items():
+    #   print("Current Vertex at: {}".format(key))
+    #   for i in range(len(values)):
+    #     print("Vertex {}".format(values[i]))
 
 # {0: [1], 1: [0]}
 # {0: [1], 1: [0, 2], 2: [1]}

@@ -26,15 +26,17 @@ class Graph:
   def bfs_traversal(self, source):
     print("source node={}".format(source))
     toVisit=[source]
-    visited = []
+    visited = set()
+    bfs = []
     while(len(toVisit)!=0):
       top = toVisit[0]
       for node in self.roots[top]:
         if node not in toVisit and node not in visited:
           toVisit.append(node)
-      visited.append(top)
+      visited.add(top)
+      bfs.append(top)
       toVisit.pop(0)
-    print(visited)
+    print(bfs)
 
 #
 #       1 ----- 3 -- -- 0
@@ -45,6 +47,7 @@ class Graph:
 #     \ | /     | /     |
 #       2 ----- 4 -- -- 6
 #
+
 
 if __name__ == "__main__":
   # graph with 4 nodes and directed = False

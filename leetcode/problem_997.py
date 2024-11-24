@@ -2,7 +2,17 @@
 
 ### tags: Graph, Directed Graph, Indegree, Outdegree
 
-# Without Graphs
+class Solution:
+    def findJudge(self, n: int, trust: List[List[int]]) -> int:
+        delta = [0 for i in range(n+1)]
+        for out, inc in trust:
+            delta[out] -= 1
+            delta[inc] += 1
+        
+        for i in range(1, n+1):
+            if(delta[i] == n-1):
+                return i
+        return -1
 
 class Solution:
     def findJudge(self, n: int, trust: List[List[int]]) -> int:

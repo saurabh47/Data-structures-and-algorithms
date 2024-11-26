@@ -3,14 +3,12 @@
 
 class Solution:
     def findChampion(self, n: int, edges: List[List[int]]) -> int:
-        incoming = defaultdict(int)
-        for src, dest in edges:
-            if(src not in incoming):
-                incoming[src] = 0
-            incoming[dest] += 1
+        incoming = {}
         for i in range(n):
-            if(i not in incoming):
-                incoming[i] = 0
+            incoming[i] = 0
+        
+        for src, dest in edges:
+            incoming[dest] += 1
 
         count = 0
         champions = []
@@ -19,9 +17,4 @@ class Solution:
                 champions.append(k)
         if(len(champions) > 1):
             return -1
-        elif(len(champions) == 0):
-            if(n > 1):
-                return -1
-            else:
-                return n - 1
         return champions[0]

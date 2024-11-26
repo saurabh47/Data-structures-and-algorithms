@@ -30,7 +30,6 @@ class Graph:
         if(node not in self.visited):
             self.bfs(node)
       
-  
   def bfs(self, node):
     q = deque()
     q.append(node)
@@ -44,6 +43,23 @@ class Graph:
           q.append(neighbor)
           self.visited.add(neighbor)
   
+  def dfs_traversal(self):
+
+    visited = set()
+    result = []
+    def dfs(node):
+        visited.add(node)
+        result.append(node)
+        for neighbor in self.roots[node]:
+          if(neighbor not in visited):
+            dfs(neighbor)
+
+    for node, neighbors in self.roots.items():
+      if(node not in visited):
+        dfs(node)
+    print("dfs=", result)
+      
+      
   def bfs_traversal(self, source):
     print("source node={}".format(source))
     toVisit=[source]
@@ -87,6 +103,7 @@ if __name__ == "__main__":
   graph.addEdge(0, 6)
   graph.bfs_traversal(5)
   graph.traversal_bfs()
+  graph.dfs_traversal()
 
 
 ### output

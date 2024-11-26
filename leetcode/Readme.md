@@ -1125,6 +1125,28 @@ Output: [5,4,3,2,1]
 Explanation: The linked list is 1 -> 2 -> 3 -> 4 -> 5. After reversing the linked list, the linked list becomes 5 -> 4 -> 3 -> 2 -> 1.
 ```
 
+### [Problem 207. Course Schedule](https://leetcode.com/problems/course-schedule/)
+
+There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.
+
+For example, the pair [0, 1], indicates that to take course 0 you have to first take course 1.
+Return true if you can finish all courses. Otherwise, return false.
+
+```
+Example 1:
+
+Input: numCourses = 2, prerequisites = [[1,0]]
+Output: true
+Explanation: There are a total of 2 courses to take. 
+To take course 1 you should have finished course 0. So it is possible.
+Example 2:
+
+Input: numCourses = 2, prerequisites = [[1,0],[0,1]]
+Output: false
+Explanation: There are a total of 2 courses to take. 
+To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
+```
+
 ### [Problem 209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 
 Given an array of positive integers nums and a positive integer target, return the minimal length of a contiguous subarray [numsl, numsl+1, ..., numsr-1, numsr] of which the sum is greater than or equal to target. If there is no such subarray, return 0 instead.

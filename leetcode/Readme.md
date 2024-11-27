@@ -3930,7 +3930,6 @@ Return true if these subarrays exist, and false otherwise.
 A subarray is a contiguous non-empty sequence of elements within an array.
 ```
 
-
 Example 1:
 
 Input: nums = [4,2,4]
@@ -3954,6 +3953,41 @@ Constraints:
 2 <= nums.length <= 1000
 -109 <= nums[i] <= 10
 ```
+
+### [Problem 2419. Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/description/)
+
+You are given an integer array nums of size n.
+
+Consider a non-empty subarray from nums that has the maximum possible bitwise AND.
+
+In other words, let k be the maximum value of the bitwise AND of any subarray of nums. Then, only subarrays with a bitwise AND equal to k should be considered.
+Return the length of the longest such subarray.
+
+The bitwise AND of an array is the bitwise AND of all the numbers in it.
+
+A subarray is a contiguous sequence of elements within an array.
+```
+
+Example 1:
+
+Input: nums = [1,2,3,3,2,2]
+Output: 2
+Explanation:
+The maximum possible bitwise AND of a subarray is 3.
+The longest subarray with that value is [3,3], so we return 2.
+Example 2:
+
+Input: nums = [1,2,3,4]
+Output: 1
+Explanation:
+The maximum possible bitwise AND of a subarray is 4.
+The longest subarray with that value is [4], so we return 1.
+
+Constraints:
+
+1 <= nums.length <= 10
+```
+
 
 ### [Problem 2461. Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/)
 
@@ -4301,6 +4335,37 @@ Total cost is 1 + 1 + 1 + 1 + 1 = 5.
 It can be shown that no other mapping can provide a lower cost.
 ```
 
+### [Problem: 3043. Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix)
+
+You are given two arrays with positive integers arr1 and arr2.
+
+A prefix of a positive integer is an integer formed by one or more of its digits, starting from its leftmost digit. For example, 123 is a prefix of the integer 12345, while 234 is not.
+
+A common prefix of two integers a and b is an integer c, such that c is a prefix of both a and b. For example, 5655359 and 56554 have a common prefix 565 while 1223 and 43456 do not have a common prefix.
+
+You need to find the length of the longest common prefix between all pairs of integers (x, y) such that x belongs to arr1 and y belongs to arr2.
+
+Return the length of the longest common prefix among all pairs. If no common prefix exists among them, return 0.
+```
+
+Example 1:
+
+Input: arr1 = [1,10,100], arr2 = [1000]
+Output: 3
+Explanation: There are 3 pairs (arr1[i], arr2[j]):
+
+- The longest common prefix of (1, 1000) is 1.
+- The longest common prefix of (10, 1000) is 10.
+- The longest common prefix of (100, 1000) is 100.
+  The longest common prefix is 100 with a length of 3.
+  Example 2:
+
+Input: arr1 = [1,2,3], arr2 = [4,4,4]
+Output: 0
+Explanation: There exists no common prefix for any pair (arr1[i], arr2[j]), hence we return 0.
+Note that common prefixes between elements of the same array do not count
+```
+
 ### [Problem 3075. (Medium) Maximum Happiness of Selected Children](https://leetcode.com/problems/maximum-happiness-of-selected-children)
 ```
 
@@ -4413,71 +4478,45 @@ Input: nums = [1], head = [1,2,1,2,1,2]
 Output: [2,2,2]
 Explanation: Remove the nodes with value 1.
 ```
+### [Probelem 3243. Shortest Distance After Road Addition Queries I](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/)
 
-### [Problem 2419. Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/description/)
 
-You are given an integer array nums of size n.
+You are given an integer n and a 2D integer array queries.
 
-Consider a non-empty subarray from nums that has the maximum possible bitwise AND.
+There are n cities numbered from 0 to n - 1. Initially, there is a unidirectional road from city i to city i + 1 for all 0 <= i < n - 1.
 
-In other words, let k be the maximum value of the bitwise AND of any subarray of nums. Then, only subarrays with a bitwise AND equal to k should be considered.
-Return the length of the longest such subarray.
+queries[i] = [ui, vi] represents the addition of a new unidirectional road from city ui to city vi. After each query, you need to find the length of the shortest path from city 0 to city n - 1.
 
-The bitwise AND of an array is the bitwise AND of all the numbers in it.
+Return an array answer where for each i in the range [0, queries.length - 1], answer[i] is the length of the shortest path from city 0 to city n - 1 after processing the first i + 1 queries.
 
-A subarray is a contiguous sequence of elements within an array.
+![](https://assets.leetcode.com/uploads/2024/06/28/image8.jpg)
+> After the addition of the road from 2 to 4, the length of the shortest path from 0 to 4 is 3.
+
+![](https://assets.leetcode.com/uploads/2024/06/28/image9.jpg)
+
+> After the addition of the road from 0 to 2, the length of the shortest path from 0 to 4 is 2.
+
+
+![](https://assets.leetcode.com/uploads/2024/06/28/image10.jpg)
+>
+After the addition of the road from 0 to 4, the length of the shortest path from 0 to 4 is 1.
+
 ```
-
 Example 1:
+Input: n = 5, queries = [[2,4],[0,2],[0,4]]
+Output: [3,2,1]
 
-Input: nums = [1,2,3,3,2,2]
-Output: 2
-Explanation:
-The maximum possible bitwise AND of a subarray is 3.
-The longest subarray with that value is [3,3], so we return 2.
 Example 2:
 
-Input: nums = [1,2,3,4]
-Output: 1
+Input: n = 4, queries = [[0,3],[0,2]]
+Output: [1,1]
 Explanation:
-The maximum possible bitwise AND of a subarray is 4.
-The longest subarray with that value is [4], so we return 1.
 
-Constraints:
-
-1 <= nums.length <= 10
+After the addition of the road from 0 to 3, the length of the shortest path from 0 to 3 is 1.
+After the addition of the road from 0 to 2, the length of the shortest path remains 1.
 ```
+ 
 
-### [Problem: 3043. Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix)
-
-You are given two arrays with positive integers arr1 and arr2.
-
-A prefix of a positive integer is an integer formed by one or more of its digits, starting from its leftmost digit. For example, 123 is a prefix of the integer 12345, while 234 is not.
-
-A common prefix of two integers a and b is an integer c, such that c is a prefix of both a and b. For example, 5655359 and 56554 have a common prefix 565 while 1223 and 43456 do not have a common prefix.
-
-You need to find the length of the longest common prefix between all pairs of integers (x, y) such that x belongs to arr1 and y belongs to arr2.
-
-Return the length of the longest common prefix among all pairs. If no common prefix exists among them, return 0.
-```
-
-Example 1:
-
-Input: arr1 = [1,10,100], arr2 = [1000]
-Output: 3
-Explanation: There are 3 pairs (arr1[i], arr2[j]):
-
-- The longest common prefix of (1, 1000) is 1.
-- The longest common prefix of (10, 1000) is 10.
-- The longest common prefix of (100, 1000) is 100.
-  The longest common prefix is 100 with a length of 3.
-  Example 2:
-
-Input: arr1 = [1,2,3], arr2 = [4,4,4]
-Output: 0
-Explanation: There exists no common prefix for any pair (arr1[i], arr2[j]), hence we return 0.
-Note that common prefixes between elements of the same array do not count
-```
 
 ### [Problem 3254. Find the Power of K-Size Subarrays I (Easy)](https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i)
 

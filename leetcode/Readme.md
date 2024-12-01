@@ -2986,6 +2986,28 @@ The number of soldiers in each row is:
   The rows ordered from weakest to strongest are [2,0,3,1,4].
 ```
 
+### [Problem 1346. Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/)
+
+Given an array arr of integers, check if there exist two indices i and j such that :
+
+i != j
+0 <= i, j < arr.length
+arr[i] == 2 * arr[j]
+
+
+```
+Example 1:
+
+Input: arr = [10,2,5,3]
+Output: true
+Explanation: For i = 0 and j = 2, arr[i] == 10 == 2 * 5 == 2 * arr[j]
+Example 2:
+
+Input: arr = [3,1,7,11]
+Output: false
+Explanation: There is no i and j that satisfy the conditions.
+```
+
 ### [Problem 1365. How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
 
 Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].

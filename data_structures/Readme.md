@@ -107,6 +107,25 @@ _Note: Docs generated via Github copilot_
         The output of BFS traversal from a node 0 is: 0, 3, 4, 6, 2, 1, 5
         The output of BFS traversal from a node 5 is: 5, 1, 2, 3, 4, 0, 6
 
+    - Depth First Search
+        Depth First Search is a traversing algorithm where you should start traversing from a selected node (source or starting node) and traverse as far as possible in the same branch before backtracking. You should then move to the next branch and repeat the process.
+
+        e.g
+
+        ```
+               1 ----- 3 -- -- 0
+             / |     / |     / |
+           /   |    /  |    /  |
+         5     |   /   |   /   |
+           \   |  /    |  /    |
+             \ | /     | /     |
+               2 ----- 4 -- -- 6
+
+        ```
+        The output of DFS traversal from a node 2 is: 2, 5, 1, 3, 4, 0, 6. If you observe carefully, you will notice that the nodes are visited depth wise. First, all the nodes of the first branch are visited, then nodes of second branch, and so on. The algorithm for DFS traversal is as follows:
+        The output of DFS traversal from a node 0 is: 0, 3, 1, 5, 2, 4, 6
+        The output of DFS traversal from a node 5 is: 5, 2, 1, 3, 4, 0, 6
+
 ### Problems to solve
 
 - Height and Depth of a node in a Binary Tree

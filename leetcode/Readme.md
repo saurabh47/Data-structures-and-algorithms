@@ -1718,6 +1718,22 @@ Output: [7,8,0,7]
 Explanation: 7243 + 564 = 780
 ```
 
+### [Problem 448. Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
+
+Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
+
+```
+Example 1:
+
+Input: nums = [4,3,2,7,8,2,3,1]
+Output: [5,6]
+Example 2:
+
+Input: nums = [1,1]
+Output: [2]
+```
+
+
 ### [Problem 451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)
 
 Given a string s, sort it in decreasing order based on the frequency of characters, and return the sorted string. If there are multiple answers, return any of them.

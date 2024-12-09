@@ -4026,6 +4026,24 @@ Return the number of strings in words that are a prefix of s.
 
 A prefix of a string is a substring that occurs at the beginning of the string. A substring is a contiguous sequence of characters within a string
 
+```
+sExample 1:
+
+Input: words = ["a","b","c","ab","bc","abc"], s = "abc"
+Output: 3
+Explanation:
+The strings in words which are a prefix of s = "abc" are:
+"a", "ab", and "abc".
+Thus the number of strings in words which are a prefix of s is 3.
+Example 2:
+
+Input: words = ["a","a"], s = "aa"
+Output: 2
+Explanation:
+Both of the strings are a prefix of s. 
+Note that the same string can occur multiple times in words, and it should be counted each time.
+```
+
 ### [Problem 2265. (Medium) Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/)
 
 Given the root of a binary tree, return the number of nodes where the value of the node is equal to the average of the values in its subtree.

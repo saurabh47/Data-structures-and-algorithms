@@ -4382,6 +4382,19 @@ Explanation: You can choose the integers 1, 2, 3, 4, 5, 6, and 7.
 They are from the range [1, 7], all did not appear in banned, and their sum is 28, which did not exceed maxSum.
 ```
 
+### [Problem 2558. Take Gifts From the Richest Pile](https://leetcode.com/problems/take-gifts-from-the-richest-pile)
+
+You are given an integer array gifts denoting the number of gifts in various piles. Every second, you do the following:
+
+Choose the pile with the maximum number of gifts.
+If there is more than one pile with the maximum number of gifts, choose any.
+Leave behind the floor of the square root of the number of gifts in the pile. Take the rest of the gifts.
+Return the number of gifts remaining after k seconds.
+
+ 
+
+
+
 ### [Problem 2577. (Hard) Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid)
 
 You are given a m x n matrix grid consisting of non-negative integers where grid[row][col] represents the minimum time required to be able to visit the cell (row, col), which means you can visit the cell (row, col) only when the time you visit it is greater than or equal to grid[row][col].

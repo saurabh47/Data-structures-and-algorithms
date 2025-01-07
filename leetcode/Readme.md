@@ -3182,6 +3182,31 @@ Step 5) 4 is even, divide by 2 and obtain 2.
 Step 6) 2 is even, divide by 2 and obtain 1
 ```
 
+### Problem 1408. String Matching in an Array
+
+Given an array of string words, return all strings in words that is a substring of another word. You can return the answer in any order.
+
+A substring is a contiguous sequence of characters within a string
+
+```
+Example 1:
+
+Input: words = ["mass","as","hero","superhero"]
+Output: ["as","hero"]
+Explanation: "as" is substring of "mass" and "hero" is substring of "superhero".
+["hero","as"] is also a valid answer.
+Example 2:
+
+Input: words = ["leetcode","et","code"]
+Output: ["et","code"]
+Explanation: "et", "code" are substring of "leetcode".
+Example 3:
+
+Input: words = ["blue","green","bu"]
+Output: []
+Explanation: No string of words is substring of another string.
+```
+
 ### [Problem 1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/)
 
 Given an array of integers arr.

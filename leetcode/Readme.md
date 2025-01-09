@@ -3814,6 +3814,29 @@ Explanation: The operations are as follows:
 Thus the resulting integer is 6
 ```
 
+### [Problem 1961. Check if String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/description/)
+
+Given a string s and an array of strings words, determine whether s is a prefix string of words.
+
+A string s is a prefix string of words if s can be made by concatenating the first k strings in words for some positive k no larger than words.length.
+
+Return true if s is a prefix string of words, or false otherwise.
+
+```
+Example 1:
+
+Input: s = "iloveleetcode", words = ["i","love","leetcode","apples"]
+Output: true
+Explanation:
+s can be made by concatenating "i", "love", and "leetcode" together.
+Example 2:
+
+Input: s = "iloveleetcode", words = ["apples","i","love","leetcode"]
+Output: false
+Explanation:
+It is impossible to make s using a prefix of arr.
+```
+
 ### [Problem 1963. Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/description/?envType=daily-question&envId=2024-10-08)
 
 You are given a 0-indexed string s of even length n. The string consists of exactly n / 2 opening brackets '[' and n / 2 closing brackets ']'.

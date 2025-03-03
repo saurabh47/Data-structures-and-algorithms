@@ -285,6 +285,8 @@ Explanation: Your function should return length = 2, with the first two elements
 
 ### Problem 27. Remove Element (https://leetcode.com/problems/remove-element/)
 
+solution: [problem_26](../leetcode/problem_26.py)
+
 Given an integer array nums and an integer val, remove all occurrences of val "in nums" in-place. The relative order of the elements may be changed.
 
 ```

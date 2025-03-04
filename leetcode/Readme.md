@@ -3868,6 +3868,32 @@ Explanation: There are:
   The total number of units will be = (1 _ 3) + (2 _ 2) + (1 \* 1) = 8
 ```
 
+### [Problem 1780. Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/description/)
+
+solution: [problem_1780.py](./problem_1780.py)
+
+Given an integer n, return true if it is possible to represent n as the sum of distinct powers of three. Otherwise, return false.
+
+An integer y is a power of three if there exists an integer x such that y == 3x.
+
+ 
+```
+Example 1:
+
+Input: n = 12
+Output: true
+Explanation: 12 = 31 + 32
+Example 2:
+
+Input: n = 91
+Output: true
+Explanation: 91 = 30 + 32 + 34
+Example 3:
+
+Input: n = 21
+Output: false
+```
+
 ### [Problem 1791. Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/)
 
 There is an undirected star graph consisting of n nodes labeled from 1 to n. A star graph is a graph where there is one center node and exactly n - 1 edges that connect the center node with every other node.

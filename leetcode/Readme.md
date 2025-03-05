@@ -5138,6 +5138,31 @@ Output: -1
 Explanation: There is no path from the top left to the bottom-right cell.
 ```
 
+### [Probelem 2579. Count Total Number of Colored Cells](https://leetcode.com/problems/count-total-number-of-colored-cells/description/)
+
+
+solution: [problem_2579](./problem_2579.py)
+
+There exists an infinitely large two-dimensional grid of uncolored unit cells. You are given a positive integer n, indicating that you must do the following routine for n minutes:
+
+At the first minute, color any arbitrary unit cell blue.
+Every minute thereafter, color blue every uncolored cell that touches a blue cell.
+Below is a pictorial representation of the state of the grid after minutes 1, 2, and 3.
+
+```
+Example 1:
+
+Input: n = 1
+Output: 1
+Explanation: After 1 minute, there is only 1 blue cell, so we return 1.
+Example 2:
+
+Input: n = 2
+Output: 5
+Explanation: After 2 minutes, there are 4 colored cells on the boundary and 1 in the center, so we return 5. 
+```
+
+
 ### [Problem 2582. Pass the Pillow](https://leetcode.com/problems/pass-the-pillow)
 
 There are n people standing in a line labeled from 1 to n. The first person in the line is holding a pillow initially. Every second, the person holding the pillow passes it to the next person standing in the line. Once the pillow reaches the end of the line, the direction changes, and people continue passing the pillow in the opposite direction.

@@ -31,3 +31,20 @@ class Solution:
         if(len(res) != length):
             res = "0" * (length - len(res)) + res
         return res
+    
+
+### Optimized Solution Cantor's Diagonal (pure genius)
+
+# time complexity: O(n) 
+# space complexity: O(1)
+
+class Solution:
+    def findDifferentBinaryString(self, nums: List[str]) -> str:
+        res=""
+        for i in range(len(nums)):
+            char = nums[i][i]
+            if(char == "0"):
+                res += "1"
+            else:
+                res += "0"
+        return res

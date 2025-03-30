@@ -2356,6 +2356,26 @@ Output: ["Hello", "World"]
 Explanation: The input string is ["Hello", "World"] and the encoded string is "5#Hello6#World"
 ```
 
+### [Problem 680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
+
+Given a string s, return true if the s can be palindrome after deleting at most one character from it.
+
+```
+Example 1:
+
+Input: s = "aba"
+Output: true
+Example 2:
+
+Input: s = "abca"
+Output: true
+Explanation: You could delete the character 'c'.
+Example 3:
+
+Input: s = "abc"
+Output: false
+```
+
 ### [Problem 700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)
 
 You are given the root of a binary search tree (BST) and an integer val.

@@ -18,19 +18,20 @@ class Solution:
             operations -= 1
             isSorted = True
         return total
-
+ 
 class Solution2:
     def deleteGreatestValue(self, grid: List[List[int]]) -> int:
         operations  = len(grid[0])
         total = 0
         nested_heap = []
+        # create a heap out of each row and store it in a list
         for i in range(len(grid)):
             row = grid[i]
             max_heap = []
             for num in row:
                 heapq.heappush(max_heap, -num)
             nested_heap.append(max_heap)
-
+        # pop the max element from each heap and add it to the total
         while(operations > 0):
             max_num = 0
             for i in range(len(nested_heap)):

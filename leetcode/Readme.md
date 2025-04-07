@@ -1551,6 +1551,17 @@ Output: true
 Explanation: Both s and t contain all the same letters, in the same frequency, so they are anagrams.
 ```
 
+### [Problem 252. Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)
+solution: [problem_@52](./problem_252.py)
+Given an array of meeting time intervals where intervals[i] = [starti, endi], determine if a person could attend all meetings.
+
+```
+Input: intervals = [[0,30],[5,10],[15,20]]
+Output: false
+Explanation: The person cannot attend meetings [0,30] and [5,10] because they overlap.
+```
+
+
 ### [Problem 257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)
 
 Given the root of a binary tree, return all root-to-leaf paths in any order.

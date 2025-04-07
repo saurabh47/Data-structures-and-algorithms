@@ -40,3 +40,17 @@ class Solution2:
             total += max_num
             operations -= 1
         return total
+
+# Sort each rown and then choose max among each column
+class Solution3:
+    def deleteGreatestValue(self, grid: List[List[int]]) -> int:
+        result = 0
+        for row in grid:
+            row.sort()
+        cols = len(grid[0])
+        for i in range(cols - 1, -1, -1):
+            max_col = 0
+            for j in range(len(grid)):
+                max_col = max(max_col, grid[j][i])
+            result += max_col
+        return result

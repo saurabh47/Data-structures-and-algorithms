@@ -5714,6 +5714,25 @@ Output: [2,4,6]
 Explanation: The linked list is 1 -> 2 -> 3. After doubling the linked list, the linked list becomes 2 -> 4 -> 6
 ```
 
+### [Problem 2848. Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/description/)
+
+You are given a 0-indexed 2D integer array nums representing the coordinates of the cars parking on a number line. For any index i, nums[i] = [starti, endi] where starti is the starting point of the ith car and endi is the ending point of the ith car.
+
+Return the number of integer points on the line that are covered with any part of a car.
+
+```
+Example 1:
+
+Input: nums = [[3,6],[1,5],[4,7]]
+Output: 7
+Explanation: All the points from 1 to 7 intersect at least one car, therefore the answer would be 7.
+Example 2:
+
+Input: nums = [[1,3],[5,8]]
+Output: 7
+Explanation: Points intersecting at least one car are 1, 2, 3, 5, 6, 7, 8. There are a total of 7 points, therefore the answer would be 7.
+```
+
 ### [Problem 2924. Find Champions II](https://leetcode.com/problems/find-champions-ii)
 
 There are n teams numbered from 0 to n - 1 in a tournament; each team is also a node in a DAG.

@@ -4,10 +4,9 @@ from pyparsing import List
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
         length = len(nums);
+        # >> 1 is equivalent to // 2
         sum_exp = (length * (length+1)) >> 1
-        sum_act=0
-        for i in range(length):
-            sum_act +=nums[i]
+        sum_act = sum(nums)
         return int(sum_exp - sum_act);
 
 

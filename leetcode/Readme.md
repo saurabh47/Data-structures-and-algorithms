@@ -645,8 +645,33 @@ Constraints:
 1 <= path.length <= 3000
 path consists of English letters, digits, period '.', slash '/' or '_'.
 path is a valid absolute Unix path.
+```
+
+### [Problem 74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
+
+You are given an m x n integer matrix matrix with the following two properties:
+
+Each row is sorted in non-decreasing order.
+The first integer of each row is greater than the last integer of the previous row.
+Given an integer target, return true if target is in matrix or false otherwise.
+
+You must write a solution in O(log(m * n)) time complexity.
+
+ 
+![](https://assets.leetcode.com/uploads/2020/10/05/mat.jpg)
 
 ```
+Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3
+Output: true
+```
+
+![](https://assets.leetcode.com/uploads/2020/10/05/mat2.jpg)
+
+```
+Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13
+Output: false
+```
+
 ### [Problem 75. Sort Colors](https://leetcode.com/problems/sort-colors/)
 
 Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.

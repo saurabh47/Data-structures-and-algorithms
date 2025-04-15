@@ -2,7 +2,10 @@
 // Link: https://leetcode.com/problems/search-in-rotated-sorted-array/
 // tags: Binary Search, Array
 
+// time complexity: O(log n)
+// space complexity: O(1)
 // The idea is to find a pivot and apply binary search in one of the partition
+// pivot here is the index of the smallest element in the rotated array
 class Solution {
     fun search(nums: IntArray, target: Int): Int {
         /* given: arr, target

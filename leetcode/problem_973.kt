@@ -26,3 +26,42 @@ class Solution {
         return result
     }
 }
+
+
+/**
+ * 
+ * Problem 347. Top K Frequent Elements
+ * time complexity: O(n), space complexity: O(n)
+ */
+class OptimizedSolution {
+    fun topKFrequent(nums: IntArray, k: Int): IntArray {
+         /*
+          * input: nums, k
+          * output: top k elements by freq 
+         */
+ 
+         var hashMap = HashMap<Int, Int>()
+         // array index to represent the freq of elements
+         //
+         var array = MutableList<MutableList<Int>>(nums.size + 1){mutableListOf()}
+         for(num in nums){
+             var freq = hashMap.getOrDefault(num, 0)
+             hashMap.put(num, freq + 1)
+         }
+         for((key, value) in hashMap){
+             array[value].add(key);
+         }
+ 
+         var count = 0
+         var result = IntArray(k)
+         for(i in array.size - 1 downTo 0){
+           for(elem in array[i]){
+             if (count >= k) break
+             result[count] = elem
+             count += 1
+           }
+           if (count >= k) break
+         }
+         return result
+     }
+ }

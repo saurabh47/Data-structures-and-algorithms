@@ -54,6 +54,8 @@ class Solution {
  *     var next: ListNode? = null
  * }
  */
+// time complexity: O(n), n is the number of elements in the list
+// space complexity: O(1)
 class Solution2 {
     fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
         var head: ListNode? = null

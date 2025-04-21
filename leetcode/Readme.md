@@ -2711,6 +2711,42 @@ Input: nums = [1,6,1], k = 3
 Output: 5
 ```
 
+### [Problem 724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
+
+Given an array of integers nums, calculate the pivot index of this array.
+
+The pivot index is the index where the sum of all the numbers strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right.
+
+If the index is on the left edge of the array, then the left sum is 0 because there are no elements to the left. This also applies to the right edge of the array.
+
+Return the leftmost pivot index. If no such index exists, return -1.
+
+```
+
+Example 1:
+
+Input: nums = [1,7,3,6,5,6]
+Output: 3
+Explanation:
+The pivot index is 3.
+Left sum = nums[0] + nums[1] + nums[2] = 1 + 7 + 3 = 11
+Right sum = nums[4] + nums[5] = 5 + 6 = 11
+Example 2:
+
+Input: nums = [1,2,3]
+Output: -1
+Explanation:
+There is no index that satisfies the conditions in the problem statement.
+Example 3:
+
+Input: nums = [2,1,-1]
+Output: 0
+Explanation:
+The pivot index is 0.
+Left sum = 0 (no elements to the left of index 0)
+Right sum = nums[1] + nums[2] = 1 + -1 = 0
+```
+
 ### [Problem 725. Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/)
 
 Given the head of a singly linked list and an integer k, split the linked list into k consecutive linked list parts.
@@ -3906,6 +3942,36 @@ Example 3:
 Input: words = ["blue","green","bu"]
 Output: []
 Explanation: No string of words is substring of another string.
+```
+
+### [Problem 1413. Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/)
+
+Given an array of integers nums, you start with an initial positive value startValue.
+In each iteration, you calculate the step by step sum of startValue plus elements in nums (from left to right).
+Return the minimum positive value of startValue such that the step by step sum is never less than 1.
+ 
+```
+Example 1:
+
+Input: nums = [-3,2,-3,4,2]
+Output: 5
+Explanation: If you choose startValue = 4, in the third iteration your step by step sum is less than 1.
+step by step sum
+startValue = 4 | startValue = 5 | nums
+  (4 -3 ) = 1  | (5 -3 ) = 2    |  -3
+  (1 +2 ) = 3  | (2 +2 ) = 4    |   2
+  (3 -3 ) = 0  | (4 -3 ) = 1    |  -3
+  (0 +4 ) = 4  | (1 +4 ) = 5    |   4
+  (4 +2 ) = 6  | (5 +2 ) = 7    |   2
+Example 2:
+
+Input: nums = [1,2]
+Output: 1
+Explanation: Minimum start value should be positive. 
+Example 3:
+
+Input: nums = [1,-2,-3]
+Output: 5
 ```
 
 ### [Problem 1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/)

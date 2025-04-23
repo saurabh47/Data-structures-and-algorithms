@@ -2,6 +2,9 @@
  * Problem 1399. Count Largest Group
  * tags: math, simulation
  */
+
+ // time complexity: O(nlog(n)) for digitSum
+  // space complexity: O(n) for hashMap
 class Solution {
     fun countLargestGroup(n: Int): Int {
         var result:Int = 0

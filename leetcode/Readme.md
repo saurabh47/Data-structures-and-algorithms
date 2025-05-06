@@ -4802,14 +4802,29 @@ Explanation: The students go in turns as follows:
 Student number 0 does not have enough chalk, so they will have to replace it
 ```
 
-### [Problem: 1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)
+### [Problem 1920. Build array from permutation](https://leetcode.com/problems/build-array-from-permutation/)
+
+Given a zero-based permutation nums (0-indexed), build an array ans of the same length where ans[i] = nums[nums[i]] for each 0 <= i < nums.length and return it.
+
+A zero-based permutation nums is an array of distinct integers from 0 to nums.length - 1 (inclusive).
 
 ```
-There is a bi-directional graph with n vertices, where each vertex is labeled from 0 to n - 1 (inclusive). The edges in the graph are represented as a 2D integer array edges, where each edges[i] = [ui, vi] denotes a bi-directional edge between vertex ui and vertex vi. Every vertex pair is connected by at most one edge, and no vertex has an edge to itself.
+Example 1:
 
-You want to determine if there is a valid path that exists from vertex source to vertex destination.
+Input: nums = [0,2,1,5,3,4]
+Output: [0,1,2,4,5,3]
+Explanation: The array ans is built as follows: 
+ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
+    = [nums[0], nums[2], nums[1], nums[5], nums[3], nums[4]]
+    = [0,1,2,4,5,3]
+Example 2:
 
-Given edges and the integers n, source, and destination, return true if there is a valid path from source to destination, or false otherwise
+Input: nums = [5,0,1,2,3,4]
+Output: [4,5,0,1,2,3]
+Explanation: The array ans is built as follows:
+ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
+    = [nums[5], nums[0], nums[1], nums[2], nums[3], nums[4]]
+    = [4,5,0,1,2,3]
 ```
 
 ### [Problem 1937. Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/description/)
@@ -4921,6 +4936,16 @@ Example 3:
 Input: s = "[]"
 Output: 0
 Explanation: The string is already balanced
+```
+
+### [Problem: 1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)
+
+```
+There is a bi-directional graph with n vertices, where each vertex is labeled from 0 to n - 1 (inclusive). The edges in the graph are represented as a 2D integer array edges, where each edges[i] = [ui, vi] denotes a bi-directional edge between vertex ui and vertex vi. Every vertex pair is connected by at most one edge, and no vertex has an edge to itself.
+
+You want to determine if there is a valid path that exists from vertex source to vertex destination.
+
+Given edges and the integers n, source, and destination, return true if there is a valid path from source to destination, or false otherwise
 ```
 
 ### [Problem 1980. Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/description/)

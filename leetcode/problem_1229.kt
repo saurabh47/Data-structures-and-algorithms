@@ -1,7 +1,7 @@
 /**
  * Problem 1229. Meeting Scheduler
  * tags: Array, Two Pointers
- * time complexity: O(n+m), where n is the length of slots1 and m is the length of slots2
+ * time complexity: O(nlogn + mlogm), where n is the length of slots1 and m is the length of slots2
  * space complexity: O(1)
  */
 class Solution {

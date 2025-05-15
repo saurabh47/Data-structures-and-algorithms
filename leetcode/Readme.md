@@ -1893,6 +1893,18 @@ numMatrix.sumRegion(1, 1, 2, 2); // return 11 (i.e sum of the green rectangle)
 numMatrix.sumRegion(1, 2, 2, 4); // return 12 (i.e sum of the blue rectangle)
 ```
 
+### [Problem 323. Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
+
+You have a graph of n nodes. You are given an integer n and an array edges where edges[i] = [ai, bi] indicates that there is an edge between ai and bi in the graph.
+
+Return the number of connected components in the graph.
+
+Example 1:
+Input: n = 5, edges = [[0,1],[1,2],[3,4]]
+Output: 2
+
+
+
 ### [Problem 328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)
 
 Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list.

@@ -45,3 +45,28 @@ class Solution {
         return result
     }
 }
+
+/**
+ * DFS solution
+ * tags: Tree, Depth-First Search
+ * time complexity: O(n)
+ * space complexity: O(h), where h is the height of the tree
+ */
+
+class Solution {
+    fun rightSideView(root: TreeNode?): List<Int> {
+        var result = mutableListOf<Int>()
+        if(root == null){
+            return emptyList()
+        }
+        fun dfsHelper(node: TreeNode?, level: Int): Unit{
+            if(node == null) return 
+            if(result.size == level) result.add(node.`val`)
+            dfsHelper(node.right, level+1)
+            dfsHelper(node.left, level+1)
+        }
+
+        dfsHelper(root, 0)
+        return result
+    }
+}

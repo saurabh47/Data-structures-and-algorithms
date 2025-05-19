@@ -999,7 +999,14 @@ The path sum of a path is the sum of the node's values in the path.
 Given the root of a binary tree, return the maximum path sum of any non-empty path.
 
 ```
+Input: root = [1,2,3]
+Output: 6
+Explanation: The optimal path is 2 -> 1 -> 3 with a path sum of 2 + 1 + 3 = 6.
+Example 2:
 
+Input: root = [-10,9,20,null,null,15,7]
+Output: 42
+Explanation: The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 42.
 ```
 
 ### [Problem 125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
@@ -6431,6 +6438,33 @@ Explanation: The remapped keypad given in the image provides the minimum cost.
 "e" -> one push on key 6
 Total cost is 1 + 1 + 1 + 1 + 1 = 5.
 It can be shown that no other mapping can provide a lower cost.
+```
+
+### [Problem 3024. Type of Triangle](https://leetcode.com/problems/type-of-triangle/description/?envType=daily-question&envId=2025-05-19)
+
+You are given a 0-indexed integer array nums of size 3 which can form the sides of a triangle.
+
+A triangle is called equilateral if it has all sides of equal length.
+A triangle is called isosceles if it has exactly two sides of equal length.
+A triangle is called scalene if all its sides are of different lengths.
+Return a string representing the type of triangle that can be formed or "none" if it cannot form a triangle.
+
+```
+Example 1:
+
+Input: nums = [3,3,3]
+Output: "equilateral"
+Explanation: Since all the sides are of equal length, therefore, it will form an equilateral triangle.
+Example 2:
+
+Input: nums = [3,4,5]
+Output: "scalene"
+Explanation: 
+nums[0] + nums[1] = 3 + 4 = 7, which is greater than nums[2] = 5.
+nums[0] + nums[2] = 3 + 5 = 8, which is greater than nums[1] = 4.
+nums[1] + nums[2] = 4 + 5 = 9, which is greater than nums[0] = 3. 
+Since the sum of the two sides is greater than the third side for all three cases, therefore, it can form a triangle.
+As all the sides are of different lengths, it will form a scalene triangle.
 ```
 
 ### [Problem 3042. (Easy) Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i)

@@ -690,7 +690,7 @@ Given an integer target, return true if target is in matrix or false otherwise.
 
 You must write a solution in O(log(m * n)) time complexity.
 
- 
+
 ![](https://assets.leetcode.com/uploads/2020/10/05/mat.jpg)
 
 ```
@@ -1283,7 +1283,7 @@ Example 3:
 
 Input: nums = [11,13,15,17]
 Output: 11
-Explanation: The original array was [11,13,15,17] and it was rotated 4 times. 
+Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 ```
 
 ### [Problem 154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
@@ -2576,7 +2576,7 @@ A string is a palindrome when it reads the same backward as forward.
 
 A substring is a contiguous sequence of characters within the string.
 
- 
+
 ```
 Example 1:
 
@@ -3580,7 +3580,7 @@ Example 1:
 
 Input: stones = [2,7,4,1,8,1]
 Output: 1
-Explanation: 
+Explanation:
 We combine 7 and 8 to get 1 so the array converts to [2,4,1,1,1] then,
 we combine 2 and 4 to get 2 so the array converts to [2,1,1,1] then,
 we combine 2 and 1 to get 1 so the array converts to [1,1,1] then,
@@ -3685,7 +3685,7 @@ Example 1:
 
 Input: root = [1,7,0,7,-8,null,null]
 Output: 2
-Explanation: 
+Explanation:
 Level 1 sum = 1.
 Level 2 sum = 7 + 0 = 7.
 Level 3 sum = 7 + -8 = -1.
@@ -4134,7 +4134,7 @@ Explanation: No string of words is substring of another string.
 Given an array of integers nums, you start with an initial positive value startValue.
 In each iteration, you calculate the step by step sum of startValue plus elements in nums (from left to right).
 Return the minimum positive value of startValue such that the step by step sum is never less than 1.
- 
+
 ```
 Example 1:
 
@@ -4152,7 +4152,7 @@ Example 2:
 
 Input: nums = [1,2]
 Output: 1
-Explanation: Minimum start value should be positive. 
+Explanation: Minimum start value should be positive.
 Example 3:
 
 Input: nums = [1,-2,-3]
@@ -4169,13 +4169,13 @@ The score after splitting a string is the number of zeros in the left substring 
 Example 1:
 
 Input: s = "011101"
-Output: 5 
-Explanation: 
+Output: 5
+Explanation:
 All possible ways of splitting s into two non-empty substrings are:
-left = "0" and right = "11101", score = 1 + 4 = 5 
-left = "01" and right = "1101", score = 1 + 3 = 4 
-left = "011" and right = "101", score = 1 + 2 = 3 
-left = "0111" and right = "01", score = 1 + 1 = 2 
+left = "0" and right = "11101", score = 1 + 4 = 5
+left = "01" and right = "1101", score = 1 + 3 = 4
+left = "011" and right = "101", score = 1 + 2 = 3
+left = "0111" and right = "01", score = 1 + 1 = 2
 left = "01110" and right = "1", score = 2 + 1 = 3
 Example 2:
 
@@ -4940,7 +4940,7 @@ Example 1:
 
 Input: nums = [0,2,1,5,3,4]
 Output: [0,1,2,4,5,3]
-Explanation: The array ans is built as follows: 
+Explanation: The array ans is built as follows:
 ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
     = [nums[0], nums[2], nums[1], nums[5], nums[3], nums[4]]
     = [0,1,2,4,5,3]
@@ -5321,6 +5321,45 @@ Explanation:
   The person at position 0 has successfully bought 5 tickets and it took 4 + 1 + 1 + 1 + 1 = 8 seconds
 ```
 
+###[Problem 2091. Removing Minimum and Maximum From Array](https://leetcode.com/problems/removing-minimum-and-maximum-from-array/description/)
+
+You are given a 0-indexed array of distinct integers nums.
+
+There is an element in nums that has the lowest value and an element that has the highest value. We call them the minimum and maximum respectively. Your goal is to remove both these elements from the array.
+
+A deletion is defined as either removing an element from the front of the array or removing an element from the back of the array.
+
+Return the minimum number of deletions it would take to remove both the minimum and maximum element from the array.
+
+```
+Example 1:
+
+Input: nums = [2,10,7,5,4,1,8,6]
+Output: 5
+Explanation:
+The minimum element in the array is nums[5], which is 1.
+The maximum element in the array is nums[1], which is 10.
+We can remove both the minimum and maximum by removing 2 elements from the front and 3 elements from the back.
+This results in 2 + 3 = 5 deletions, which is the minimum number possible.
+Example 2:
+
+Input: nums = [0,-4,19,1,8,-2,-3,5]
+Output: 3
+Explanation:
+The minimum element in the array is nums[1], which is -4.
+The maximum element in the array is nums[2], which is 19.
+We can remove both the minimum and maximum by removing 3 elements from the front.
+This results in only 3 deletions, which is the minimum number possible.
+Example 3:
+
+Input: nums = [101]
+Output: 1
+Explanation:
+There is only one element in the array, which makes it both the minimum and maximum element.
+We can remove it with 1 deletion.
+
+```
+
 ### [Problem 2109. Adding Spaces to a String](https://leetcode.com/problems/adding-spaces-to-a-string/)
 
 You are given a 0-indexed string s and a 0-indexed integer array spaces that describes the indices in the original string where spaces will be added. Each space should be inserted before the character at the given index.
@@ -5372,7 +5411,7 @@ Output: [3,-2,1,-5,2,-4]
 Explanation:
 The positive integers in nums are [3,1,2]. The negative integers are [-2,-5,-4].
 The only possible way to rearrange them such that they satisfy all conditions is [3,-2,1,-5,2,-4].
-Other ways such as [1,-2,2,-5,3,-4], [3,1,2,-2,-5,-4], [-2,3,-5,1,-4,2] are incorrect because they do not satisfy one or more conditions.  
+Other ways such as [1,-2,2,-5,3,-4], [3,1,2,-2,-5,-4], [-2,3,-5,1,-4,2] are incorrect because they do not satisfy one or more conditions.
 Example 2:
 
 Input: nums = [-1,1]
@@ -6459,10 +6498,10 @@ Example 2:
 
 Input: nums = [3,4,5]
 Output: "scalene"
-Explanation: 
+Explanation:
 nums[0] + nums[1] = 3 + 4 = 7, which is greater than nums[2] = 5.
 nums[0] + nums[2] = 3 + 5 = 8, which is greater than nums[1] = 4.
-nums[1] + nums[2] = 4 + 5 = 9, which is greater than nums[0] = 3. 
+nums[1] + nums[2] = 4 + 5 = 9, which is greater than nums[0] = 3.
 Since the sum of the two sides is greater than the third side for all three cases, therefore, it can form a triangle.
 As all the sides are of different lengths, it will form a scalene triangle.
 ```

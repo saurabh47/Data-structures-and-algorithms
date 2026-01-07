@@ -17,15 +17,14 @@ class Solution:
         while(True):
             size = len(q)
             if(size == 0):
-                return result
-            rv = 0
+                break
             while(size > 0):
                 top = q.popleft()
-                rv = top.val
+                if(size == 1):
+                    result.append(top.val)
                 if(top.left):
                     q.append(top.left)
                 if(top.right):
                     q.append(top.right)
                 size -= 1
-            result.append(rv)
         return result

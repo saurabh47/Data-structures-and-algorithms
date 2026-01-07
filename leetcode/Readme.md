@@ -316,6 +316,8 @@ Explanation: 10/3 = truncate(3.33333..) = 3
 
 ### [Problem 33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
+company: Google, Amazon, Meta, Microsoft, Walmart Labs
+
 There is an integer array nums sorted in ascending order (with distinct values). Prior to being passed to your function, nums is rotated at an unknown pivot index k (0 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2]. Given the array nums after the rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
 
 ```
@@ -343,6 +345,39 @@ A sorted array of distinct integers is given. Find the index of the target value
 Input: nums = [1,3,5,6], target = 5
 Output: 2
 Explanation: 5 exists in nums and its index is 2
+```
+
+### [Problem 38. Count and Say](https://leetcode.com/problems/count-and-say/)
+
+The count-and-say sequence is a sequence of digit strings defined by the recursive formula:
+
+countAndSay(1) = "1"
+countAndSay(n) is the run-length encoding of countAndSay(n - 1).
+Run-length encoding (RLE) is a string compression method that works by replacing consecutive identical characters (repeated 2 or more times) with the concatenation of the character and the number marking the count of the characters (length of the run). For example, to compress the string "3322251" we replace "33" with "23", replace "222" with "32", replace "5" with "15" and replace "1" with "11". Thus the compressed string becomes "23321511".
+
+Given a positive integer n, return the nth element of the count-and-say sequence.
+
+```
+Example 1:
+
+Input: n = 4
+
+Output: "1211"
+
+Explanation:
+
+countAndSay(1) = "1"
+countAndSay(2) = RLE of "1" = "11"
+countAndSay(3) = RLE of "11" = "21"
+countAndSay(4) = RLE of "21" = "1211"
+Example 2:
+
+Input: n = 1
+
+Output: "1"
+Explanation:
+
+This is the base case.
 ```
 
 ### [Problem 39. Combination Sum](https://leetcode.com/problems/combination-sum/)
@@ -396,6 +431,8 @@ Output:
 ```
 
 ### [Problem 41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
+
+Company: Amazon, Google, Meta
 
 Given an unsorted integer array nums. Return the smallest positive integer that is not present in nums.
 You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space.
@@ -493,6 +530,24 @@ Output: true
 Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index
 ```
 
+### [Problem 56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+Company: Meta, Amazon, Microsoft, Google, Tesla
+
+Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
+
+```
+Example 1:
+
+Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
+Output: [[1,6],[8,10],[15,18]]
+Explanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
+Example 2:
+
+Input: intervals = [[1,4],[4,5]]
+Output: [[1,5]]
+Explanation: Intervals [1,4] and [4,5] are considered overlapping.
+```
+
 ### [Problem 58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/)
 
 Given a string s consisting of some words separated by some number of spaces, return the length of the last word in the string. A word is a maximal substring consisting of non-space characters only.
@@ -561,6 +616,93 @@ Explanation: There are three ways to climb to the top.
 1. 1 step + 1 step + 1 step
 2. 1 step + 2 steps
 3. 2 steps + 1 ste
+```
+
+### [Problem 71. Simplify Path](https://leetcode.com/problems/simplify-path/)
+
+You are given an absolute path for a Unix-style file system, which always begins with a slash '/'. Your task is to transform this absolute path into its simplified canonical path.
+
+The rules of a Unix-style file system are as follows:
+
+A single period '.' represents the current directory.
+A double period '..' represents the previous/parent directory.
+Multiple consecutive slashes such as '//' and '///' are treated as a single slash '/'.
+Any sequence of periods that does not match the rules above should be treated as a valid directory or file name. For example, '...' and '....' are valid directory or file names.
+The simplified canonical path should follow these rules:
+
+The path must start with a single slash '/'.
+Directories within the path must be separated by exactly one slash '/'.
+The path must not end with a slash '/', unless it is the root directory.
+The path must not have any single or double periods ('.' and '..') used to denote current or parent directories.
+Return the simplified canonical path.
+
+```
+Example 1:
+
+Input: path = "/home/"
+Output: "/home"
+Explanation:
+
+The trailing slash should be removed.
+
+Example 2:
+
+Input: path = "/home//foo/"
+Output: "/home/foo"
+Explanation:
+Multiple consecutive slashes are replaced by a single one.
+
+Example 3:
+
+Input: path = "/home/user/Documents/../Pictures"
+Output: "/home/user/Pictures"
+Explanation:
+A double period ".." refers to the directory up a level (the parent directory).
+
+Example 4:
+
+Input: path = "/../"
+Output: "/"
+Explanation:
+Going one level up from the root directory is not possible.
+
+Example 5:
+
+Input: path = "/.../a/../b/c/../d/./"
+Output: "/.../b/d"
+Explanation:
+"..." is a valid name for a directory in this problem.
+
+Constraints:
+
+1 <= path.length <= 3000
+path consists of English letters, digits, period '.', slash '/' or '_'.
+path is a valid absolute Unix path.
+```
+
+### [Problem 74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
+
+You are given an m x n integer matrix matrix with the following two properties:
+
+Each row is sorted in non-decreasing order.
+The first integer of each row is greater than the last integer of the previous row.
+Given an integer target, return true if target is in matrix or false otherwise.
+
+You must write a solution in O(log(m * n)) time complexity.
+
+ 
+![](https://assets.leetcode.com/uploads/2020/10/05/mat.jpg)
+
+```
+Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3
+Output: true
+```
+
+![](https://assets.leetcode.com/uploads/2020/10/05/mat2.jpg)
+
+```
+Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13
+Output: false
 ```
 
 ### [Problem 75. Sort Colors](https://leetcode.com/problems/sort-colors/)
@@ -848,6 +990,25 @@ Output: 7
 Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4. Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.
 ```
 
+### [Problem 124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+
+A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root.
+
+The path sum of a path is the sum of the node's values in the path.
+
+Given the root of a binary tree, return the maximum path sum of any non-empty path.
+
+```
+Input: root = [1,2,3]
+Output: 6
+Explanation: The optimal path is 2 -> 1 -> 3 with a path sum of 2 + 1 + 3 = 6.
+Example 2:
+
+Input: root = [-10,9,20,null,null,15,7]
+Output: 42
+Explanation: The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 42.
+```
+
 ### [Problem 125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 
 Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
@@ -972,6 +1133,39 @@ Input: nums = [1]
 Output: 1
 ```
 
+### [Problem 138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
+
+A linked list of length n is given such that each node contains an additional random pointer, which could point to any node in the list, or null.
+
+Construct a deep copy of the list. The deep copy should consist of exactly n brand new nodes, where each new node has its value set to the value of its corresponding original node. Both the next and random pointer of the new nodes should point to new nodes in the copied list such that the pointers in the original list and copied list represent the same list state. None of the pointers in the new list should point to nodes in the original list.
+
+For example, if there are two nodes X and Y in the original list, where X.random --> Y, then for the corresponding two nodes x and y in the copied list, x.random --> y.
+
+Return the head of the copied linked list.
+
+The linked list is represented in the input/output as a list of n nodes. Each node is represented as a pair of [val, random_index] where:
+
+val: an integer representing Node.val
+random_index: the index of the node (range from 0 to n-1) that the random pointer points to, or null if it does not point to any node.
+Your code will only be given the head of the original linked list.
+
+```
+Example 1:
+
+Input: head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
+Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
+
+Example 2:
+
+Input: head = [[1,1],[2,1]]
+Output: [[1,1],[2,1]]
+
+Example 3:
+
+Input: head = [[3,null],[3,0],[3,null]]
+Output: [[3,null],[3,0],[3,null]]
+```
+
 ### [Problem 141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
 
 Given head, the head of a linked list, determine if the linked list has a cycle in it.
@@ -1059,6 +1253,37 @@ Given an input string s, reverse the order of the words.
 Input: s = "the sky is blue"
 Output: "blue is sky the"
 Explanation: The words are reversed.
+```
+
+### [Problem 153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+
+Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
+
+[4,5,6,7,0,1,2] if it was rotated 4 times.
+[0,1,2,4,5,6,7] if it was rotated 7 times.
+Notice that rotating an array [a[0], a[1], a[2], ..., a[n-1]] 1 time results in the array [a[n-1], a[0], a[1], a[2], ..., a[n-2]].
+
+Given the sorted rotated array nums of unique elements, return the minimum element of this array.
+
+You must write an algorithm that runs in O(log n) time.
+
+
+```
+Example 1:
+
+Input: nums = [3,4,5,1,2]
+Output: 1
+Explanation: The original array was [1,2,3,4,5] rotated 3 times.
+Example 2:
+
+Input: nums = [4,5,6,7,0,1,2]
+Output: 0
+Explanation: The original array was [0,1,2,4,5,6,7] and it was rotated 4 times.
+Example 3:
+
+Input: nums = [11,13,15,17]
+Output: 11
+Explanation: The original array was [11,13,15,17] and it was rotated 4 times. 
 ```
 
 ### [Problem 154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
@@ -1467,6 +1692,17 @@ Output: true
 Explanation: Both s and t contain all the same letters, in the same frequency, so they are anagrams.
 ```
 
+### [Problem 252. Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)
+solution: [problem_@52](./problem_252.py)
+Given an array of meeting time intervals where intervals[i] = [starti, endi], determine if a person could attend all meetings.
+
+```
+Input: intervals = [[0,30],[5,10],[15,20]]
+Output: false
+Explanation: The person cannot attend meetings [0,30] and [5,10] because they overlap.
+```
+
+
 ### [Problem 257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)
 
 Given the root of a binary tree, return all root-to-leaf paths in any order.
@@ -1580,6 +1816,46 @@ Output: 3
 Explanation: The researcher has 3 papers with at least 3 citations each and the remaining two with no more than 3 citations.
 ```
 
+### [Problem 278. First Bad Version](https://leetcode.com/problems/first-bad-version/)
+
+You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.
+
+Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one, which causes all the following ones to be bad.
+
+You are given an API bool isBadVersion(version) which returns whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.
+
+```
+Example 1:
+
+Input: n = 5, bad = 4
+Output: 4
+Explanation:
+call isBadVersion(3) -> false
+call isBadVersion(5) -> true
+call isBadVersion(4) -> true
+Then 4 is the first bad version.
+Example 2:
+
+Input: n = 1, bad = 1
+Output: 1
+```
+
+### [Problem 283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+Note that you must do this in-place without making a copy of the array.
+
+```
+Example 1:
+
+Input: nums = [0,1,0,3,12]
+Output: [1,3,12,0,0]
+Example 2:
+
+Input: nums = [0]
+Output: [0]
+```
+
 ### [Problem 290. Word Pattern](https://leetcode.com/problems/word-pattern/)
 
 Given a pattern and a string s, find if s follows the same pattern.
@@ -1669,6 +1945,22 @@ numMatrix.sumRegion(1, 1, 2, 2); // return 11 (i.e sum of the green rectangle)
 numMatrix.sumRegion(1, 2, 2, 4); // return 12 (i.e sum of the blue rectangle)
 ```
 
+### [Problem 323. Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
+
+You have a graph of n nodes. You are given an integer n and an array edges where edges[i] = [ai, bi] indicates that there is an edge between ai and bi in the graph.
+
+Return the number of connected components in the graph.
+
+```
+Example 1:
+Input: n = 5, edges = [[0,1],[1,2],[3,4]]
+Output: 2
+
+Example 2:
+Input: n = 5, edges = [[0,1],[1,2],[2,3],[3,4]]
+Output: 1
+```
+
 ### [Problem 328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)
 
 Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list.
@@ -1716,10 +2008,30 @@ Output: ["h","a","n","n","a","H"]
 Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
 
 ```
-
 Input: nums = [1,1,1,2,2,3], k = 2
 Output: [1,2]
 Explanation: Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order. In this case, the answer is [1,2] because both 1 and 2 appear twice, and 1 comes before 2.
+```
+
+### [Problem 367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)
+
+Given a positive integer num, return true if num is a perfect square or false otherwise.
+
+A perfect square is an integer that is the square of an integer. In other words, it is the product of some integer with itself.
+
+You must not use any built-in library function, such as sqrt.
+
+```
+Example 1:
+
+Input: num = 16
+Output: true
+Explanation: We return true because 4 * 4 = 16 and 4 is an integer.
+Example 2:
+
+Input: num = 14
+Output: false
+Explanation: We return false because 3.742 * 3.742 = 14 and 3.742 is not an integer.
 ```
 
 ### [Problem 380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)
@@ -1794,6 +2106,52 @@ Input: root = [3,9,20,null,null,15,7]
 Output: 24
 Explanation: There are two left leaves in the binary tree, with values 9 and 15 respectively.
 ```
+
+### [Problem 408. Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/) (Premium)
+
+Company: Meta
+
+A string can be abbreviated by replacing any number of non-adjacent, non-empty substrings with their lengths. The lengths should not have leading zeros.
+
+For example, a string such as "substitution" could be abbreviated as (but not limited to):
+
+"s10n" ("s ubstitutio n")
+"sub4u4" ("sub stit u tion")
+"12" ("substitution")
+"su3i1u2on" ("su bst i t u ti on")
+"substitution" (no substrings replaced)
+The following are not valid abbreviations:
+
+"s55n" ("s ubsti tutio n", the replaced substrings are adjacent)
+"s010n" (has leading zeros)
+"s0ubstitution" (replaces an empty substring)
+Given a string word and an abbreviation abbr, return whether the string matches the given abbreviation.
+
+A substring is a contiguous non-empty sequence of characters within a string.
+
+```
+Example 1:
+
+Input: word = "internationalization", abbr = "i12iz4n"
+Output: true
+Explanation: The word "internationalization" can be abbreviated as "i12iz4n" ("i nternational iz atio n").
+Example 2:
+
+Input: word = "apple", abbr = "a2e"
+Output: false
+Explanation: The word "apple" cannot be abbreviated as "a2e".
+```
+
+Constraints:
+
+```
+1 <= word.length <= 20
+word consists of only lowercase English letters.
+1 <= abbr.length <= 10
+abbr consists of lowercase English letters and digits.
+All the integers in abbr will fit in a 32-bit integer.
+```
+
 
 ### [Problem 409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)
 
@@ -1971,6 +2329,23 @@ Example 2:
 Input: num = 1
 Output: 0
 Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0
+```
+
+### [Problem 485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)
+
+solution: [problem_485.](./problem_485.py)
+Given a binary array nums, return the maximum number of consecutive 1's in the array.
+
+```
+Example 1:
+
+Input: nums = [1,1,0,1,1,1]
+Output: 3
+Explanation: The first two digits or the last three digits are consecutive 1s. The maximum number of consecutive 1s is 3.
+Example 2:
+
+Input: nums = [1,0,1,1,0,1]
+Output: 2
 ```
 
 ### [Problem 506. Relative Ranks](https://leetcode.com/problems/relative-ranks/)
@@ -2193,6 +2568,28 @@ Input: c = 3
 Output: false
 ```
 
+### [Problem 647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+
+Given a string s, return the number of palindromic substrings in it.
+
+A string is a palindrome when it reads the same backward as forward.
+
+A substring is a contiguous sequence of characters within the string.
+
+ 
+```
+Example 1:
+
+Input: s = "abc"
+Output: 3
+Explanation: Three palindromic strings: "a", "b", "c".
+Example 2:
+
+Input: s = "aaa"
+Output: 6
+Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa"
+```
+
 ### [Problem 648. Replace Words](https://leetcode.com/problems/replace-words/)
 
 In English, we have a concept called root, which can be followed by some other word to form another longer word - let's call this word derivative. For example, when the root "help" is followed by the word "ful", we can form a derivative "helpful".
@@ -2255,6 +2652,26 @@ Output: ["Hello", "World"]
 Explanation: The input string is ["Hello", "World"] and the encoded string is "5#Hello6#World"
 ```
 
+### [Problem 680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
+
+Given a string s, return true if the s can be palindrome after deleting at most one character from it.
+
+```
+Example 1:
+
+Input: s = "aba"
+Output: true
+Example 2:
+
+Input: s = "abca"
+Output: true
+Explanation: You could delete the character 'c'.
+Example 3:
+
+Input: s = "abc"
+Output: false
+```
+
 ### [Problem 700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)
 
 You are given the root of a binary search tree (BST) and an integer val.
@@ -2264,6 +2681,22 @@ Find the node in the BST that the node's value equals val and return the subtree
 ```
 Input: root = [4,2,7,1,3], val = 2
 Output: [2,1,3
+```
+
+### [Problem 695. Max Area of Island](https://leetcode.com/problems/max-area-of-island/)
+
+You are given an m x n binary matrix grid. An island is a group of 1's (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.
+The area of an island is the number of cells with a value 1 in the island.
+Return the maximum area of an island in grid. If there is no island, return 0.
+
+```
+Input: grid = [[0,0,1,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,1,1,0,1,0,0,0,0,0,0,0,0],[0,1,0,0,1,1,0,0,1,0,1,0,0],[0,1,0,0,1,1,0,0,1,1,1,0,0],[0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,1,1,0,0,0,0]]
+Output: 6
+Explanation: The answer is not 11, because the island must be connected 4-directionally.
+Example 2:
+
+Input: grid = [[0,0,0,0,0,0,0,0]]
+Output: 0
 ```
 
 ### [Problem 701. Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)
@@ -2360,6 +2793,42 @@ Example 3:
 
 Input: nums = [1,6,1], k = 3
 Output: 5
+```
+
+### [Problem 724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
+
+Given an array of integers nums, calculate the pivot index of this array.
+
+The pivot index is the index where the sum of all the numbers strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right.
+
+If the index is on the left edge of the array, then the left sum is 0 because there are no elements to the left. This also applies to the right edge of the array.
+
+Return the leftmost pivot index. If no such index exists, return -1.
+
+```
+
+Example 1:
+
+Input: nums = [1,7,3,6,5,6]
+Output: 3
+Explanation:
+The pivot index is 3.
+Left sum = nums[0] + nums[1] + nums[2] = 1 + 7 + 3 = 11
+Right sum = nums[4] + nums[5] = 5 + 6 = 11
+Example 2:
+
+Input: nums = [1,2,3]
+Output: -1
+Explanation:
+There is no index that satisfies the conditions in the problem statement.
+Example 3:
+
+Input: nums = [2,1,-1]
+Output: 0
+Explanation:
+The pivot index is 0.
+Left sum = 0 (no elements to the left of index 0)
+Right sum = nums[1] + nums[2] = 1 + -1 = 0
 ```
 
 ### [Problem 725. Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/)
@@ -2850,6 +3319,25 @@ stockSpanner.next(75);  // return 4, because the last 4 prices (including today'
 stockSpanner.next(85);  // return
 ```
 
+### [Problem 905. Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)
+
+Given an integer array nums, move all the even integers at the beginning of the array followed by all the odd integers.
+Return any array that satisfies this condition.
+
+solution: [Problem 905](./problem_905.kt)
+
+```
+Example 1:
+
+Input: nums = [3,1,2,4]
+Output: [2,4,3,1]
+Explanation: The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
+Example 2:
+
+Input: nums = [0]
+Output: [0]
+```
+
 ### [Problem 912. Sort an Array](https://leetcode.com/problems/sort-an-array/)
 
 Given an array of integers nums, sort the array in ascending order and return it.
@@ -2890,6 +3378,25 @@ Example 2:
 
 Input: words1 = ["amazon","apple","facebook","google","leetcode"], words2 = ["l","e"]
 Output: ["apple","google","leetcode"]
+```
+
+### [Problem 922. Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/)
+
+Given an array of integers nums, half of the integers in nums are odd, and the other half are even.
+Sort the array so that whenever nums[i] is odd, i is odd, and whenever nums[i] is even, i is even.
+Return any answer array that satisfies this condition.
+
+solution: [Problem 922](./problem_922.kt)
+```
+Example 1:
+
+Input: nums = [4,2,5,7]
+Output: [4,5,2,7]
+Explanation: [4,7,2,5], [2,5,4,7], [2,7,4,5] would also have been accepted.
+Example 2:
+
+Input: nums = [2,3]
+Output: [2,3]
 ```
 
 ### [Problem 933. Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)
@@ -2967,6 +3474,29 @@ Output: 7
 Explanation: The maximum width ramp is achieved at (i, j) = (2, 9): nums[2] = 1 and nums[9] = 1
 ```
 
+### [Problem 973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)
+
+Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0).
+
+The distance between two points on the X-Y plane is the Euclidean distance (i.e., √(x1 - x2)2 + (y1 - y2)2).
+
+You may return the answer in any order. The answer is guaranteed to be unique (except for the order that it is in).
+
+```
+Input: points = [[1,3],[-2,2]], k = 1
+Output: [[-2,2]]
+Explanation:
+The distance between (1, 3) and the origin is sqrt(10).
+The distance between (-2, 2) and the origin is sqrt(8).
+Since sqrt(8) < sqrt(10), (-2, 2) is closer to the origin.
+We only want the closest k = 1 points from the origin, so the answer is just [[-2,2]].
+Example 2:
+
+Input: points = [[3,3],[5,-1],[-2,4]], k = 2
+Output: [[3,3],[-2,4]]
+Explanation: The answer [[-2,4],[3,3]] would also be accepted.
+```
+
 ### [Problem 974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)
 
 Given an integer array nums and an integer k, return the number of non-empty subarrays that have a sum divisible by k.
@@ -3031,6 +3561,34 @@ Example 1:
 Input: root = [1,0,1,0,1,0,1]
 Output: 22
 Explanation: (100) + (101) + (110) + (111) = 4 + 5 + 6 + 7 = 22
+```
+
+### [Problem 1046. Last Stone Weight](https://leetcode.com/problems/last-stone-weight/)
+
+You are given an array of integers stones where stones[i] is the weight of the ith stone.
+
+We are playing a game with the stones. On each turn, we choose the heaviest two stones and smash them together. Suppose the heaviest two stones have weights x and y with x <= y. The result of this smash is:
+
+If x == y, both stones are destroyed, and
+If x != y, the stone of weight x is destroyed, and the stone of weight y has new weight y - x.
+At the end of the game, there is at most one stone left.
+
+Return the weight of the last remaining stone. If there are no stones left, return 0.
+
+```
+Example 1:
+
+Input: stones = [2,7,4,1,8,1]
+Output: 1
+Explanation: 
+We combine 7 and 8 to get 1 so the array converts to [2,4,1,1,1] then,
+we combine 2 and 4 to get 2 so the array converts to [2,1,1,1] then,
+we combine 2 and 1 to get 1 so the array converts to [1,1,1] then,
+we combine 1 and 1 to get 0 so the array converts to [1] then that's the value of the last stone.
+Example 2:
+
+Input: stones = [1]
+Output: 1
 ```
 
 ### [Problem 1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
@@ -3116,6 +3674,29 @@ Input: arr1 = [28,6,22,8,44,17], arr2 = [22,28,8,6]
 Output: [22,28,8,6,17,44]
 ```
 
+### [Problem 1161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)
+
+Given the root of a binary tree, the level of its root is 1, the level of its children is 2, and so on.
+
+Return the smallest level x such that the sum of all the values of nodes at level x is maximal.
+
+```
+Example 1:
+
+Input: root = [1,7,0,7,-8,null,null]
+Output: 2
+Explanation: 
+Level 1 sum = 1.
+Level 2 sum = 7 + 0 = 7.
+Level 3 sum = 7 + -8 = -1.
+So we return the level with the maximum sum which is level 2.
+
+Example 2:
+
+Input: root = [989,null,10250,98693,-89388,null,null,null,-32127]
+Output: 2
+```
+
 ### [Problem 1190. Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/)
 
 You are given a string s that consists of lower case English letters and brackets.
@@ -3181,6 +3762,58 @@ Explanation :
 First delete "eee" and "ccc", get "ddbbbdaa"
 Then delete "bbb", get "dddaa"
 Finally delete "ddd", get "aa"
+```
+### [Problem 1229. Meeting Scheduler](https://leetcode.com/problems/meeting-scheduler/)
+
+Given the availability time slots arrays slots1 and slots2 of two people and a meeting duration duration, return the earliest time slot that works for both of them and is of duration duration.
+
+If there is no common time slot that satisfies the requirements, return an empty array.
+
+The format of a time slot is an array of two elements [start, end] representing an inclusive time range from start to end.
+
+It is guaranteed that no two availability slots of the same person intersect with each other. That is, for any two time slots [start1, end1] and [start2, end2] of the same person, either start1 > end2 or start2 > end1.
+
+```
+Example 1:
+
+Input: slots1 = [[10,50],[60,120],[140,210]], slots2 = [[0,15],[60,70]], duration = 8
+Output: [60,68]
+Example 2:
+
+Input: slots1 = [[10,50],[60,120],[140,210]], slots2 = [[0,15],[60,70]], duration = 12
+Output: []
+```
+
+### [Problem 1249. Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)
+
+solution: [problem_1249](./problem_1249.kt)
+company: meta
+
+Given a string s of '(' , ')' and lowercase English characters.
+
+Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting parentheses string is valid and return any valid string.
+
+Formally, a parentheses string is valid if and only if:
+
+It is the empty string, contains only lowercase characters, or
+It can be written as AB (A concatenated with B), where A and B are valid strings, or
+It can be written as (A), where A is a valid string.
+
+```
+Example 1:
+
+Input: s = "lee(t(c)o)de)"
+Output: "lee(t(c)o)de"
+Explanation: "lee(t(co)de)" , "lee(t(c)ode)" would also be accepted.
+Example 2:
+
+Input: s = "a)b(c)d"
+Output: "ab(c)d"
+Example 3:
+
+Input: s = "))(("
+Output: ""
+Explanation: An empty string is also valid.
 ```
 
 ### [Problem 1302. Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)
@@ -3319,8 +3952,32 @@ Output: false
 Explanation: There is no i and j that satisfy the conditions.
 ```
 
+### [Problem 1358. Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/)
+
+Given a string s consisting only of characters a, b and c.
+
+Return the number of substrings containing at least one occurrence of all these characters a, b and c.
+
+```
+Example 1:
+
+Input: s = "abcabc"
+Output: 10
+Explanation: The substrings containing at least one occurrence of the characters a, b and c are "abc", "abca", "abcab", "abcabc", "bca", "bcab", "bcabc", "cab", "cabc" and "abc" (again).
+Example 2:
+
+Input: s = "aaacb"
+Output: 3
+Explanation: The substrings containing at least one occurrence of the characters a, b and c are "aaacb", "aacb" and "acb".
+Example 3:
+
+Input: s = "abc"
+Output: 1
+```
+
 ### [Problem 1365. How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
 
+solution: [problem_1356.py](./problem_1356.py)
 Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
 
 ```
@@ -3382,6 +4039,26 @@ stk.pop();                            // return 103 --> Return top of the stack 
 stk.pop();                            // return 202 --> Return top of the stack 202, stack becomes [201]
 stk.pop();                            // return 201 --> Return top of the stack 201, stack becomes []
 stk.pop();                            // return -1 --> Stack is empty return -1.
+```
+### [Problem 1399. Count Largest Group](https://leetcode.com/problems/count-largest-group/)
+
+You are given an integer n.
+Each number from 1 to n is grouped according to the sum of its digits.
+Return the number of groups that have the largest size.
+
+```
+Example 1:
+
+Input: n = 13
+Output: 4
+Explanation: There are 9 groups in total, they are grouped according sum of its digits of numbers from 1 to 13:
+[1,10], [2,11], [3,12], [4,13], [5], [6], [7], [8], [9].
+There are 4 groups with largest size.
+Example 2:
+
+Input: n = 2
+Output: 2
+Explanation: There are 2 groups [1], [2] of size 1.
 ```
 
 ### Problem 1400. Construct K Palindrome Strings
@@ -3452,6 +4129,65 @@ Output: []
 Explanation: No string of words is substring of another string.
 ```
 
+### [Problem 1413. Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/)
+
+Given an array of integers nums, you start with an initial positive value startValue.
+In each iteration, you calculate the step by step sum of startValue plus elements in nums (from left to right).
+Return the minimum positive value of startValue such that the step by step sum is never less than 1.
+ 
+```
+Example 1:
+
+Input: nums = [-3,2,-3,4,2]
+Output: 5
+Explanation: If you choose startValue = 4, in the third iteration your step by step sum is less than 1.
+step by step sum
+startValue = 4 | startValue = 5 | nums
+  (4 -3 ) = 1  | (5 -3 ) = 2    |  -3
+  (1 +2 ) = 3  | (2 +2 ) = 4    |   2
+  (3 -3 ) = 0  | (4 -3 ) = 1    |  -3
+  (0 +4 ) = 4  | (1 +4 ) = 5    |   4
+  (4 +2 ) = 6  | (5 +2 ) = 7    |   2
+Example 2:
+
+Input: nums = [1,2]
+Output: 1
+Explanation: Minimum start value should be positive. 
+Example 3:
+
+Input: nums = [1,-2,-3]
+Output: 5
+```
+
+### [Problem 1422. Maximum Points After Applying Operations](https://leetcode.com/problems/maximum-points-after-applying-operations/)
+
+Given a string s of zeros and ones, return the maximum score after splitting the string into two non-empty substrings (i.e. left substring and right substring).
+
+The score after splitting a string is the number of zeros in the left substring plus the number of ones in the right substring.
+
+```
+Example 1:
+
+Input: s = "011101"
+Output: 5 
+Explanation: 
+All possible ways of splitting s into two non-empty substrings are:
+left = "0" and right = "11101", score = 1 + 4 = 5 
+left = "01" and right = "1101", score = 1 + 3 = 4 
+left = "011" and right = "101", score = 1 + 2 = 3 
+left = "0111" and right = "01", score = 1 + 1 = 2 
+left = "01110" and right = "1", score = 2 + 1 = 3
+Example 2:
+
+Input: s = "00111"
+Output: 5
+Explanation: When left = "00" and right = "111", we get the maximum score = 2 + 3 = 5
+Example 3:
+
+Input: s = "1111"
+Output: 3
+```
+
 ### [Problem 1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/)
 
 Given an array of integers arr.
@@ -3471,6 +4207,25 @@ Return the number of triplets (i, j and k) Where a == b.
 Input: arr = [2,3,1,6,7]
 Output: 4
 Explanation: The triplets are (0,1,2), (0,2,2), (2,3,4) and (2,4,4)
+```
+
+### [Problem 1446. Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)
+
+The power of the string is the maximum length of a non-empty substring that contains only one unique character.
+
+Given a string s, return the power of s.
+
+```
+Example 1:
+
+Input: s = "leetcode"
+Output: 2
+Explanation: The substring "ee" is of length 2 with the character 'e' only.
+Example 2:
+
+Input: s = "abbcccddddeeeeedcba"
+Output: 5
+Explanation: The substring "eeeee" is of length 5 with the character 'e' only.
 ```
 
 ### [Problem 1448. Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)
@@ -3529,6 +4284,14 @@ Input: sentence = "i am tired", searchWord = "you"
 Output: -1
 Explanation: "you" is not a prefix of any word in the sentence.
 ```
+
+### [Problem 1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length)
+
+solution: [problem_1456](./problem_1456.py)
+
+Given a string s and an integer k, return the maximum number of vowel letters in any substring of s with length k.
+
+Vowel letters in English are 'a', 'e', 'i', 'o', and 'u'.
 
 ### [Problem 1460. Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/)
 
@@ -3738,6 +4501,44 @@ Output: [[0,5,0],
          [2,0,8]
 ```
 
+### [Problem 1609. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/)
+
+solution: [problem_1609.py](./problem_1609.py)
+tags: binary tree, bfs
+company: Meta
+
+A binary tree is named Even-Odd if it meets the following conditions:
+
+The root of the binary tree is at level index 0, its children are at level index 1, their children are at level index 2, etc.
+For every even-indexed level, all nodes at the level have odd integer values in strictly increasing order (from left to right).
+For every odd-indexed level, all nodes at the level have even integer values in strictly decreasing order (from left to right).
+Given the root of a binary tree, return true if the binary tree is Even-Odd, otherwise return false.
+
+![](https://assets.leetcode.com/uploads/2020/09/15/sample_1_1966.png)
+
+```
+Input: root = [1,10,4,3,null,7,9,12,8,6,null,null,2]
+Output: true
+Explanation: The node values on each level are:
+Level 0: [1]
+Level 1: [10,4]
+Level 2: [3,7,9]
+Level 3: [12,8,6,2]
+Since levels 0 and 2 are all odd and increasing and levels 1 and 3 are all even and decreasing, the tree is Even-Odd.
+```
+
+![](https://assets.leetcode.com/uploads/2020/09/15/sample_2_1966.png)
+
+```
+Input: root = [5,4,2,3,3,7]
+Output: false
+Explanation: The node values on each level are:
+Level 0: [5]
+Level 1: [4,2]
+Level 2: [3,3,7]
+Node values in level 2 must be in strictly increasing order, so the tree is not Even-Odd.
+```
+
 ### [Problem 1636. Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/)
 
 You are given two arrays rowSum and colSum of non-negative integers where rowSum[i] is the sum of the elements in the ith row and colSum[j] is the sum of the elements of the jth column of a 2D matrix. In other words, you do not know the elements of the matrix, but you do know the sums of each row and column.
@@ -3876,7 +4677,6 @@ Given an integer n, return true if it is possible to represent n as the sum of d
 
 An integer y is a power of three if there exists an integer x such that y == 3x.
 
- 
 ```
 Example 1:
 
@@ -4051,6 +4851,61 @@ Output: "This is a sentence"
 Explanation: Sort the words in s to their original positions "This1 is2 a3 sentence4", then remove the numbers
 ```
 
+### [Problem 1837. Sum of Digits in Base K](https://leetcode.com/problems/sum-of-digits-in-base-k/)
+
+Given an integer n (in base 10) and a base k, return the sum of the digits of n after converting n from base 10 to base k.
+
+After converting, each digit should be interpreted as a base 10 number, and the sum should be returned in base 10.
+
+```
+ Example 1:
+
+Input: n = 34, k = 6
+Output: 9
+Explanation: 34 (base 10) expressed in base 6 is 54. 5 + 4 = 9.
+Example 2:
+
+Input: n = 10, k = 10
+Output: 1
+Explanation: n is already in base 10. 1 + 0 = 1.
+```
+
+### [Problem 1869. Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/)
+
+solution: [problem_1869.py](./problem_1869.py)
+
+Given a binary string s, return true if the longest contiguous segment of 1's is strictly longer than the longest contiguous segment of 0's in s, or return false otherwise.
+
+For example, in s = "110100010" the longest continuous segment of 1s has length 2, and the longest continuous segment of 0s has length 3.
+Note that if there are no 0's, then the longest continuous segment of 0's is considered to have a length 0. The same applies if there is no 1's.
+
+```
+Example 1:
+
+Input: s = "1101"
+Output: true
+Explanation:
+The longest contiguous segment of 1s has length 2: "1101"
+The longest contiguous segment of 0s has length 1: "1101"
+The segment of 1s is longer, so return true.
+Example 2:
+
+Input: s = "111000"
+Output: false
+Explanation:
+The longest contiguous segment of 1s has length 3: "111000"
+The longest contiguous segment of 0s has length 3: "111000"
+The segment of 1s is not longer, so return false.
+Example 3:
+
+Input: s = "110100010"
+Output: false
+Explanation:
+The longest contiguous segment of 1s has length 2: "110100010"
+The longest contiguous segment of 0s has length 3: "110100010"
+The segment of 1s is not longer, so return false.
+```
+
 ### [Problem 1894. Find the Student that Will Replace the Chalk](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/)
 
 There are n students in a class numbered from 0 to n - 1. The teacher will give each student a problem starting with the student number 0, then the student number 1, and so on until the teacher reaches the student number n - 1. After that, the teacher will restart the process, starting with the student number 0 again.
@@ -4074,14 +4929,29 @@ Explanation: The students go in turns as follows:
 Student number 0 does not have enough chalk, so they will have to replace it
 ```
 
-### [Problem: 1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)
+### [Problem 1920. Build array from permutation](https://leetcode.com/problems/build-array-from-permutation/)
+
+Given a zero-based permutation nums (0-indexed), build an array ans of the same length where ans[i] = nums[nums[i]] for each 0 <= i < nums.length and return it.
+
+A zero-based permutation nums is an array of distinct integers from 0 to nums.length - 1 (inclusive).
 
 ```
-There is a bi-directional graph with n vertices, where each vertex is labeled from 0 to n - 1 (inclusive). The edges in the graph are represented as a 2D integer array edges, where each edges[i] = [ui, vi] denotes a bi-directional edge between vertex ui and vertex vi. Every vertex pair is connected by at most one edge, and no vertex has an edge to itself.
+Example 1:
 
-You want to determine if there is a valid path that exists from vertex source to vertex destination.
+Input: nums = [0,2,1,5,3,4]
+Output: [0,1,2,4,5,3]
+Explanation: The array ans is built as follows: 
+ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
+    = [nums[0], nums[2], nums[1], nums[5], nums[3], nums[4]]
+    = [0,1,2,4,5,3]
+Example 2:
 
-Given edges and the integers n, source, and destination, return true if there is a valid path from source to destination, or false otherwise
+Input: nums = [5,0,1,2,3,4]
+Output: [4,5,0,1,2,3]
+Explanation: The array ans is built as follows:
+ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
+    = [nums[5], nums[0], nums[1], nums[2], nums[3], nums[4]]
+    = [4,5,0,1,2,3]
 ```
 
 ### [Problem 1937. Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/description/)
@@ -4195,12 +5065,22 @@ Output: 0
 Explanation: The string is already balanced
 ```
 
+### [Problem: 1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)
+
+```
+There is a bi-directional graph with n vertices, where each vertex is labeled from 0 to n - 1 (inclusive). The edges in the graph are represented as a 2D integer array edges, where each edges[i] = [ui, vi] denotes a bi-directional edge between vertex ui and vertex vi. Every vertex pair is connected by at most one edge, and no vertex has an edge to itself.
+
+You want to determine if there is a valid path that exists from vertex source to vertex destination.
+
+Given edges and the integers n, source, and destination, return true if there is a valid path from source to destination, or false otherwise
+```
+
 ### [Problem 1980. Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/description/)
 
 Given an array of strings nums containing n unique binary strings each of length n, return a binary string of length n that does not appear in nums. If there are multiple answers, you may return any of them.
 
 solution: [problem_1980.py](./problem_1980.py)
- 
+
 ```
 Example 1:
 
@@ -4471,6 +5351,37 @@ Explanation:
 We are also able to place spaces before the first character of the string.
 ```
 
+### [Problem 2149. Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/description/)
+You are given a 0-indexed integer array nums of even length consisting of an equal number of positive and negative integers.
+
+You should return the array of nums such that the the array follows the given conditions:
+
+1. Every consecutive pair of integers have opposite signs.
+2. For all integers with the same sign, the order in which they were present in nums is preserved.
+3. The rearranged array begins with a positive integer.
+
+Return the modified array after rearranging the elements to satisfy the aforementioned conditions.
+
+solution: [problem_2149.py](./problem_2149.py)
+
+```
+Example 1:
+
+Input: nums = [3,1,-2,-5,2,-4]
+Output: [3,-2,1,-5,2,-4]
+Explanation:
+The positive integers in nums are [3,1,2]. The negative integers are [-2,-5,-4].
+The only possible way to rearrange them such that they satisfy all conditions is [3,-2,1,-5,2,-4].
+Other ways such as [1,-2,2,-5,3,-4], [3,1,2,-2,-5,-4], [-2,3,-5,1,-4,2] are incorrect because they do not satisfy one or more conditions.  
+Example 2:
+
+Input: nums = [-1,1]
+Output: [1,-1]
+Explanation:
+1 is the only positive integer and -1 the only negative integer in nums.
+So nums is rearranged to [1,-1].
+```
+
 ### [Problem 2161. Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/description/)
 
 solution: [problem_2161.py](./problem_2161.py)
@@ -4488,7 +5399,7 @@ Example 1:
 
 Input: nums = [9,12,5,10,14,3,10], pivot = 10
 Output: [9,5,3,10,10,12,14]
-Explanation: 
+Explanation:
 The elements 9, 5, and 3 are less than the pivot so they are on the left side of the array.
 The elements 12 and 14 are greater than the pivot so they are on the right side of the array.
 The relative ordering of the elements less than and greater than pivot is also maintained. [9, 5, 3] and [12, 14] are the respective orderings.
@@ -4496,11 +5407,11 @@ Example 2:
 
 Input: nums = [-3,4,3,2], pivot = 2
 Output: [-3,2,4,3]
-Explanation: 
+Explanation:
 The element -3 is less than the pivot so it is on the left side of the array.
 The elements 4 and 3 are greater than the pivot so they are on the right side of the array.
 The relative ordering of the elements less than and greater than pivot is also maintained. [-3] and [4, 3] are the respective orderings.
- 
+
 
 Constraints:
 
@@ -4602,6 +5513,32 @@ Explanation: The root node is the node with value 50 since it has no parent.
 The resulting binary tree is shown in the diagram
 ```
 
+### [Problem 2206. Divide Array Into Equal Pairs] (https://leetcode.com/problems/divide-array-into-equal-pairs/description/)
+
+You are given an integer array nums consisting of 2 \* n integers.
+
+You need to divide nums into n pairs such that:
+
+Each element belongs to exactly one pair.
+The elements present in a pair are equal.
+Return true if nums can be divided into n pairs, otherwise return false.
+
+```
+Example 1:
+
+Input: nums = [3,2,3,2,2,2]
+Output: true
+Explanation:
+There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs.
+If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.
+Example 2:
+
+Input: nums = [1,2,3,4]
+Output: false
+Explanation:
+There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.
+```
+
 ### [Problem: 2220. (Easy): Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
 
 A bit flip of a number x is choosing a bit in the binary representation of x and flipping it from either 0 to 1 or 1 to 0.
@@ -4687,6 +5624,37 @@ Input: root = [10,4,6]
 Output: true
 Explanation: The values of the root, its left child, and its right child are 10, 4, and 6, respectively.
 10 is equal to 4 + 6, so we return true
+```
+
+### [Problem 2379. Minimum Recolors to Get K Consecutive Black Blocks](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/description/)
+
+solution: [problem_2379.py](./problem_2379.py)
+
+You are given a 0-indexed string blocks of length n, where blocks[i] is either 'W' or 'B', representing the color of the ith block. The characters 'W' and 'B' denote the colors white and black, respectively.
+
+You are also given an integer k, which is the desired number of consecutive black blocks.
+
+In one operation, you can recolor a white block such that it becomes a black block.
+
+Return the minimum number of operations needed such that there is at least one occurrence of k consecutive black blocks.
+
+```
+Example 1:
+
+Input: blocks = "WBBWWBBWBW", k = 7
+Output: 3
+Explanation:
+One way to achieve 7 consecutive black blocks is to recolor the 0th, 3rd, and 4th blocks
+so that blocks = "BBBBBBBWBW".
+It can be shown that there is no way to achieve 7 consecutive black blocks in less than 3 operations.
+Therefore, we return 3.
+Example 2:
+
+Input: blocks = "WBWBBBW", k = 2
+Output: 0
+Explanation:
+No changes need to be made, since 2 consecutive black blocks already exist.
+Therefore, we return 0.
 ```
 
 ### [Problem 2395. Find Subarrays With Equal Sum](https://leetcode.com/problems/find-subarrays-with-equal-sum/description/)
@@ -5008,6 +5976,57 @@ s consists of only the letters 'a', 'b', and 'c'.
 0 <= k <= s.lengt
 ```
 
+### [Problem 2523. Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/description/)
+
+Given two positive integers left and right, find the two integers num1 and num2 such that:
+
+left <= num1 < num2 <= right .
+Both num1 and num2 are prime numbers.
+num2 - num1 is the minimum amongst all other pairs satisfying the above conditions.
+Return the positive integer array ans = [num1, num2]. If there are multiple pairs satisfying these conditions, return the one with the smallest num1 value. If no such numbers exist, return [-1, -1].
+
+```
+Example 1:
+
+Input: left = 10, right = 19
+Output: [11,13]
+Explanation: The prime numbers between 10 and 19 are 11, 13, 17, and 19.
+The closest gap between any pair is 2, which can be achieved by [11,13] or [17,19].
+Since 11 is smaller than 17, we return the first pair.
+Example 2:
+
+Input: left = 4, right = 6
+Output: [-1,-1]
+Explanation: There exists only one prime number in the given range, so the conditions cannot be satisfied.
+```
+
+### [Problem 2529. Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/description/)
+
+solution: [problem_2529.py](./problem_2529.py)
+
+Given an array nums sorted in non-decreasing order, return the maximum between the number of positive integers and the number of negative integers.
+
+In other words, if the number of positive integers in nums is pos and the number of negative integers is neg, then return the maximum of pos and neg.
+Note that 0 is neither positive nor negative.
+
+```
+Example 1:
+
+Input: nums = [-2,-1,-1,1,2,3]
+Output: 3
+Explanation: There are 3 positive integers and 3 negative integers. The maximum count among them is 3.
+Example 2:
+
+Input: nums = [-3,-2,-1,0,0,1,2]
+Output: 3
+Explanation: There are 2 positive integers and 3 negative integers. The maximum count among them is 3.
+Example 3:
+
+Input: nums = [5,20,66,1314]
+Output: 4
+Explanation: There are 4 positive integers and 0 negative integers. The maximum count among them is 4.
+```
+
 ### [Problem 2554. Maximum Number of Integers to Choose From a Range I](https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i/)
 
 You are given an integer array banned and two integers n and maxSum. You are choosing some number of integers following the below rules:
@@ -5164,7 +6183,6 @@ Explanation: There is no path from the top left to the bottom-right cell.
 
 ### [Probelem 2579. Count Total Number of Colored Cells](https://leetcode.com/problems/count-total-number-of-colored-cells/description/)
 
-
 solution: [problem_2579](./problem_2579.py)
 
 There exists an infinitely large two-dimensional grid of uncolored unit cells. You are given a positive integer n, indicating that you must do the following routine for n minutes:
@@ -5183,9 +6201,8 @@ Example 2:
 
 Input: n = 2
 Output: 5
-Explanation: After 2 minutes, there are 4 colored cells on the boundary and 1 in the center, so we return 5. 
+Explanation: After 2 minutes, there are 4 colored cells on the boundary and 1 in the center, so we return 5.
 ```
-
 
 ### [Problem 2582. Pass the Pillow](https://leetcode.com/problems/pass-the-pillow)
 
@@ -5250,12 +6267,76 @@ Return the minimum possible length of the resulting string that you can obtain.
 
 Note that the string concatenates after removing the substring and could produce new "AB" or "CD" substrings.
 
+### [Problem 2799. Count Complete Subarrays in an Array](https://leetcode.com/problems/count-complete-subarrays-in-an-array/description/)
+
+You are given an array nums consisting of positive integers.
+
+We call a subarray of an array complete if the following condition is satisfied:
+
+The number of distinct elements in the subarray is equal to the number of distinct elements in the whole array.
+Return the number of complete subarrays.
+
+A subarray is a contiguous non-empty part of an array.
+
+```
+Example 1:
+
+Input: nums = [1,3,1,2,2]
+Output: 4
+Explanation: The complete subarrays are the following: [1,3,1,2], [1,3,1,2,2], [3,1,2] and [3,1,2,2].
+Example 2:
+
+Input: nums = [5,5,5,5]
+Output: 10
+Explanation: The array consists only of the integer 5, so any subarray is complete. The number of subarrays that we can choose is 10.
+```
+
 ### [Problem 2816. (Medium) Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list)
 
 ```
 Input: head = [1,2,3]
 Output: [2,4,6]
 Explanation: The linked list is 1 -> 2 -> 3. After doubling the linked list, the linked list becomes 2 -> 4 -> 6
+```
+
+### [Problem 2848. Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/description/)
+
+You are given a 0-indexed 2D integer array nums representing the coordinates of the cars parking on a number line. For any index i, nums[i] = [starti, endi] where starti is the starting point of the ith car and endi is the ending point of the ith car.
+
+Return the number of integer points on the line that are covered with any part of a car.
+
+```
+Example 1:
+
+Input: nums = [[3,6],[1,5],[4,7]]
+Output: 7
+Explanation: All the points from 1 to 7 intersect at least one car, therefore the answer would be 7.
+Example 2:
+
+Input: nums = [[1,3],[5,8]]
+Output: 7
+Explanation: Points intersecting at least one car are 1, 2, 3, 5, 6, 7, 8. There are a total of 7 points, therefore the answer would be 7.
+```
+
+### [Problem 2843. Count Symmetric Integers](https://leetcode.com/problems/count-symmetric-integers/description/)
+
+You are given two positive integers low and high.
+
+An integer x consisting of 2 * n digits is symmetric if the sum of the first n digits of x is equal to the sum of the last n digits of x. Numbers with an odd number of digits are never symmetric.
+
+Return the number of symmetric integers in the range [low, high].
+
+```
+Example 1:
+
+Input: low = 1, high = 100
+Output: 9
+Explanation: There are 9 symmetric integers between 1 and 100: 11, 22, 33, 44, 55, 66, 77, 88, and 99.
+Example 2:
+
+Input: low = 1200, high = 1230
+Output: 4
+Explanation: There are 4 symmetric integers between 1200 and 1230: 1203, 1212, 1221, and 1230.
 ```
 
 ### [Problem 2924. Find Champions II](https://leetcode.com/problems/find-champions-ii)
@@ -5307,7 +6388,7 @@ The input is generated such that if team a is stronger than team b and team b is
 
 ### [Probelm 2965.Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values)
 
-You are given a 0-indexed 2D integer matrix grid of size n * n with values in the range [1, n2]. Each integer appears exactly once except a which appears twice and b which is missing. The task is to find the repeating and missing numbers a and b.
+You are given a 0-indexed 2D integer matrix grid of size n \* n with values in the range [1, n2]. Each integer appears exactly once except a which appears twice and b which is missing. The task is to find the repeating and missing numbers a and b.
 
 Return a 0-indexed integer array ans of size 2 where ans[0] equals to a and ans[1] equals to b.
 
@@ -5357,6 +6438,33 @@ Explanation: The remapped keypad given in the image provides the minimum cost.
 "e" -> one push on key 6
 Total cost is 1 + 1 + 1 + 1 + 1 = 5.
 It can be shown that no other mapping can provide a lower cost.
+```
+
+### [Problem 3024. Type of Triangle](https://leetcode.com/problems/type-of-triangle/description/?envType=daily-question&envId=2025-05-19)
+
+You are given a 0-indexed integer array nums of size 3 which can form the sides of a triangle.
+
+A triangle is called equilateral if it has all sides of equal length.
+A triangle is called isosceles if it has exactly two sides of equal length.
+A triangle is called scalene if all its sides are of different lengths.
+Return a string representing the type of triangle that can be formed or "none" if it cannot form a triangle.
+
+```
+Example 1:
+
+Input: nums = [3,3,3]
+Output: "equilateral"
+Explanation: Since all the sides are of equal length, therefore, it will form an equilateral triangle.
+Example 2:
+
+Input: nums = [3,4,5]
+Output: "scalene"
+Explanation: 
+nums[0] + nums[1] = 3 + 4 = 7, which is greater than nums[2] = 5.
+nums[0] + nums[2] = 3 + 5 = 8, which is greater than nums[1] = 4.
+nums[1] + nums[2] = 4 + 5 = 9, which is greater than nums[0] = 3. 
+Since the sum of the two sides is greater than the third side for all three cases, therefore, it can form a triangle.
+As all the sides are of different lengths, it will form a scalene triangle.
 ```
 
 ### [Problem 3042. (Easy) Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i)
@@ -5533,6 +6641,70 @@ Explanation:
 There is only one element. So the answer is true.
 ```
 
+### [Problem 3191. Minimum Operations to Make Binary Array Elements Equal to One I](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/description)
+
+You are given a binary array nums.
+
+You can do the following operation on the array any number of times (possibly zero):
+
+Choose any 3 consecutive elements from the array and flip all of them.
+Flipping an element means changing its value from 0 to 1, and from 1 to 0.
+
+Return the minimum number of operations required to make all elements in nums equal to 1. If it is impossible, return -1.
+
+```
+
+Example 1:
+
+Input: nums = [0,1,1,1,0,0]
+
+Output: 3
+
+Explanation:
+We can do the following operations:
+
+Choose the elements at indices 0, 1 and 2. The resulting array is nums = [1,0,0,1,0,0].
+Choose the elements at indices 1, 2 and 3. The resulting array is nums = [1,1,1,0,0,0].
+Choose the elements at indices 3, 4 and 5. The resulting array is nums = [1,1,1,1,1,1].
+Example 2:
+
+Input: nums = [0,1,1,1]
+
+Output: -1
+
+Explanation:
+It is impossible to make all elements equal to 1.
+```
+
+### [Problem 3208. Alternating Groups II](https://leetcode.com/problems/alternating-groups-ii/description/)
+
+solution: [problem_3208](./problem_3208.py)
+There is a circle of red and blue tiles. You are given an array of integers colors and an integer k. The color of tile i is represented by colors[i]:
+
+colors[i] == 0 means that tile i is red.
+colors[i] == 1 means that tile i is blue.
+An alternating group is every k contiguous tiles in the circle with alternating colors (each tile in the group except the first and last one has a different color from its left and right tiles).
+
+Return the number of alternating groups.
+
+Note that since colors represents a circle, the first and the last tiles are considered to be next to each other.
+
+```
+Example 1:
+Input: colors = [0,1,0,1,0], k = 3
+Output: 3
+```
+
+![](https://assets.leetcode.com/uploads/2024/05/28/screenshot-2024-05-28-182844.png)
+
+```
+Input: colors = [1,1,0,1], k = 4
+Output: 0
+Explanation:
+```
+
+![](https://assets.leetcode.com/uploads/2024/06/19/screenshot-2024-05-28-184516.png)
+
 ### [Problem 3217. Delete Nodes From Linked List Present in Array (Medium)](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/)
 
 You are given an array of integers nums and the head of a linked list. Return the head of the modified linked list after removing all nodes from the linked list that have a value that exists in nums.
@@ -5688,3 +6860,38 @@ Constraints:
 1 <= k <= 10
 1 <= multiplier <= 5
 ```
+
+### [Problem 3396. Minimum Number of Operations to Make Elements in Array Distinct](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/description)
+
+You are given an integer array nums. You need to ensure that the elements in the array are distinct. To achieve this, you can perform the following operation any number of times:
+
+Remove 3 elements from the beginning of the array. If the array has fewer than 3 elements, remove all remaining elements.
+Note that an empty array is considered to have distinct elements. Return the minimum number of operations needed to make the elements in the array distinct.
+
+```
+Example 1:
+Input: nums = [1,2,3,4,2,3,3,5,7]
+Output: 2
+Explanation:
+In the first operation, the first 3 elements are removed, resulting in the array [4, 2, 3, 3, 5, 7].
+In the second operation, the next 3 elements are removed, resulting in the array [3, 5, 7], which has distinct elements.
+Therefore, the answer is 2.
+
+Example 2:
+Input: nums = [4,5,6,4,4]
+Output: 2
+
+Explanation:
+In the first operation, the first 3 elements are removed, resulting in the array [4, 4].
+In the second operation, all remaining elements are removed, resulting in an empty array.
+Therefore, the answer is 2.
+
+Example 3:
+Input: nums = [6,7,8,9]
+Output: 0
+Explanation:
+The array already contains distinct elements. Therefore, the answer is 0.
+
+```
+
+

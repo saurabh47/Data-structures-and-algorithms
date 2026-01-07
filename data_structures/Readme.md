@@ -126,6 +126,19 @@ _Note: Docs generated via Github copilot_
         The output of DFS traversal from a node 0 is: 0, 3, 1, 5, 2, 4, 6
         The output of DFS traversal from a node 5 is: 5, 2, 1, 3, 4, 0, 6
 
+    - Finding Cycle in a Graph
+        A cycle in a graph is a path that starts and ends at the same vertex. A cycle can be of any length, but it must contain at least one edge. A cycle can be directed or undirected. A directed cycle is a cycle in which all edges are directed in the same direction. An undirected cycle is a cycle in which edges can be traversed in both directions.
+
+        To find a cycle in a graph, we can use Depth First Search (DFS) algorithm. The idea is to keep track of the visited vertices and the parent of each vertex. If we encounter a vertex that has already been visited and is not the parent of the current vertex, then we have found a cycle. refer [solution](./graphs/cycle.kt) for details.
+        The time complexity of this algorithm is O(V + E), where V is the number of vertices and E is the number of edges in the graph. The space complexity is O(V) for the visited array and O(V) for the recursion stack.
+    
+    - Topological Sort
+        Topological sort is a linear ordering of vertices in a directed acyclic graph (DAG) such that for every directed edge u -> v, vertex u comes before vertex v in the ordering. In other words, it is a way of arranging the vertices in a directed graph such that all edges point from earlier to later in the ordering.
+
+        Topological sort can be performed using Breadth First Search (BFS) or Depth First Search (DFS) algorithm. The idea is to keep track of the in-degree of each vertex and add the vertices with in-degree 0 to a queue. Then, we can remove the vertices from the queue and add their neighbors to the queue if their in-degree becomes 0. This process continues until all vertices are processed.
+        refer [solution](./graphs/topological_sort.kt) for details. 
+        The time complexity of this algorithm is O(V + E), where V is the number of vertices and E is the number of edges in the graph. The space complexity is O(V) for the visited array and O(V) for the queue.
+
 ### Problems to solve
 
 - Height and Depth of a node in a Binary Tree

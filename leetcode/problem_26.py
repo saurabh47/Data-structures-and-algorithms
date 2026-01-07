@@ -29,7 +29,21 @@ class Solution2:
                 index += 1
         while(len(nums) != len(s)):
             nums.pop()
-        
+
+# Optimized Solution
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+class Solution3:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        index = 1
+        left = 0
+        for right in range(1, len(nums)):
+            if(nums[left] < nums[right]):
+                nums[index] = nums[right]
+                index += 1
+            left += 1
+        return index        
 
 
 if __name__ == "__main__":

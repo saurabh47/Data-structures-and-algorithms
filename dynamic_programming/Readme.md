@@ -52,7 +52,7 @@ Pattern 2: Unbounded Knapsack
 3. Number divisors - // TODO
 4. Minimum jumps to reach end
 5. Minimum jumps with fee - // TODO
-6. House Thief
+6. House Robber problem 198.
 
 #### Pattern 4: Palindromic Subsequence
 

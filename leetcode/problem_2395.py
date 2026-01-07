@@ -23,3 +23,16 @@ class Solution:
             else:
                 lookUp[s] = i - 1
         return False
+
+# Time cmplexity: O(n)
+# Memory complexity: O(n)
+class Solution:
+    def findSubarrays(self, nums: List[int]) -> bool:
+        lookUp = set()
+        for i in range(1, len(nums)):
+            s = nums[i-1] + nums[i]
+            if(s in lookUp):
+                return True
+            else:
+                lookUp.add(s)
+        return False

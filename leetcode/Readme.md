@@ -680,6 +680,22 @@ path consists of English letters, digits, period '.', slash '/' or '_'.
 path is a valid absolute Unix path.
 ```
 
+### [Problem 73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
+
+Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.
+
+You must do it in place.
+
+```
+Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]
+Output: [[1,0,1],[0,0,0],[1,0,1]]
+```
+
+```
+Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
+```
+
 ### [Problem 74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
 
 You are given an m x n integer matrix matrix with the following two properties:

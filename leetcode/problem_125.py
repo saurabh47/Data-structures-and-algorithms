@@ -41,6 +41,30 @@ class Solution2:
              return True
         return False
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+class Solution3:
+    def isPalindrome(self, s: str) -> bool:
+
+        def isAlphaNumeric(letter: str):
+            return (ord(letter) >= 97 and ord(letter) <= 122) or (ord(letter) >= 65 and ord(letter) <= 90) or (ord(letter) >= 48 and ord(letter) <= 57)
+
+        start = 0
+        end = len(s) - 1
+        reverse = ''
+        while(start < end):
+            while(not isAlphaNumeric(s[start]) and start < len(s) - 1):
+                start += 1
+            while(not isAlphaNumeric(s[end]) and end > 0):
+                end -= 1
+            if(start >= end):
+                return True
+            if(s[start].lower() != s[end].lower()):
+                return False
+            start += 1
+            end -= 1
+        return True
+
 
 if __name__ == "__main__":
     s = "A man, a plan, a canal: Panama"

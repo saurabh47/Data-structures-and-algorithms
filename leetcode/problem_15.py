@@ -58,6 +58,35 @@ class Solution:
                     end -= 1
         return result
 
+
+
+# Time Complexity:  (O(n(logn) + n^2)) =  (O(n^2))
+# Space Complexity: O(n)
+# hint: sort and use two pointers
+class Solution3:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        result = []
+        nums.sort()
+        for i in range(len(nums)):
+            # since array is sorted we can skip duplicates
+            if(i > 0 and nums[i] == nums[i - 1]):
+                continue
+            start = i + 1
+            end = len(nums) - 1
+            while(start < end):
+                sum3 = nums[i] + nums[start] + nums[end]
+                if(sum3 < 0):
+                    start += 1
+                elif(sum3 > 0):
+                    end -= 1
+                else:
+                    result.append([nums[i], nums[start], nums[end]])
+                    start += 1
+                    # since array is sorted we can skip duplicates
+                    while(nums[start] == nums[start - 1] and start < end):
+                        start += 1
+        return result
+
 if __name__ == "__main__":
     solution = Solution()
     print(solution.threeSum([-1, 0, 1, 2, -1, -4]))

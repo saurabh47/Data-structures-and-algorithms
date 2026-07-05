@@ -65,6 +65,28 @@ class Solution3:
         end = len(nums) - 1
         reverse(start, end)
 
+# After k rotations, the last k elements are at the beginning of the array.
+# So, we need to reverse the first l - k elements, the last k elements, and then the entire array.
+# time complexity: O(n)
+# space complexity: O(1)
+class Solution4:
+    def rotate(self, nums: List[int], k: int) -> None:
+        def reverse(start, end):
+            while(start < end):
+                temp = nums[start]
+                nums[start] = nums[end]
+                nums[end] = temp
+                start += 1
+                end -= 1
+
+        l = len(nums)
+        k = k % l
+
+        if(l <= 1):
+            return
+        reverse(0, l - k - 1)
+        reverse(l - k, l - 1)
+        reverse(0, l - 1)
 
 
 if __name__ == "__main__":

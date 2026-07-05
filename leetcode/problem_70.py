@@ -65,3 +65,25 @@ print(climb3Stairs(5))
 # 2nd step + 1 step
 # Since we can only take 1 or 2 steps at a time
 # Hence f(3) = f(1) + f(2)
+
+# Dynamic Programming Approach
+# time complexity: O(n)
+# space complexity: O(n)
+class Solution4:
+    def climbStairs(self, n: int) -> int:
+        # f(1):1
+        # f(2): 1 + 1, 2 => 2
+        # f(3): 1 + 1 + 1, 2 + 1, 1 + 2 = 3
+        # f(4): [1,1,1,1], [2,2], [1,2,1], [2,1,1], [1,1,2] = 5
+        # f(n) = f(n-1) + 1, f(n-2) + 2
+        # [1, 2, 3, 0, 0] 
+        arr = [i if i < 4 else 0 for i in range(1, n + 1)]
+        def climb(k:int)->int:
+            if(k < 3):
+                return
+            val = arr[k - 1] + arr[k - 2]
+            arr[k] = val
+        
+        for i in range(n):
+            climb(i)
+        return arr[n-1]
